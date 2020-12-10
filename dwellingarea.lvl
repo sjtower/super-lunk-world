@@ -3,7 +3,7 @@
 // ------------------------------
 
 \-size 5 5									// level size in rooms - W / H
-\-back_room_chance 5						// % chance of a second room (default = 5%)
+\-back_room_chance 0						// % chance of a second room (default = 5%)
 \-back_room_interconnection_chance 20		// % chance of a second room interconnection (default = 20%)
 \-back_room_hidden_door_chance 500			// 1/N chance of a hidden door (default = 500)
 \-back_room_hidden_door_cache_chance 1000	// 1/N chance of a hidden door to a cache (default = 1000)
@@ -13,8 +13,8 @@
 \-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
 \-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
 \-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance 1				    // 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 1				    // 1/N chance of spawning a machine tall room (default = 0)
+\-machine_wideroom_chance 0				    // 1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance 0				    // 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
 // ------------------------------
@@ -24,7 +24,10 @@
 \?chunk_ground				5
 \?chunk_air					6
 \?chunk_door				8 	// Chunk with entrance or exit in it
-	
+
+//spawn extra enemies with this hack, thanks gareb3ar :)
+//\?empty%99%hermitcrab						0
+
 \?empty						0
 \?floor						1
 \?floor%50					2	// 50% chance of floor, 50% chance of empty
@@ -43,24 +46,30 @@
 \?upsidedown_spikes			v
 \?push_block				4
 \?bone_block				f
+\?hornedlizard%1			~
+\?jiangshi				    j
 
 \?arrow_trap				A
 \?spring_trap				>
-	
+\?bigspear_trap				-
+
 //\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
 \?litwalltorch				O
 //\?lockedchest				c
+\?rock						r
 
 \?snake						m
 \?bat						z
 \?caveman					c
 \?scorpion					s
 \?caveman_asleep%50			n
-\?cookfire					r
+\?cookfire					F
 \?turkey					u
 \?vlad						V
 \?imp                       +
-	
+\?oldhunter					h
+
+\?crate						R
 \?altar						x	// Each side of the altar
 \?idol						I	// Idol statue
 \?idol_floor				i	// Idol block
@@ -68,7 +77,7 @@
 \?woodenlog_trap_ceiling	C	// Wooden log trap ceiling
 //\?vault_wall				|	// Vault wall
 //\?coffin					g	// Character coffin (NPC/Player)
-	
+
 \?shop_sign					K
 \?shop_door					k
 \?lamp_hang					l
@@ -127,28 +136,13 @@
 0000000000
 1111111111
 
-//yang
-\!flip
-\!dual
-\!rare
-:000000000 XXXXZZXXXX
-:yL0O09000 1111001111
-::P:001000 1000000011
-00L0000000 Z00LO0tttZ
-0:Pppppp:0 111P111111
-1:L00000:1 XX1L00001X
-1:L0u0N0:1 XX1LO0D01X
-1:aaaaaa:1 XX11Z===1X
-
-//vlad_cape_setup
-\!purge
 ==========
-=00040000=
-=004V0000=
+=-00V0-01=
+=-0000-01=
 0000000011
-0090000000
-0ppttttpp0
-000====000
+0000^00R00
+0111111pp0
+009====000
 1111111111
 
 
@@ -156,38 +150,15 @@
 \.entrance_drop
 ////////////////////////////////////////////////////////////////////////////////
 
-//yang
-\!flip
-\!dual
-:000000000 XXXXZZXXXX
-:yL0O09000 1111001111
-::P:001000 1000000011
-00L0000000 Z00LO0tttZ
-0:Pppppp:0 111P111111
-1:L00000:1 XX1L00001X
-1:L0u0N0:1 XX1LO0D01X
-1:aaaaaa:1 XX11Z===1X
-
 //vlad_cape_setup
 ==========
-=00040000=
-=004V0000=
+=00000001=
+=-00V0-01=
 0000000011
-0090000000
-0ppttttpp0
-0000000000
+0000^R0000
+0111111110
+0900000000
 1111001111
-
-\!flip
-\!dual
-:000000000 XXXXZZXXXX
-:yL0O09000 1111001111
-::P:001000 1000000011
-00L0000000 Z00LO0tttZ
-0:Pppppp:0 111P111111
-1:L00000:1 XX1L00001X
-1:L0u0N0:1 XX1LO0D01X
-1:aaaaaa:1 XX11Z===1X
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -246,17 +217,59 @@ L111c0111L
 0111111110
 1111111111
 
-//spring pad dodge
 \!ignore
+//lizard jump
 1111111111
-1111111111
-1111111111
-1111O11111
-v0v0vv0v0v
-0000000000
->0>0>>0>0>
+0000110000
+P11000011P
+L110O0011L
+L11000011L
+L11~~~~11L
+0111111110
 1111111111
 
+//jiangshi jump
+1111111111
+0000110000
+P11000011P
+L110O0011L
+L11000011L
+L1100j011L
+0111111110
+1111111111
+
+\!ignore
+//spring trap spike dodge
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+v0v0vv0v0v
+>0>O>>O>0>
+1111111111
+
+//spring trap rock dodge
+1111111111
+1111111111
+1111111111
+r00r00r00r
+>00>00>00>
+P01100110P
+L^11^^11^L
+1111111111
+
+//bigger spring trap rock dodge
+1111111111
+r00000r00r
+0000000000
+r00r00r00r
+>00>00>00>
+P01100110P
+L^11^^11^L
+1111111111
+
+\!ignore
 //imp jump
 1111111111
 0000000000
@@ -428,6 +441,7 @@ pppppppppLpppppppppp
 100000000L0000000001
 1111PP1111111PP11111
 
+\!ignore
 04010401111110401040
 P1010pP100001Pp0101P
 L40V0p11011011p0V04L
@@ -520,6 +534,7 @@ L000000001100000000L
 00000000000000000000 10000000000000000001
 11111111111111111111 11111111111111111111
 
+//long snake jump
 \!ignore
 11111111111111111111
 00000000000000000000
@@ -530,6 +545,7 @@ P000001000000100000P
 ^^^^^^1^^^^^^1^^^^^^
 11111111111111111111
 
+\!ignore
 //long_imp_jump
 11111111111111111111
 00000000000000000000
@@ -538,6 +554,16 @@ L1pp00O0000000O0pp1L
 L10000+0000000+0001L
 L100000000000000001L
 L1^^^^^^^^^^^^^^^^1L
+11111111111111111111
+
+//long spring trap jump
+11111111111111111111
+v0v0vv0v0vv0v0vv0v0v
+00010000000000001000
+000100>0>00>0>001000
+0>0100101001010010>0
+Pp0100101001010010pP
+^^^1^^1^1^^1^1^^1^^^
 11111111111111111111
 
 \!ignore
