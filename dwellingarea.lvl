@@ -3,7 +3,7 @@
 // ------------------------------
 
 \-size 5 5									// level size in rooms - W / H
-\-back_room_chance 0						// % chance of a second room (default = 5%)
+\-back_room_chance 5						// % chance of a second room (default = 5%)
 \-back_room_interconnection_chance 20		// % chance of a second room interconnection (default = 20%)
 \-back_room_hidden_door_chance 500			// 1/N chance of a hidden door (default = 500)
 \-back_room_hidden_door_cache_chance 1000	// 1/N chance of a hidden door to a cache (default = 1000)
@@ -12,7 +12,7 @@
 \-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
 \-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
 \-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-machine_bigroom_chance 1					// 1/N chance of spawning a machine big room (default = 0)
+\-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
 \-machine_wideroom_chance 1				    // 1/N chance of spawning a machine wide room (default = 0)
 \-machine_tallroom_chance 1				    // 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
@@ -43,10 +43,11 @@
 \?upsidedown_spikes			v
 \?push_block				4
 \?bone_block				f
+
 \?arrow_trap				A
-//\?bear_trap					H
+\?spring_trap				>
 	
-\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
+//\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
 \?litwalltorch				O
 //\?lockedchest				c
 
@@ -57,16 +58,16 @@
 \?caveman_asleep%50			n
 \?cookfire					r
 \?turkey					u
-//\?vlad						V
-\?hornedlizard             z
+\?vlad						V
+\?imp                       +
 	
 \?altar						x	// Each side of the altar
 \?idol						I	// Idol statue
 \?idol_floor				i	// Idol block
 \?woodenlog_trap			T	// Wooden log trap
 \?woodenlog_trap_ceiling	C	// Wooden log trap ceiling
-\?vault_wall				|	// Vault wall
-\?coffin					g	// Character coffin (NPC/Player)
+//\?vault_wall				|	// Vault wall
+//\?coffin					g	// Character coffin (NPC/Player)
 	
 \?shop_sign					K
 \?shop_door					k
@@ -77,8 +78,8 @@
 \?shopkeeper				$	// Shopkeeper and items
 
 \?yang						y	// Yang
-\?pen_floor					a	// Pen bottom floor
-\?pen_locked_door			N	// Locked door to other Layer
+//\?pen_floor				a	// Pen bottom floor
+//\?pen_locked_door			N	// Locked door to other Layer
 
 // ------------------------------
 //  LEVEL CHANCES
@@ -126,12 +127,27 @@
 0000000000
 1111111111
 
+//yang
+\!flip
+\!dual
+\!rare
+:000000000 XXXXZZXXXX
+:yL0O09000 1111001111
+::P:001000 1000000011
+00L0000000 Z00LO0tttZ
+0:Pppppp:0 111P111111
+1:L00000:1 XX1L00001X
+1:L0u0N0:1 XX1LO0D01X
+1:aaaaaa:1 XX11Z===1X
+
+//vlad_cape_setup
+\!purge
 ==========
-002====200
-000====000
-0000000000
-0000900000
-0pp====pp0
+=00040000=
+=004V0000=
+0000000011
+0090000000
+0ppttttpp0
 000====000
 1111111111
 
@@ -140,15 +156,38 @@
 \.entrance_drop
 ////////////////////////////////////////////////////////////////////////////////
 
+//yang
 \!flip
+\!dual
+:000000000 XXXXZZXXXX
+:yL0O09000 1111001111
+::P:001000 1000000011
+00L0000000 Z00LO0tttZ
+0:Pppppp:0 111P111111
+1:L00000:1 XX1L00001X
+1:L0u0N0:1 XX1LO0D01X
+1:aaaaaa:1 XX11Z===1X
+
+//vlad_cape_setup
 ==========
-002====200
-000====000
-0000000000
-0000900000
-0pp====pp0
+=00040000=
+=004V0000=
+0000000011
+0090000000
+0ppttttpp0
 0000000000
 1111001111
+
+\!flip
+\!dual
+:000000000 XXXXZZXXXX
+:yL0O09000 1111001111
+::P:001000 1000000011
+00L0000000 Z00LO0tttZ
+0:Pppppp:0 111P111111
+1:L00000:1 XX1L00001X
+1:L0u0N0:1 XX1LO0D01X
+1:aaaaaa:1 XX11Z===1X
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -196,6 +235,8 @@ L10000001L
 \.path_normal
 ////////////////////////////////////////////////////////////////////////////////
 
+//caveman jump
+\!ignore
 1111111111
 0000110000
 P11000011P
@@ -203,6 +244,27 @@ L110O0011L
 L11000011L
 L111c0111L
 0111111110
+1111111111
+
+//spring pad dodge
+\!ignore
+1111111111
+1111111111
+1111111111
+1111O11111
+v0v0vv0v0v
+0000000000
+>0>0>>0>0>
+1111111111
+
+//imp jump
+1111111111
+0000000000
+P10000001P
+L100O+001L
+L10000001L
+L10000001L
+L1^^^^^^1L
 1111111111
 
 \!ignore
@@ -349,6 +411,22 @@ pppppppppLpppppppppp
 000000000L0000000000
 1111PP1111111PP11111
 
+1111PP11111111PP1111
+1000pppppLpppppp0001
+000000OOOL0000000000
+000000000L0000000000
+000000000L0000000000
+000000000L0000000000
+1p1p1p1p1L1p1p1p1p11
+000000000L0000000000
+000000000L0000000000
+000000OOOL0000000000
+000000000L0000000000
+00000000000000000000
+100000000L0000000001
+100000OOOL0000000001
+100000000L0000000001
+1111PP1111111PP11111
 
 04010401111110401040
 P1010pP100001Pp0101P
@@ -442,17 +520,27 @@ L000000001100000000L
 00000000000000000000 10000000000000000001
 11111111111111111111 11111111111111111111
 
-
+\!ignore
 11111111111111111111
 00000000000000000000
-00000000000000000000
+0000000O00000O000000
 00000000000000000000
 000000m000000m000000
 P000001000000100000P
 ^^^^^^1^^^^^^1^^^^^^
 11111111111111111111
 
+//long_imp_jump
+11111111111111111111
+00000000000000000000
+P100000000000000001P
+L1pp00O0000000O0pp1L
+L10000+0000000+0001L
+L100000000000000001L
+L1^^^^^^^^^^^^^^^^1L
+11111111111111111111
 
+\!ignore
 040104P111111P401040
 P1010pL100001Lp0101P
 L40v0p11011011p0v04L
