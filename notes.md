@@ -82,15 +82,16 @@
 1. Grab falling platform, require jump away right when it falls
 1. key escort (volcana can guarantee a key?)
 1. ~~look at tall push block puzzle - can we force direction?~~
-1. can we trigger from below with death waffle / ufo? Or just UFO?
-1. multiple log traps in one room
-1. Normal platforms over spikes drop
-1. Falling platform arrow dodge
-1. Drop on caveman, avoid arrows
-1. Run jump to send push block down to arrows
-1. Long spike pit with bones
+1. can we trigger from below with death waffle / ufo? ~~Or just UFO?~~
+1. multiple log traps in one room (?)
+1. ~~Normal platforms over spikes drop~~
+1. ~~Falling platform arrow dodge~~
+1. ~~Drop on caveman, avoid arrows~~
+1. ~~Run jump to send push block down to arrows~~
+1. ~~Long spike pit with bones~~
 1. Drop rocks into arrows, preserve bone blocks
 1. Toss at caveman with key
+1. bunch of bones, don't break them all!
 1. Quillback escort (!) - require Quillback to get through a bedrock encased exit tunnel
 
 ##Jungle
