@@ -79,7 +79,6 @@
 1. idol room
 1. ~~imp jump~~
 1. parachute level
-1. Grab falling platform, require jump away right when it falls
 1. key escort (volcana can guarantee a key?)
 1. ~~look at tall push block puzzle - can we force direction?~~
 1. can we trigger from below with death waffle / ufo? ~~Or just UFO?~~
@@ -89,9 +88,13 @@
 1. ~~Drop on caveman, avoid arrows~~
 1. ~~Run jump to send push block down to arrows~~
 1. ~~Long spike pit with bones~~
-1. Drop rocks into arrows, preserve bone blocks
-1. Toss at caveman with key
-1. bunch of bones, don't break them all!
+1. ~~Drop rocks into arrows, preserve bone blocks~~
+1. ~~Toss at caveman with key~~
+1. ~~bunch of bones, don't break them all!~~
+1. ~~Grab falling platform, require jump away right when it falls~~
+1. ~~throw rock, let out imp, jump on imp~~
+1. Falling platform next to push block, have to push a little then jump
+1. run under some falling platforms you have to trigger
 1. Quillback escort (!) - require Quillback to get through a bedrock encased exit tunnel
 
 ##Jungle
