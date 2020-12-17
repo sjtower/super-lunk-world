@@ -14,7 +14,7 @@
 \-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
 \-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
 \-machine_wideroom_chance 2				    // 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 2				    // 1/N chance of spawning a machine tall room (default = 0)
+\-machine_tallroom_chance 0				    // 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
 // ------------------------------
@@ -60,7 +60,7 @@
 \?litwalltorch				O
 //\?lockedchest				c
 \?rock						r
-\?key						k
+\?key						y
 \?clover					Q
 
 \?snake						m
@@ -71,6 +71,8 @@
 \?turkey					u
 \?imp                       +
 \?jiangshi				    j
+\?octopus					M
+\?ufo						U
 
 \?crate						R
 \?altar						x	// Each side of the altar
@@ -89,9 +91,11 @@
 \?wanted_poster				W
 \?shopkeeper				$	// Shopkeeper and items
 
-\?yang						y	// Yang
+//\?yang						y	// Yang
 //\?pen_floor				a	// Pen bottom floor
 //\?pen_locked_door			N	// Locked door to other Layer
+
+\?thief						J
 
 // ------------------------------
 //  LEVEL CHANCES
@@ -390,7 +394,7 @@ L1p0000p1L
 \!dual
 \!flip
 1111111111 1111111111
-0k000000k0 1111111111
+0y000000y0 1111111111
 P11000011P 1122221111
 L100OO001L 1100001111
 L1/000001L 11D0002211
@@ -402,7 +406,7 @@ L11111111L 1111000011
 \!dual
 \!flip
 1111111111 1111111111
-0k000000k0 1111111111
+0y000000y0 1111111111
 P11000011P 1122221111
 L100OO001L 1100001111
 L1/000001L 11D0002211
@@ -425,6 +429,7 @@ L11011011L
 \.path_drop_notop
 ////////////////////////////////////////////////////////////////////////////////
 
+//throw rock on bones
 \!flip
 1111001111
 111r00r111
@@ -432,9 +437,10 @@ L11011011L
 110^ff^011
 1101111011
 1100000011
-11^pppp^11
+00^pppp^00
 1111001111
 
+//Falling platform arrow dodge 1
 \!flip
 1111001111
 1111000111
@@ -442,7 +448,7 @@ L11011011L
 11000f0111
 11000f0111
 1A00000111
-11^^FF^111
+00^^FF^000
 1111001111
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -623,6 +629,7 @@ L000000001100000000L
 11111111111111111111 11111111111111111111
 
 //long snake jump
+\!ignore
 11111111111111111111
 00000000000000000000
 0000000O00000O000000
@@ -633,6 +640,7 @@ P000001000000100000P
 11111111111111111111
 
 //long snake spring jump
+\!ignore
 11111111111111111111
 00000000000000000000
 0000000O00000O000000
@@ -642,7 +650,30 @@ P000001000000100000P
 ^^^^^^1^^^^^^1^^^^^^
 11111111111111111111
 
-//long_imp_jump
+//long bones snake jump
+\ignore
+11111111111111111111
+00000000000000000000
+000000mO0000Om000000
+000000f000000f000000
+000000f000000f000000
+P000001000000100000P
+^^^^^^1^^^^^^1^^^^^^
+11111111111111111111
+
+//long UFO trigger run (not working)
+\!ignore
+11111111111111111111
+11o1oooo11o111111111
+01C1CCCC11C11111111P
+00000000000000000000
+P111111111111111111P
+L1I1111111011011111L
+11f1UI0*10U11U111111
+11111ii1111111111111
+
+//long imp jump
+\!ignore
 11111111111111111111
 00000000000000000000
 P100000000000000001P
@@ -653,6 +684,7 @@ L1^^^^^^^^^^^^^^^^1L
 11111111111111111111
 
 //bone bridge trap
+\!ignore
 11111111111111111111
 01A00000A11A000000A1
 0r0m0000fmmf0000m0r0
@@ -663,6 +695,7 @@ L1^^^^^^^^^^^^^^^^1L
 11111111111111111111
 
 //long spring trap jump
+\!ignore
 11111111111111111111
 v0v0vv0v0vv0v0vv0v0v
 00010000000000001000
@@ -672,6 +705,8 @@ Pp0100101001010010pP
 ^^^1^^1^1^^1^1^^1^^^
 11111111111111111111
 
+//push block puzzle
+\!ignore
 04010401111110401040
 P1010pP100001Pp0101P
 L40v0p11011011p0v04L
@@ -680,16 +715,6 @@ L400000001100000004L
 P100000001100000001P
 L000000001100000000L
 11111111111111111111
-
-\!ignore
-11111111111111111111
-01111111111111111110
-01111111111111111110
-0=1111111111111111=0
-0==================0
-00000000000000000000
-00000000000000000000
-1==================1
 
 ////////////////////////////////////////////////////////////////////////////////
 \.machine_wideroom_side

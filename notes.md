@@ -1,0 +1,129 @@
+# Level generation observations
+
+1. generic.lvl contains things like shops and kali altars. This file is used in conjuction with the other level files
+1. two-room or fewer crashes
+1. size of 4-1 with all original tiles can still crash
+1. at least one `\.side` room is required
+1. `\.path_normal` is not always, but often required
+1. Dwelling seems to require both `\.pen_room` and `\.shop`
+1. Can safely remove all idol and coffin rooms
+1. 2-2 is more stable but still crashes occasionally
+1. 3-3 seems stable, no crashes
+1. cannot erase contents of generic.lvl
+1. It seems like we need to keep all "sections" in generic.lvl, EG `\.altar`, `\.vault`. It seems like IF the level can contain these sections, they are loaded and will crash if not found.
+1. QUESTION: They can be replaced with anything you want, they just have to be there?
+1. We can trim down `dwelling.lvl` to one room per section
+1. Try set size to 5-5 and set `1` for `\-machine_bigroom_chance 1`, `\-machine_wideroom_chance 1`, `\-machine_tallroom_chance 1`
+
+## Level generation notes
+
+### Sections (not exhaustive)
+
+1. `\.entrance`
+1. `\.entrance_drop`
+1. `\.exit`
+1. `\.exit_notop`
+1. `\.side`
+1. `\.path_normal`
+1. `\.path_notop`
+1. `\.path_drop`
+1. `\.path_drop_notop`
+1. `\.idol_top`
+1. `\.idol`
+1. `\.machine_bigroom_path`
+1. `\.machine_bigroom_side`
+1. `\.machine_wideroom_path`
+1. `\.machine_wideroom_side`
+1. `\.machine_tallroom_path`
+1. `\.machine_tallroom_side`
+1. `\.machine_tallroom_path`
+
+### Notes on sections/rooms
+1. Spelunky 2 does not seem to care if the rooms defined in sections can connect. It seems to operate on assuming that all required pieces for a level are present. Namely, you can go left/right, and you can drop down to a lower screen.
+1. "path" rooms are open on the left and right. They can also be open at the top and bottom.
+1. "drop" rooms are open on the bottom
+1. "notop" rooms are open on the top
+1. combinations occur here, so "path_drop_notop" is open on the sides (path), top (notop), and bottom (drop)
+1. "side" rooms are placed at outside the main path of a level as mostly dead ends, but can open into other rooms.
+1. drop_notop rooms will have "side" rooms on either side, because the main path will go top -> bottom
+1. It seems like the required path is never past a "side" room, or past a special room (idol, shop, kali, etc.)
+1. "machine" big,wide, & tall rooms function much like regular rooms
+1. You can control the chance of these spawning. With a large level, you can force most rooms to be big
+1. machine tall rooms are generally open left/right, but have a floor in the middle
+1. machine big rooms are generally open on all sides
+1. In order to have layer 2 rooms, you need all layer 2 sections in `generic.lvl`
+1. Crates and treasure can automatically appear if you have a natural corner in the level
+
+### Notes on Traps
+
+#### Log trap
+1. Log is 5 tiles tall and two tiles wide
+1. There must be 6 tiles minimum between the log (T) and the idol (I)
+
+
+# Things to test
+1. Entrance/exit on machine big/wide/tall rooms?
+1. will oldhunter kill vlad anywhere? Or do we have to meet him somewhere first? Same level?
+1. can we use `\.setroom#-#` in any lvl? A - no 
+1. `\!purge` ? Multiple `\.setroom` rooms?
+1. Will Yang say anything if we put him at an entrance?
+1. can I place note? Will it replace crystal idol?
+
+# Room Ideas
+##Dwelling
+1. ~~jump on snakes over spikes~~
+1. ~~high horned lizard jump (can't spawn lizards :( )~~
+1. overhang ledge coyote jump (AKA stupid jump) (jump up past an overhanding ledge, 1 tile)
+1. ~~push block puzzle~~
+1. ~~arrow trap puzzle/dodge room~~
+1. idol room
+1. ~~imp jump~~
+1. parachute level
+1. Grab falling platform, require jump away right when it falls
+1. key escort (volcana can guarantee a key?)
+1. ~~look at tall push block puzzle - can we force direction?~~
+1. can we trigger from below with death waffle / ufo? Or just UFO?
+1. multiple log traps in one room
+1. Normal platforms over spikes drop
+1. Falling platform arrow dodge
+1. Drop on caveman, avoid arrows
+1. Run jump to send push block down to arrows
+1. Long spike pit with bones
+1. Drop rocks into arrows, preserve bone blocks
+1. Toss at caveman with key
+1. Quillback escort (!) - require Quillback to get through a bedrock encased exit tunnel
+
+##Jungle
+
+Climbing puzzles with trees
+##Volcana
+1. can we guarantee firebugs? set spawn to max and place chains
+1. firebug flame can go through two kitty-corner placed blocks
+
+##Neo Babylon
+
+
+## Audio/Visual ideas
+1. reskin dog and hampster to be cat variations
+1. recolor terrain to emphasize modded content
+1. repack the sound bank - include SMW romhack music
+
+
+# Overlunky
+
+1. If you spawn a door from camp, you will respawn at that level on death/restart
+
+## Spwan notes
+
+### cannot spawn directly
+1. hornedlizard
+1. firebug
+1. mole
+1. monkey
+1. bat 
+
+#Misc
+
+1. strings files need to be the same number of lines or the game will crash
+1. you do not need to preserve %ls present in the original string
+
