@@ -97,16 +97,64 @@
 1. run under some falling platforms you have to trigger
 1. Quillback escort (!) - require Quillback to get through a bedrock encased exit tunnel
 
-##Jungle
+##Jungle / Volcana - prefer traps/enemies of these two levels
 1. Climbing puzzles with trees
-1. trap gauntlet - path
-
-##Volcana
+1. ~~trap gauntlet - path~~
+1. kill imp, drop magma man on falling platform
+1. don't hit the door switch
+1. imp escort bow/arrow stand puzzle
 1. can we guarantee firebugs? set spawn to max and place chains
 1. firebug flame can go through two kitty-corner placed blocks
+1. robot escort with push block / falling platforms / door&switch
+1. precise mine excavation
+1. throw mine excavation? caveman/yeti?
+1. throw rock at door switch / key
+1. reflect throw via robots to hit switch
+1. jump thru lava elevator
+1. lava conveyor loop 
+1. PB conveyor / FP / elevator puzzle
+1. Don't wake caveman! next to mines/lava
+1. monkeys?
+1. save caveman / robot with PBs
+1. wake hermit crab to hit switch
+1. Thin ice to force delay - spikes, spears, lasers
+1. mine on FP puzzle/timing
+1. lava elevator with trees on either / one side / vines
+1. snakes on bramble
+1. tiki guys / witchdoctor in spikes
+1. choose correct FP -> robot explosion
+1. mosquito jump room
+1. water fountain / just water gates to extinguish flame
+1. push blocks into lava, into side of lava. Can lava burn bushes?
+1. throw rock on robot
+1. ride giant spiders over bramble
+1. ~~ride tusk through spikes~~
+1. don't hit any robot!
+1. ride lavamander through lava
+1. start on bush bridge with lit torch above
+1. trees on bushes? Do they break when burned?
+1. PB bush burn puzzle
+1. witch doctor gauntlet
+1. Don't burn any bushes! avoid imp, require player carry torch
+1. climb tree, avoid spikes/spears
+1. mine bridge/jumps
+1. whip lava onto bush
+1. wide trap gauntlet w/ key
+
+#Olmec
+1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
+
+#Temple / Tidepool
+1. give Vlad's cape
+1. death waffle guantlet
+1. crush block gauntlet / you get a PB for defense / required
+1. ice block spring spikes
+1. giant frog excavation
+1. pipe puzzle, plumbus puzzle
 
 ##Neo Babylon
-
+1. mech escort / excavation
+1. plasma cannon precise excavation
 
 ## Audio/Visual ideas
 1. reskin dog and hampster to be cat variations
