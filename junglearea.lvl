@@ -13,7 +13,7 @@
 \-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
 \-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
 \-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance 2				    // 1/N chance of spawning a machine wide room (default = 0)
+\-machine_wideroom_chance 10				    // 1/N chance of spawning a machine wide room (default = 0)
 \-machine_tallroom_chance 0				    // 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
@@ -46,9 +46,12 @@
 \?thorn_vine				*
 \?jungle_spear_trap			~
 \?bigspear_trap				P
+\?laser_trap				z
 \?powder_keg				o
 \?landmine				]
 \?thinice					I
+\?elevator					e
+\?honey_upwards			    }
 
 \?stagnant_lava				a
 \?water						w
@@ -65,24 +68,25 @@
 //\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
 \?pot						t
 \?tree_base					T
-\?cookfire					r
+//\?cookfire					r
+\?rock						r
 \?key						s
 \?fountain_drain			d
 \?clover					Q
 
 \?madametusk				M
 
-//\?hermitcrab				?
-//\?robot					?
-//\?imp						?
+\?hermitcrab				)
+\?robot					    {
+\?imp                       +
 //\?caveman_asleep			n
-//\?lavamander				?
+\?lavamander				L
 //\?caveman					?
 //\?mantrap					?
 //\?witchdoctor				?
 //\?tikiman					?
 //\?mosquito				?
-//\?giant_spider			N
+\?giant_spider			    N
 \?sister					i
 
 \?altar						x	// Each side of the altar
@@ -230,6 +234,7 @@ P0000000P0
 1111111111
 
 //bush powderkeg run
+\!ignore
 \!flip
 1111111111
 1000oo0001
@@ -240,7 +245,7 @@ P0000000P0
 H011XX110H
 XXXXXXXXXX
 
-//bush powderkeg avoid
+//bush bomb avoid
 \!flip
 1111111111
 10v0bb0v01
@@ -252,6 +257,7 @@ H0b1aa1b0H
 XXXXXXXXXX
 
 //swim thru bramble
+\!ignore
 \!flip
 1111111111
 v0ww*vvw0v
@@ -263,7 +269,7 @@ v=w**w**=v
 11*===*=11
 
 //spike tusk jump
-/!flip
+\!flip
 1111111111
 v00011000v
 vt001100tv
@@ -273,11 +279,34 @@ v=00O000=v
 =^^^^M^^^=
 =11111111=
 
+//throw rock at imp or bombs to clear path
+\!flip
+=f000+00f=
+=00000000=
+=0000O000=
+=0=0000=0=
+00=oooo=00
+0r}p11p}r0
+0111111110
+1111111111
+
+//imp drop on bombs to clear path
+\!flip
+=f000+00f=
+=00000000=
+=0000O000=
+00=0000=00
+00=0000=00
+00=oooo=00
+00}p11p}00
+11XXXXX111
+
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
 ////////////////////////////////////////////////////////////////////////////////
 
 //top spike spear guantlet
+\!ignore
 1111001111
 P0000000P0
 1~00~~00~1
@@ -285,6 +314,16 @@ P0000000P0
 0~00~~00~0
 000~~~~000
 0~~~~~~~~0
+1111111111
+
+//top tree dodge
+1110001111
+1100000011
+11000000z1
+1z00000011
+01000000z0
+pz00000010
+0000T00000
 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -302,16 +341,27 @@ P0000000P0
 0~~~0~~~~0
 1111001111
 
-//lava burn drop
+//lava burn drop 1
 \!flip
+1111111111
 1aaa11aaa1
 1111oo1111
-1bbbbbbbb1
-110b00b011
+110bbbb011
 0H0b00b0H0
 010b00b010
 0111001110
 XXXX00XXXX
+
+//throw rock at imp to open bottom drop
+\!flip
+=00f0+0f0=
+=00000000=
+v000*0*00v
+v000*0*00v
+v000*0*00v
+0r001010r0
+01111o1110
+1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop

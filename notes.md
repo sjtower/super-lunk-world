@@ -102,7 +102,8 @@
 1. ~~trap gauntlet - path~~
 1. kill imp, drop magma man on falling platform
 1. don't hit the door switch
-1. imp escort bow/arrow stand puzzle
+1. imp escort
+1. bow/arrow stand puzzle
 1. can we guarantee firebugs? set spawn to max and place chains
 1. firebug flame can go through two kitty-corner placed blocks
 1. robot escort with push block / falling platforms / door&switch
@@ -117,7 +118,7 @@
 1. monkeys?
 1. save caveman / robot with PBs
 1. wake hermit crab to hit switch
-1. Thin ice to force delay - spikes, spears, lasers
+1. Thin ice to force delay - spikes, spears, lasers, whip away lava
 1. mine on FP puzzle/timing
 1. lava elevator with trees on either / one side / vines
 1. snakes on bramble
@@ -140,6 +141,7 @@
 1. mine bridge/jumps
 1. whip lava onto bush
 1. wide trap gauntlet w/ key
+1. put pot on FB to trigger tusk
 
 #Olmec
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
@@ -167,6 +169,8 @@
 1. If you spawn a door from camp, you will respawn at that level on death/restart
 
 ## Spwan notes
+
+1. You can spawn an imp without their cauldron if you spawn them in a 1-tile high space.
 
 ### cannot spawn directly
 1. hornedlizard
