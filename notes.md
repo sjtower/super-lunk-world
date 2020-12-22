@@ -53,6 +53,7 @@
 1. machine big rooms are generally open on all sides
 1. In order to have layer 2 rooms, you need all layer 2 sections in `generic.lvl`
 1. Crates and treasure can automatically appear if you have a natural corner in the level
+1. Seems like switches and doors are only usable in certain levels
 
 ### Notes on Traps
 
@@ -95,17 +96,19 @@
 1. ~~throw rock, let out imp, jump on imp~~
 1. Falling platform next to push block, have to push a little then jump
 1. run under some falling platforms you have to trigger
-1. Quillback escort (!) - require Quillback to get through a bedrock encased exit tunnel
+
+## Quillback escort
+1. require Quillback to get through a bedrock encased exit tunnel
+1. push down TNT
+1. TNT on crush blocks - send up
 
 ##Jungle / Volcana - prefer traps/enemies of these two levels
-1. Climbing puzzles with trees
+1. ~~Climbing puzzles with trees~~
 1. ~~trap gauntlet - path~~
-1. kill imp, drop magma man on falling platform
-1. don't hit the door switch
-1. imp escort
+1. ~~kill imp, drop magma man on falling platform~~
+1. don't hit the door switch (can't do in jungle))
+1. ~~imp escort~~
 1. bow/arrow stand puzzle
-1. can we guarantee firebugs? set spawn to max and place chains
-1. firebug flame can go through two kitty-corner placed blocks
 1. robot escort with push block / falling platforms / door&switch
 1. precise mine excavation
 1. throw mine excavation? caveman/yeti?
@@ -138,10 +141,21 @@
 1. witch doctor gauntlet
 1. Don't burn any bushes! avoid imp, require player carry torch
 1. climb tree, avoid spikes/spears
-1. mine bridge/jumps
+1. mine bridge/jumps - prevent running with honey? thin ice?
 1. whip lava onto bush
 1. wide trap gauntlet w/ key
-1. put pot on FB to trigger tusk
+1. put pot on FP -> conveyor -> to trigger tusk
+1. layer 2 lava lock - open back door
+1. layer 1/2 maze
+1. bring crush block down and ride
+1. delicate TNT traversal
+1. TNT + PB puzzle
+1. PB to block spear trap (thin ice?)
+1. mine escort? laser traps, lava
+1. push TNT through laser traps / imps
+1. bones + TNT
+1. throw mine at laser trap / lava elevator
+1. double leaf bridge with witch doctors
 
 #Olmec
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
