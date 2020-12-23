@@ -12,6 +12,8 @@
 \-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
 \-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
 \-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-max_liquid_particles 6000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
+\-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
 \-machine_bigroom_chance 2					// 1/N chance of spawning a machine big room (default = 0)
 \-machine_wideroom_chance 1				    // 1/N chance of spawning a machine wide room (default = 0)
 \-machine_tallroom_chance 0				    // 1/N chance of spawning a machine tall room (default = 0)
@@ -48,7 +50,7 @@
 \?bigspear_trap				P
 \?laser_trap				z
 \?powder_keg				o
-\?landmine				]
+\?landmine				    ]
 \?thinice					I
 \?elevator					e
 \?honey_upwards			    }
@@ -57,8 +59,8 @@
 \?water						w
 
 \?giantclam					C
-\?slidingwall_switch		c
 \?slidingwall_ceiling		A
+\?slidingwall_switch		c
 \?falling_platform			F
 \?chainandblocks_ceiling	B
 \?conveyorbelt_left			<
@@ -145,10 +147,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 ----------
-2222222222
+2222222A22
 0000000000
 0000000000
-0000000000
+00000c0000
 000900Q000
 0--------0
 1111111111
@@ -159,12 +161,12 @@
 
 \!flip
 1111111111
-20000V0220
+20000V02A0
 0090000000
 0011100000
-0022200000
+002220c000
 1000000Q01
-1220000221
+12200002=1
 1112002111
 
 
@@ -314,9 +316,9 @@ v00011000v
 vt001100tv
 v=F0000F=v
 v=00O000=v
-==000h000=
-=^^^^=^^^=
-=11111111=
+=0000h000=
+=0000=000=
+=****1***=
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
@@ -341,6 +343,16 @@ P0000000P0
 01000000z0
 pz00000010
 0000T00000
+1111111111
+
+//top mine dig
+1110001111
+111]]]1111
+1111111111
+1100000011
+1100000011
+1100000011
+1111111111
 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -380,6 +392,27 @@ v000*0*00v
 0r001010r0
 01111o1110
 1111111111
+
+//robot escort drop
+\!flip
+1111111111
+1000000001
+1000000F{1
+1100040111
+000101p000
+0040p0p000
+1111001100
+XXXX11XXXX
+
+//precise mine dig drop
+1a111111a1
+1110]]0111
+1100110011
+0001111000
+0011111100
+0011111100
+11a1001a11
+1111pp1111
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
@@ -496,16 +529,15 @@ vf0000000000000000fv
 =^M^^^^^^^^^^^^^^M^=
 =111111111111111111=
 
-
-//long imp escort
+//long avoid big boom
 11111111111111111111
-10f0f00vf+fv0f000f01
-v000000v000v0000000v
-v010000v0O0v0000010v
-v010000v000v0000010v
-=o100r0000000r0001o=
-=11oooooooooooooo11=
-=111111111111111111=
+10f0f00vf+0fvf000f01
+v000000v0000v000000v
+v=00000v0O00v00000=v
+v=00000v0000v00000=v
+==0000000000000000==
+==^oooooooooooooo^==
+=XXXXXXXXXXXXXXXXXX=
 
 
 ////////////////////////////////////////////////////////////////////////////////

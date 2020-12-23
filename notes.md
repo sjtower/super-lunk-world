@@ -14,6 +14,7 @@
 1. QUESTION: They can be replaced with anything you want, they just have to be there?
 1. We can trim down `dwelling.lvl` to one room per section
 1. Try set size to 5-5 and set `1` for `\-machine_bigroom_chance 1`, `\-machine_wideroom_chance 1`, `\-machine_tallroom_chance 1`
+1. Some worlds require a `machine_rewardroom_chance` > 0, and a valid room defined in the `\.machine_rewardroom` section
 
 ## Level generation notes
 
@@ -108,8 +109,8 @@
 1. ~~kill imp, drop magma man on falling platform~~
 1. don't hit the door switch (can't do in jungle))
 1. ~~imp escort~~
-1. bow/arrow stand puzzle
-1. robot escort with push block / falling platforms / door&switch
+1. ~~bow/arrow stand puzzle~~
+1. robot escort with push block / falling platforms / door&switch (can't)
 1. precise mine excavation
 1. throw mine excavation? caveman/yeti?
 1. throw rock at door switch / key
