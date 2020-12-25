@@ -16,7 +16,7 @@
 \-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
 \-machine_bigroom_chance 2					// 1/N chance of spawning a machine big room (default = 0)
 \-machine_wideroom_chance 1				    // 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 0				    // 1/N chance of spawning a machine tall room (default = 0)
+\-machine_tallroom_chance 2				    // 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
 // ------------------------------
@@ -256,9 +256,9 @@ XXXXXXXXXX
 10v0bb0v01
 1ov1bb1vo1
 11v1oo1v11
-010o11o010
-0001aa1000
-H0b1aa1b0H
+010o--o010
+000-aa-000
+H0b-aa-b0H
 XXXXXXXXXX
 
 //swim thru bramble
@@ -311,6 +311,7 @@ v=00O000=v
 
 //spike bow arrow jump
 \!flip
+\!ignore
 1111111111
 v00011000v
 vt001100tv
@@ -319,6 +320,51 @@ v=00O000=v
 =0000h000=
 =0000=000=
 =****1***=
+
+//lava elevator whip
+\!flip
+1111111111
+100a000000
+000e000000
+000000a000
+p-0000e0-p
+-aa0a00aa-
+-aaaaaaaa-
+----------
+
+//lava elevator whip 2
+\!flip
+1111111111
+100a110000
+000e000000
+000000a000
+000000e000
+-aa0a00aa-
+-aaaaaaaa-
+----------
+
+//lava elevator dodge
+\!flip
+111111a111
+1001v1e000
+00eav00000
+000ev00000
+0000v00e00
+-aa0000aa-
+-aaaaaaaa-
+----------
+
+//lava elevator dodge 2
+\!flip
+1111111111
+10vvvvvv01
+00aa000000
+00ee0a0a00
+00000e0e00
+-0a000a00-
+-aaaaaeaa-
+----------
+
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
@@ -336,12 +382,12 @@ P0000000P0
 1111111111
 
 //top tree dodge
-1110001111
+1110000111
 1100000011
-11000000z1
-1z00000011
-01000000z0
-pz00000010
+1100000011
+==000000==
+0=000000z0
+pz000000=0
 0000T00000
 1111111111
 
@@ -370,17 +416,6 @@ P0000000P0
 0~~~0~~~~0
 1111001111
 
-//lava burn drop 1
-\!flip
-1111111111
-1aaa11aaa1
-1111oo1111
-110bbbb011
-0H0b00b0H0
-010b00b010
-0111001110
-XXXX00XXXX
-
 //throw rock at imp to open bottom drop
 \!flip
 \!ignore
@@ -395,24 +430,25 @@ v000*0*00v
 
 //robot escort drop
 \!flip
-1111111111
-1000000001
-1000000F{1
-1100040111
-000101p000
+\!ignore
+==========
+=00000000=
+=000000F{=
+0-000404=0
+000-0=4p00
 0040p0p000
-1111001100
-XXXX11XXXX
+----00--00
+XXXX--XXXX
 
 //precise mine dig drop
-1a111111a1
-1110]]0111
-1100110011
-0001111000
-0011111100
-0011111100
-11a1001a11
-1111pp1111
+-a------a-
+---0]]0---
+--00--00--
+000----000
+00------00
+00------00
+-0a-00-a0-
+----pp----
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
@@ -473,9 +509,9 @@ V00000000V
 1100000000000<<01p11 XX1000-----1111111XX
 10000000000000000011 XXXXXXXXXXXXXXXXXXXX
 10000000000000000001 XXXXXXXXXXXXXXXXXXXX
-1h4000000000000000h1 XX00---00000-------X
+1h4000000000000000h1 XX00---0-----------X
 11100000000000000111 X00000---------000-X
-0010000000000000/100 ZZ0000000------0D00Z
+0010000000000000/100 ZZ00000--------0D00Z
 00111111111111111100 X001111--------000OX
 0000000000000000D000 XXXX11111XXXXXX0D0XX
 11110011111111001111 XXXXZZXXXXXXXXXXXXXX
@@ -529,15 +565,26 @@ vf0000000000000000fv
 =^M^^^^^^^^^^^^^^M^=
 =111111111111111111=
 
-//long avoid big boom
+//long avoid imp boom
+\!ignore
 11111111111111111111
-10f0f00vf+0fvf000f01
-v000000v0000v000000v
-v=00000v0O00v00000=v
+10vf0f0vf+0fvf00fv01
+v0v0000v0000v0000v0v
+v=v0000v0O00v0000v=v
 v=00000v0000v00000=v
 ==0000000000000000==
 ==^oooooooooooooo^==
 =XXXXXXXXXXXXXXXXXX=
+
+//long lava elevator whip/dodge
+11111111111111111111
+10a00000000000000000
+00e00000000000000000
+0000000e000e00000a00
+0000-0000a0000-00e00
+-00000000e000000a00-
+-a0a0aaaaaa0aaaae0a-
+--------------------
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -557,23 +604,24 @@ v=00000v0000v00000=v
 \.machine_tallroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
+//tall lava burn & tree
 \!flip
-0000002200
-2000000000
-0000000000
-0000T20000
-0000110000
-00000000T2
-0T11000211
-0111000020
-0000000000
-112001T001
-2000011021
-0000010000
-0000T10000
-0021110001
-1T110002T1
-1111021111
+v000000000
+v---------
+v-aa--aaa-
+v---oo----
+v-0bbbb0-0
+0H0b00b0H0
+010b00b010
+0111001110
+1110001111
+1100000011
+==000000==
+0=000000=0
+pz000000zp
+00010100=0
+0000T00000
+111p1p1111
 
 ////////////////////////////////////////////////////////////////////////////////
 \.machine_tallroom_side

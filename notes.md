@@ -54,7 +54,7 @@
 1. machine big rooms are generally open on all sides
 1. In order to have layer 2 rooms, you need all layer 2 sections in `generic.lvl`
 1. Crates and treasure can automatically appear if you have a natural corner in the level
-1. Seems like switches and doors are only usable in certain levels
+1. Seems like switches and doors are only usable in certain levels (tidepool, vlad's, COG, Eggplant)
 
 ### Notes on Traps
 
@@ -107,21 +107,17 @@
 1. ~~Climbing puzzles with trees~~
 1. ~~trap gauntlet - path~~
 1. ~~kill imp, drop magma man on falling platform~~
-1. don't hit the door switch (can't do in jungle))
 1. ~~imp escort~~
 1. ~~bow/arrow stand puzzle~~
-1. robot escort with push block / falling platforms / door&switch (can't)
+1. robot escort with push block / falling platforms / door&switch
 1. precise mine excavation
 1. throw mine excavation? caveman/yeti?
-1. throw rock at door switch / key
-1. reflect throw via robots to hit switch
 1. jump thru lava elevator
 1. lava conveyor loop 
 1. PB conveyor / FP / elevator puzzle
 1. Don't wake caveman! next to mines/lava
 1. monkeys?
 1. save caveman / robot with PBs
-1. wake hermit crab to hit switch
 1. Thin ice to force delay - spikes, spears, lasers, whip away lava
 1. mine on FP puzzle/timing
 1. lava elevator with trees on either / one side / vines
@@ -157,12 +153,28 @@
 1. bones + TNT
 1. throw mine at laser trap / lava elevator
 1. double leaf bridge with witch doctors
+1. snakes on FP over lava
+1. PB onto FP puzzle
+1. turkey sacrifice jumps
+1. lava elevator dodge with water gates
+1. long lava whip bush puzzle
+1. mine on elevator next to wall - eencased lava or bedrock
+1. mantrap forest
+1. drop fall with lava - triggered by mine over TNT w/ lava
+1. get to exit before covered in lava
+1. does TNT survive a fall on top of a PB?
+1. fire spreads kitty corner, can we slow down burn this way?
+1. lava only burns bushes when on top of bush - bush next to lava survives. We can use this like a bush fuse delay
 
 #Olmec
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
 
 #Temple / Tidepool
 1. give Vlad's cape
+1. don't hit the door switch
+1. throw rock at door switch / key
+1. reflect throw via robots to hit switch
+1. wake hermit crab to hit switch
 1. death waffle guantlet
 1. crush block gauntlet / you get a PB for defense / required
 1. ice block spring spikes
