@@ -62,6 +62,12 @@
 1. Log is 5 tiles tall and two tiles wide
 1. There must be 6 tiles minimum between the log (T) and the idol (I)
 
+#### spring trap
+1. does not work if placed under a platform
+
+#### lava
+1. can be pushed through kitty-corner openings via PBs
+1. 1 square of lava can cover ~4 tiles in lava
 
 # Things to test
 1. Entrance/exit on machine big/wide/tall rooms?
@@ -114,7 +120,8 @@
 1. ~~throw mine excavation? caveman/yeti?~~
 1. ~~jump thru lava elevator~~
 1. force player to put mine on elevator then jump on it later
-1. lava conveyor loop 
+1. lava conveyor loop (maybe can't do? :())
+1. elevator on a conveyor?
 1. PB conveyor / FP / elevator puzzle
 1. Don't wake caveman! next to mines/lava
 1. monkeys?
@@ -168,6 +175,10 @@
 1. lava only burns bushes when on top of bush - bush next to lava survives. We can use this like a bush fuse delay
 1. race TNT to end/exit
 1. mine on one-tile column - can you trigger mine and jump out of way and back to same spot?
+1. you can push a PB that an arrow is stuck in - puzzle
+1. lit torch through / over waterfalls
+1. throw rock, break bones with elevator over it and FP under it. force player to grap FP before elevator goes down on it
+1. mine on FP, require pick it up and put down on FP
 
 #Olmec
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!

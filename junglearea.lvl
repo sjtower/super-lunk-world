@@ -12,8 +12,8 @@
 \-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
 \-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
 \-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-max_liquid_particles 6000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
-\-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
+//\-max_liquid_particles 6000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
+//\-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
 \-machine_bigroom_chance 2					// 1/N chance of spawning a machine big room (default = 0)
 \-machine_wideroom_chance 1				    // 1/N chance of spawning a machine wide room (default = 0)
 \-machine_tallroom_chance 2				    // 1/N chance of spawning a machine tall room (default = 0)
@@ -49,6 +49,7 @@
 \?jungle_spear_trap			~
 \?bigspear_trap				P
 \?laser_trap				z
+\?arrow_trap				@
 \?powder_keg				o
 \?landmine				    ]
 \?thinice					I
@@ -58,9 +59,9 @@
 \?stagnant_lava				a
 \?water						w
 
+\?alien_generator			A
 \?giantclam					C
-\?slidingwall_ceiling		A
-\?slidingwall_switch		c
+\?spring_trap				c
 \?falling_platform			F
 \?chainandblocks_ceiling	B
 \?conveyorbelt_left			<
@@ -148,10 +149,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 ----------
-2222222A22
+2222222B22
 0000000000
 0000000000
-00000c0000
+0000000000
 000900Q000
 0--------0
 1111111111
@@ -162,10 +163,10 @@
 
 \!flip
 1111111111
-20000V02A0
+20000V02B0
 0090000000
 0011100000
-002220c000
+0022200000
 1000000Q01
 12200002=1
 1112002111
@@ -441,6 +442,7 @@ pz000000=0
 1111111111
 
 //top lava elevator dodge
+\!ignore
 ----00----
 -tt-00-tt-
 -e0-00-0e-
@@ -448,6 +450,16 @@ F00000000F
 0000000000
 -0ap00pa0-
 -ae----ea-
+----------
+
+//top shopkeep conveyor
+--A-00A---
+-t000000t-
+-0>>>>>00-
+f00000000f
+f00<<<<<Ff
+-aa-----a-
+----------
 ----------
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -500,8 +512,20 @@ XXXX--XXXX
 -0a-00-a0-
 ----pp----
 
+//avoid mine bridge drop
+\!ignore
+----------
+----------
+0]]]]]]]]0
+0FFFFIFFF0
+-FFFFIFFF-
+-000-0-00-
+-aaa-0-aa-
+----pp----
+
 //drop mine elevator
 \!flip
+\!ignore
 1111001111
 v0]0000]01
 v~~101~~00
@@ -510,6 +534,16 @@ vXXX0~~X00
 0X0XXXXXXX
 1X00000001
 1~~1111~~1
+
+//PB into lava drop
+----------
+-v000000t-
+0v4a00000v
+0v4pp-w0-v
+0v4a--bb-v
+-p4a-0bb-0
+-h4a-0p---
+-----F----
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
@@ -529,14 +563,14 @@ P00000~001
 
 //top drop mine elevator
 \!flip
-1111001111
 1]000000]1
 1111~0~111
 XXXXX0XXXX
 11~~~0~~~1
 10~~XeX~~~
-100~0X0~01
-1~~1000~~1
+10000X0001
+1000000001
+1~~1~~1~~1
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -607,7 +641,7 @@ H0000bbbbbbbbb000b0- XX000--1000---00-1XX
 ---FFFF------------- X--------000-------0
 00-0000000/-------00 X--------0D00------0
 00-t00t-----------00 XXX------000O------0
-000----000D000000000 XXXX-----0D0XXXXXXX0
+000----000D00000000- XXXX-----0D0XXXXXXX0
 --000000------00---- XXXXZZXXXZXZXXXXXXXX
 
 
@@ -639,14 +673,37 @@ H0000bbbbbbbbb000b0- XX000--1000---00-1XX
 ////////////////////////////////////////////////////////////////////////////////
 
 //vine spike jump
+\!ignore
 11111111*11*11111111
-00000001****11100000
-0000000v0F1F0v000000
-0000000v00v00v000000
+10000001****11100001
+1000000v0F1F0v000001
+0000O00v00v00v00O000
 00000000000000000000
 T000000000000000000T
 1*^^^^********^^^^*1
 11111111111111111111
+
+//elevator conveyor
+\!flip
+11111111111111111111
+10y11111111111111y01
+10e000000r0000000e01
+fFf00000----00000fFf
+f]-00000----00000-]f
+r1000000----0000001r
+110000000--000000011
+11>>>>>>>--<<<<<<<11
+
+//long shopkeep conveyor
+\!ignore
+---A--A------A--A---
+-t00--00000000--00t-
+-000000000O00000000-
+f0>>>>>>>00<<<<<<<0f
+f0c0000000000000000f
+-a0<<<<<<<>>>>>>>0a-
+--a----ta--at----a--
+--------------------
 
 //long spike tusk jump
 \!ignore
@@ -729,7 +786,8 @@ pz000000zp
 0000T00000
 111p1p1111
 
-//tall precise mine dig drop
+//tall precise mine dig drop -- too hard for world 2
+\!ignore
 -a--00--a-
 ---0]]0---
 --00--00--
@@ -737,11 +795,29 @@ pz000000zp
 00------00
 00------00
 -0a-00-a0-
----p00p---
----000]---
-----tt-0--
---p0**0]--
-0p-a0aa-p0
+-a-p00p-a-
+---000]-a-
+----ttF-a-
+--]0**0---
+0p-aa0a-p0
+00-aaaa-00
+00------00
+-00000000-
+----pp----
+
+//tall precise mine dig
+-a--00--a-
+---0]]0---
+--00--00--
+000----000
+00------00
+00------00
+-0a-00-a0-
+-a-v00--a-
+---000]-a-
+----ttF---
+--]0**0t--
+0p-aa0a-p0
 00-aaaa-00
 00------00
 -00000000-
@@ -788,6 +864,7 @@ pz000000zp
 1111111111
 0000000000
 0000000000
+
 0000000000
 0000000000
 0000000000
