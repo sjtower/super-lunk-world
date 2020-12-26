@@ -109,10 +109,11 @@
 1. ~~kill imp, drop magma man on falling platform~~
 1. ~~imp escort~~
 1. ~~bow/arrow stand puzzle~~
-1. robot escort with push block / falling platforms / door&switch
-1. precise mine excavation
-1. throw mine excavation? caveman/yeti?
-1. jump thru lava elevator
+1. ~~robot escort with push block / falling platforms / door&switch~~
+1. ~~precise mine excavation~~
+1. ~~throw mine excavation? caveman/yeti?~~
+1. ~~jump thru lava elevator~~
+1. force player to put mine on elevator then jump on it later
 1. lava conveyor loop 
 1. PB conveyor / FP / elevator puzzle
 1. Don't wake caveman! next to mines/lava
@@ -165,6 +166,8 @@
 1. does TNT survive a fall on top of a PB?
 1. fire spreads kitty corner, can we slow down burn this way?
 1. lava only burns bushes when on top of bush - bush next to lava survives. We can use this like a bush fuse delay
+1. race TNT to end/exit
+1. mine on one-tile column - can you trigger mine and jump out of way and back to same spot?
 
 #Olmec
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
