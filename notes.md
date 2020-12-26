@@ -119,10 +119,11 @@
 1. ~~precise mine excavation~~
 1. ~~throw mine excavation? caveman/yeti?~~
 1. ~~jump thru lava elevator~~
-1. force player to put mine on elevator then jump on it later
-1. lava conveyor loop (maybe can't do? :())
-1. elevator on a conveyor?
+1. ~~force player to whip mine on elevator then jump on it later~~
+1. ~~lava conveyor loop (maybe can't do? :())~~
+1. ~~elevator on a conveyor?~~
 1. PB conveyor / FP / elevator puzzle
+1.   have to hold push block on conveyor to make elevator go up certain shaft
 1. Don't wake caveman! next to mines/lava
 1. monkeys?
 1. save caveman / robot with PBs
@@ -134,7 +135,7 @@
 1. choose correct FP -> robot explosion
 1. mosquito jump room
 1. water fountain / just water gates to extinguish flame
-1. push blocks into lava, into side of lava. Can lava burn bushes?
+1. ~~push blocks into lava, into side of lava. Can lava burn bushes?~~
 1. throw rock on robot
 1. ride giant spiders over bramble
 1. ~~ride tusk through spikes~~
@@ -166,7 +167,7 @@
 1. turkey sacrifice jumps
 1. lava elevator dodge with water gates
 1. long lava whip bush puzzle
-1. mine on elevator next to wall - eencased lava or bedrock
+1. ~~mine on elevator next to wall - eencased lava or bedrock~~
 1. mantrap forest
 1. drop fall with lava - triggered by mine over TNT w/ lava
 1. get to exit before covered in lava

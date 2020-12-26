@@ -14,9 +14,9 @@
 \-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
 //\-max_liquid_particles 6000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
 //\-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
-\-machine_bigroom_chance 2					// 1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance 1				    // 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 2				    // 1/N chance of spawning a machine tall room (default = 0)
+\-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance 0				    // 1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance 0				    // 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
 // ------------------------------
@@ -148,13 +148,13 @@
 \.entrance
 ////////////////////////////////////////////////////////////////////////////////
 
-----------
-2222222B22
-0000000000
-0000000000
-0000000000
-000900Q000
-0--------0
+-a-0----a-
+-a-a----a-
+fafa000faf
+faff0f0faf
+0f000000f0
+0f0090Q0f0
+-0------0-
 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -162,11 +162,11 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 \!flip
-1111111111
-20000V02B0
-0090000000
-0011100000
-0022200000
+1a111111a1
+1a000V0001
+ff0f00f0f0
+0009000000
+00---00000
 1000000Q01
 12200002=1
 1112002111
@@ -177,26 +177,26 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 ----------
-002----200
-000----000
-0000000000
-0008000000
-0000000000
-0000000000
-11------11
+0bo-aa-ob0
+0bp----pb0
+0bbbbbbbb0
+0bbbbbbbb0
+0bb-b-bbb0
+0bb-9-bbb0
+H1------1H
 
 ////////////////////////////////////////////////////////////////////////////////
 \.exit_notop
 ////////////////////////////////////////////////////////////////////////////////
 
-1111001111
-0000000000
-0000000000
-0000000000
-0080000000
-0000000000
-0000000000
-11------11
+-000000---
+00o-a0a-b0
+0bbb---ob0
+0b0bbbbbb0
+0b0b000000
+0bbb-b-000
+0bb-9b0000
+H1------1H
 
 ////////////////////////////////////////////////////////////////////////////////
 \.side
@@ -337,6 +337,7 @@ p-0000e0-p
 
 //lava elevator whip 2
 \!flip
+\!ignore
 1111111111
 100a110000
 000e000000
@@ -360,6 +361,7 @@ p-0000e0-p
 
 //lava elevator dodge 2
 \!flip
+\!ignore
 1111111111
 10vvvvvv01
 00aa000000
@@ -371,6 +373,7 @@ p0000e0e0p
 
 //elevator mine
 \!flip
+\!ignore
 111-a-1111
 100---0001
 000---0000
@@ -403,6 +406,16 @@ p0000e0e0p
 ]00----00]
 -00----00-
 -********-
+
+//path elevator smash 1
+----------
+-zee0000z-
+-e00ee000-
+f00000000f
+f00000000f
+f00000000f
+-000eeeee-
+----------
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
@@ -536,6 +549,7 @@ vXXX0~~X00
 1~~1111~~1
 
 //PB into lava drop
+\!ignore
 ----------
 -v000000t-
 0v4a00000v
@@ -544,6 +558,16 @@ vXXX0~~X00
 -p4a-0bb-0
 -h4a-0p---
 -----F----
+
+//whip mine above, activate below
+1---0-1111
+0-zt000]F0
+0v--ee0-00
+0v00000-F0
+0000000-00
+0000000-F0
+0000--0000
+1111pp1111
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
@@ -562,6 +586,7 @@ P00000~001
 1~~1001111
 
 //top drop mine elevator
+\!ignore
 \!flip
 1]000000]1
 1111~0~111
@@ -571,6 +596,28 @@ XXXXX0XXXX
 10000X0001
 1000000001
 1~~1~~1~~1
+
+//top drop lava elevator
+\!flip
+----00----
+-0000000a-
+-a0----ee-
+-ee000000-
+t00000000t
+-00-00-00-
+-00-00-00-
+----00----
+
+//top drop push TNT elevator FP
+\!flip
+---000h--X
+-t0000o0vX
+-00----FvX
+-000000ovX
+-00000-evX
+-a0--0-XwX
+XetX-t-X0X
+XXXX---XXX
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -631,7 +678,7 @@ V00000000V
 1000000000000000000v X001ZZ--111111-----X
 10-at-ta-ta--ta----v X00V000---11---000-X
 00---o--o---o---b--v ZZ0000000000000000ZZ
-0000bbbbbbbbbbbbbb-0 X0000-111------0---X
+0000bbbbbbbbbbbbbb-v X0000-111------0---X
 H0000bbbbbbbbb000b0- XX000--1000---00-1XX
 -0000000000000000bs- XX------0000000---XX
 -00000000000000000-- --------------------
@@ -685,12 +732,24 @@ T000000000000000000T
 
 //elevator conveyor
 \!flip
+\!ignore
 11111111111111111111
 10y11111111111111y01
 10e000000r0000000e01
 fFf00000----00000fFf
 f]-00000----00000-]f
 r1000000----0000001r
+110000000--000000011
+11>>>>>>>--<<<<<<<11
+
+//stationary elevator conveyor
+\!flip
+11111111111111111111
+10011111111111111001
+10e000000r0000000e01
+f0000000----0000000f
+f0f00000----00000f0f
+f0000000----0000000f
 110000000--000000011
 11>>>>>>>--<<<<<<<11
 
