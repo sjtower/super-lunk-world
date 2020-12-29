@@ -58,6 +58,9 @@
 
 ### Notes on Traps
 
+#### Big Spear Trap
+1. takes up two tiles, starts from leftmost tile
+
 #### Log trap
 1. Log is 5 tiles tall and two tiles wide
 1. There must be 6 tiles minimum between the log (T) and the idol (I)
@@ -122,10 +125,9 @@
 1. ~~force player to whip mine on elevator then jump on it later~~
 1. ~~lava conveyor loop (maybe can't do? :())~~
 1. ~~elevator on a conveyor?~~
-1. PB conveyor / FP / elevator puzzle
+1. ~~PB conveyor / FP / elevator puzzle~~
 1.   have to hold push block on conveyor to make elevator go up certain shaft
-1. Don't wake caveman! next to mines/lava
-1. monkeys?
+1. ~~Don't wake caveman! next to mines/lava~~
 1. save caveman / robot with PBs
 1. Thin ice to force delay - spikes, spears, lasers, whip away lava
 1. mine on FP puzzle/timing
@@ -139,8 +141,8 @@
 1. throw rock on robot
 1. ride giant spiders over bramble
 1. ~~ride tusk through spikes~~
-1. don't hit any robot!
-1. ride lavamander through lava
+1. ~~don't hit any robot!~~
+1. ~~ride lavamander through lava~~
 1. start on bush bridge with lit torch above
 1. trees on bushes? Do they break when burned?
 1. PB bush burn puzzle

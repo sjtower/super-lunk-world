@@ -26,7 +26,7 @@
 \?chunk_ground				5
 \?chunk_air					6
 \?chunk_door				8 	// Chunk with entrance or exit in it
-	
+
 \?empty						0
 \?floor						1
 \?floor%50					2	// 50% chance of floor, 50% chance of empty
@@ -85,7 +85,7 @@
 \?robot					    {
 \?imp                       +
 \?yeti					    y
-//\?caveman_asleep			n
+\?caveman_asleep			n
 \?lavamander				L
 //\?caveman					?
 //\?mantrap					?
@@ -408,6 +408,7 @@ p0000e0e0p
 -********-
 
 //path elevator smash 1
+\!ignore
 ----------
 -zee0000z-
 -e00ee000-
@@ -415,6 +416,27 @@ f00000000f
 f00000000f
 f00000000f
 -000eeeee-
+----------
+
+//lava lavamander jump
+\!flip
+1111111111
+v000--000v
+vt00--00tv
+v-F0000F-v
+v-00O000-v
+--0000000-
+-aaaaLaaa-
+----------
+
+//path don't wake caveman
+----------
+--a-]n-a--
+----------
+f00000000f
+f00-n]--0f
+f00-----0f
+-aa-aaa-a-
 ----------
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -466,6 +488,7 @@ F00000000F
 ----------
 
 //top shopkeep conveyor
+\!ignore
 --A-00A---
 -t000000t-
 -0>>>>>00-
@@ -473,6 +496,16 @@ f00000000f
 f00<<<<<Ff
 -aa-----a-
 ----------
+----------
+
+//top torch bush race
+----00-H--
+-4--000f4-
+-bbbbbbbb-
+0bb0000bb0
+0bbbbbbbb0
+-bbbbbbbb-
+-a0aa0a0a-
 ----------
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -559,7 +592,18 @@ vXXX0~~X00
 -h4a-0p---
 -----F----
 
+//drop avoid robots
+----------
+vp000000pv
+v0{0{O{-0v
+v0-0-0--0v
+v0o0-00o0v
+v0-IoIo-0v
+-a-0p0-aa-
+----00----
+
 //whip mine above, activate below
+\!ignore
 1---0-1111
 0-zt000]F0
 0v--ee0-00
@@ -598,6 +642,7 @@ XXXXX0XXXX
 1~~1~~1~~1
 
 //top drop lava elevator
+\!ignore
 \!flip
 ----00----
 -0000000a-
@@ -609,6 +654,7 @@ t00000000t
 ----00----
 
 //top drop push TNT elevator FP
+\!ignore
 \!flip
 ---000h--X
 -t0000o0vX
@@ -619,6 +665,16 @@ t00000000t
 XetX-t-X0X
 XXXX---XXX
 
+//top drop thin ice avoid traps
+\!flip
+----00----
+--P000P0--
+----II----
+--P000P0--
+-00~00~00-
+-00~II~00-
+-00~00~0t-
+----00----
 
 ////////////////////////////////////////////////////////////////////////////////
 \.idol				// Idol room
@@ -774,6 +830,16 @@ vf0000000000000000fv
 =f0000000000000000f=
 =^M^^^^^^^^^^^^^^M^=
 =111111111111111111=
+
+//long lava lavamander jump
+11111111111111111111
+v000000000000000000v
+v000000O0000O000000v
+v000000000000000000v
+v000000000000000000v
+-000000000000000000-
+-aLaaaaaaLaaaaaaaLa-
+--------------------
 
 //long avoid imp boom
 \!ignore
