@@ -15,7 +15,7 @@
 //\-max_liquid_particles 6000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
 //\-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
 \-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance 0				    // 1/N chance of spawning a machine wide room (default = 0)
+\-machine_wideroom_chance 2				    // 1/N chance of spawning a machine wide room (default = 0)
 \-machine_tallroom_chance 0				    // 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
@@ -190,13 +190,13 @@ H1------1H
 ////////////////////////////////////////////////////////////////////////////////
 
 -000000---
-00o-a0a-b0
-0bbb---ob0
-0b0bbbbbb0
-0b0b000000
-0bbb-b-000
-0bb-9b0000
-H1------1H
+000--taa-b
+0bbb----bb
+0bbbboobbb
+0bb00pp000
+0bb0000000
+0bb--b-011
+H1--9b0011
 
 ////////////////////////////////////////////////////////////////////////////////
 \.side
@@ -419,6 +419,7 @@ f00000000f
 ----------
 
 //lava lavamander jump
+\!ignore
 \!flip
 1111111111
 v000--000v
@@ -432,16 +433,26 @@ v-00O000-v
 //path don't wake caveman
 ----------
 --a-]n-a--
-----------
+---p--p---
 f00000000f
 f00-n]--0f
-f00-----0f
--aa-aaa-a-
+f00v--v00f
+-aa0aaa0a-
 ----------
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
 ////////////////////////////////////////////////////////////////////////////////
+
+//top don't wake caveman
+----00----
+-00000000-
+-00-n]0-0-
+f00---a-0f
+f00-n]-t0f
+f0~v--v~0f
+-aa0aaa0a-
+----------
 
 //top spike spear guantlet
 \!ignore
@@ -596,11 +607,11 @@ vXXX0~~X00
 ----------
 vp000000pv
 v0{0{O{-0v
-v0-0-0--0v
-v0o0-00o0v
-v0-IoIo-0v
+v0opopo-0v
+v0o0-0-o0v
+v0-0o0o-0v
 -a-0p0-aa-
-----00----
+----pp----
 
 //whip mine above, activate below
 \!ignore
@@ -612,6 +623,17 @@ v0-IoIo-0v
 0000000-F0
 0000--0000
 1111pp1111
+
+//drop thin ice avoid traps
+\!flip
+----------
+v00H00000v
+v-0-bb-0-v
+v-a-oo-a-v
+v---oo---v
+0-00pp00-0
+0->-II-<-0
+---~II~---
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
@@ -675,6 +697,17 @@ XXXX---XXX
 -00~II~00-
 -00~00~0t-
 ----00----
+
+//top drop thin ice whip lava
+\!flip
+----00----
+-t0H0000t-
+-a--bb--a-
+v-a-oo-a-v
+v---oo---v
+0-00pp00-0
+0->-II-<-0
+---~II~---
 
 ////////////////////////////////////////////////////////////////////////////////
 \.idol				// Idol room
@@ -799,6 +832,7 @@ r1000000----0000001r
 11>>>>>>>--<<<<<<<11
 
 //stationary elevator conveyor
+\!ignore
 \!flip
 11111111111111111111
 10011111111111111001
@@ -832,6 +866,7 @@ vf0000000000000000fv
 =111111111111111111=
 
 //long lava lavamander jump
+\!ignore
 11111111111111111111
 v000000000000000000v
 v000000O0000O000000v
@@ -873,6 +908,16 @@ v=00000v0000v00000=v
 0]]00-000--000-00]]0
 =--aaaaaaaaaaaaaa--=
 =111111111111111111=
+
+//wide torch bush race
+--------------------
+----4------4--4-----
+-HbbbbbbbbbbbbbbbbH-
+0fb00000000000000bf0
+0bb00bbbbbbbbbb00bb0
+-bbbbbbbb00bbbbbbbb-
+-F0aa0a0a00a0aa0a0F-
+--------------------
 
 ////////////////////////////////////////////////////////////////////////////////
 \.machine_wideroom_side
