@@ -93,7 +93,7 @@
 //\?tikiman					?
 //\?mosquito				?
 \?giant_spider			    N
-\?sister					i
+//\?sister					i
 
 \?altar						x	// Each side of the altar
 //\?idol						I	// Idol statue
@@ -217,19 +217,19 @@ H1--9b0011
 
 //spike spear gauntlet 1
 \!flip
-\!ignore
+//\!ignore
 1111111111
 P0000000P0
 0~00~~00~0
-~00~44~001
-0~00~~00~0
+~p0~44~0p1
+0~0p~~p0~0
 000~==~000
 0~~~==~~~0
 1111111111
 
 //spike spear gauntlet 2
 \!flip
-\!ignore
+//\!ignore
 1111111111
 P0000000P0
 1~00P000~1
@@ -240,7 +240,7 @@ P0000000P0
 1111111111
 
 //bush powderkeg run
-\!ignore
+//\!ignore
 \!flip
 1111111111
 1000oo0001
@@ -252,7 +252,7 @@ H011XX110H
 XXXXXXXXXX
 
 //bush bomb avoid
-\!ignore
+//\!ignore
 \!flip
 1111111111
 10v0bb0v01
@@ -264,7 +264,7 @@ H0b-aa-b0H
 XXXXXXXXXX
 
 //swim thru bramble
-\!ignore
+//\!ignore
 \!flip
 1111111111
 v0ww*vvw0v
@@ -276,7 +276,7 @@ v=w**w**=v
 11*===*=11
 
 //spike tusk jump
-\!ignore
+//\!ignore
 \!flip
 1111111111
 v00011000v
@@ -288,7 +288,7 @@ v=00O000=v
 =11111111=
 
 //throw rock at imp or bombs to clear path
-\!ignore
+//\!ignore
 \!flip
 =f000+00f=
 =00000000=
@@ -300,7 +300,7 @@ v=00O000=v
 1111111111
 
 //imp drop on bombs to clear path
-\!ignore
+//\!ignore
 \!flip
 =f000+00f=
 =00000000=
@@ -313,7 +313,7 @@ v=00O000=v
 
 //spike bow arrow jump
 \!flip
-\!ignore
+//\!ignore
 1111111111
 v00011000v
 vt001100tv
@@ -325,7 +325,7 @@ v=00O000=v
 
 //lava elevator whip
 \!flip
-\!ignore
+//\!ignore
 1111111111
 100a000000
 000e000000
@@ -337,7 +337,7 @@ p-0000e0-p
 
 //lava elevator whip 2
 \!flip
-\!ignore
+//\!ignore
 1111111111
 100a110000
 000e000000
@@ -349,7 +349,7 @@ p-0000e0-p
 
 //lava elevator dodge
 \!flip
-\!ignore
+//\!ignore
 111111a111
 1001v1e000
 00eav00000
@@ -361,7 +361,7 @@ p-0000e0-p
 
 //lava elevator dodge 2
 \!flip
-\!ignore
+//\!ignore
 1111111111
 10vvvvvv01
 00aa000000
@@ -373,7 +373,7 @@ p0000e0e0p
 
 //elevator mine
 \!flip
-\!ignore
+//\!ignore
 111-a-1111
 100---0001
 000---0000
@@ -384,7 +384,7 @@ p0000e0e0p
 --******--
 
 //elevator mine 2
-\!ignore
+//\!ignore
 \!flip
 111---1111
 100---0001
@@ -397,7 +397,7 @@ p0000e0e0p
 
 //short throw mine
 \!flip
-\!ignore
+//\!ignore
 111----111
 100-tt-001
 000y-0y000
@@ -408,7 +408,7 @@ p0000e0e0p
 -********-
 
 //path elevator smash 1
-\!ignore
+//\!ignore
 ----------
 -zee0000z-
 -e00ee000-
@@ -419,7 +419,7 @@ f00000000f
 ----------
 
 //lava lavamander jump
-\!ignore
+//\!ignore
 \!flip
 1111111111
 v000--000v
@@ -431,6 +431,8 @@ v-00O000-v
 ----------
 
 //path don't wake caveman
+//\!ignore
+\!flip
 ----------
 --a-]n-a--
 ---p--p---
@@ -440,11 +442,23 @@ f00v--v00f
 -aa0aaa0a-
 ----------
 
+//path robots in bramble
+\!flip
+1111111111
+1111111111
+1000110001
+0000FF0000
+0F000000F0
+1{000000{1
+1********1
+XXXXXXXXXX
+
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
 ////////////////////////////////////////////////////////////////////////////////
 
 //top don't wake caveman
+//\!ignore
 ----00----
 -00000000-
 -00-n]0-0-
@@ -455,18 +469,18 @@ f0~v--v~0f
 ----------
 
 //top spike spear guantlet
-\!ignore
+//\!ignore
 1111001111
 P0000000P0
 1~00~~00~1
-100~~~~001
-0~00~~00~0
+1p0~~~~0p1
+p~0p~~p0~p
 000~~~~000
 0~~~~~~~~0
 1111111111
 
 //top tree dodge
-\!ignore
+//\!ignore
 1110000111
 1100000011
 1100000011
@@ -477,7 +491,7 @@ pz000000=0
 1111111111
 
 //top mine dig
-\!ignore
+//\!ignore
 1110001111
 111]]]1111
 1111111111
@@ -488,7 +502,7 @@ pz000000=0
 1111111111
 
 //top lava elevator dodge
-\!ignore
+//\!ignore
 ----00----
 -tt-00-tt-
 -e0-00-0e-
@@ -499,7 +513,7 @@ F00000000F
 ----------
 
 //top shopkeep conveyor
-\!ignore
+//\!ignore
 --A-00A---
 -t000000t-
 -0>>>>>00-
@@ -510,6 +524,7 @@ f00<<<<<Ff
 ----------
 
 //top torch bush race
+//\!ignore
 ----00-H--
 -4--000f4-
 -bbbbbbbb-
@@ -519,12 +534,58 @@ f00<<<<<Ff
 -a0aa0a0a-
 ----------
 
+//top lava elevator vine/tree dodge
+//\!ignore
+----00----
+---vFFv---
+-00v00v00-
+F00v00v00F
+00pv00vp00
+t--00a0--t
+---eeee---
+----------
+
+//top lava elevator FP drop slow
+----00----
+----FF----
+-00400400-
+000-00-000
+000-00-000
+----0a----
+----ee----
+----------
+
+
+//top robots in bramble
+//\!ignore
+1111pp1111
+1100000011
+1100000011
+1100000011
+0000000000
+10{0000{01
+1********1
+XXXXXXXXXX
+
+//top backlayer lava lock
+\!dual
+\!flip
+//\!ignore
+----00---- ----------
+-a-0000-a- -00000000-
+-D-00D0-D- -D00OD00D-
+-a-pppp-a- --p----p--
+---0000--- --000r00--
+00o0000o00 --~----~--
+-tp0aa0pt- ----------
+---------- ----------
+
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop
 ////////////////////////////////////////////////////////////////////////////////
 
 //drop spike spear gauntlet
-\!ignore
+//\!ignore
 1111111111
 P0000000P0
 1~0~0~~0~1
@@ -536,7 +597,7 @@ P0000000P0
 
 //throw rock at imp to open bottom drop
 \!flip
-\!ignore
+//\!ignore
 =00f0+0f0=
 =00000000=
 v000*0*00v
@@ -548,7 +609,7 @@ v000*0*00v
 
 //robot escort drop
 \!flip
-\!ignore
+//\!ignore
 ==========
 =00000000=
 =000000F{=
@@ -559,7 +620,7 @@ v000*0*00v
 XXXX--XXXX
 
 //precise mine dig drop
-\!ignore
+//\!ignore
 -a------a-
 ---0]]0---
 --00--00--
@@ -570,7 +631,7 @@ XXXX--XXXX
 ----pp----
 
 //avoid mine bridge drop
-\!ignore
+//\!ignore
 ----------
 ----------
 0]]]]]]]]0
@@ -582,7 +643,7 @@ XXXX--XXXX
 
 //drop mine elevator
 \!flip
-\!ignore
+//\!ignore
 1111001111
 v0]0000]01
 v~~101~~00
@@ -593,7 +654,7 @@ vXXX0~~X00
 1~~1111~~1
 
 //PB into lava drop
-\!ignore
+//\!ignore
 ----------
 -v000000t-
 0v4a00000v
@@ -604,6 +665,7 @@ vXXX0~~X00
 -----F----
 
 //drop avoid robots
+//\!ignore
 ----------
 vp000000pv
 v0{0{O{-0v
@@ -614,7 +676,7 @@ v0-0o0o-0v
 ----pp----
 
 //whip mine above, activate below
-\!ignore
+//\!ignore
 1---0-1111
 0-zt000]F0
 0v--ee0-00
@@ -625,6 +687,7 @@ v0-0o0o-0v
 1111pp1111
 
 //drop thin ice avoid traps
+//\!ignore
 \!flip
 ----------
 v00H00000v
@@ -635,13 +698,24 @@ v---oo---v
 0->-II-<-0
 ---~II~---
 
+//FP mine drop
+\!flip
+=1======1=
+=v000]00v=
+0v01FF10v0
+0v010010v0
+0001001000
+0001001000
+--11^^11--
+XXXX11XXXX
+
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
 ////////////////////////////////////////////////////////////////////////////////
 
 //top drop spike spear guantlet
 \!flip
-\!ignore
+//\!ignore
 1111001111
 10P0000001
 1~~~~~~~01
@@ -652,7 +726,7 @@ P00000~001
 1~~1001111
 
 //top drop mine elevator
-\!ignore
+//\!ignore
 \!flip
 1]000000]1
 1111~0~111
@@ -664,7 +738,7 @@ XXXXX0XXXX
 1~~1~~1~~1
 
 //top drop lava elevator
-\!ignore
+//\!ignore
 \!flip
 ----00----
 -0000000a-
@@ -676,7 +750,7 @@ t00000000t
 ----00----
 
 //top drop push TNT elevator FP
-\!ignore
+//\!ignore
 \!flip
 ---000h--X
 -t0000o0vX
@@ -742,7 +816,7 @@ V00000000V
 //big PB & bow/arrow puzzle. Two PB towers - 4 & 2
 \!flip
 \!dual
-\!ignore
+//\!ignore
 11110011111111000111 XXXXZZXXXXXXXZZXXXXX
 10000000000000000001 X001ZZ--111111-----X
 0000004004h400000000 X00V000---11---000-X
@@ -809,7 +883,7 @@ H0000bbbbbbbbb000b0- XX000--1000---00-1XX
 ////////////////////////////////////////////////////////////////////////////////
 
 //vine spike jump
-\!ignore
+//\!ignore
 11111111*11*11111111
 10000001****11100001
 1000000v0F1F0v000001
@@ -821,7 +895,7 @@ T000000000000000000T
 
 //elevator conveyor
 \!flip
-\!ignore
+//\!ignore
 11111111111111111111
 10y11111111111111y01
 10e000000r0000000e01
@@ -832,7 +906,7 @@ r1000000----0000001r
 11>>>>>>>--<<<<<<<11
 
 //stationary elevator conveyor
-\!ignore
+//\!ignore
 \!flip
 11111111111111111111
 10011111111111111001
@@ -844,7 +918,7 @@ f0000000----0000000f
 11>>>>>>>--<<<<<<<11
 
 //long shopkeep conveyor
-\!ignore
+//\!ignore
 ---A--A------A--A---
 -t00--00000000--00t-
 -000000000O00000000-
@@ -855,7 +929,7 @@ f0c0000000000000000f
 --------------------
 
 //long spike tusk jump
-\!ignore
+//\!ignore
 11111111111111111111
 v000000000000000000v
 vt00000O0000O00000tv
@@ -866,7 +940,7 @@ vf0000000000000000fv
 =111111111111111111=
 
 //long lava lavamander jump
-\!ignore
+//\!ignore
 11111111111111111111
 v000000000000000000v
 v000000O0000O000000v
@@ -877,7 +951,7 @@ v000000000000000000v
 --------------------
 
 //long avoid imp boom
-\!ignore
+//\!ignore
 11111111111111111111
 10vf0f0vf+0fvf00fv01
 v0v0000v0000v0000v0v
@@ -888,7 +962,7 @@ v=00000v0000v00000=v
 =XXXXXXXXXXXXXXXXXX=
 
 //long lava elevator whip/dodge
-\!ignore
+//\!ignore
 11111111111111111111
 10a00000000000000000
 00e00000000000000000
@@ -899,7 +973,7 @@ v=00000v0000v00000=v
 --------------------
 
 //long throw mines
-\!ignore
+//\!ignore
 11111111111111111111
 100000000--000000001
 10000y-O00y0O-y00001
@@ -910,6 +984,7 @@ v=00000v0000v00000=v
 =111111111111111111=
 
 //wide torch bush race
+//\!ignore
 --------------------
 ----4------4--4-----
 -HbbbbbbbbbbbbbbbbH-
@@ -917,6 +992,16 @@ v=00000v0000v00000=v
 0bb00bbbbbbbbbb00bb0
 -bbbbbbbb00bbbbbbbb-
 -F0aa0a0a00a0aa0a0F-
+--------------------
+
+//wide throw shopkeep
+-A----------------A-
+-0-00000044000000-0-
+-00000000ff00000000-
+f00000000ff00000000f
+f00000000ff00000000f
+->>000000ff000000<<-
+-00aa0a0affa0aa0a00-
 --------------------
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -938,7 +1023,7 @@ v=00000v0000v00000=v
 
 //tall lava burn & tree
 \!flip
-\!ignore
+//\!ignore
 v000000000
 v---------
 v-aa--aaa-
@@ -957,7 +1042,7 @@ pz000000zp
 111p1p1111
 
 //tall precise mine dig drop -- too hard for world 2
-\!ignore
+//\!ignore
 -a--00--a-
 ---0]]0---
 --00--00--
@@ -1019,7 +1104,7 @@ pz000000zp
 \.machine_keyroom
 ////////////////////////////////////////////////////////////////////////////////
 
-\!ignore
+//\!ignore
 \!dual
 0000000000 1111111111
 0000000000 1000000001
@@ -1030,7 +1115,7 @@ pz000000zp
 0000000000 1000000001
 0000000000 1111111111
 
-\!ignore
+//\!ignore
 1111111111
 0000000000
 0000000000
@@ -1055,7 +1140,7 @@ pz000000zp
 \.machine_rewardroom
 ////////////////////////////////////////////////////////////////////////////////
 
-\!ignore
+//\!ignore
 \!dual
 0000000000 1111111111
 0000000000 1000000001
@@ -1113,7 +1198,7 @@ pz000000zp
 \.chunk_ground
 ////////////////////////////////////////////////////////////////////////////////
 
-\!ignore
+//\!ignore
 00000
 00000
 00000
