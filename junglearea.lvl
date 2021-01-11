@@ -16,7 +16,7 @@
 //\-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
 \-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
 \-machine_wideroom_chance 2				    // 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 0				    // 1/N chance of spawning a machine tall room (default = 0)
+\-machine_tallroom_chance 5				    // 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
 // ------------------------------
