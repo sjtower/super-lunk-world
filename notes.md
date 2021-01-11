@@ -73,6 +73,9 @@
 1. 1 square of lava can cover ~4 tiles in lava
 1. lava only burns bushes when on top of bush - bush next to lava survives. We can use this like a bush fuse delay
 
+#### water
+1. does not interact with conveyors
+
 #### fire
 
 # Things to test

@@ -263,18 +263,6 @@ XXXXXXXXXX
 H0b-aa-b0H
 XXXXXXXXXX
 
-//swim thru bramble
-//\!ignore
-\!flip
-1111111111
-v0ww*vvw0v
-v=ww*w*w=v
-v=w**w**=v
-0=w*wwww=0
-==wwwww*=0
-1=www*ww=1
-11*===*=11
-
 //spike tusk jump
 //\!ignore
 \!flip

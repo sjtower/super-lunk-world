@@ -51,18 +51,31 @@
 //\?octopus					?
 //\?hermitcrab				?
 \?giantclam					C
-\?fountain_drain			*
+
+\?bush_block				b
+\?vine						v
+\?fountain_drain			d
 \?slidingwall_switch		c
 \?slidingwall_ceiling		A
 \?conveyorbelt_left			<
 \?conveyorbelt_right		>
+\?thorn_vine				*
 
+\?laser_trap				z
+\?arrow_trap				@
+\?landmine				    ]
+\?thinice					I
+\?elevator					e
+\?honey_upwards			    }
+
+\?littorch					H
+\?litwalltorch				O
 \?key						T
 
-\?altar						x	// Each side of the altar
-\?idol						I	// Idol statue
-\?vault_wall				|	// Vault wall
-\?coffin					g	// Character coffin (NPC/Player)
+//\?altar						x	// Each side of the altar
+//\?idol						I	// Idol statue
+//\?vault_wall				|	// Vault wall
+//\?coffin					g	// Character coffin (NPC/Player)
 
 \?shop_sign					K
 \?shop_door					k
@@ -73,11 +86,12 @@
 \?wanted_poster				W
 \?shopkeeper				$	// Shopkeeper and items
 \?madametusk				M
-\?bodyguard					b
+//\?bodyguard					b
 \?locked_door				/	// Locked door to other Layer
 \?sleeping_hiredhand		\
 	
 \?water						w
+\?stagnant_lava				a
 
 // ------------------------------
 //  LEVEL CHANCES
@@ -177,16 +191,6 @@
 0000000000
 11======11
 
-\!flip
-1110000===
-0000000000
-2200000090
-0000000===
-0000000000
-0000000===
-0000B00===
-1111======
-
 ////////////////////////////////////////////////////////////////////////////////
 \.side
 ////////////////////////////////////////////////////////////////////////////////
@@ -204,55 +208,81 @@
 \.path_normal
 ////////////////////////////////////////////////////////////////////////////////
 
+//swim thru bramble
+\!ignore
+\!flip
 1111111111
-0000000000
-0000000000
-0000000000
-5000050000
-0000000000
-0000000000
-1111111111
+00ww*vvw00
+0=ww*w*w=0
+0=w**w**=0
+B=w*wwww=0
+==wwwww*=B
+1=www*ww=1
+11*===*=11
 
+//don't hit switch
+\!flip
+1111111111
+1aaa00aaa1
+1A1A1A1A11
+0f0f0f0f0=
+0o0oco0o00
+=0c00c000=
+=00000000=
+==========
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
 ////////////////////////////////////////////////////////////////////////////////
 
-1112002111
-0000000000
-0000000000
-0000000000
-5000050000
-0000000000
-0000000000
+//top whip water to burn
+1111001111
+1100H00011
+b1O0000O1b
+b000ww000b
+bbbbbbbbbb
+bbbb11bbbb
+0011111100
 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop
 ////////////////////////////////////////////////////////////////////////////////
 
-1111221111
-6000060000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-1112002111
+//burn through waterfall drop
+1111111111
+0w0HbbH0w0
+O100bb001O
+010=bb=010
+0100bb0010
+01BdbbdB10
+B110bb011B
+1111001111
+
+//water conveyor
+\!flip
+====00====
+=H000O000=
+==0000000=
+===00=000=
+=00w0=000=
+=bd0=<<<<=
+=bbb00000=
+====00====
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
 ////////////////////////////////////////////////////////////////////////////////
 
 \!flip
-1112002111
-0000000000
-0000000000
-===0000000
-0-=0000==0
-0==0000==0
-0000000==0
-1112002111
+====00====
+=H000O000=
+==0000000=
+===000=00=
+=0w000=00=
+=bd0=<<<<=
+=bbb00000=
+====00====
 
 ////////////////////////////////////////////////////////////////////////////////
 \.idol				// Idol room

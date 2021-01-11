@@ -184,7 +184,6 @@ v00000000O000000000v
 
 //don't hit switch
 \!flip
-//long don't hit switch
 1111111111
 1aaaaaaaa1
 1A1A111A11
