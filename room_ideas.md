@@ -94,7 +94,6 @@
 1. race TNT to end/exit
 1. mine on one-tile column - you can trigger mine and jump out of way and back to same spot
 1. you can push a PB that an arrow is stuck in - puzzle
-1. lit torch through / over waterfalls
 1. throw rock, break bones with elevator over it and FP under it. force player to grap FP before elevator goes down on it
 1. mine on FP, require pick it up and put down on FP
 1. throw torch to Tikiman, he can then burn bushes
@@ -119,7 +118,6 @@
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
 
 #Temple / Tidepool
-1. give Vlad's cape
 1. don't hit the door switch
 1. throw rock at door switch / key
 1. reflect throw via robots/forcefield to hit switch
@@ -144,6 +142,15 @@
 1. move water rooms from jungle to here
 1. giant clam dodges - TNT in clam?
 1. push TNT into clam to clear below
+1. ~~lit torch through / over waterfalls~~
+1. helping hand - require HH to carry something. Throw him up somewhere?
+1. Bunch of layer 2 doors, remember correct one
+1. use temple enemies
+1. hide door behind lantern
+1. door behind PB
+1. 4 doors above lava, PB push down and remember the door. Deter jumping down with... scorpions? / more PBs
+1. big waterfall room wih multiple bush barriers
+1. ride gate up
 
 ##Ice Caves
 1. parachute level - give parachute at entrance
@@ -152,6 +159,7 @@
 1. death waffles, lasers, arrow traps
 
 ##Neo Babylon
+1. give Vlad's cape
 1. mech escort / excavation
 1. plasma cannon precise excavation
 

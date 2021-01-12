@@ -76,6 +76,10 @@
 #### water
 1. does not interact with conveyors
 
+#### switches / gates
+1. Will only work in levels where they are present in vanilla (Tidepool, CoG, Eggplant)
+1. Will crash if two gates spawn at different heights in the same room
+
 #### fire
 
 # Things to test
