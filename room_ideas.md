@@ -118,10 +118,10 @@
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
 
 #Temple / Tidepool
-1. don't hit the door switch
-1. throw rock at door switch / key
-1. reflect throw via robots/forcefield to hit switch
-1. wake hermit crab to hit switch
+1. ~~don't hit the door switch~~
+1. ~~throw rock at door switch / key~~
+1. ~~reflect throw via robots/forcefield to hit switch~~
+1. ~~wake hermit crab to hit switch~~
 1. death waffle guantlet
 1. crush block gauntlet / you get a PB for defense / required
 1. ice block spring spikes
@@ -151,6 +151,7 @@
 1. 4 doors above lava, PB push down and remember the door. Deter jumping down with... scorpions? / more PBs
 1. big waterfall room wih multiple bush barriers
 1. ride gate up
+1. send CB through lots of bones
 
 ##Ice Caves
 1. parachute level - give parachute at entrance

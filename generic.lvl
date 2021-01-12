@@ -28,8 +28,8 @@
 \?vault_wall				|	// Vault wall
 \?bone_block				f
 
-\?shop_sign					K
-\?shop_door					k
+\?shop_sign					ö
+\?shop_door					ö
 \?lamp_hang					l
 \?shop_wall					.
 \?shop_wall%50				;

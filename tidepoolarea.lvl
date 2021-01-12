@@ -14,8 +14,8 @@
 \-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
 //\-max_liquid_particles 6000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
 //\-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
-\-machine_bigroom_chance 6					// 1/N chance of spawning a machine big room (default = 0)
-\-machine_tallroom_chance 8					// 1/N chance of spawning a machine tall room (default = 0)
+\-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
+\-machine_tallroom_chance 0					// 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
 // ------------------------------
@@ -34,12 +34,13 @@
 \?floor_hard				X	// Indestructible ("hard") floor
 \?floor_hard%50%floor		Y	// 50% chance of hard floor, 50% chance of regular floor
 \?adjacent_floor			Z	// Hard floor or empty depending on whether this leads to another second layer room
-\?climbing_pole				V
+\?climbing_pole				L
 \?growable_climbing_pole	B
 \?pagoda_platform			p
 \?door						9	// Exit or entrance
 \?door2						D	// Door to other Layer
 \?spikes					^
+\?upsidedown_spikes			v
 \?push_block				4
 //\?arrow_trap				A
 \?bone_block				f
@@ -54,13 +55,14 @@
 \?robot					    {
 
 \?bush_block				b
-\?vine						v
+\?vine						V
 \?fountain_drain			d
 \?slidingwall_switch		c
 \?slidingwall_ceiling		A
 \?conveyorbelt_left			<
 \?conveyorbelt_right		>
 \?thorn_vine				*
+\?honey_upwards			    }
 
 //\?spring_trap				c
 \?falling_platform			F
@@ -80,14 +82,15 @@
 \?litwalltorch				O
 \?key						T
 \?pot						t
+\?rock						k
 
 //\?altar						x	// Each side of the altar
 //\?idol						I	// Idol statue
 //\?vault_wall				|	// Vault wall
 //\?coffin					g	// Character coffin (NPC/Player)
 
-\?shop_sign					K
-\?shop_door					k
+\?shop_sign					ö
+\?shop_door					ö
 \?lamp_hang					l
 \?shop_wall					.
 \?shop_pagodawall			ö
@@ -106,8 +109,8 @@
 //  LEVEL CHANCES
 // ------------------------------
 
-\%liontrap_chance 		0
-\%snap_trap_chance		0
+\%liontrap_chance 		300
+\%snap_trap_chance		300
 \%leprechaun_chance		0	// 1/n chance that a Leprechaun will spawn
 
 // ------------------------------
@@ -148,7 +151,7 @@
 0=0=w==0=0
 0=0r9r00=0
 0========0
-000====000
+0========0
 1111==1111
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -213,7 +216,7 @@
 \!ignore
 \!flip
 1111111111
-00ww*vvw00
+00ww*VVw00
 0=ww*w*w=0
 0=w**w**=0
 B=w*wwww=0
@@ -222,6 +225,7 @@ B=w*wwww=0
 11*===*=11
 
 //don't hit switch
+\!ignore
 \!flip
 1aaa00aaa1
 111A11A111
@@ -230,6 +234,77 @@ B=w*wwww=0
 0B00c000B0
 ==000000==
 ==========
+==========
+
+//throw rock to hit switch
+\!ignore
+\!flip
+====AA====
+=00000000=
+=000c0000=
+=0rf00fr0=
+00f=00=f00
+000=00=000
+0000000000
+==========
+
+//breakout CB & ride up
+//\!ignore
+10v1111v01
+kr001100rk
+0=000000=0
+0=00O000=0
+0=000000=0
+0=r0==0r=0
+B=g0==0g=B
+1111111111
+
+//breakout CB & ride sideways
+\!ignore
+\!flip
+1111111111
+000t11t000
+0001111000
+0001111000
+0ff1111ff0
+1000000001
+1000g00001
+11******11
+
+//breakout CB & ride while hanging after triggering opposite side
+\!flip
+\!ignore
+1111111111
+1g0=11=0g1
+0001111000
+0001111000
+0001111000
+000FFFF000
+00r0000r00
+111****111
+
+//breakout CB & ride up
+\!flip
+\!ignore
+1111111111
+0v000000v0
+0001111000
+0001111000
+0001111000
+1f011110f1
+1gf0ff0fg1
+111****111
+
+//refelct rock off robot to hit switch
+\!flip
+//\!ignore
+11111A1111
+==0010100=
+==c01010c=
+===00{00==
+0000000000
+k00000000k
+==000=000=
 ==========
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -259,11 +334,24 @@ bbbb11bbbb
 =00000g00=
 =====g====
 
+//breakout CB & ride
+\!flip
+111ppp1111
+100000F001
+1g00000001
+111****0*1
+0000000000
+0000000000
+10000000g1
+1******111
+
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop
 ////////////////////////////////////////////////////////////////////////////////
 
 //burn through waterfall drop
+\!flip
+\!ignore
 1111111111
 0H000000H0
 O10000011O
@@ -275,6 +363,7 @@ B1bbbbb11B
 
 //wake crab to open door drop
 \!flip
+\!ignore
 11A1111111
 0000000000
 0=0p=====p
@@ -284,12 +373,38 @@ B=0p=pph=p
 =00000t===
 ====pp====
 
+//refelct rock off robot to hit switch drop
+\!flip
+\!dual
+//\!ignore
+1111AA1111 ==========
+=00100100= ==========
+=c010010c= ==========
+==00{{00== ==========
+0000000000 ==========
+k00000000k =00000000=
+==00FF00== =D000O00D=
+====pp==== ====DD====
+
+//breakout CB & ride up drop
+\!flip
+\!ignore
+1111111111
+0v000000v0
+0001001000
+0001001000
+0001001000
+1f01gg10f1
+1gfFFFFfg1
+111*00*111
+
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
 ////////////////////////////////////////////////////////////////////////////////
 
 //top drop whip water into bucket
 \!flip
+\!ignore
 ====00====
 =H000O000=
 ==0000000=
@@ -468,7 +583,7 @@ B10000=01B 1111f11111
 010000wb10 1000000001
 01B00wdb10 1000000001
 0111111b10 1000000001
-B000000/0B 100V00VD01
+B000000/0B 100L00LD01
 1111pp1111 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -552,11 +667,11 @@ B000000/0B 100V00VD01
 \!dual
 11==001111 XXXXXXXXXX
 11==001111 X========X
-110V000011 X0000l00=X
-110V000011 XD000000=X
-<<<V000010 X==00I00=X
-100V000000 XX=00==0=X
-100V000000 XX=======X
+1100000011 X0000l00=X
+1100000011 XD000000=X
+<<<0000010 X==00I00=X
+1000000000 XX=00==0=X
+100B000000 XX=======X
 <11=pp==11 XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////

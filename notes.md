@@ -78,9 +78,11 @@
 
 #### switches / gates
 1. Will only work in levels where they are present in vanilla (Tidepool, CoG, Eggplant)
+1. Will crash if push block placed on door
 1. Will crash if two gates spawn at different heights in the same room
 
-#### fire
+#### Crush Blocks
+1. will slow down in water
 
 # Things to test
 1. Entrance/exit on machine big/wide/tall rooms?
