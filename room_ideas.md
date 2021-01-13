@@ -116,6 +116,7 @@
 
 #Olmec
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
+1. Give ankh bombs and rope after each boss 
 
 #Temple / Tidepool
 1. ~~don't hit the door switch~~
@@ -138,9 +139,9 @@
 1. Ride CB and clear path blocked by bones
 1. Free CB from bones for jump up - avoid ceiling spikes
 1. Keep torch lit through water conveyor w/ drain
-1. push water away, burn bushes underneath
+1. ~~push water away, burn bushes underneath~~
 1. move water rooms from jungle to here
-1. giant clam dodges - TNT in clam?
+1. ~~giant clam dodges - TNT in clam?~~
 1. push TNT into clam to clear below
 1. ~~lit torch through / over waterfalls~~
 1. helping hand - require HH to carry something. Throw him up somewhere?
@@ -152,6 +153,10 @@
 1. big waterfall room wih multiple bush barriers
 1. ride gate up
 1. send CB through lots of bones
+1. UFO excavation
+1. Sorceress spawn animal to bounce off of
+1. big CB into bubble wrap (BW)
+1. bring robot across with CB
 
 ##Ice Caves
 1. parachute level - give parachute at entrance

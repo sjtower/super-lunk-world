@@ -83,6 +83,7 @@
 
 #### Crush Blocks
 1. will slow down in water
+1. Big crush blocks are 2x2 tiles big and are centered in the top-left square
 
 # Things to test
 1. Entrance/exit on machine big/wide/tall rooms?
