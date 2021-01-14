@@ -134,13 +134,13 @@
 1. throw mine at pipe in the right place
 1. plumbus claw game w/ robot
 1. TNT/CB push through bubble wrap
-1. Duck under death waffles/lasers/ big CB via quicksand
+1. ~~Duck under death waffles/lasers/ big CB via quicksand~~
 1. Ride CB to key and back
 1. Ride CB and clear path blocked by bones
 1. Free CB from bones for jump up - avoid ceiling spikes
 1. Keep torch lit through water conveyor w/ drain
 1. ~~push water away, burn bushes underneath~~
-1. move water rooms from jungle to here
+1. ~~move water rooms from jungle to here~~
 1. ~~giant clam dodges - TNT in clam?~~
 1. push TNT into clam to clear below
 1. ~~lit torch through / over waterfalls~~

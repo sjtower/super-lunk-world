@@ -85,6 +85,9 @@
 1. will slow down in water
 1. Big crush blocks are 2x2 tiles big and are centered in the top-left square
 
+#### Quicksand
+1. if platform is placed below quicksand, player cannot dop below it
+
 # Things to test
 1. Entrance/exit on machine big/wide/tall rooms?
 1. will oldhunter kill vlad anywhere? Or do we have to meet him somewhere first? Same level?
