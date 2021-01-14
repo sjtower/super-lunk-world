@@ -263,18 +263,6 @@ XXXXXXXXXX
 H0b-aa-b0H
 XXXXXXXXXX
 
-//spike tusk jump
-//\!ignore
-\!flip
-1111111111
-v00011000v
-vt001100tv
-v=F0000F=v
-v=00O000=v
-==0000000=
-=^^^^M^^^=
-=11111111=
-
 //throw rock at imp or bombs to clear path
 //\!ignore
 \!flip
@@ -915,17 +903,6 @@ f0c0000000000000000f
 -a0<<<<<<<>>>>>>>0a-
 --a----ta--at----a--
 --------------------
-
-//long spike tusk jump
-//\!ignore
-11111111111111111111
-v000000000000000000v
-vt00000O0000O00000tv
-v1F00000000000000F1v
-vf0000000000000000fv
-=f0000000000000000f=
-=^M^^^^^^^^^^^^^^M^=
-=111111111111111111=
 
 //long lava lavamander jump
 //\!ignore

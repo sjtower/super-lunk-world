@@ -15,7 +15,8 @@
 //\-max_liquid_particles 6000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
 //\-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
 \-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
-\-machine_tallroom_chance 0					// 1/N chance of spawning a machine tall room (default = 0)
+\-machine_wideroom_chance 2				    // 1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance 4					// 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
 // ------------------------------
@@ -46,8 +47,6 @@
 \?bone_block				f
 \?powder_keg				o
 
-//\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
-
 //\?jiangshi				?
 //\?octopus					?
 \?hermitcrab				h
@@ -65,6 +64,7 @@
 \?conveyorbelt_right		>
 \?thorn_vine				*
 \?honey_upwards			    }
+\?honey_downwards			)
 
 //\?spring_trap				c
 \?falling_platform			F
@@ -74,7 +74,6 @@
 \?landmine				    ]
 \?thinice					I
 \?elevator					e
-\?honey_upwards			    }
 
 \?crushtrap				    g
 \?crushtraplarge			G
@@ -112,8 +111,8 @@
 //  LEVEL CHANCES
 // ------------------------------
 
-\%liontrap_chance 		300
-\%snap_trap_chance		300
+\%liontrap_chance 		0
+\%snap_trap_chance		0
 \%leprechaun_chance		0	// 1/n chance that a Leprechaun will spawn
 
 // ------------------------------
@@ -257,7 +256,7 @@ B=w*wwww=0
 kr001100rk
 0=000000=0
 0=00O000=0
-0=000000=0
+0=00kk00=0
 0=r0==0r=0
 B=g0==0g=B
 1111111111
@@ -312,8 +311,8 @@ k00000000k
 
 //clam dodges
 1110001111
-0000000000
-000C000000
+100rrr0001
+100C000001
 00r111r000
 0001110000
 0C01110C00
@@ -322,14 +321,27 @@ k00000000k
 
 //breakout CB & ride while hanging after triggering opposite side 2 - honey - NOT WORKING
 \!flip
+\!ignore
 1111111111
 1g0=11=0g1
 0001111000
-0001111000
 0001G01000
+0001001000
 0000000000
 00r0}}0r00
 111****111
+
+//spike tusk jump
+\!ignore
+\!flip
+1111111111
+0000110000
+0t001100t0
+0=000000=0
+B=00O000=B
+==0000000=
+=0000M000=
+==========
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
@@ -348,6 +360,7 @@ bbbb11bbbb
 1111111111
 
 //top crush block (CB) dodge
+\!ignore
 \!flip
 ====pp====
 ==000000g=
@@ -359,6 +372,7 @@ bbbb11bbbb
 =====g====
 
 //top breakout CB & ride
+\!ignore
 \!flip
 111ppp1111
 100000F001
@@ -422,6 +436,7 @@ k00000000k =00000000=
 ====pp==== ====DD====
 
 //throw rock at BW, giant CB dodge drop
+\!ignore
 \!flip
 1111111111
 0k000000k0
@@ -430,6 +445,17 @@ k00000000k =00000000=
 B=000000=p
 =G000000G=
 =00000000=
+====rr====
+
+//CB into BW drop
+\!flip
+1111111111
+0000000000
+p==0=====p
+p=gw00r0=p
+p=====00=p
+=000r000g=
+=0000=====
 ====rr====
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -449,6 +475,7 @@ B=000000=p
 ====00====
 
 //top drop crush block (CB) dodge
+\!ignore
 \!flip
 ====pp====
 ==000000g=
@@ -465,8 +492,8 @@ B=000000=p
 =0000000g=
 =gppppppp=
 =pppppppg=
-=gpp==ppp=
-=pppppppg=
+=gpp==ppg=
+=gppppppg=
 =pp=pp=pp=
 ====pp====
 
@@ -476,6 +503,17 @@ B=000000=p
 =G0000000=
 =00000000=
 =00=00p00=
+=00====00=
+=G00000G0=
+=00000000=
+====pp====
+
+//top drop crush block puzzle 2
+\!flip
+====pp====
+=G0000000=
+=00000000=
+=00=00400=
 =00====00=
 =G00000G0=
 =00000000=
@@ -578,6 +616,35 @@ B=000000=p
 11111111111111111111 11111111111111111111
 11111111111111111111 11111111111111111111
 11111111111111111111 11111111111111111111
+
+
+////////////////////////////////////////////////////////////////////////////////
+\.machine_wideroom_path
+////////////////////////////////////////////////////////////////////////////////
+
+//long spike tusk jump
+//\!ignore
+11111111111111111111
+00000000000000000000
+0t00000O0000O00000t0
+01F00000000000000F10
+Bf0000000000000000fB
+=f0000000000000000f=
+=^M00000000000000M^=
+=11==============11=
+
+////////////////////////////////////////////////////////////////////////////////
+\.machine_wideroom_side
+////////////////////////////////////////////////////////////////////////////////
+
+11111111111111111111
+11111111111111111111
+11111111111111111111
+11111111111111111111
+11111111111111111111
+11111111111111111111
+11111111111111111111
+11111111111111111111
 
 ////////////////////////////////////////////////////////////////////////////////
 \.machine_tallroom_path

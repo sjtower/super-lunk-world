@@ -157,6 +157,8 @@
 1. Sorceress spawn animal to bounce off of
 1. big CB into bubble wrap (BW)
 1. bring robot across with CB
+1. break out CB & run away - need to get behind CB to progress
+1. mine in lava, throw body on it to set off
 
 ##Ice Caves
 1. parachute level - give parachute at entrance

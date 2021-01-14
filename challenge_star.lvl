@@ -16,7 +16,6 @@
 \?ladder_plat				P	// Ladder with platform across it
 \?door2						D	// Door to other Layer
 
-\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
 \?littorch					H
 \?crossbow					y
 \?walltorch					o
