@@ -137,17 +137,17 @@
 1. ~~Duck under death waffles/lasers/ big CB via quicksand~~
 1. Ride CB to key and back
 1. Ride CB and clear path blocked by bones
-1. Free CB from bones for jump up - avoid ceiling spikes
-1. Keep torch lit through water conveyor w/ drain
+1. ~~Free CB from bones for jump up - avoid ceiling spikes~~
+1. ~~Keep torch lit through water conveyor w/ drain~~
 1. ~~push water away, burn bushes underneath~~
 1. ~~move water rooms from jungle to here~~
 1. ~~giant clam dodges - TNT in clam?~~
-1. push TNT into clam to clear below
+1. ~~push TNT into clam to clear below~~
 1. ~~lit torch through / over waterfalls~~
-1. helping hand - require HH to carry something. Throw him up somewhere?
+1. ~~helping hand - require HH to carry something. Throw him up somewhere?~~
 1. Bunch of layer 2 doors, remember correct one
 1. use temple enemies
-1. hide door behind lantern
+1. key in clam
 1. door behind PB
 1. 4 doors above lava, PB push down and remember the door. Deter jumping down with... scorpions? / more PBs
 1. big waterfall room wih multiple bush barriers
@@ -159,6 +159,9 @@
 1. bring robot across with CB
 1. break out CB & run away - need to get behind CB to progress
 1. mine in lava, throw body on it to set off
+1. ~~clam on PB puzzle? start on BW? Drop Clam, kill it with BW?~~
+1. ride PB on conveyor through lava
+1. make water bucket for TNT to survive fall
 
 ##Ice Caves
 1. parachute level - give parachute at entrance
