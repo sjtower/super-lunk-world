@@ -162,6 +162,7 @@
 1. ~~clam on PB puzzle? start on BW? Drop Clam, kill it with BW?~~
 1. ride PB on conveyor through lava
 1. make water bucket for TNT to survive fall
+1. enter door on CB
 
 ##Ice Caves
 1. parachute level - give parachute at entrance
