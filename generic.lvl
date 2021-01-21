@@ -18,7 +18,7 @@
 \?locked_door				/	// Locked door to other Layer
 \?stone_floor				-
 \?tomb_floor				G
-\?cursed_pot				u
+\?cursed_pot				ô
 
 \?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
 \?litwalltorch				O

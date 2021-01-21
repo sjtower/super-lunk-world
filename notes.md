@@ -78,8 +78,10 @@
 
 #### switches / gates
 1. Will only work in levels where they are present in vanilla (Tidepool, CoG, Eggplant)
-1. Will crash if push block placed on door
+1. Will crash if push block placed on top of gate
 1. Will crash if two gates spawn at different heights in the same room
+1. Sorceress lasers will trigger switches
+1. Mummy locusts will not trigger switches
 
 #### Crush Blocks
 1. will slow down in water

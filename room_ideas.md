@@ -113,6 +113,7 @@
 1. Junk onto spring pads
 1. throw junk at BBW while on TI (thin ice). You can close the lava gap to the BBW via conveyors and PBs on top of the bones
 1. blow up mine on correct conveyor spot, then PB down/ avoid lava
+1. try lava conveyor with ACTIVE lava
 
 #Olmec
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
@@ -161,19 +162,18 @@
 1. mine in lava, throw body on it to set off
 1. ~~clam on PB puzzle? start on BW? Drop Clam, kill it with BW?~~
 1. ride PB on conveyor through lava
-1. make water bucket for TNT to survive fall
 1. enter door on CB
 1. ~~empty water to alow CB to break BW~~
 1. PB onto moving CB (large, unmoving)
 1. ~~BW bridge, CB on top, bring down to cross spikes under bridge~~
-1. Sorceress hit switch?
-1. bring down TNT with CB
-1. Throw torch over waterfall
-1. ride door up
-1. stand on CB to enter door (moving CB, large CB)
+1. ~~Sorceress hit switch?~~
+1. ~~bring down TNT with CB~~
+1. ~~Throw torch over waterfall~~
+1. ride door up - Needs to be big room?
+1. ~~stand on CB to enter door (moving CB, large CB)~~
 1. ride CB, push PB multiple times?
 1. bring one CB around in a loop multiple times
-1. locusts hit switch
+1. ~~locusts hit switch~~
 1. burn bush to release CB
 1. water to slow CB
 1. elevator to stop CB
@@ -181,6 +181,8 @@
 1. Large stack of PB/TNT 
 1. BW destroy CB
 1. quick evade CB while pushing a PB out
+1. ~~CB elevators~~
+1. ride CB to switch, loop back to go through gate
 
 ##Ice Caves
 1. parachute level - give parachute at entrance
