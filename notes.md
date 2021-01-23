@@ -15,6 +15,8 @@
 1. We can trim down `dwelling.lvl` to one room per section
 1. Try set size to 5-5 and set `1` for `\-machine_bigroom_chance 1`, `\-machine_wideroom_chance 1`, `\-machine_tallroom_chance 1`
 1. Some worlds require a `machine_rewardroom_chance` > 0, and a valid room defined in the `\.machine_rewardroom` section
+1. All worlds except 1 require `\.coffin_unlockable	` section
+1. `\.coffin_player_vertical` & `\.coffin_player` are not required and can be removed
 
 ## Level generation notes
 
