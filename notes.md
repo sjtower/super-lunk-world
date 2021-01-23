@@ -141,6 +141,16 @@
 1. Top: 11
 1. Drop: 11
 1. Top/Drop: 6
-1. Big:
-1. Wide:
-1. Tall:
+1. Big: 2
+1. Wide: 10
+1. Tall: 3
+
+#### Tidepool
+
+1. Path: 20
+1. Top: 11
+1. Drop: 13
+1. Top/Drop: 6
+1. Big: 3
+1. Wide: 3
+1. Tall: 5

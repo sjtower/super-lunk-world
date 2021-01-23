@@ -2,3 +2,4 @@
 1. firebug flame can go through two kitty-corner placed blocks
 1. hide door behind lantern
 1. make water bucket for TNT to survive fall
+1. locusts hit switch - do not interact

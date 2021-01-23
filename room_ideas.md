@@ -166,7 +166,6 @@
 1. ~~stand on CB to enter door (moving CB, large CB)~~
 1. ride CB, push PB multiple times?
 1. bring one CB around in a loop multiple times
-1. ~~locusts hit switch~~
 1. burn bush to release CB
 1. water in to slow CB
 1. ~~elevator to stop CB~~
