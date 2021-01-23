@@ -58,6 +58,9 @@
 
 ### Notes on Traps
 
+#### Spikes
+1. Can only be placed on dirt, will break upon spawning if placed on minewood, stone, pagoda, platforms etc.
+
 #### Big Spear Trap
 1. takes up two tiles, starts from leftmost tile
 
@@ -76,6 +79,10 @@
 #### water
 1. does not interact with conveyors
 
+#### Falling Platforms
+1. small objects can fit under the FP, such as lava or rocks. This way you can set up a path that items can go through but not the player 
+1. You can place a FP near the ceiling and it won't be able to be stepped on or grabbed in any way
+
 #### switches / gates
 1. Will only work in levels where they are present in vanilla (Tidepool, CoG, Eggplant)
 1. Will crash if push block placed on top of gate
@@ -85,7 +92,8 @@
 
 #### Crush Blocks
 1. will slow down in water
-1. Big crush blocks are 2x2 tiles big and are centered in the top-left square
+1. You cannot push a PB on to a moving CB because the PB will bounce upon landing and fall off the CB.
+1. Big crush blocks are 2x2 tiles big. Spawn location can vary - placement conforms to surrounding blocks?
 
 #### Quicksand
 1. if platform is placed below quicksand, player cannot dop below it
@@ -124,3 +132,15 @@
 1. strings files need to be the same number of lines or the game will crash
 1. you do not need to preserve %ls present in the original string
 
+
+### Room counts
+
+#### Jungle
+
+1. Path: 18
+1. Top: 11
+1. Drop: 11
+1. Top/Drop: 6
+1. Big:
+1. Wide:
+1. Tall:

@@ -10,8 +10,8 @@
 //  TILE CODES
 // ------------------------------
 
-\?minewood_floor		>
-\?excalibur_stone		s
+//\?minewood_floor		>
+//\?excalibur_stone		s
 \?bone_block			f
 \?haunted_corpse		7
 

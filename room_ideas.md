@@ -117,7 +117,7 @@
 1. ride FP down
 1. mine in lava, throw body on it to set off
 1. ride PB on conveyor through lava
-1. try lava conveyor with ACTIVE lava
+1. try lava conveyor with ACTIVE lava - squish out lava with a FP
 
 #Olmec
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
@@ -179,6 +179,7 @@
 1. bunch of PBs, hidden doors behind
 1. doors sit on CB, get CB / PB under door to reach higher?
 1. key under CB
+1. whip water into spike pit
 
 ##Ice Caves
 1. parachute level - give parachute at entrance
