@@ -107,6 +107,9 @@
 #### Elevators
 1. you can push elevator if it lands on a PB/TNT
 
+#### Force Fields
+1. can block the generator block with TNT, and TNT will not explode
+
 ### Enemies
 
 1. Imp: You can spawn an imp without their cauldron if you spawn them in a 1-tile high space.

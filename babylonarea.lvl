@@ -62,6 +62,8 @@
 //\?zoo_exhibit				z
 
 \?honey_upwards			    }
+\?conveyorbelt_left			<
+\?conveyorbelt_right		>
 \?thorn_vine				*
 
 \?spring_trap				g
@@ -298,6 +300,7 @@ f00000000f
 
 //UFO jumps 1
 \!flip
+\!ignore
 0000110000
 0=001100=0
 p=00FF00=p
@@ -309,17 +312,19 @@ XXXXXXXXXX
 
 //UFO jumps 2
 \!flip
+\!ignore
 1110000111
-1100XX0011
+1100))0011
 1100XX0011
 1000XX0001
 0000XX0000
 00O0XX00O0
-X00FU0F00X
+f00FU0F00f
 XXXXXXXXXX
 
 //Turkey jump 1
 \!flip
+\!ignore
 1100000011
 1100))0011
 1100==0011
@@ -331,14 +336,49 @@ XXXXXXXXXX
 
 //Turkey jump 2
 \!flip
-1111111111
-0001001000
-0100000010
-p100ww001p
-0111ww1110
-p10011001p
+\!ignore
+000=00=000
+0=000000=0
+0=000000=0
+p=w0000w=p
+0===0w===0
+p=0p==p0=p
 000Fu0F000
 XXXXXXXXXX
+
+//push elevator via PB
+\!flip
+\!ignore
+1110000111
+1110))0111
+1110==0111
+0110==0110
+0000==0000
+0e00==00e0
+0040==0400
+==========
+
+//Push TNT to jump off through forcefield 1
+\!flip
+1111111111
+1110000111
+1110==0111
+1110A=0111
+1110==0111
+0000==0000
+0o00==00o0
+XXX)XX)XXX
+
+//Push TNT to jump off through forcefield 2
+\!flip
+1111111111
+1110000111
+1110==0111
+1110=A0111
+1110==0111
+0000==0000
+0o00==00o0
+XX)XXXX)XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
@@ -380,6 +420,7 @@ EA000000AE
 
 //UFO top
 \!flip
+\!ignore
 1110kk0111
 1000rr0001
 1000000001
@@ -388,6 +429,16 @@ EA000000AE
 X********X
 XXXXXXXXXX
 X========X
+
+//guide TNT through traps top - TOO HARD / JANKY?
+====00====
+X00o00000X
+XpAppppe0X
+1p0eppp0p1
+10p0p40p01
+X0040p000X
+XX040000XX
+XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop
@@ -432,6 +483,7 @@ XXXX==XXXX
 
 //smack UFO drop
 \!flip
+\!ignore
 ==========
 =000U0000=
 =O0000000=
@@ -441,11 +493,36 @@ XXXX==XXXX
 000X11X000
 XXXX00XXXX
 
+//bone room full of waffles and olmites drop
+\!flip
+\!ignore
+==========
+=00000000=
+EE00ll00EE
+E=ffffff=E
+0AffffffA0
+0=ffffff=0
+==ffffff==
+====ff====
+
+//guide TNT through traps drop
+\!flip
+==========
+00o0000o00
+p==A00A==p
+p=000000=p
+p=000000=p
+p=000000=p
+X=00))00=X
+XXXX==XXXX
+
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
 ////////////////////////////////////////////////////////////////////////////////
 
 //UFO excavation top drop
+\!flip
+\!ignore
 ====E=====
 ====E=====
 =000000U0=
@@ -457,6 +534,7 @@ XXXX00XXXX
 
 //spike cape top drop
 \!flip
+\!ignore
 ====0=====
 =1v0^1111=
 =0^111111=
@@ -466,8 +544,9 @@ XXXX00XXXX
 ==1^00====
 ====00====
 
-//Spring spike cape top drop
+//Spring spike cape top-drop
 \!flip
+\!ignore
 ====0=====
 =1v0^1111=
 =10111111=
@@ -476,6 +555,29 @@ XXXX00XXXX
 =10vvv====
 ==g^00====
 ====00====
+
+//bone room full of waffles and olmites top-drop
+\!flip
+\!ignore
+====00====
+=00000000=
+=000ll000=
+=ffffffff=
+AffffffffA
+=ffffffff=
+=ffffffff=
+====ff====
+
+//guide TNT through traps top-drop
+\!flip
+====00====
+=00o00000=
+=ppppppe0=
+=p0Aepp0p=
+=000000p0=
+=00000000=
+=00p00p00=
+XXXX==XXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.idol				// Idol room

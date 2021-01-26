@@ -217,7 +217,7 @@
 1. TNT/PB under elevator
 1. Guide TNT on elevators through torches - torches ignite TNT
 1. YEET self off of forcefield over spikes. Free heal after :)
-1. Room full of bones and cavemen and Waffles
+1. ~~Room full of bones and cavemen and Waffles~~
 1. upside down spikes with springs on top?
 1. push TNT through waffles
 
