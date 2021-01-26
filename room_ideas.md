@@ -163,9 +163,10 @@
 1. ~~bring down TNT with CB~~
 1. ~~Throw torch over waterfall~~
 1. ride door up - Needs to be big room? one door, lazers on either side, hang on door for protection
+    set up with a delay -> rocks on conveyors, or humans on TI, etc.
 1. ~~stand on CB to enter door (moving CB, large CB)~~
 1. ride CB, push PB multiple times?
-1. bring one CB around in a loop multiple times
+1. bring one CB around in a loop multiple times - push PB over FP bridge?
 1. burn bush to release CB
 1. water in to slow CB
 1. ~~elevator to stop CB~~
@@ -179,6 +180,8 @@
 1. doors sit on CB, get CB / PB under door to reach higher?
 1. key under CB
 1. whip water into spike pit
+1. move CB rooms from Dwelling ot here
+
 
 ##Ice Caves
 1. parachute level - give parachute at entrance
@@ -198,6 +201,16 @@
 1. throw mine at pipe in the right place
 1. plumbus claw game w/ robot
 1. UFO excavation
+1. jump on waffle boxes with elevators on them
+1. move elevator-only rooms from Jungle
+1. Push PB to up-pipes
+1. UFO jumps
+1. Cape maneuvers - float down spike stairway, tight w/ ceiling spikes
+1. quad jump with Turkey
+1. Whip mine while floating
+1. Throw rock down while floating
+1. Jump off FP
+1. YEET self off of forcefield over spikes. Free heal after :)
 
 # Questions
 1. Does TNT on a FP survive a fall? PB?
