@@ -190,17 +190,17 @@
 1. death waffles, lasers, arrow traps
 
 ##Neo Babylon
-1. give Vlad's cape
+1. ~~give Vlad's cape~~
 1. mech escort / excavation
 1. plasma cannon precise excavation
-1. death waffle guantlet
+1. ~~death waffle guantlet~~
 1. giant frog excavation
 1. pipe puzzle, plumbus puzzle
 1. go in pipe the right way
 1. trigger room by going through pipe first
 1. throw mine at pipe in the right place
 1. plumbus claw game w/ robot
-1. UFO excavation
+1. ~~UFO excavation~~
 1. jump on waffle boxes with elevators on them
 1. move elevator-only rooms from Jungle
 1. Push PB to up-pipes
@@ -209,13 +209,15 @@
 1. quad jump with Turkey
 1. Whip mine while floating
 1. Throw rock down while floating
-1. Jump off FP
+1. ~~Jump off FP~~
 1. Mushroom rooms?
 1. Lamassu excavation
 1. you can push elevator if it lands on a PB/TNT
 1. TNT/PB under elevator
 1. Guide TNT on elevators through torches - torches ignite TNT
 1. YEET self off of forcefield over spikes. Free heal after :)
+1. Room full of bones and cavemen and Waffles
+1. upside down spikes with springs on top?
 
 # Questions
 1. Does TNT on a FP survive a fall? PB?

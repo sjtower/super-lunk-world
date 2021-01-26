@@ -58,10 +58,14 @@
 1. Crates and treasure can automatically appear if you have a natural corner in the level
 1. Seems like switches and doors are only usable in certain levels (tidepool, vlad's, COG, Eggplant)
 
-### Notes on Traps
+### Notes on Traps and Enemies
 
 #### Spikes
 1. Can only be placed on dirt, will break upon spawning if placed on minewood, stone, pagoda, platforms etc.
+
+#### Upside-down Spikes
+1. can be placed anywhere
+1. Spring trap can be placed on top
 
 #### Big Spear Trap
 1. takes up two tiles, starts from leftmost tile
@@ -71,7 +75,7 @@
 1. There must be 6 tiles minimum between the log (T) and the idol (I)
 
 #### spring trap
-1. does not work if placed under a platform
+1. does not work if placed under a anything but an empty space
 
 #### lava
 1. can be pushed through kitty-corner openings via PBs
@@ -103,6 +107,11 @@
 #### Elevators
 1. you can push elevator if it lands on a PB/TNT
 
+### Enemies
+
+1. Imp: You can spawn an imp without their cauldron if you spawn them in a 1-tile high space.
+1. Giant Frog: requires a back layer with connected door
+
 # Things to test
 1. Entrance/exit on machine big/wide/tall rooms?
 1. will oldhunter kill vlad anywhere? Or do we have to meet him somewhere first? Same level?
@@ -120,10 +129,6 @@
 # Overlunky
 
 1. If you spawn a door from camp, you will respawn at that level on death/restart
-
-## Spwan notes
-
-1. You can spawn an imp without their cauldron if you spawn them in a 1-tile high space.
 
 ### cannot spawn directly
 1. hornedlizard
