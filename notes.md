@@ -100,6 +100,9 @@
 #### Quicksand
 1. if platform is placed below quicksand, player cannot dop below it
 
+#### Elevators
+1. you can push elevator if it lands on a PB/TNT
+
 # Things to test
 1. Entrance/exit on machine big/wide/tall rooms?
 1. will oldhunter kill vlad anywhere? Or do we have to meet him somewhere first? Same level?

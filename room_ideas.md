@@ -210,6 +210,11 @@
 1. Whip mine while floating
 1. Throw rock down while floating
 1. Jump off FP
+1. Mushroom rooms?
+1. Lamassu excavation
+1. you can push elevator if it lands on a PB/TNT
+1. TNT/PB under elevator
+1. Guide TNT on elevators through torches - torches ignite TNT
 1. YEET self off of forcefield over spikes. Free heal after :)
 
 # Questions

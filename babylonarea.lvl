@@ -14,9 +14,9 @@
 \-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
 //\-max_liquid_particles 2000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
 //\-flagged_liquid_rooms 6					// Number of random rooms that will be flagged for being eligible to spawn liquid
-\-machine_bigroom_chance 1					// 1/N chance of spawning a machine big room (default = 0)
+\-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
 \-machine_wideroom_chance 0					// 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 6					// 1/N chance of spawning a machine tall room (default = 0)
+\-machine_tallroom_chance 0					// 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
 // ------------------------------
@@ -50,6 +50,8 @@
 \?timed_forcefield			)
 \?forcefield_top			'
 \?elevator					e
+\?clover					Q
+\?litwalltorch				O
 
 \?falling_platform			F
 
@@ -59,6 +61,8 @@
 
 //\?zoo_exhibit				z
 
+\?honey_upwards			    }
+
 \?regenerating_block		r
 \?bigspear_trap				C
 \?bone_block				f
@@ -66,12 +70,17 @@
 
 \?giant_frog				n
 
+\?powder_keg				o
+\?landmine				    ]
+\?thinice					I
+
 //\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
 \?litwalltorch				O
 \?mushroom_base				M
 
-\?lamassu					U
-\?olmite					o
+\?ufo						U
+\?lamassu					S
+\?olmite					l
 \?empty_mech				m
 
 //\?altar						x	// Each side of the altar
@@ -82,9 +91,9 @@
 	
 \?shop_sign					ö
 \?shop_door					ö
-\?lamp_hang					l
+\?lamp_hang					ö
 \?shop_wall					ö
-\?shop_item					S
+\?shop_item					ö
 \?wanted_poster				ö
 \?shopkeeper				$	// Shopkeeper and items
 
@@ -106,6 +115,7 @@
 
 \+olmite			0
 \+ufo				0
+\+lamassu           0
 \+critterdrone		60
 
 // ------------------------------
@@ -156,7 +166,7 @@
 ========00
 0000000000
 0000000000
-00========
+====00====
 
 ////////////////////////////////////////////////////////////////////////////////
 \.exit
@@ -212,54 +222,70 @@
 \.path_normal
 ////////////////////////////////////////////////////////////////////////////////
 
-=======--=
-0000000000
-0000000000
-0000000000
-5000050000
-0000000000
-0000000000
+//death waffle gauntlet
+\!flip
 ==========
+1004000001
+0011111100
+0011111100
+01AA0AAA10
+1111111111
+1111111111
+1111111111
+
+//death waffle gauntlet 2
+==========
+100f00f001
+00A1LL1A00
+001ALLA100
+00A1LL1A00
+1F100001F1
+1000110001
+1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
 ////////////////////////////////////////////////////////////////////////////////
 
-00======00
-0000000000
-0000000000
-0000000000
-5000000=00
-0000000=00
-00000=====
-==========
+//top pipe into FF
+\!flip
+====00EEE=
+==EEEE==E=
+==E==EEEE=
+00EEE0r000
+0000r0r000
+0000=0==00
+=000=0====
+=====)====
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop
 ////////////////////////////////////////////////////////////////////////////////
 
+//TNT on PB drop
 \!flip
 ==========
-000000====
+0000o0====
+0O00pp4000
+000====e==
 0000000000
-000000==e=
-0U00000000
-===0000000
-=====00000
-========0=
+0000000000
+=000000000
+XXXX==XXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
 ////////////////////////////////////////////////////////////////////////////////
 
-=0======0=
-000000000=
-e=========
-0000000000
-0=========
-0000000000
-0=========
-0000000000
+//UFO excavation top drop
+====E=====
+====E=====
+=000000U0=
+=00000000=
+==w====w==
+00=0000==0
+0=0=w=0==0
+==00=00===
 
 ////////////////////////////////////////////////////////////////////////////////
 \.idol				// Idol room
