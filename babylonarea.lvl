@@ -66,6 +66,8 @@
 
 \?spring_trap				g
 
+\?robot					    {
+
 \?regenerating_block		r
 \?bigspear_trap				C
 \?bone_block				f
@@ -250,6 +252,7 @@
 
 //Jump from FP cape check
 \!flip
+\!ignore
 1111111111
 0000110000
 p=0F11F0=p
@@ -258,6 +261,39 @@ p=000000=p
 =000O0000=
 =00000000=
 =********=
+
+//pipe puzzle 1
+\!ignore
+==========
+10EE00EE01
+0F100001F0
+001F00F100
+0010000100
+1F000000F1
+1F0F00F0F1
+1***))***1
+
+//throw mine at pipe in the right place - NOT WORKING not enough room
+\!ignore
+==========
+1000110001
+00]0110]00
+0010000100
+0F1>00<1F0
+1E******E1
+1EEEEEEEE1
+1XXXXXXXX1
+
+//path elevator smash 1
+//\!ignore
+----------
+-zee0000z-
+-e00ee000-
+f00000000f
+f00000000f
+f00000000f
+-000eeeee-
+----------
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
@@ -276,6 +312,7 @@ p=000000=p
 =====)====
 
 //top waffle elevator dodge
+\!ignore
 1111001111
 100v00v001
 100e00e001
@@ -285,12 +322,23 @@ f00000000f
 1^^^^^^^^1
 1111111111
 
+//PB to up pipes
+EEE1001EEE
+E1E0000E1E
+E10000001E
+EA000000AE
+0100000010
+0100000010
+1100o00011
+1111AA1111
+
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop
 ////////////////////////////////////////////////////////////////////////////////
 
 //TNT on PB drop
 \!flip
+\!ignore
 ==========
 0000o0====
 0O00pp4000
@@ -300,9 +348,10 @@ f00000000f
 =000000000
 XXXX==XXXX
 
-//Giant Frog excavation
+//Giant Frog excavation drop
 \!flip
 \!dual
+\!ignore
 ========== ==========
 =00000000= ====000===
 00000n0000 ====0DO===
@@ -311,6 +360,17 @@ XXXX==XXXX
 X1^^00^^1X ==========
 X111==111X ==========
 XXXX==XXXX ==========
+
+//plumbus claw game drop
+\!flip
+====B=====
+0000000000
+0O=pppp=00
+00=0000=00
+00X{00{X00
+=0pXXXXp0=
+=e000000e=
+XXXX==XXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop

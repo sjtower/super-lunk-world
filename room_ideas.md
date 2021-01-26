@@ -194,14 +194,15 @@
 1. mech escort / excavation
 1. plasma cannon precise excavation
 1. ~~death waffle guantlet~~
-1. giant frog excavation
-1. pipe puzzle, plumbus puzzle
+1. ~~giant frog excavation~~
+1. pipe puzzle 
+1. plumbus puzzle
 1. go in pipe the right way
 1. trigger room by going through pipe first
 1. throw mine at pipe in the right place
 1. plumbus claw game w/ robot
 1. ~~UFO excavation~~
-1. jump on waffle boxes with elevators on them
+1. ~~jump on waffle boxes with elevators on them~~
 1. move elevator-only rooms from Jungle
 1. Push PB to up-pipes
 1. UFO jumps
@@ -218,6 +219,7 @@
 1. YEET self off of forcefield over spikes. Free heal after :)
 1. Room full of bones and cavemen and Waffles
 1. upside down spikes with springs on top?
+1. push TNT through waffles
 
 # Questions
 1. Does TNT on a FP survive a fall? PB?
