@@ -67,6 +67,7 @@
 \?spring_trap				g
 
 \?robot					    {
+\?turkey					u
 
 \?regenerating_block		r
 \?bigspear_trap				C
@@ -285,7 +286,7 @@ p=000000=p
 1XXXXXXXX1
 
 //path elevator smash 1
-//\!ignore
+\!ignore
 ----------
 -zee0000z-
 -e00ee000-
@@ -294,6 +295,50 @@ f00000000f
 f00000000f
 -000eeeee-
 ----------
+
+//UFO jumps 1
+\!flip
+0000110000
+0=001100=0
+p=00FF00=p
+p=000000=p
+p=000000=p
+XX00O000XX
+XUf0000fUX
+XXXXXXXXXX
+
+//UFO jumps 2
+\!flip
+1110000111
+1100XX0011
+1100XX0011
+1000XX0001
+0000XX0000
+00O0XX00O0
+X00FU0F00X
+XXXXXXXXXX
+
+//Turkey jump 1
+\!flip
+1100000011
+1100))0011
+1100==0011
+1000==0001
+0000==0000
+0000==0000
+000Fu0F000
+==========
+
+//Turkey jump 2
+\!flip
+1111111111
+0001001000
+0100000010
+p100ww001p
+0111ww1110
+p10011001p
+000Fu0F000
+XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
@@ -323,6 +368,7 @@ f00000000f
 1111111111
 
 //PB to up pipes
+\!ignore
 EEE1001EEE
 E1E0000E1E
 E10000001E
@@ -331,6 +377,17 @@ EA000000AE
 0100000010
 1100o00011
 1111AA1111
+
+//UFO top
+\!flip
+1110kk0111
+1000rr0001
+1000000001
+10FFFFFF01
+1f00U000f1
+X********X
+XXXXXXXXXX
+X========X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop
@@ -361,8 +418,9 @@ X1^^00^^1X ==========
 X111==111X ==========
 XXXX==XXXX ==========
 
-//plumbus claw game drop
+//plumbus claw game drop - DUMB consider redesign
 \!flip
+\!ignore
 ====B=====
 0000000000
 0O=pppp=00
@@ -371,6 +429,17 @@ XXXX==XXXX ==========
 =0pXXXXp0=
 =e000000e=
 XXXX==XXXX
+
+//smack UFO drop
+\!flip
+==========
+=000U0000=
+=O0000000=
+00p0000p00
+0p000000p0
+000X**X000
+000X11X000
+XXXX00XXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
@@ -398,6 +467,7 @@ XXXX==XXXX
 ====00====
 
 //Spring spike cape top drop
+\!flip
 ====0=====
 =1v0^1111=
 =10111111=

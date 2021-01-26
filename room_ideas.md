@@ -203,10 +203,10 @@
 1. plumbus claw game w/ robot
 1. ~~UFO excavation~~
 1. ~~jump on waffle boxes with elevators on them~~
-1. move elevator-only rooms from Jungle
-1. Push PB to up-pipes
-1. UFO jumps
-1. Cape maneuvers - float down spike stairway, tight w/ ceiling spikes
+1. ~~move elevator-only rooms from Jungle~~
+1. ~~Push PB to up-pipes~~
+1. ~~UFO jumps~~
+1. ~~Cape maneuvers - float down spike stairway, tight w/ ceiling spikes~~
 1. quad jump with Turkey
 1. Whip mine while floating
 1. Throw rock down while floating
