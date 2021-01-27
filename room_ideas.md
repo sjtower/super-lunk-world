@@ -213,13 +213,14 @@
 1. ~~Jump off FP~~
 1. Mushroom rooms?
 1. Lamassu excavation
-1. you can push elevator if it lands on a PB/TNT
+1. ~~you can push elevator if it lands on a PB/TNT~~
 1. TNT/PB under elevator
 1. Guide TNT on elevators through torches - torches ignite TNT
 1. YEET self off of forcefield over spikes. Free heal after :)
 1. ~~Room full of bones and cavemen and Waffles~~
 1. upside down spikes with springs on top?
 1. push TNT through waffles
+1. float down and body lasers on opposite sides
 
 # Questions
 1. Does TNT on a FP survive a fall? PB?
