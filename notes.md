@@ -150,6 +150,8 @@
 1. you do not need to preserve %ls present in the original string
 1. Falling platforms now trigger when a PB is on them & when another FP hits it
 
+# Setups
+1. If you want a corpse on bramble, place FP with pots/rocks on top around the enemy so they won't damage jump away
 
 ### Room counts
 
@@ -178,3 +180,6 @@
 1. Top: 10
 1. Drop: 10
 1. Top/Drop: 9
+1. Big: 3
+1. Wide: 4
+1. Tall: 3

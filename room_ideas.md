@@ -222,16 +222,17 @@
 1. upside down spikes with springs on top?
 1. push TNT through waffles
 1. ~~float down and body lasers on opposite sides~~
-1. activate mine and then whip away
+1. ~~activate mine and then whip away~~
 1. ~~whip UFO into wall to open~~
 1. ~~more bramble jumps to test cape dexterity~~
 1. enter door on FP, falling PB
 1. Throw mine into lava with body to excavate 
-1. carry mine through laser traps / FF
+1. ~~carry mine through laser traps / FF~~
 1. use FF as protection for mine, self
 1. throw mine at laser trap, refect off FF
 1. spring traps on bramble
 1. time mech shot through FF, elevators, lava trap?
+1. push PB into laser?
 1. put back door at exit, could I force an easy Usahbti room w/ plasma cannon
 
 # Questions
