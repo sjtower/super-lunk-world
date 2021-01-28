@@ -172,3 +172,6 @@
 1. Big: 3
 1. Wide: 3
 1. Tall: 5
+
+#### Neo Babylon
+1. Path: 21

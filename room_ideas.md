@@ -181,6 +181,7 @@
 1. key under CB
 1. whip water into spike pit
 1. move CB rooms from Dwelling ot here
+1. Douse torch to allow TNT through
 
 
 ##Ice Caves
@@ -195,9 +196,9 @@
 1. plasma cannon precise excavation
 1. ~~death waffle guantlet~~
 1. ~~giant frog excavation~~
-1. pipe puzzle 
+1. ~~pipe puzzle~~ 
 1. plumbus puzzle
-1. go in pipe the right way
+1. ~~go in pipe the right way~~
 1. trigger room by going through pipe first
 1. throw mine at pipe in the right place
 1. plumbus claw game w/ robot
@@ -214,7 +215,7 @@
 1. Mushroom rooms?
 1. Lamassu excavation
 1. ~~you can push elevator if it lands on a PB/TNT~~
-1. TNT/PB under elevator
+1. ~~TNT/PB under elevator~~
 1. Guide TNT on elevators through torches - torches ignite TNT
 1. YEET self off of forcefield over spikes. Free heal after :)
 1. ~~Room full of bones and cavemen and Waffles~~
@@ -222,9 +223,14 @@
 1. push TNT through waffles
 1. ~~float down and body lasers on opposite sides~~
 1. activate mine and then whip away
-1. whip UFO into wall to open
-1. more bramble jumps to test cape dexterity
+1. ~~whip UFO into wall to open~~
+1. ~~more bramble jumps to test cape dexterity~~
 1. enter door on FP, falling PB
+1. Throw mine into lava with body to excavate 
+1. carry mine through laser traps / FF
+1. use FF as protection for mine, self
+1. throw mine at laser trap, refect off FF
+1. put back door at exit, could I force an easy Usahbti room w/ plasma cannon
 
 # Questions
 1. Does TNT on a FP survive a fall? PB?

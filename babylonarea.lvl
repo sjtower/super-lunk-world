@@ -325,6 +325,7 @@ XXXXXXXXXX
 
 //fake UFO jumps
 \!flip
+\!ignore
 0000110000
 0=001100=0
 p=000000=p
@@ -408,6 +409,7 @@ XX)XXXX)XX
 
 //double-jump up bramble
 \!flip
+\!ignore
 1111111111
 1111111111
 1110000111
@@ -431,6 +433,7 @@ XX)XXXX)XX
 
 //Whip UFO right way
 \!flip
+\!ignore
 ==========
 00======00
 0F000000F0
@@ -438,6 +441,41 @@ p=000000=p
 p==0000==p
 p==000U==p
 ===0000z==
+XXXXXXXXXX
+
+//Guide TNT though torches
+\!flip
+\!ignore
+==========
+00======00
+0F000000F0
+p=k0o00k=p
+p==eeee==p
+p=A0000==p
+===0000z==
+XXXXXXXXXX
+
+//Carry mine though lasers
+\!flip
+\!ignore
+=]======]=
+0r='=='=r0
+0F000000F0
+pz000000zp
+p=000000=p
+p==0000==p
+===)00)===
+XXXXXXXXXX
+
+//whip active mine
+\!flip
+=]======]=
+0r='=='=r0
+0F000000F0
+p=000000=p
+p=00==00=p
+p**0000**p
+===)00)===
 XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -516,6 +554,7 @@ p0000000zp
 
 //float dodge bramble top
 \!flip
+\!ignore
 1111001111
 1***00**11
 101*000011
@@ -527,6 +566,7 @@ p0000000zp
 
 //Whip UFO right way top
 \!flip
+\!ignore
 ====00====
 =000pp000=
 =00000000=
@@ -534,6 +574,28 @@ p0000000zp
 ==000000==
 0=0000U0=0
 ^z000000z^
+XXXXXXXXXX
+
+//Whip mine while floating down top
+\!flip
+====pp====
+=00000000=
+=0]0**0]0=
+=0*0000*0=
+=00000000=
+=00000000=
+=z000000z=
+XXXXXXXXXX
+
+//whip active mine top
+\!flip
+===]00]===
+=0='00'=0=
+=00000000=
+=00000000=
+=000II000=
+=**0000**=
+===)00)z==
 XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -626,6 +688,7 @@ p===00z==p
 ====00====
 
 //Pick pipe drop
+\!ignore
 \!flip
 \!dual
 ========== ==========
@@ -636,6 +699,29 @@ E=E=AE=E=E E0E0==E0E=
 0=E/EE=E=^ E00DEEE0E=
 O=0F=D=0T= E0E=XD0EE=
 ==**00==== EEEXXXXXXX
+
+//mine through traps drop
+\!ignore
+\!flip
+==========
+00]0000]00
+p==A00A==p
+p=000000=p
+p=000000zp
+pz000000=p
+X=00))00=X
+XXXX==XXXX
+
+//whip mine drop
+\!flip
+==========
+00]0000]00
+p==A00A==p
+p=000000=p
+p=000000=p
+p=000000=p
+X=******=X
+XXXX00XXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
@@ -691,6 +777,7 @@ AffffffffA
 
 //guide TNT through traps top-drop
 \!flip
+\!ignore
 ====00====
 =00o00000=
 =ppppppe0=
@@ -702,6 +789,7 @@ XXXX==XXXX
 
 //float body lasers top-drop
 \!flip
+\!ignore
 ===pppp===
 ===0000z==
 ==z0000===
@@ -713,6 +801,7 @@ XXXX==XXXX
 
 //float dodge bramble top-drop
 \!flip
+\!ignore
 1111001111
 ***000***1
 *0000000*1
@@ -721,6 +810,28 @@ XXXX==XXXX
 1*000000*1
 1***00***1
 ====00====
+
+//Whip mine while floating down top-drop
+\!flip
+====pp====
+=0000]000=
+=0*00*00*=
+=00000000=
+=00000000=
+=00000000=
+=z000l00z=
+XX======XX
+
+//whip mine top-drop
+\!flip
+====00I===
+=00000]00=
+=00000*00=
+=*****^00=
+=0000*000=
+=0000*00X=
+=0000**0X=
+XX0000**XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.idol				// Idol room
