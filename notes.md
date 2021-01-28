@@ -175,3 +175,6 @@
 
 #### Neo Babylon
 1. Path: 21
+1. Top: 10
+1. Drop: 10
+1. Top/Drop: 9

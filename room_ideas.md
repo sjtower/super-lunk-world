@@ -192,7 +192,7 @@
 
 ##Neo Babylon
 1. ~~give Vlad's cape~~
-1. mech escort / excavation
+1. ~~mech escort / excavation~~
 1. plasma cannon precise excavation
 1. ~~death waffle guantlet~~
 1. ~~giant frog excavation~~
@@ -209,7 +209,7 @@
 1. ~~UFO jumps~~
 1. ~~Cape maneuvers - float down spike stairway, tight w/ ceiling spikes~~
 1. quad jump with Turkey
-1. Whip mine while floating
+1. ~~Whip mine while floating~~
 1. Throw rock down while floating
 1. ~~Jump off FP~~
 1. Mushroom rooms?
@@ -230,6 +230,8 @@
 1. carry mine through laser traps / FF
 1. use FF as protection for mine, self
 1. throw mine at laser trap, refect off FF
+1. spring traps on bramble
+1. time mech shot through FF, elevators, lava trap?
 1. put back door at exit, could I force an easy Usahbti room w/ plasma cannon
 
 # Questions
