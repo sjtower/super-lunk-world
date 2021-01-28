@@ -41,6 +41,7 @@
 \?ladder_plat				P	// Ladder with platform across it
 \?door						9	// Exit or entrance
 \?door2						D	// Door to other Layer
+\?locked_door				/	// Locked door to other Layer
 \?spikes					^
 \?upsidedown_spikes			v
 \?push_block				4
@@ -322,11 +323,11 @@ XXXXXXXXXX
 f00FU0F00f
 XXXXXXXXXX
 
-//UFO jumps 3 -- NEEDS MOER TESTING
+//fake UFO jumps
 \!flip
 0000110000
 0=001100=0
-p=00FF00=p
+p=000000=p
 p=000000=p
 p=000000=p
 pX00O000Xp
@@ -395,6 +396,7 @@ XX)XXXX)XX
 
 //double-jump over bramble
 \!flip
+\!ignore
 1111111111
 1111111111
 1110000111
@@ -404,8 +406,20 @@ XX)XXXX)XX
 0)**==**)0
 ===****===
 
+//double-jump up bramble
+\!flip
+1111111111
+1111111111
+1110000111
+1**0000111
+0*0*0*0*00
+0***0*0**0
+00000*0000
+==========
+
 //olmites
 \!flip
+\!ignore
 1111111111
 1110000111
 110OllO011
@@ -414,6 +428,17 @@ XX)XXXX)XX
 0l======l0
 0========0
 ==******==
+
+//Whip UFO right way
+\!flip
+==========
+00======00
+0F000000F0
+p=000000=p
+p==0000==p
+p==000U==p
+===0000z==
+XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
@@ -466,6 +491,8 @@ XXXXXXXXXX
 X========X
 
 //guide TNT through traps top - TOO HARD / JANKY?
+\!flip
+\!ignore
 ====00====
 X00o00000X
 XpAppppe0X
@@ -476,6 +503,7 @@ XX040000XX
 XXXXXXXXXX
 
 //float body lasers top
+\!ignore
 \!flip
 ===pppp===
 ==000000==
@@ -485,6 +513,28 @@ pz00000A=p
 p0000000zp
 =z00000000
 ==========
+
+//float dodge bramble top
+\!flip
+1111001111
+1***00**11
+101*000011
+000***0001
+0*00000*00
+0*00000*00
+0**0000**0
+========*=
+
+//Whip UFO right way top
+\!flip
+====00====
+=000pp000=
+=00000000=
+=00000000=
+==000000==
+0=0000U0=0
+^z000000z^
+XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop
@@ -565,6 +615,7 @@ XXXX==XXXX
 
 //float body lasers drop
 \!flip
+\!ignore
 ==========
 0000000000
 p==z00===p
@@ -573,6 +624,18 @@ p==z00A==p
 p===00z==p
 ===z00====
 ====00====
+
+//Pick pipe drop
+\!flip
+\!dual
+========== ==========
+EE000000EE EEEEEEE00=
+E=E=E==E=E E00]A0E0E=
+E=E=EEAE=E E0EEE=E0E=
+E=E=AE=E=E E0E0==E0E=
+0=E/EE=E=^ E00DEEE0E=
+O=0F=D=0T= E0E=XD0EE=
+==**00==== EEEXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_drop_notop
@@ -646,6 +709,17 @@ XXXX==XXXX
 ==z0000===
 ===0000z==
 ==z0000===
+====00====
+
+//float dodge bramble top-drop
+\!flip
+1111001111
+***000***1
+*0000000*1
+100***0001
+1*000*00*1
+1*000000*1
+1***00***1
 ====00====
 
 ////////////////////////////////////////////////////////////////////////////////

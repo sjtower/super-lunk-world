@@ -8,6 +8,7 @@ No
 <SYS_SPECIAL3/>
 <SYS_LEFT/>
 <SYS_RIGHT/>
+<SYS_ACCEPT/> OK
 <LOG_ACCEPT/> Continue
 Continue
 Cancel
@@ -99,8 +100,11 @@ Battle against friends or bots in the deadly Arena.
 ########################################
 Invite
 <SYS_ACCEPT/> Ready
-Press <SYS_SPECIAL2/> to invite
+<SYS_SPECIAL3/> Code
+<SYS_SPECIAL2/> Invite                <SYS_SPECIAL3/> Code
 <SYS_SPECIAL/> Search
+Enter Code
+Your Code:
 ########################################
 ## OPTIONS                            ##
 ########################################
@@ -134,6 +138,10 @@ Borderless Windowed
 Windowed
 Brightness
 Set the screen brightness.
+Bright Flashes
+Toggle bright flashes on and off. 
+On
+Off
 Visual Effects
 Lower VFX may improve performance.
 High
@@ -199,10 +207,6 @@ Off
 Low
 Medium
 High
-Bright Flashes
-Toggle bright flashes on and off.
-On
-Off
 Instant Restart
 Add an Instant Restart option to the Pause Menu.
 None
@@ -304,6 +308,7 @@ Cross-Play
 ## ENTER SEED SCREEN                  ##
 ########################################
 Enter Seed
+<SYS_ACCEPT/> Select    <SYS_SPECIAL/> Delete
 <SYS_ACCEPT/> Select    <SYS_SPECIAL/> Delete    <SYS_SPECIAL2/> Random
 Seed: %08X
 ########################################
@@ -319,7 +324,7 @@ QUICK SELECT
 <LOG_ROPE/> Quick Select
 <SYS_SPECIAL2/> Quick Select
 Press <LOG_START/> to access the Options Menu and change your control scheme.
-The blood moon has changed this place...
+The walls are shifting...
 ########################################
 ## ARENA                              ##
 ########################################
@@ -1679,31 +1684,31 @@ You feel forgiven.
 ########################################
 #### Shopkeeper
 ########################################
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
-The blood moon has changed something in this place. You should take the shortcuts once you find them. Good luck!
+Welcome to %ls's %ls!
+Welcome, Your Highness! Do you see anything of interest?
+# The following line is meant to be slightly mocking:
+Oh, hello, Your Majesty! See anything you like, heh heh?
+I'm completely sold out!
+General Store
+Clothing Shop
+Weapon Shop
+Specialty Shop
+Hired Hands Shop
+Pets Shop
+Dice House
+Play Dice
+The Dice House is closed! I'm out of items!
+You bet $%d! Now roll the dice!
+You rolled a %d!
+You lose.
+You win!
+You win a prize!
+Stop, thief!
+Vandal!
+Cheater!
+Wow, big spender! I'll remember you!
+# Buying an idol from the player:
+I'm happy to take that off your hands!
 ########################################
 #### Merchant
 ########################################
@@ -2250,7 +2255,7 @@ Ali
 Bob
 Cosmo
 Darwin
-Ear
+Earl
 Frank
 Garth
 Hakim

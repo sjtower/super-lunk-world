@@ -220,7 +220,11 @@
 1. ~~Room full of bones and cavemen and Waffles~~
 1. upside down spikes with springs on top?
 1. push TNT through waffles
-1. float down and body lasers on opposite sides
+1. ~~float down and body lasers on opposite sides~~
+1. activate mine and then whip away
+1. whip UFO into wall to open
+1. more bramble jumps to test cape dexterity
+1. enter door on FP, falling PB
 
 # Questions
 1. Does TNT on a FP survive a fall? PB?

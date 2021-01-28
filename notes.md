@@ -110,6 +110,9 @@
 #### Force Fields
 1. can block the generator block with TNT, and TNT will not explode
 
+#### Pipes
+1. Blocking a downward opening pipe with a platform will soft-lock the player
+
 ### Enemies
 
 1. Imp: You can spawn an imp without their cauldron if you spawn them in a 1-tile high space.
@@ -145,6 +148,7 @@
 
 1. strings files need to be the same number of lines or the game will crash
 1. you do not need to preserve %ls present in the original string
+1. Falling platforms now trigger when a PB is on them & when another FP hits it
 
 
 ### Room counts
