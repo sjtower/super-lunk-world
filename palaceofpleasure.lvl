@@ -2,7 +2,7 @@
 //  PALACE OF PLEASURE LEVEL (BABYLON)
 // ------------------------------
 
-\-size 4 5									// level size in rooms
+\-size 7 7									// level size in rooms
 \-back_room_chance 0						// % chance of a second room (default = 5%)
 \-back_room_interconnection_chance 0		// % chance of a second room interconnection (default = 20%)
 \-back_room_hidden_door_chance 0			// 1/N chance of a hidden door (default = 500)
@@ -12,28 +12,32 @@
 \-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
 \-floor_side_spread_chance 10				// 1/N chance of a spreadable floor spreading to its side (default = 10)
 \-floor_bottom_spread_chance 5				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-machine_bigroom_chance 1					// 1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance 1					// 1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance 1					// 1/N chance of spawning a machine tall room (default = 0)
+\-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
 
 // ------------------------------
 //  TILE CODES
 // ------------------------------
 
-\?palace_floor				u
+\?palace_floor				|
 \?treasure_vaultchest		R
-\?palace_entrance			C
+//\?palace_entrance			C
 \?palace_table				c
 \?palace_table_tray			j
-\?palace_chandelier			v
+//\?palace_chandelier			v
 \?palace_candle				h
 \?palace_bookcase			B
 \?litwalltorch				O
 \?elevator					V
-\?stone_floor				>
+//\?stone_floor				>
 \?bone_block				f
-\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
+//\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
 \?clover					Q
 \?cursed_pot				<
 
-\?madametusk				M
+\?madametusk				∩
 \?bodyguard					b
 
 // ------------------------------
@@ -52,80 +56,80 @@
 \.palaceofpleasure_0-0 // TOP FLOOR
 ////////////////////////////////////////////////////////////////////////////////
 
-uuuuuuuuuu
-u000v00u00
-u000000u00
-u000000u0B
-u000000uB0
-uhL000000B
-u0L0c00000
-uuPuuuuuuu
+||||||||||
+|000v00|00
+|000000|00
+|000000|0B
+|000000|B0
+|hL000000B
+|0L0c00000
+||P|||||||
 
 ////////////////////////////////////////////////////////////////////////////////
 \.palaceofpleasure_0-1 // Madame Tusk
 ////////////////////////////////////////////////////////////////////////////////
 
-uuuuuuuuuu
+||||||||||
 0v000000v0
 0000000000
 0000000000
 0000000000
-Bh00M000h0
-b00uuuu00b
-uuBuuuuBuu
+Bh000000h0
+b00||||00b
+||B||||B||
 
 ////////////////////////////////////////////////////////////////////////////////
 \.palaceofpleasure_0-2
 ////////////////////////////////////////////////////////////////////////////////
 
-uuuuuuuuuu
-00000v000u
-000000000u
-000000B00u
-00000B000u
-BB0j0000hu
-000c000L0u
-uuuuuuuPuu
+||||||||||
+00000v000|
+000000000|
+000000B00|
+00000B000|
+BB0j0000h|
+000c000L0|
+|||||||P||
 
 ////////////////////////////////////////////////////////////////////////////////
 \.palaceofpleasure_1-0 // BOTTOM FLOOR
 ////////////////////////////////////////////////////////////////////////////////
 
-uuLuuuuuuu
-uuL0v00000
-uuL000uu00
-00L000uu00
-I0LBBBuuh0
-uuL0000000
-uuL0b00000
-uuPuuuuuuu
+||L|||||||
+||L0v00000
+||L000||00
+00L000||00
+I0LBBB||h0
+||L0000000
+||L0b00000
+||P|||||||
 
 ////////////////////////////////////////////////////////////////////////////////
 \.palaceofpleasure_1-1 // Entrance
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0000000000 uu0uuuu0uu
-0000000000 0000v00000
-00=0000000 0000000000
-0000====00 0000000000
-0=0======0 0000000000
-0=000000== 00B0h000hB
-0=00b0C0=0 c00B00D000
-==V======= uuuuuuuuuu
+========== ||0||||0||
+00]0000]00 0000v00000
+p==A00A==p 0000000000
+p=000000=p 0000000000
+p=000000=p 0000000000
+p=000000=p 00B0h000hB
+X=******=X c00B00D000
+XXXX00XXXX ||||||||||
 
 ////////////////////////////////////////////////////////////////////////////////
 \.palaceofpleasure_1-2
 ////////////////////////////////////////////////////////////////////////////////
 
-uuuuuuuLuu
-00uQ0v0L0u
-00uu000L0u
-00ut000L0u
-0huuBBBL0u
-B000000Lhu
-00000b0L0u
-uuuuuuuuuu
+|||||||L||
+00|Q0v0L0|
+00||000L0|
+00|t000L0|
+0h||BBBL0|
+B000000Lh|
+00000b0L0|
+||||||||||
 
 ////////////////////////////////////////////////////////////////////////////////
 \.palaceofpleasure_2-0 // DUNGEON
@@ -197,11 +201,11 @@ uuuuuuuuuu
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0000000000 >>>>>>>>>>
-0000111100 000000000>
-0001111110 000000000>
-0001==1100 000000000>
-000===1==0 000000000>
-00000000=0 O00O00O00>
-0T000b0/11 000b000D0>
-011=====1= >>>>>>>>>>
+========== >>>>>>>>>>
+00]0000]00 000000000>
+p==A00A==p 000000000>
+p=000000=p 000000000>
+p=000000=p 000000000>
+p=000000=p O00O00O00>
+X=******=X 000b000D0>
+XXXX00XXXX >>>>>>>>>>

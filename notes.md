@@ -17,6 +17,11 @@
 1. Some worlds require a `machine_rewardroom_chance` > 0, and a valid room defined in the `\.machine_rewardroom` section
 1. All worlds except 1 require `\.coffin_unlockable	` section
 1. `\.coffin_player_vertical` & `\.coffin_player` are not required and can be removed
+1. The room engine does not like solids arranged diagonally, IE:
+    X0
+    0X 
+    X = solid 0 = air
+    The engine will fill in one of the air blocks with dirt. You can get around this by placing something like a platform or bones in the air spot.
 
 ## Level generation notes
 
@@ -57,6 +62,21 @@
 1. In order to have layer 2 rooms, you need all layer 2 sections in `generic.lvl`
 1. Crates and treasure can automatically appear if you have a natural corner in the level
 1. Seems like switches and doors are only usable in certain levels (tidepool, vlad's, COG, Eggplant)
+
+### Notes on specific worlds and levels
+1. 4-1, 4-3: Tusks entrance will appear on the path
+1. 6-2: Ushabti room is required (hallofushabti) and cannot be entirely filled in with dirt.
+    1. cannot be sized 1-1
+    1. entrance can be covered with dirt
+    1. Error displayed if more or less than 100 ushabti's are generated (won't crash)
+    1. Increasing the size of the level without altering the ushabti rooms will throw above error
+    1. 4 / 4 = 15 normal rooms @ 6 ushabti and one entrance @ 10 ushabti = 100 ushabti 
+    1. ushabti room will fill whole level, can figure out how to avoid error with math
+        1, EG: 6 / 6 room would be 5 normal rooms @ 2 ushabti each (70 total ushabti) and one entrance with 30 ushabti
+    1. hallofushabti takes priority for room size
+    1. ushabti dual entrance has 10 ushabtis by default. There are 5 ushabti rooms with 6 ushabti each 
+    1. cannot seem to generate big, tall, or wide rooms
+1. 6-3: Pleasure Palace entrance can spawn anywhere on or off the path along with treasure room entrance 
 
 ### Notes on Traps and Enemies
 

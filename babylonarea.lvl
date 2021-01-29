@@ -14,7 +14,7 @@
 \-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
 //\-max_liquid_particles 2000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
 //\-flagged_liquid_rooms 6					// Number of random rooms that will be flagged for being eligible to spawn liquid
-\-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
+\-machine_bigroom_chance 1					// 1/N chance of spawning a machine big room (default = 0)
 \-machine_wideroom_chance 1					// 1/N chance of spawning a machine wide room (default = 0)
 \-machine_tallroom_chance 1					// 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
@@ -106,7 +106,7 @@
 \?wanted_poster				ö
 \?shopkeeper				$	// Shopkeeper and items
 
-\?thief						J
+//\?thief						J
 
 \?lava						w
 \?lava%50%floor				a	// 50% chance of lava, %50 chance of floor
@@ -1180,7 +1180,7 @@ f**)***0=0
 \!dual
 0000000000 1111111111
 0000000000 1200000111
-0000000000 120J000001
+0000000000 1200000001
 0000000000 1111111101
 1111111011 1111111101
 1000000011 1000000001
