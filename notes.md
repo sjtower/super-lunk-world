@@ -138,6 +138,10 @@
 1. Imp: You can spawn an imp without their cauldron if you spawn them in a 1-tile high space.
 1. UFO: its range is 5 tiles for back & forth routine
 1. Giant Frog: requires a back layer with connected door
+1. Quillback
+    1. Normally, Quillback's roll will continue as long as he drops in height and destroys some floor?
+    1. Won't reset his rolling attack if he doesn't destroy anything
+    1. If rolls into a 4-wide hole with unbreakable blocks on both walls, he will bounce/climb all the way up after hitting a wall
 
 # Things to test
 1. Entrance/exit on machine big/wide/tall rooms?

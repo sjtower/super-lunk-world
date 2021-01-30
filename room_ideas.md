@@ -28,8 +28,9 @@
 
 ## Quillback escort
 1. require Quillback to get through a bedrock encased exit tunnel
-1. push down TNT
-1. TNT on crush blocks - send up
+1. ~~push down TNT~~
+1. TNT on crush blocks - send up - doesn't work :(
+1. SHotgun jump?
 
 ##Jungle / Volcana - prefer traps/enemies of these two levels
 1. ~~Climbing puzzles with trees~~
