@@ -143,6 +143,9 @@
     1. Won't reset his rolling attack if he doesn't destroy anything
     1. If rolls into a 4-wide hole with unbreakable blocks on both walls, he will bounce/climb all the way up after hitting a wall
     1. not effected by spring traps
+1. Olmec:
+    1. room 0-0 seems to be uneditable?
+    1. olmec seems to spawn in vanilla location regardless of placement
 
 # Things to test
 1. Entrance/exit on machine big/wide/tall rooms?

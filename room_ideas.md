@@ -122,7 +122,10 @@
 
 #Olmec
 1. Giddyup! Ride olmec through the level! dodge laval, upper-deckers. Don't get crushed!
-1. Give ankh bombs and rope after each boss 
+1. crush trap blocking, need to trigger up
+1. Give ankh bombs and rope after each boss - clashes with shortcuts? 
+1. ~~PB onto Olmec~~
+1. little gaps in ceiling, must fit into gaps or be crushed, shorter hallway
 
 #Temple / Tidepool
 1. ~~don't hit the door switch~~
@@ -183,6 +186,7 @@
 1. whip water into spike pit
 1. move CB rooms from Dwelling ot here
 1. Douse torch to allow TNT through
+1. put torch on CB, send over above bushes
 
 
 ##Ice Caves
