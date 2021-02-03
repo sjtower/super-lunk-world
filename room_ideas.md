@@ -126,6 +126,8 @@
 1. Give ankh bombs and rope after each boss - clashes with shortcuts? 
 1. ~~PB onto Olmec~~
 1. little gaps in ceiling, must fit into gaps or be crushed, shorter hallway
+1. moves slower if going right over many PBs??
+1. jump off olmec as he rises
 
 #Temple / Tidepool
 1. ~~don't hit the door switch~~
