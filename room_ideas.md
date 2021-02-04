@@ -196,6 +196,12 @@
 1. force use back layer to fight yetis?
 1. stuff on spring pads
 1. death waffles, lasers, arrow traps
+1. sticky trap dodge
+1. cavremen run at you
+1. lava drip / drain?
+1. does water drop parachute?
+1. whip ufo into floor/wall
+1. whipo something to open up TNT wall
 
 ##Neo Babylon
 1. ~~give Vlad's cape~~
