@@ -67,7 +67,9 @@
 
 ### Notes on specific worlds and levels
 1. 4-1, 4-3: Tusks entrance will appear on the path
-1. 5: height can be increased, but bottomlewss pit will always spawn at the same depth
+1. 5:
+    1. height can be increased, but bottomlewss pit will always spawn at the same depth
+    1. you can spawn liquids, but if any liquid drops off the bottom of the screen, the game will crash
 1. 6-2: Ushabti room is required (hallofushabti) and cannot be entirely filled in with dirt.
     1. cannot be sized 1-1
     1. entrance can be covered with dirt
