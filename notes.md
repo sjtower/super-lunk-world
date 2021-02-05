@@ -65,6 +65,7 @@
 
 ### Notes on specific worlds and levels
 1. 4-1, 4-3: Tusks entrance will appear on the path
+1. 5: height can be increased, but bottomlewss pit will always spawn at the same Y value
 1. 6-2: Ushabti room is required (hallofushabti) and cannot be entirely filled in with dirt.
     1. cannot be sized 1-1
     1. entrance can be covered with dirt
@@ -177,6 +178,8 @@
 1. strings files need to be the same number of lines or the game will crash
 1. you do not need to preserve %ls present in the original string
 1. Falling platforms now trigger when a PB is on them & when another FP hits it
+1. sequal: Can your next mod be named "Oliver's Twist"?
+    super big path that you need to ride a boulder and get of at certain points
 
 # Setups
 1. If you want a corpse on bramble, place FP with pots/rocks on top around the enemy so they won't damage jump away

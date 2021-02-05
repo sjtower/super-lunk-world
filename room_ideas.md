@@ -202,6 +202,10 @@
 1. does water drop parachute?
 1. whip ufo into floor/wall
 1. whipo something to open up TNT wall
+1. whip something to trigger arrow traps
+1. bushes & torches
+1. open lava onto bushes
+1. remove top room's floors, to allow dropping to side rooms (against a drop-top) and drop rooms
 
 ##Neo Babylon
 1. ~~give Vlad's cape~~
