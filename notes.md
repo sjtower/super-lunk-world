@@ -62,12 +62,12 @@
 1. In order to have layer 2 rooms, you need all layer 2 sections in `generic.lvl`
 1. Crates and treasure can automatically appear if you have a natural corner in the level
 1. Seems like switches and doors are only usable in certain levels (tidepool, vlad's, COG, Eggplant)
-1. You can override room sections that are defined in other files. For example, if you define a `.shop` section,
-    it will override the `\.shop` defined in `generic.lvl`
+1. You can combine room sections that are defined in other files. For example, if you define a `.shop` section,
+    it will combine with the `\.shop` defined in `generic.lvl` and rooms can be pulled from either section
 
 ### Notes on specific worlds and levels
 1. 4-1, 4-3: Tusks entrance will appear on the path
-1. 5: height can be increased, but bottomlewss pit will always spawn at the same Y value
+1. 5: height can be increased, but bottomlewss pit will always spawn at the same depth
 1. 6-2: Ushabti room is required (hallofushabti) and cannot be entirely filled in with dirt.
     1. cannot be sized 1-1
     1. entrance can be covered with dirt
