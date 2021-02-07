@@ -187,6 +187,8 @@
 
 # Setups
 1. If you want a corpse on bramble, place FP with pots/rocks on top around the enemy so they won't damage jump away
+1. an enemy on a FP will survive a fall into spikes, use to set up single-tile jumps.
+    1. sometimes the enemy dies, you can use robots which will not die
 
 ### Room counts
 

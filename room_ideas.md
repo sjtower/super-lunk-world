@@ -190,7 +190,6 @@
 1. Douse torch to allow TNT through
 1. put torch on CB, send over above bushes
 
-
 ##Ice Caves
 1. parachute level - give parachute at entrance
 1. force use back layer to fight yetis?
@@ -198,13 +197,14 @@
 1. death waffles, lasers, arrow traps
 1. sticky trap dodge
 1. cavremen run at you
-1. lava drip / drain?
+1. ~~lava drip / drain?~~ - causes crashes
 1. does water drop parachute?
 1. whip ufo into floor/wall
 1. whipo something to open up TNT wall
 1. whip something to trigger arrow traps
 1. bushes & torches
 1. open lava onto bushes
+1. back layer jump on yentis in spikes - put on FP to survive in spikes?
 1. remove top room's floors, to allow dropping to side rooms (against a drop-top) and drop rooms
 
 ##Neo Babylon
@@ -251,6 +251,9 @@
 1. time mech shot through FF, elevators, lava trap?
 1. push PB into laser?
 1. put back door at exit, could I force an easy Usahbti room w/ plasma cannon
+
+## Tiamat
+1. work way to top of arena where a log trap can be triggered all the way down to kill
 
 # Questions
 1. Does TNT on a FP survive a fall? PB?
