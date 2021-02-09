@@ -88,6 +88,11 @@
 #### Spikes
 1. Can only be placed on dirt, will break upon spawning if placed on minewood, stone, pagoda, platforms etc.
 
+#### Powder Keg (TNT)
+1. Will explode if it touches a lit torch (hanging on the wall or thrown by the player)
+1. Will explode if dropped any distance
+1. Will not explode if placed on top of a PB and pushed over a ledge
+
 #### Upside-down Spikes
 1. can be placed anywhere
 1. Spring trap can be placed on top
@@ -122,7 +127,8 @@
 1. Mummy locusts will not trigger switches
 
 #### Crush Blocks
-1. will slow down in water
+1. will slow down in water and lava
+1. will trigger when there is exactly 5 tiles between the player and the crush block 
 1. You cannot push a PB on to a moving CB because the PB will bounce upon landing and fall off the CB.
 1. Big crush blocks are 2x2 tiles big. Spawn location can vary - placement conforms to surrounding blocks?
 
@@ -135,6 +141,10 @@
 #### Force Fields
 1. can block the generator block with TNT, and TNT will not explode
 
+#### Horizontal forcefields
+1. cannot spawn directly, only in Tiamat's lair
+1. will pass through bone blocks
+
 #### Pipes
 1. Blocking a downward opening pipe with a platform will soft-lock the player
 
@@ -142,6 +152,10 @@
 
 1. Imp: You can spawn an imp without their cauldron if you spawn them in a 1-tile high space.
 1. UFO: its range is 5 tiles for back & forth routine
+1. Olmite:
+    1. Will spawn in random stacks of 1-4
+    1. Can limit height by placing blocks over the Olmite
+    1. If you want one Olmite only, put them on a falling platform with a solid block above
 1. Giant Frog: requires a back layer with connected door
 1. Quillback
     1. Normally, Quillback's roll will continue as long as he drops in height and destroys some floor?
@@ -151,6 +165,8 @@
 1. Olmec:
     1. room 0-0 seems to be uneditable?
     1. olmec seems to spawn in vanilla location regardless of placement
+1. Tiamat:
+    1. Does not have a physical hitbox, so things like falling blocks/log trap/TNT will not affect her
 
 # Things to test
 1. Entrance/exit on machine big/wide/tall rooms?

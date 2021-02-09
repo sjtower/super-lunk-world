@@ -1,72 +1,111 @@
 // ------------------------------
 //  TIAMAT (BABYLON)
 // ------------------------------
-
-\-size 3 11									// level size in rooms
-\-back_room_chance 0						// % chance of a second room (default = 5%)
-\-back_room_interconnection_chance 0		// % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance 0			// 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance 0		// 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance 0							// 1/N chance of a mount (default = 5000)
-\-altar_room_chance 0						// 1/N chance of an altar room (default = 14)
-\-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-max_liquid_particles 2000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
-\-flagged_liquid_rooms 7					// Number of random rooms that will be flagged for being eligible to spawn liquid
-
+\-size 3 11  //    level size in rooms
+\-back_room_chance 0 //    % chance of a second room (default = 5%)
+\-back_room_interconnection_chance 0 //    % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance 0 //    1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance 0 //    1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance 0 //    1/N chance of a mount (default = 5000)
+\-altar_room_chance 0 //    1/N chance of an altar room (default = 14)
+\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance 0 //    1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance 0 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-max_liquid_particles 2000 //    Maximum number of liquid drops that can be created until no more liquid rooms are allowed
+\-flagged_liquid_rooms 7 //    Number of random rooms that will be flagged for being eligible to spawn liquid
 // ------------------------------
 //  TILE CODES
 // ------------------------------
-
-\?chunk_air					6
-
-\?empty						0
-\?floor						1
-\?floor%50					2	// 50% chance of floor, 50% chance of empty
-\?babylon_floor				=
-\?floor_hard				X	// Indestructible ("hard") floor
-\?floor_hard%50%floor		Y	// 50% chance of hard floor, 50% chance of regular floor
-\?adjacent_floor			Z	// Hard floor or empty depending on whether this leads to another second layer room
-\?ladder					L
-\?ladder_plat				P	// Ladder with platform across it
-\?door						9	// Exit or entrance
-\?door2						D	// Door to other Layer
-\?spikes					^
-\?push_block				4
-\?laser_trap				^
-\?spark_trap				A
-\?timed_forcefield			)
-\?forcefield_top			'
-
-\?tiamat					T
-\?olmecship					G
-
-\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
-
-\?altar						x	// Each side of the altar
-\?vault_wall				|	// Vault wall
-
-\?shop_sign					K
-\?shop_door					k
-\?lamp_hang					l
-\?shop_wall					.
-\?shop_item					S
-\?wanted_poster				W
-\?shopkeeper				$	// Shopkeeper and items
-	
-\?water						w
-
+\?chunk_air 6
+\?empty 0
+\?floor 1
+\?floor%50 2
+\?babylon_floor =
+\?floor_hard X
+\?floor_hard%50%floor Y
+\?adjacent_floor Z
+\?ladder L
+\?ladder_plat P
+\?door 9
+\?door2 D
+\?spikes ^
+\?push_block 4
+\?spark_trap A
+\?timed_forcefield )
+\?forcefield_top '
+\?tiamat T
+\?olmecship G
+\?treasure t
+\?altar x
+\?vault_wall |
+\?shop_sign K
+\?shop_door k
+\?lamp_hang l
+\?shop_wall .
+\?shop_item S
+\?wanted_poster W
+\?shopkeeper $
+\?water w
+\?locked_door /
+\?stone_floor +
+\?cursed_pot u
+\?litwalltorch O
+\?haunted_corpse 7
+\?bone_block f
+\?shop_wall%50 ;
+\?shop_woodwall :
+\?die %
+\?merchant #
+\?cavemanshopkeeper &
+\?sleeping_hiredhand \
+\?forcefield ?
+\?woodenlog_trap a
+\?woodenlog_trap_ceiling b
+\?idol_floor c
+\?idol e
+\?powder_keg g
+\?mattock h
+\?spring_trap i
+\?platform j
+\?landmine m
+\?thief J
+\?lava d
+\?olmite n
+\?falling_platform o
+\?laser_trap p
+\?crushtrap q
+\?upsidedown_spikes r
+\?caveman s
+\?honey_upwards v
+\?bush_block y
+\?octopus z
+\?key B
+\?crushtraplarge C
+\?elevator E
+\?honey_downwards F
+\?arrow_trap H
+\?thorn_vine I
+\?thinice M
+\?rock N
+\?minewood_floor_hanging_hide Q
+\?minewood_floor_noreplace R
+\?cookfire U
+\?caveman_asleep V
+\?necromancer <
+\?yeti >
+\?ufo ,
+\?cavemanboss ]
+\?snake [
+\?turkey {
+\?imp }
 // ------------------------------
 //  LEVEL CHANCES
 // ------------------------------
-
 // ------------------------------
 //  MONSTER CHANCES
 // ------------------------------
-\+critterfish		80
-\+critteranchovy	80
-
+\+critterfish 80 
+\+critteranchovy 80 
 // ------------------------------
 //  TEMPLATES
 // ------------------------------
@@ -79,30 +118,31 @@
 //  !hard		The next template is hard (only appear in the second two levels of the area).
 //  !liquid		The next template contains liquid (used to limit the number of liquid drops)
 
+
 ////////////////////////////////////////////////////////////////////////////////
 \.entrance
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0000000000
-0000000000
-2000000000
-2000000000
-0090000000
-1===000000
-2111000000
+0000000LXX
+00000000XX
+09000000XX
+1j000000XX
+1}000000XX
+10001000XX
+1{{{1000XX
+11111000XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.exit
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000090
+XX00000000
+XX00000000
+XX00000000
+XX00000000
+XX00000000
+XX00000000
+0X00000090
 0000000===
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -138,20 +178,19 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0000000000 0000000000
-0000000000 0000000000
-0000000000 0000000000
-0000000000 0000000000
-00'===='00 0000000000
-0000000000 0000000000
-0000000000 000G000000
-0000000000 ====XXX===
+0000=gg=00 0000000000
+0000=gg=00 0000000000
+0000====00 0000000000
+0000====00 0000000000
+0000=gg=00 0000000000
+0000====00 0000000000
+0000mggm00 000G000000
+i000bbbb00 ====XXX===
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom0-2
 ////////////////////////////////////////////////////////////////////////////////
 
-\!onlyflip
 \!dual
 0000000000 0000000000
 0000000000 0000000000
@@ -168,65 +207,64 @@
 
 XXXXXXXXXX
 0000000000
-XXXXXX0000
-AXAXAX0000
-XXXXXX0000
-0000000000
-XX00000000
-AX00000000
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom1-1
 ////////////////////////////////////////////////////////////////////////////////
 
-XX)0000)XX
+XXX0ba0b0X
 0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
+XX0i0000i1
+XX0X0000X1
+XX01000011
+XX]0111111
+XX00000000
+XXXXXoPXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom1-2
 ////////////////////////////////////////////////////////////////////////////////
 
-\!onlyflip
+XXXXXXXXXX
 XXXXXXXXXX
 0000000000
-XXXXXX0000
-AXAXAX0000
-XXXXXX0000
-0000000000
-XX00000000
-AX00000000
+0000000100
+0000000100
+1111111101
+m0m0m0m0m1
+XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom2-0
 ////////////////////////////////////////////////////////////////////////////////
 
-XX00000000
+XXXXXXXXXX
 0000000000
+XXXXXXXXXX
 XX00000000
-AX00000000
-XX00000000
-0000000000
-XX00000000
-AX00000000
+XX0000000[
+0004000004
+XXPRRRRRRR
+XXLRs00Q00
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom2-1
 ////////////////////////////////////////////////////////////////////////////////
 
+XXXXXyyyyy
+000400L000
+XXXX00L000
 0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
+0000g040g0
+0004000004
+RRXXi0i0iX
+\RL111111^
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom2-2
@@ -234,182 +272,184 @@ AX00000000
 
 00000000XX
 0000000000
-00000000XX
-00000000XA
-00000000XX
-0000000000
-00000000XX
-00000000XA
+00000000UV
+0000000RRR
+00[000[0RR
+0040004000
+XXXXXXXXXX
+40000000XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-0
 ////////////////////////////////////////////////////////////////////////////////
 
-XX00000000
+XXLRRRj000
+00L0040400
+XXXR0R0R00
+X<XR0U0Rs0
+XXXRRRRRRR
 0000000000
-XX00000000
-AX00000000
-XX00000000
-0000000000
-XXAXXXAXXX
-AXXXAXXXAX
+XXXXXXXXXX
+XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-1
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-AXXX00XXXA
-XX000000XX
+PR40000000
+Lsf000000v
+LR00I0000?
+0I00I0000X
+RII0X0000X
+00f0400004
+00Xoj000Mj
+00X111111X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-2
 ////////////////////////////////////////////////////////////////////////////////
 
-00000000XX
-0000000000
-00000000XX
-00000000XA
-00000000XX
-0000000000
-XXXAXXXAXX
-XAXXXAXXXA
+jj000000XX
+NN00000000
+XXXXXXX0XX
+XXXXXXX0f0
+LXLLXLLXf0
+00000000f0
+0XXXXXXXXX
+XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-0
 ////////////////////////////////////////////////////////////////////////////////
 
-XXAXXXAXXX
-AXXXAXXX00
-XXAXXX2000
-AXXX220000
-XX22000000
-2200000000
-0000000000
-0000000000
+\!dual
+XXXXXXAXXX XXgXgXgXXX
+XXXXAXXX00 XXqXqXqX0g
+XXAXXX2000 gg0000000g
+XXXX22000X C00000000X
+XX2200000X 000O0O000X
+220000000X X0O0O0O00X
+0D000000iX X/0v0v000X
+XXXXXXXXXX XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-1
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
+\!dual
+00X000000X XXXXXXXXXX
+00X000000X 00000000CX
+0iX000000X 000000000B
+XXX000000X X00O0O00Xo
+XXX000000X X000000000
+XXX000000X XEC0E00E0X
+XXX000000X Xq00q00q0X
+XXX000000X XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-2
 ////////////////////////////////////////////////////////////////////////////////
 
-\!onlyflip
-XXAXXXAXXX
-AXXXAXXX00
-XXAXXX2000
-AXXX220000
-XX22000000
-2200000000
-0000000000
-0000000000
+\!dual
+XXXXXXXXXX XXXXXXXXXX
+XXXXXXXXXX XXXqC0qqX0
+XXXXXXXXXX Xqq00000X0
+XXXXXXXXXX 000O00O000
+XXXXXXXXXX 0000000000
+XXX0000000 XqqqC0seX0
+XXX0000yy/ XXXX00qqXD
+XXX00000yy XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom5-0
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
+Xfgffg0000
+Xfffgf0004
+Xgfgff0004
+XfffffXXXX
+000000XrrX
+jXXXXXX00X
+qf0000000X
+XXXXXXXX0X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom5-1
 ////////////////////////////////////////////////////////////////////////////////
 
+0'A0000A'0
 0000000000
 0000000000
 0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
+X?000000)X
+XA000000AX
+X00000000X
+X00000000X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom5-2
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
+XdX00yB00y
+XfX00yyyyy
+0fX00000qy
+0fX00yyyyy
+X0X00y0000
+X0X00yyyyy
+X0y000000y
+Xjyj00000y
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom6-0
 ////////////////////////////////////////////////////////////////////////////////
 
+o00000000X
+n0pXX0000X
+o0XXXdd0qX
+00XXXXXXXX
 0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
+X00000X000
+X0ddddX000
+XXXXXXX0XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom6-1
 ////////////////////////////////////////////////////////////////////////////////
 
+X00000000X
+X00000000X
+X0O0000O0X
+XA00AA00AX
 0000000000
 0000000000
 0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
+XX000000XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom6-2
 ////////////////////////////////////////////////////////////////////////////////
 
+Xyyyyyyyyy
+X000000000
+X0d0d0d0d0
+XXXXXXXXXX
 0000000000
 0000000000
 0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
+XX00000000
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom7-0
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0000000000
-0000000000
-0000000000
-00000000==
-00000000==
-00000000==
-00000000==
+00000000XX
+00000000XX
+00000000XX
+000A0000XX
+00000000XX
+00000000XX
+00000000XX
+0000000PXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom7-1 // CENTER - TIAMAT HEAD
@@ -428,27 +468,27 @@ XX22000000
 \.setroom7-2
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0000000000
-0000000000
-0000000000
-==00000000
-==00000000
-==00000000
-==00000000
+XX00000000
+XX00000000
+XX00000000
+XX0000A000
+XX00000000
+XX00000000
+XX00000000
+XXP0000000
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom8-0
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-wwwwwwwww1
+0000000LXX
+0000000LXX
+0000000LXX
+=000000LXX
+==00000LXX
+0000000LXX
+00000000XX
+wwwwwwwwXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom8-1 // CENTER - TIAMAT THRONE
@@ -459,22 +499,22 @@ wwwwwwwww1
 0000000000
 0000000000
 0000000000
-00T0000000
+00T0#0&U$0
+o111XXXXXo
 0111111110
-1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom8-2
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-0000000000
-1wwwwwwwww
+XX00000000
+XX00000000
+XX00000000
+XX00000000
+XX00000000
+XX00000000
+XX00000000
+XXwwwwwwww
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom9-0

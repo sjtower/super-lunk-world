@@ -254,6 +254,7 @@
 
 ## Tiamat
 1. work way to top of arena where a log trap can be triggered all the way down to kill
+1. edit ending - add caveman? See what will trigger as you run forward
 
 # Questions
 1. Does TNT on a FP survive a fall? PB?
