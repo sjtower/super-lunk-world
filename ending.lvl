@@ -1,39 +1,64 @@
 // ------------------------------
 //  ENDING
 // ------------------------------
-
-\-size 5 3									// level size in rooms
-\-back_room_chance 0						// % chance of a second room (default = 5%)
-\-back_room_interconnection_chance 0		// % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance 0			// 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance 0		// 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance 0							// 1/N chance of a mount (default = 5000)
-\-altar_room_chance 0						// 1/N chance of an altar room (default = 14)
-\-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-
+\-size 5 3  //    level size in rooms
+\-back_room_chance 0 //    % chance of a second room (default = 5%)
+\-back_room_interconnection_chance 0 //    % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance 0 //    1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance 0 //    1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance 0 //    1/N chance of a mount (default = 5000)
+\-altar_room_chance 0 //    1/N chance of an altar room (default = 14)
+\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance 0 //    1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance 0 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
 // ------------------------------
 //  TILE CODES
 // ------------------------------
-
-\?empty						0
-\?floor						1
-\?floor%50					2	// 50% chance of floor, 50% chance of empty
-\?styled_floor				=
-\?entrance					E
-\?water						w
-
-\?treasure					t
-
+\?empty 0
+\?floor 1
+\?floor%50 2
+\?styled_floor =
+\?entrance E
+\?water w
+\?treasure t
+\?floor_hard X
+\?floor_hard%50%floor Y
+\?adjacent_floor Z
+\?ladder L
+\?ladder_plat P
+\?door2 D
+\?locked_door /
+\?stone_floor +
+\?tomb_floor G
+\?cursed_pot u
+\?litwalltorch O
+\?haunted_corpse 7
+\?altar x
+\?vault_wall |
+\?bone_block f
+\?shop_sign K
+\?shop_door k
+\?lamp_hang l
+\?shop_wall .
+\?shop_wall%50 ;
+\?shop_woodwall :
+\?wanted_poster W
+\?shopkeeper $
+\?die %
+\?merchant #
+\?cavemanshopkeeper &
+\?shop_item S
+\?sleeping_hiredhand \
+\?forcefield ?
+\?forcefield_top '
+\?thief J
+\?spring_trap a
 // ------------------------------
 //  LEVEL CHANCES
 // ------------------------------
-
 // ------------------------------
 //  MONSTER CHANCES
 // ------------------------------
-
 // ------------------------------
 //  TEMPLATES
 // ------------------------------
@@ -45,6 +70,7 @@
 //  !rare		The next template is rare (only 5% chance of a rare template being used).
 //  !hard		The next template is hard (only appear in the second two levels of the area).
 //  !liquid		The next template contains liquid (used to limit the number of liquid drops)
+
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom0-0
@@ -198,7 +224,7 @@ www00ww1w1
 0000001110
 0000000000
 0000000000
-0000000000
+00000a0000
 ====1111==
 1111111111
 
