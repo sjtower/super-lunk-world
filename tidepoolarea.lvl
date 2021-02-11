@@ -1,141 +1,123 @@
 // ------------------------------
 //  AREA FOUR-B (TIDEPOOL)
 // ------------------------------
-
-\-size 5 7									// level size in rooms - W / H
-\-back_room_chance 5						// % chance of a second room (default = 5%)
-\-back_room_interconnection_chance 20		// % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance 500			// 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance 1000	// 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance 0							// 1/N chance of a mount (default = 5000)
-\-altar_room_chance 0						// 1/N chance of an altar room (default = 14)
-\-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-//\-max_liquid_particles 6000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
-//\-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
-\-machine_bigroom_chance 5					// 1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance 5				    // 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 5					// 1/N chance of spawning a machine tall room (default = 0)
-\-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
-
+\-size 5 7  //    level size in rooms - W / H
+\-back_room_chance 5 //    % chance of a second room (default = 5%)
+\-back_room_interconnection_chance 20 //    % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance 500 //    1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance 1000 //    1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance 0 //    1/N chance of a mount (default = 5000)
+\-altar_room_chance 0 //    1/N chance of an altar room (default = 14)
+\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance 0 //    1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance 0 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
+//\-max_liquid_particles 6000 //   \-max_liquid_particles 6000 
+//\-flagged_liquid_rooms 20 //   \-flagged_liquid_rooms 20 
+\-machine_bigroom_chance 5 //    1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance 5 //    1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance 5 //    1/N chance of spawning a machine tall room (default = 0)
+\-machine_rewardroom_chance 0 //    1/N chance of spawning a machine reward room (default = 0)
 // ------------------------------
 //  TILE CODES
 // ------------------------------
-
-\?chunk_ground				5
-\?chunk_air					6
-\?chunk_door				8 	// Chunk with entrance or exit in it
-
-\?empty						0
-\?floor						1
-\?floor%50					2	// 50% chance of floor, 50% chance of empty
-\?pagoda_floor				=
-\?pagoda_floor%50			-
-\?floor_hard				X	// Indestructible ("hard") floor
-\?floor_hard%50%floor		Y	// 50% chance of hard floor, 50% chance of regular floor
-\?adjacent_floor			Z	// Hard floor or empty depending on whether this leads to another second layer room
-\?climbing_pole				L
-\?growable_climbing_pole	B
-\?pagoda_platform			p
-\?door						9	// Exit or entrance
-\?door2						D	// Door to other Layer
-\?spikes					^
-\?upsidedown_spikes			v
-\?push_block				4
-//\?arrow_trap				A
-\?bone_block				f
-\?powder_keg				o
-\?clover					Q
-
-//\?jiangshi				?
-\?octopus					§
-\?hermitcrab				h
-\?giantclam					C
-\?madametusk				M
-
-\?robot					    {
-
-\?sorceress				    s
-//\?catmummy				    z
-\?mummy						U
-
-\?spark_trap				A
-\?laser_trap				z
-
-\?bush_block				b
-\?vine						V
-\?fountain_drain			d
-\?slidingwall_switch		c
-\?slidingwall_ceiling		A
-\?conveyorbelt_left			<
-\?conveyorbelt_right		>
-\?thorn_vine				*
-\?honey_upwards			    }
-\?honey_downwards			)
-
-//\?spring_trap				c
-\?falling_platform			F
-
-//\?laser_trap				z
-\?arrow_trap				@
-\?landmine				    ]
-\?thinice					I
-\?elevator					e
-
-\?crushtrap				    g
-\?crushtraplarge			G
-\?regenerating_block		r
-\?quicksand					q
-
-\?littorch					H
-\?litwalltorch				O
-\?key						T
-\?pot						t
-\?rock						k
-
-//\?altar						x	// Each side of the altar
-//\?idol						I	// Idol statue
-//\?vault_wall				|	// Vault wall
-//\?coffin					g	// Character coffin (NPC/Player)
-
-\?shop_sign					ö
-\?shop_door					ö
-\?lamp_hang					l
-\?shop_wall					.
-\?shop_pagodawall			ö
-\?shop_item					S
-\?wanted_poster				W
-\?shopkeeper				$	// Shopkeeper and items
-//\?bodyguard					b
-\?locked_door				/	// Locked door to other Layer
-\?sleeping_hiredhand		\
-	
-\?water						w
-\?stagnant_lava				a
-
+\?chunk_ground 5
+\?chunk_air 6
+\?chunk_door 8
+\?empty 0
+\?floor 1
+\?floor%50 2
+\?pagoda_floor =
+\?pagoda_floor%50 -
+\?floor_hard X
+\?floor_hard%50%floor Y
+\?adjacent_floor Z
+\?climbing_pole L
+\?growable_climbing_pole B
+\?pagoda_platform p
+\?door 9
+\?door2 D
+\?spikes ^
+\?upsidedown_spikes v
+\?push_block 4
+\?bone_block f
+\?powder_keg o
+\?clover Q
+\?octopus §
+\?hermitcrab h
+\?giantclam C
+\?madametusk M
+\?robot {
+\?sorceress s
+\?mummy U
+\?spark_trap A
+\?laser_trap z
+\?bush_block b
+\?vine V
+\?fountain_drain d
+\?slidingwall_switch c
+\?conveyorbelt_left <
+\?conveyorbelt_right >
+\?thorn_vine *
+\?honey_upwards }
+\?honey_downwards )
+\?falling_platform F
+\?arrow_trap @
+\?landmine ]
+\?thinice I
+\?elevator e
+\?crushtrap g
+\?crushtraplarge G
+\?regenerating_block r
+\?quicksand q
+\?littorch H
+\?litwalltorch O
+\?key T
+\?pot t
+\?rock k
+\?shop_sign ö
+\?lamp_hang l
+\?shop_wall .
+\?shop_item S
+\?wanted_poster W
+\?shopkeeper $
+\?locked_door /
+\?sleeping_hiredhand \
+\?water w
+\?stagnant_lava a
+\?ladder_plat P
+\?stone_floor +
+\?cursed_pot u
+\?haunted_corpse 7
+\?altar x
+\?vault_wall |
+\?shop_sign K
+\?shop_wall%50 ;
+\?shop_woodwall :
+\?die %
+\?merchant #
+\?cavemanshopkeeper &
+\?forcefield ?
+\?forcefield_top '
+\?thief J
+\?slidingwall_ceiling i
 // ------------------------------
 //  LEVEL CHANCES
 // ------------------------------
-
-\%liontrap_chance 		0
-\%snap_trap_chance		0
-\%leprechaun_chance		0	// 1/n chance that a Leprechaun will spawn
-
+\%liontrap_chance 0 
+\%snap_trap_chance 0 
+\%leprechaun_chance 0 //    1/n chance that a Leprechaun will spawn
 // ------------------------------
 //  MONSTER CHANCES
 // ------------------------------
-
-\+jiangshi			0
-\+fish				0
-\+octopus			0
-\+hermitcrab		0
-\+female_jiangshi	0
-\+crabman			0
-\+critterfish		80
-\+critteranchovy	80
-\+crittercrab		80
-
+\+jiangshi 0 
+\+fish 0 
+\+octopus 0 
+\+hermitcrab 0 
+\+female_jiangshi 0 
+\+crabman 0 
+\+critterfish 80 
+\+critteranchovy 80 
+\+crittercrab 80 
 // ------------------------------
 //  TEMPLATES
 // ------------------------------
@@ -147,12 +129,79 @@
 //  !rare		The next template is rare (only 5% chance of a rare template being used).
 //  !hard		The next template is hard (only appear in the second two levels of the area).
 //  !liquid		The next template contains liquid (used to limit the number of liquid drops)
+//robot/FP move entrance trap
+//robot/FP move entrance trap drop
+//PB move entrance trap drop
+//template
+//swim thru bramble
+//don't hit switch
+//throw rock to hit switch
+//breakout CB & ride up
+//breakout CB & ride sideways
+//breakout CB & ride while hanging after triggering opposite side
+//breakout CB & ride up
+//refelct rock off robot to hit switch - NOT WORKING - out of place?
+//clam dodges
+//breakout CB & ride while hanging after triggering opposite side 2
+//tusk jump
+//duck into quicksand avoid CB
+//bounce off sorceress enemy spawn
+//Tusk excavation
+//build water tower
+//sorceress hit switch
+//Throw torch over waterfall
+//tricky hit switch
+//CB elevators
+//top whip water to burn
+//top crush block (CB) dodge
+//top breakout CB & ride
+//top quicksand CB dodge
+//top quicksand CB dodge
+//top TNT clam excavation
+//top move clam with PB puzzle
+//top clam key
+//grab key from side CB top
+//top BW bridge
+//ride mummy hit switch top
+//burn through waterfall drop
+//wake crab to open door drop
+//refelct rock off robot to hit switch drop
+//throw rock at BW, giant CB dodge drop
+//CB into BW drop
+//duck into quicksand avoid CB drop
+//drop TNT elevator excavation
+//throw HH at key drop
+//Door behind PB drop
+//grab key from upward CB drop
+//empty water to allow CB to break BW drop
+//drop TNT CB excavation
+//Thin Ice CB
+//top drop whip water into bucket
+//top drop crush block (CB) dodge
+//top drop crush block platform dodge
+//top drop crush block puzzle
+//top drop crush block puzzle 2
+//top drop crush block puzzle 2
+//template
+//big ride gate up
+//big PB stack to block CB - use conveyors
+//big PB onto slow moving CB - use conveyors
+//long spike tusk jump
+//long ride big CB and clear at your level
+//long ride CB to key and back
+//tall tidepool template
+//tall burn through waterfall
+//tall find door through waterfall
+//tall hide door behind gate
+//tall dodge big CB on poles
+//tall ride gate down stopped on big CB - requires tiny jump
+//top drop crush block puzzle 2
+
 
 ////////////////////////////////////////////////////////////////////////////////
 \.entrance
 ////////////////////////////////////////////////////////////////////////////////
 
-//robot/FP move entrance trap
 \!flip
 ===={0====
 000=Fw=000
@@ -166,17 +215,16 @@ B========B
 ==========
 04000000Q0
 000=ww=040
-000=ww=000
-F000ww000F
-F000ww000F
-F00090000F
+r00=ww=00r
+r000ww000r
+r000ww000r
+r00090000r
 1>>>=<<<<1
 
 ////////////////////////////////////////////////////////////////////////////////
 \.entrance_drop
 ////////////////////////////////////////////////////////////////////////////////
 
-//robot/FP move entrance trap drop
 \!flip
 ===={=====
 000=F0=000
@@ -184,18 +232,17 @@ F00090000F
 0=0=w==0=0
 0=0r9r00=0
 0========0
-000000Q000
+00r000Qr00
 1111pp1111
 
-//PB move entrance trap drop
 \!flip
 ==========
 0400000040
 000=ww=000
-F00=ww=00F
-F00w9w000F
-0=>>=<<<<0
-000000Q000
+000=ww=000
+000w9w0000
+0>>>><<<<0
+00r000Qr00
 1111pp1111
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -241,7 +288,6 @@ F00w9w000F
 \.path_normal
 ////////////////////////////////////////////////////////////////////////////////
 
-//template
 \!ignore
 ==========
 =00000000=
@@ -252,7 +298,6 @@ F00w9w000F
 =00000000=
 ==========
 
-//swim thru bramble
 \!flip
 1111111111
 00ww*VVw00
@@ -263,10 +308,9 @@ B=w*wwww=0
 1=www*ww=1
 11*===*=11
 
-//don't hit switch
 \!flip
 1aaa00aaa1
-111A11A111
+111i11i111
 000r00r000
 00co00oc00
 0B00c000B0
@@ -274,18 +318,16 @@ B=w*wwww=0
 ==========
 ==========
 
-//throw rock to hit switch
 \!flip
-====AA====
+====ii====
 =00000000=
-=000c0000=
-=0rf00fr0=
-00f=0O=f00
+=000cc000=
+=00f00f00=
+0kk=0O=kk0
 000=00=000
 0000000000
 ==========
 
-//breakout CB & ride up
 10v1111v01
 kr001100rk
 0=000000=0
@@ -295,7 +337,6 @@ kr001100rk
 B=g0==0g=B
 1111111111
 
-//breakout CB & ride sideways
 \!flip
 1111111111
 000t11t000
@@ -306,7 +347,6 @@ B=g0==0g=B
 1000gO0001
 11******11
 
-//breakout CB & ride while hanging after triggering opposite side
 \!flip
 1111111111
 1g0=11=0g1
@@ -317,7 +357,6 @@ B=g0==0g=B
 00r0000r00
 111****111
 
-//breakout CB & ride up
 \!flip
 1111111111
 0v000000v0
@@ -328,9 +367,8 @@ B=g0==0g=B
 1gf0ff0fg1
 111****111
 
-//refelct rock off robot to hit switch - NOT WORKING - out of place?
 \!flip
-11111A1111
+11111i1111
 ==0010100=
 ==c01010c=
 ===00{00==
@@ -339,7 +377,6 @@ k00O00000k
 ==000=000=
 ==========
 
-//clam dodges
 \!flip
 1110001111
 100rrr0001
@@ -350,7 +387,6 @@ k00O00000k
 1111111111
 1111111111
 
-//breakout CB & ride while hanging after triggering opposite side 2
 \!flip
 1111111111
 1g0=11=0g1
@@ -361,7 +397,6 @@ k00O00000k
 00r0}}0r00
 111****111
 
-//tusk jump
 \!flip
 1111111111
 0000110000
@@ -372,18 +407,16 @@ B=00O000=B
 =0000M000=
 ==========
 
-//duck into quicksand avoid CB
 \!flip
 1111111111
 1111111111
-1qqqqqqqq1
+rqqqqqqqqr
 10000000G1
 r00O00000r
 rqq0qq0qqr
 =000gg000=
 ==========
 
-//bounce off sorceress enemy spawn
 \!flip
 1111111111
 0000000000
@@ -394,7 +427,6 @@ rqq0qq0qqr
 10000s0001
 11**==**11
 
-//Tusk excavation
 \!flip
 1111111111
 0000000000
@@ -405,7 +437,6 @@ k0Ot==tO0k
 1^^00M0^^1
 111====111
 
-//build water tower
 ==========
 =w10OO01w=
 =r101101r=
@@ -415,8 +446,7 @@ fw101101wf
 1========1
 11**==**11
 
-//sorceress hit switch
-==**AA**==
+==**ii**==
 =s000000s=
 =p00OO00p=
 0000000000
@@ -425,18 +455,16 @@ fw101101wf
 =c00cc00c=
 =********=
 
-//Throw torch over waterfall
 1111111111
 1000{{0001
 0000bb0000
-0000bb0000
+O000bb000O
 H00wbbw00H
 11dwbbwd11
 1111bb1111
 11**==**11
 
-//tricky hit switch
-==**AA**==
+==**ii**==
 =0=0000=0=
 =0=0U00=0=
 00=00O0=00
@@ -445,7 +473,6 @@ H00wbbw00H
 =F000000F=
 =********=
 
-//CB elevators
 ==========
 ==========
 =0======0=
@@ -459,10 +486,9 @@ H00wbbw00H
 \.path_notop
 ////////////////////////////////////////////////////////////////////////////////
 
-//top whip water to burn
 \!flip
 1111001111
-1100H00011
+1100HH0011
 b1O0000O1b
 b000ww000b
 bbbbbbbbbb
@@ -470,7 +496,6 @@ bbbb11bbbb
 0011111100
 1111111111
 
-//top crush block (CB) dodge
 \!flip
 ====pp====
 ==000000g=
@@ -481,18 +506,16 @@ p====00=00
 =00000g00=
 =====g====
 
-//top breakout CB & ride
 \!flip
 111ppp1111
-100000F001
+100pppF001
 1g00O00001
-111****0*1
+111****0**
 0000000000
 0000O00000
 10000000g1
 1******111
 
-//top quicksand CB dodge
 \!flip
 1111pp1111
 1111001111
@@ -503,7 +526,6 @@ p====00=00
 =ggg00ggg=
 ==========
 
-//top quicksand CB dodge
 \!flip
 1111pp1111
 1gg0000001
@@ -514,7 +536,6 @@ p====00=00
 =0O0gg0O0=
 ==========
 
-//top TNT clam excavation
 \!flip
 1110001111
 10000000p1
@@ -525,7 +546,6 @@ p====00=00
 1000000001
 1111111111
 
-//top move clam with PB puzzle
 \!flip
 1100001111
 100C000001
@@ -536,7 +556,6 @@ p1111111O0
 0000000001
 1111111111
 
-//top clam key
 \!flip
 \!dual
 1110001111 ==========
@@ -548,7 +567,6 @@ p1111111O0
 1g00rDr0g1 =gO00D000=
 1111111111 ==========
 
-//grab key from side CB top
 \!dual
 \!flip
 1111pp==== 1111111111
@@ -560,19 +578,17 @@ D1^^111110 D1111100O1
 p111111D00 p000000D01
 1111111111 111111===1
 
-//top BW bridge
 \!flip
 11pppppp11
 1100000011
 11rrrrrr11
 1100000011
 V1000O001V
-V4gggggg4V
-01^^^^^^10
-1111111111
+V4ggg0gg4V
+0100000010
+11******11
 
-//ride mummy hit switch top
-=A==pp==A=
+=i==pp==i=
 =00000000=
 =00000000=
 0000O00000
@@ -585,7 +601,6 @@ V4gggggg4V
 \.path_drop
 ////////////////////////////////////////////////////////////////////////////////
 
-//burn through waterfall drop
 \!flip
 1111111111
 0H000000H0
@@ -596,9 +611,8 @@ O10000011O
 B1bbbbb11B
 1111001111
 
-//wake crab to open door drop
 \!flip
-11A1111111
+11i1111111
 0000000000
 0=Op=====p
 0=0p=ccp=p
@@ -607,19 +621,17 @@ B=0p=pph=p
 =00000t===
 ====pp====
 
-//refelct rock off robot to hit switch drop
 \!flip
 \!dual
-1111AA1111 ==========
-=00100100= ==========
-=c010010c= ==========
-==00{{00== ==========
+11111i1111 ==========
+==0010100= ==========
+==c01010c= ==========
+===00{00== ==========
 00O0000O00 ==========
 k00000000k =00000000=
-==00FF00== =D000O00D=
-====pp==== ====DD====
+==000400== =D000O00D=
+=====p==== ====DD====
 
-//throw rock at BW, giant CB dodge drop
 \!flip
 1111111111
 0k000000k0
@@ -630,7 +642,6 @@ B=00O000=p
 =00000000=
 ====rr====
 
-//CB into BW drop
 \!flip
 1111111111
 0000000000
@@ -641,7 +652,6 @@ p=====00=p
 =0O00=====
 ====rr====
 
-//duck into quicksand avoid CB drop
 \!flip
 1111111111
 0000000000
@@ -652,18 +662,16 @@ p=qqqqqq=p
 =qqqqqqqq=
 ====00====
 
-//drop TNT elevator excavation
 \!flip
 1=111111=1
 1=100001=1
 11000O0011
-0000o00000
+000po0p000
 00e1111000
 0000rr0000
 XX0X11XXXX
 1XXX11XX11
 
-//throw HH at key drop
 \!dual
 \!flip
 1111111=== 1111111111
@@ -675,7 +683,6 @@ XX0X11XXXX
 1111000D11 1111110D01
 1111pp1111 111111===1
 
-//Door behind PB drop
 \!dual
 \!flip
 ========== ==========
@@ -687,19 +694,17 @@ XX0X11XXXX
 ====000D== ======0D0=
 ====pp==== ==========
 
-//grab key from upward CB drop
 \!dual
 \!flip
 1111111=== 1111111111
 10vvv0000= 1111111111
 100000000= 1111111111
 00000O0000 1111111111
-0010100/1p 1111110D01
+0000000/1p 1111110D01
 011T111110 11111100O1
 111gF00D11 1111110D01
 1111pp1111 111111===1
 
-//empty water to allow CB to break BW drop
 \!flip
 1111111111
 11001g1001
@@ -710,7 +715,6 @@ XX0X11XXXX
 1111001111
 1111pp1111
 
-//drop TNT CB excavation
 \!flip
 1111111111
 11000000o0
@@ -721,7 +725,6 @@ XX0X11XXXX
 XXX11gXXXX
 1XX11XXX11
 
-//Thin Ice CB
 ==========
 =000==000=
 =000==000=
@@ -735,7 +738,6 @@ XXX11gXXXX
 \.path_drop_notop
 ////////////////////////////////////////////////////////////////////////////////
 
-//top drop whip water into bucket
 \!flip
 ====00====
 =H000O000=
@@ -746,7 +748,6 @@ XXX11gXXXX
 =bbb00000=
 ====00====
 
-//top drop crush block (CB) dodge
 \!flip
 ====pp====
 ==000000g=
@@ -757,7 +758,6 @@ XXX11gXXXX
 =0000gg00=
 ====pp====
 
-//top drop crush block platform dodge
 \!flip
 ====pp====
 =0000000g=
@@ -768,7 +768,6 @@ XXX11gXXXX
 =pp=pp=pp=
 ====pp====
 
-//top drop crush block puzzle
 \!flip
 ====pp====
 =G0000000=
@@ -779,7 +778,6 @@ XXX11gXXXX
 =00000000=
 ====pp====
 
-//top drop crush block puzzle 2
 \!flip
 ====pp====
 =G0000000=
@@ -790,7 +788,6 @@ XXX11gXXXX
 =00000000=
 ====pp====
 
-//top drop crush block puzzle 2
 \!flip
 ====pp====
 =G000000g=
@@ -802,7 +799,7 @@ XXX11gXXXX
 ====pp====
 
 ////////////////////////////////////////////////////////////////////////////////
-\.idol				// Idol room
+\.idol // Idol room
 ////////////////////////////////////////////////////////////////////////////////
 
 1120000000
@@ -824,7 +821,7 @@ XXX11gXXXX
 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
-\.coffin_unlockable		// Coffin room for unlockable characters (facing right, will flip for other side)
+\.coffin_unlockable // Coffin room for unlockable characters (facing right, will flip for other side)
 ////////////////////////////////////////////////////////////////////////////////
 
 1111111111
@@ -840,10 +837,9 @@ XXX11gXXXX
 \.machine_bigroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
-//template
 \!ignore
 \!dual
-1111pp===AA===pp1111 XXXXZZXXXXXXXZZXXXXX
+1111pp===ii===pp1111 XXXXZZXXXXXXXZZXXXXX
 100000==0000==000001 XXXXXXXXXXXXXXXXXXXX
 000000==0000==000000 XXXXXXXXXXXXXXXXXXXX
 000000==0000==000000 ZXXXXXXXXXXXXXXXXXXZ
@@ -860,9 +856,8 @@ XXX11gXXXX
 0000000000000000D000 XXXX11111XXXXXX0D0XX
 11110011111111001111 XXXXZZXXXXXXXXXXXXXX
 
-//big ride gate up
 \!dual
-1A11pp0==AA==0pp11A1 XXXXZZXXXXXXXZZXXXXX
+1i11pp0==ii==0pp11i1 XXXXZZXXXXXXXZZXXXXX
 1000p>^F0000F^<p0001 XXXXXXXXXXXXXXXXXXXX
 00k===>^0000^<===k00 XXXXXXXXXXXXXXXXXXXX
 00=====>0000<=====00 ZXXXXXXXXXXXXXXXXXXZ
@@ -879,7 +874,6 @@ XXX11gXXXX
 0000000000000000D000 XXXXXXXXXXXXXXX0D0XX
 11110011111111001111 XXXXZZXXXXXXXXXXXXXX
 
-//big PB stack to block CB - use conveyors
 \!dual
 1111pp========pp1111 XXXXZZXXXXXXXZZXXXXX
 100000===00===000001 XXXXXXXXXXXXXXXXXXXX
@@ -898,7 +892,6 @@ pppp>t00pppp00t<pppp ZXXXXXXXXXXXXXXXXXXZ
 0000000000000000D000 XXXXXXXXXXXXXXX0D0XX
 11110011111111001111 XXXXZZXXXXXXXXXXXXXX
 
-//big PB onto slow moving CB - use conveyors
 \!dual
 1111pp========pp1111 XXXXZZXXXXXXXZZXXXXX
 100000===00===000001 XXXXXXXXXXXXXXXXXXXX
@@ -910,9 +903,9 @@ pppp>000pppp000<pppp ZXXXXXXXXXXXXXXXXXXZ
 100000000O0000001111 XXXXXXXXXXXXXXXXXXXX
 11B00000000000001111 XXXXXXXXXXXXXXXXXXXX
 11110000000000001111 XXXXXXXXXXXXXXXXXXXX
-111Gwwwwwwwwwwww0111 XXXXXXXXX==========X
-1110wwwwwwwwwwwww111 XXXXXXXXX======000=X
-0011111wwwwww111/100 ZXXXXXXXX======0D00Z
+11G0wwwwwwwwwwww0111 XXXXXXXXX==========X
+1100wwwwwwwwwwwww111 XXXXXXXXX======000=X
+0111111wwwwww111/100 ZXXXXXXXX======0D00Z
 0011111>>11<<1111100 XXXXXXXXX======000OX
 0000000000000000D000 XXXXXXXXXXXXXXX0D0XX
 11110011111111001111 XXXXZZXXXXXXXXXXXXXX
@@ -939,12 +932,10 @@ pppp>000pppp000<pppp ZXXXXXXXXXXXXXXXXXXZ
 11111111111111111111 11111111111111111111
 11111111111111111111 11111111111111111111
 
-
 ////////////////////////////////////////////////////////////////////////////////
 \.machine_wideroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
-//long spike tusk jump
 11111111111111111111
 00000000000000000000
 0t00000O0000O00000t0
@@ -954,7 +945,6 @@ Bf0000000000000000fB
 =^M^^^^^^^^^^^^^^M^=
 =111111111111111111=
 
-//long ride big CB and clear at your level
 \!flip
 1111111======1111111
 0000000======0000000
@@ -965,7 +955,6 @@ B0=000000ff000000=0B
 ==^^^^^^^00^^^^^^^==
 ==1111111**1111111==
 
-//long ride CB to key and back
 \!dual
 \!flip
 ==================== ====================
@@ -996,7 +985,6 @@ B==00000000000000T=B =========0==========
 
 \!flip
 \!ignore
-//tall tidepool template
 ====00====
 0000000000
 O=pppp===O
@@ -1014,7 +1002,6 @@ B=00000b=B
 B000000b=B
 ====pp====
 
-//tall burn through waterfall
 \!flip
 1111001111
 0HO0000000
@@ -1033,7 +1020,6 @@ B10000=01B
 B000000b0B
 1111pp1111
 
-//tall find door through waterfall
 \!dual
 \!flip
 1111001111 1111001111
@@ -1053,11 +1039,10 @@ B10000=01B 1111f11111
 B000000/0B 100L00LD01
 1111pp1111 1111111111
 
-//tall hide door behind gate
 \!dual
 \!flip
-0000000000 11110A1111
-0===AA===0 111t000T11
+0000000000 11110i1111
+0===ii===0 111t000T11
 0=Tc00cT=0 1111000111
 0=F0000F=0 1111001111
 00F0O00F00 1111001111
@@ -1073,10 +1058,9 @@ B000000/0B 100L00LD01
 B000000/0B 1B00000D01
 1111pp1111 1111111111
 
-//tall dodge big CB on poles
 \!dual
 \!flip
-==000000== 11111AA111
+==000000== 11111ii111
 000====000 11G0000001
 O=0=G0=0=O 1100000001
 0=000000=0 G00O000Oc1
@@ -1093,10 +1077,9 @@ B==0000=/= 00000000D1
 B000D0000B 0000/00000
 ====pp==== 1111111111
 
-//tall ride gate down stopped on big CB - requires tiny jump
 ==000000==
 000====000
-000=AA=000
+000=ii=000
 000c00c000
 0=000000=0
 ==0O00O0==
@@ -1186,10 +1169,9 @@ B00000000B
 00111000000000000000 XXXXZZXXXXXXXXZZXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
-\.tuskfrontdiceshop		// Madame Tusk's front dice shop facing right, flipped for other side
+\.tuskfrontdiceshop // Madame Tusk's front dice shop facing right, flipped for other side
 ////////////////////////////////////////////////////////////////////////////////
 
-//top drop crush block puzzle 2
 ====pp====
 =G000000g=
 =00000000=
@@ -1200,7 +1182,7 @@ B00000000B
 ====pp====
 
 ////////////////////////////////////////////////////////////////////////////////
-\.tuskdiceshop			// Madame Tusk's dice shop facing right, flipped for other side
+\.tuskdiceshop // Madame Tusk's dice shop facing right, flipped for other side
 ////////////////////////////////////////////////////////////////////////////////
 
 1111111111
@@ -1234,7 +1216,6 @@ B00000000B
 ////////////////////////////////////////////////////////////////////////////////
 \.chunk_ground
 ////////////////////////////////////////////////////////////////////////////////
-
 
 00000
 00000

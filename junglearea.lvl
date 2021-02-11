@@ -1,137 +1,125 @@
 // ------------------------------
 //  AREA TWO-A (JUNGLE)
 // ------------------------------
-
-\-size 8 5									// level size in rooms - W / H
-\-back_room_chance 10   					// % chance of a second room (default = 5%)
-\-back_room_interconnection_chance 20		// % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance 500			// 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance 1000	// 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance 5000							// 1/N chance of a mount (default = 5000)
-\-altar_room_chance 0						// 1/N chance of an altar room (default = 14)
-\-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-//\-max_liquid_particles 6000					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
-//\-flagged_liquid_rooms 20					// Number of random rooms that will be flagged for being eligible to spawn liquid
-\-machine_bigroom_chance 0					// 1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance 2				    // 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 5				    // 1/N chance of spawning a machine tall room (default = 0)
-\-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
-
+\-size 8 5  //    level size in rooms - W / H
+\-back_room_chance 10 //    % chance of a second room (default = 5%)
+\-back_room_interconnection_chance 20 //    % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance 500 //    1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance 1000 //    1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance 5000 //    1/N chance of a mount (default = 5000)
+\-altar_room_chance 0 //    1/N chance of an altar room (default = 14)
+\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance 0 //    1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance 0 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
+//\-max_liquid_particles 6000 //   \-max_liquid_particles 6000 
+//\-flagged_liquid_rooms 20 //   \-flagged_liquid_rooms 20 
+\-machine_bigroom_chance 0 //    1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance 2 //    1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance 5 //    1/N chance of spawning a machine tall room (default = 0)
+\-machine_rewardroom_chance 0 //    1/N chance of spawning a machine reward room (default = 0)
 // ------------------------------
 //  TILE CODES
 // ------------------------------
-
-\?chunk_ground				5
-\?chunk_air					6
-\?chunk_door				8 	// Chunk with entrance or exit in it
-
-\?empty						0
-\?floor						1
-\?floor%50					2	// 50% chance of floor, 50% chance of empty
-\?minewood_floor			=
-\?stone_floor				-
-\?floor_hard				X	// Indestructible ("hard") floor
-\?floor_hard%50%floor		Y	// 50% chance of hard floor, 50% chance of regular floor
-\?adjacent_floor			Z	// Hard floor or empty depending on whether this leads to another second layer room
-\?vine						v
-\?growable_vine				V
-\?door						9	// Exit or entrance
-\?door2						D	// Door to other Layer
-\?platform					p
-
-\?spikes					^
-\?push_block				4
-\?bone_block				f
-\?bush_block				b
-\?thorn_vine				*
-\?jungle_spear_trap			~
-\?bigspear_trap				P
-\?laser_trap				z
-\?arrow_trap				@
-\?powder_keg				o
-\?landmine				    ]
-\?thinice					I
-\?elevator					e
-\?honey_upwards			    }
-
-\?stagnant_lava				a
-\?water						w
-
-\?alien_generator			A
-\?giantclam					C
-\?spring_trap				c
-\?falling_platform			F
-\?chainandblocks_ceiling	B
-\?conveyorbelt_left			<
-\?conveyorbelt_right		>
-
-\?littorch					H
-//\?treasure					t	// Gold (30%), gem (30%), treasure chest (20%), crate (10%), bones/pot (5%), or nothing (5%)
-\?pot						t
-\?tree_base					T
-//\?cookfire					r
-\?rock						r
-\?key						s
-\?locked_door				/	// Locked door to other Layer
-\?fountain_drain			d
-\?clover					Q
-\?houyibow					h
-
-\?madametusk				M
-
-\?hermitcrab				)
-\?robot					    {
-\?imp                       +
-\?yeti					    y
-\?caveman_asleep			n
-\?lavamander				L
-//\?caveman					?
-//\?mantrap					?
-//\?witchdoctor				?
-//\?tikiman					?
-//\?mosquito				?
-\?giant_spider			    N
-//\?sister					i
-
-\?altar						x	// Each side of the altar
-//\?idol						I	// Idol statue
-\?vault_wall				|	// Vault wall
-\?coffin					g	// Character coffin (NPC/Player)
-
-\?shop_sign					K
-\?shop_door					k
-\?lamp_hang					l
-\?shop_wall					.
-\?shop_item					S
-\?wanted_poster				W
-\?shopkeeper				$	// Shopkeeper and items
-
+\?chunk_ground 5
+\?chunk_air 6
+\?chunk_door 8
+\?empty 0
+\?floor 1
+\?floor%50 2
+\?minewood_floor =
+\?stone_floor -
+\?floor_hard X
+\?floor_hard%50%floor Y
+\?adjacent_floor Z
+\?vine v
+\?growable_vine V
+\?door 9
+\?door2 D
+\?platform p
+\?spikes ^
+\?push_block 4
+\?bone_block f
+\?bush_block b
+\?thorn_vine *
+\?jungle_spear_trap ~
+\?bigspear_trap P
+\?laser_trap z
+\?arrow_trap @
+\?powder_keg o
+\?landmine ]
+\?thinice I
+\?elevator e
+\?honey_upwards }
+\?stagnant_lava a
+\?water w
+\?alien_generator A
+\?giantclam C
+\?spring_trap c
+\?falling_platform F
+\?chainandblocks_ceiling B
+\?conveyorbelt_left <
+\?conveyorbelt_right >
+\?littorch H
+\?pot t
+\?tree_base T
+\?rock r
+\?key s
+\?locked_door /
+\?fountain_drain d
+\?clover Q
+\?houyibow h
+\?madametusk M
+\?hermitcrab )
+\?robot {
+\?imp +
+\?yeti y
+\?caveman_asleep n
+\?lavamander L
+\?giant_spider N
+\?altar x
+\?vault_wall |
+\?coffin g
+\?shop_sign K
+\?shop_door k
+\?lamp_hang l
+\?shop_wall .
+\?shop_item S
+\?wanted_poster W
+\?shopkeeper $
+\?tomb_floor G
+\?cursed_pot u
+\?litwalltorch O
+\?haunted_corpse 7
+\?shop_wall%50 ;
+\?shop_woodwall :
+\?die %
+\?merchant #
+\?cavemanshopkeeper &
+\?sleeping_hiredhand \
+\?forcefield ?
+\?forcefield_top '
+\?thief J
+\?ladder i
 // ------------------------------
 //  LEVEL CHANCES
 // ------------------------------
-
-\%jungle_spear_trap_chance	0
-\%snap_trap_chance			0
-\%beehive_chance 			0
-\%leprechaun_chance			0
-
+\%jungle_spear_trap_chance 0 
+\%snap_trap_chance 0 
+\%beehive_chance 0 
+\%leprechaun_chance 0 
 // ------------------------------
 //  MONSTER CHANCES
 // ------------------------------
-
-\+bat				0
-\+hangspider		0
-\+giantspider		0
-\+caveman			0
-\+tikiman			0
-\+witchdoctor		0
-\+mantrap			0
-\+mosquito			0
-\+monkey			0
-\+critterbutterfly	60
-
+\+bat 0 
+\+hangspider 0 
+\+giantspider 0 
+\+caveman 0 
+\+tikiman 0 
+\+witchdoctor 0 
+\+mantrap 0 
+\+mosquito 0 
+\+monkey 0 
+\+critterbutterfly 60 
 // ------------------------------
 //  TEMPLATES
 // ------------------------------
@@ -143,18 +131,135 @@
 //  !rare		The next template is rare (only 5% chance of a rare template being used).
 //  !hard		The next template is hard (only appear in the second two levels of the area).
 //  !liquid		The next template contains liquid (used to limit the number of liquid drops)
+//spike spear gauntlet 1
+//\!ignore
+//spike spear gauntlet 2
+//\!ignore
+//bush powderkeg run
+//\!ignore
+//bush bomb avoid
+//\!ignore
+//throw rock at imp or bombs to clear path
+//\!ignore
+//imp drop on bombs to clear path
+//\!ignore
+//spike bow arrow jump
+//\!ignore
+//lava elevator whip
+//\!ignore
+//lava elevator whip 2
+//\!ignore
+//lava elevator dodge
+//\!ignore
+//lava elevator dodge 2
+//\!ignore
+//elevator mine
+//\!ignore
+//elevator mine 2
+//\!ignore
+//short throw mine
+//\!ignore
+//lava lavamander jump
+//\!ignore
+//path don't wake caveman
+//\!ignore
+//path robots in bramble
+//top don't wake caveman
+//\!ignore
+//top spike spear guantlet
+//\!ignore
+//top tree dodge
+//\!ignore
+//top mine dig
+//\!ignore
+//top lava elevator dodge
+//\!ignore
+//top shopkeep conveyor
+//\!ignore
+//top torch bush race
+//\!ignore
+//top lava elevator vine/tree dodge
+//\!ignore
+//top lava elevator FP drop slow
+//top robots in bramble
+//\!ignore
+//top backlayer lava lock
+//\!ignore
+//drop spike spear gauntlet
+//\!ignore
+//throw rock at imp to open bottom drop
+//\!ignore
+//robot escort drop
+//\!ignore
+//precise mine dig drop
+//\!ignore
+//avoid mine bridge drop
+//\!ignore
+//drop mine elevator
+//\!ignore
+//PB into lava drop
+//\!ignore
+//drop avoid robots
+//\!ignore
+//whip mine above, activate below
+//\!ignore
+//drop thin ice avoid traps
+//\!ignore
+//FP mine drop
+//top drop spike spear guantlet
+//\!ignore
+//top drop mine elevator
+//\!ignore
+//top drop lava elevator
+//\!ignore
+//top drop push TNT elevator FP
+//\!ignore
+//top drop thin ice avoid traps
+//top drop thin ice whip lava
+//big PB & bow/arrow puzzle. Two PB towers - 4 & 2
+//\!ignore
+//big preserve FPs
+//vine spike jump
+//\!ignore
+//elevator conveyor
+//\!ignore
+//stationary elevator conveyor
+//\!ignore
+//long shopkeep conveyor
+//\!ignore
+//long lava lavamander jump
+//\!ignore
+//long avoid imp boom
+//\!ignore
+//long lava elevator whip/dodge
+//\!ignore
+//long throw mines
+//\!ignore
+//wide torch bush race
+//\!ignore
+//wide throw shopkeep
+//tall lava burn & tree
+//\!ignore
+//tall precise mine dig drop -- too hard for world 2
+//\!ignore
+//tall precise mine dig
+//\!ignore
+//\!ignore
+//\!ignore
+//\!ignore
+
 
 ////////////////////////////////////////////////////////////////////////////////
 \.entrance
 ////////////////////////////////////////////////////////////////////////////////
 
--a-0----a-
--a-a----a-
-fafa000faf
-faff0f0faf
-0f000000f0
-0f0090Q0f0
--0------0-
+---0------
+--aa---a--
+0faa00faf0
+0fafbbfaf0
+00f0000ff0
+00f090Q000
+--0----0--
 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -171,13 +276,12 @@ ff0f00f0f0
 12200002=1
 1112002111
 
-
 ////////////////////////////////////////////////////////////////////////////////
 \.exit
 ////////////////////////////////////////////////////////////////////////////////
 
-----------
-0bo-aa-ob0
+----aa----
+0bo----ob0
 0bp----pb0
 0bbbbbbbb0
 0bbbbbbbb0
@@ -215,9 +319,7 @@ H1--9b0011
 \.path_normal
 ////////////////////////////////////////////////////////////////////////////////
 
-//spike spear gauntlet 1
 \!flip
-//\!ignore
 1111111111
 P0000000P0
 0~00~~00~0
@@ -227,9 +329,7 @@ P0000000P0
 0~~~==~~~0
 1111111111
 
-//spike spear gauntlet 2
 \!flip
-//\!ignore
 1111111111
 P0000000P0
 1~00P000~1
@@ -239,8 +339,6 @@ P0000000P0
 0~~~~~~~~0
 1111111111
 
-//bush powderkeg run
-//\!ignore
 \!flip
 1111111111
 1000oo0001
@@ -251,8 +349,6 @@ P0000000P0
 H011XX110H
 XXXXXXXXXX
 
-//bush bomb avoid
-//\!ignore
 \!flip
 1111111111
 10v0bb0v01
@@ -263,45 +359,37 @@ XXXXXXXXXX
 H0b-aa-b0H
 XXXXXXXXXX
 
-//throw rock at imp or bombs to clear path
-//\!ignore
 \!flip
 =f000+00f=
 =00000000=
 =0000O000=
 =0=0000=0=
-00=oooo=00
-0r}p11p}r0
-0111111110
-1111111111
+00=bbbb=00
+0r}pbbp}r0
+011obbo110
+11XXXXXX11
 
-//imp drop on bombs to clear path
-//\!ignore
 \!flip
 =f000+00f=
 =00000000=
 =0000O000=
-00=0000=00
-00=0000=00
-00=oooo=00
+00=b00b=00
+00=b00b=00
+00=boob=00
 00}p11p}00
 11XXXXX111
 
-//spike bow arrow jump
 \!flip
-//\!ignore
 1111111111
 v00011000v
 vt001100tv
 v=F0000F=v
 v=00O000=v
 =0000h000=
-=0000=000=
-=****1***=
+=000==000=
+=***==***=
 
-//lava elevator whip
 \!flip
-//\!ignore
 1111111111
 100a000000
 000e000000
@@ -311,9 +399,7 @@ p-0000e0-p
 -aaaaaaaa-
 ----------
 
-//lava elevator whip 2
 \!flip
-//\!ignore
 1111111111
 100a110000
 000e000000
@@ -323,9 +409,7 @@ p-0000e0-p
 -aaaaaaaa-
 ----------
 
-//lava elevator dodge
 \!flip
-//\!ignore
 111111a111
 1001v1e000
 00eav00000
@@ -335,9 +419,7 @@ p-0000e0-p
 -aaaaaaaa-
 ----------
 
-//lava elevator dodge 2
 \!flip
-//\!ignore
 1111111111
 10vvvvvv01
 00aa000000
@@ -347,9 +429,7 @@ p0000e0e0p
 -a00aaea0-
 ----------
 
-//elevator mine
 \!flip
-//\!ignore
 111-a-1111
 100---0001
 000---0000
@@ -359,8 +439,6 @@ p0000e0e0p
 -]e-a-ee]-
 --******--
 
-//elevator mine 2
-//\!ignore
 \!flip
 111---1111
 100---0001
@@ -371,11 +449,9 @@ p0000e0e0p
 -]e---ee]-
 --******--
 
-//short throw mine
 \!flip
-//\!ignore
 111----111
-100-tt-001
+100ffff001
 000y-0y000
 000----000
 000----000
@@ -383,20 +459,16 @@ p0000e0e0p
 -00----00-
 -********-
 
-//lava lavamander jump
-//\!ignore
 \!flip
 1111111111
 v000--000v
-vt00--00tv
-v-F0000F-v
+vt000000tv
+v-000000-v
 v-00O000-v
---0000000-
--aaaaLaaa-
+--000000--
+--aaaLaa--
 ----------
 
-//path don't wake caveman
-//\!ignore
 \!flip
 ----------
 --a-]n-a--
@@ -407,23 +479,20 @@ f00v--v00f
 -aa0aaa0a-
 ----------
 
-//path robots in bramble
 \!flip
 1111111111
 1111111111
 1000110001
+0000110000
 0000FF0000
 0F000000F0
 1{000000{1
-1********1
-XXXXXXXXXX
+X********X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.path_notop
 ////////////////////////////////////////////////////////////////////////////////
 
-//top don't wake caveman
-//\!ignore
 ----00----
 -00000000-
 -00-n]0-0-
@@ -433,8 +502,6 @@ f0~v--v~0f
 -aa0aaa0a-
 ----------
 
-//top spike spear guantlet
-//\!ignore
 1111001111
 P0000000P0
 1~00~~00~1
@@ -444,19 +511,15 @@ p~0p~~p0~p
 0~~~~~~~~0
 1111111111
 
-//top tree dodge
-//\!ignore
 1110000111
 1100000011
-1100000011
-==000000==
-0=000000z0
-pz000000=0
+v10000001v
+v=000000=v
+v=000000zv
+vz000000=v
 0000T00000
 1111111111
 
-//top mine dig
-//\!ignore
 1110001111
 111]]]1111
 1111111111
@@ -466,8 +529,6 @@ pz000000=0
 1111111111
 1111111111
 
-//top lava elevator dodge
-//\!ignore
 ----00----
 -tt-00-tt-
 -e0-00-0e-
@@ -477,8 +538,6 @@ F00000000F
 -ae----ea-
 ----------
 
-//top shopkeep conveyor
-//\!ignore
 --A-00A---
 -t000000t-
 -0>>>>>00-
@@ -488,8 +547,6 @@ f00<<<<<Ff
 ----------
 ----------
 
-//top torch bush race
-//\!ignore
 ----00-H--
 -4--000f4-
 -bbbbbbbb-
@@ -499,9 +556,7 @@ f00<<<<<Ff
 -a0aa0a0a-
 ----------
 
-//top lava elevator vine/tree dodge
-//\!ignore
-----00----
+----ii----
 ---vFFv---
 -00v00v00-
 F00v00v00F
@@ -510,8 +565,7 @@ t--00a0--t
 ---eeee---
 ----------
 
-//top lava elevator FP drop slow
-----00----
+----ii----
 ----FF----
 -00400400-
 000-00-000
@@ -520,9 +574,6 @@ t--00a0--t
 ----ee----
 ----------
 
-
-//top robots in bramble
-//\!ignore
 1111pp1111
 1100000011
 1100000011
@@ -532,10 +583,8 @@ t--00a0--t
 1********1
 XXXXXXXXXX
 
-//top backlayer lava lock
 \!dual
 \!flip
-//\!ignore
 ----00---- ----------
 -a-0000-a- -00000000-
 -D-00D0-D- -D00OD00D-
@@ -549,8 +598,6 @@ XXXXXXXXXX
 \.path_drop
 ////////////////////////////////////////////////////////////////////////////////
 
-//drop spike spear gauntlet
-//\!ignore
 1111111111
 P0000000P0
 1~0~0~~0~1
@@ -560,9 +607,7 @@ P0000000P0
 0~~~0~~~~0
 1111001111
 
-//throw rock at imp to open bottom drop
 \!flip
-//\!ignore
 =00f0+0f0=
 =00000000=
 v000*0*00v
@@ -572,11 +617,9 @@ v000*0*00v
 01111o1110
 1111111111
 
-//robot escort drop
 \!flip
-//\!ignore
-==========
-=00000000=
+======1===
+=00000v00=
 =000000F{=
 0-000404=0
 000-0=4p00
@@ -584,8 +627,6 @@ v000*0*00v
 ----00--00
 XXXX--XXXX
 
-//precise mine dig drop
-//\!ignore
 -a------a-
 ---0]]0---
 --00--00--
@@ -595,20 +636,16 @@ XXXX--XXXX
 -0a-00-a0-
 ----pp----
 
-//avoid mine bridge drop
-//\!ignore
 ----------
 ----------
 0]]]]]]]]0
 0FFFFIFFF0
--FFFFIFFF-
+-FFF000FF-
 -000-0-00-
 -aaa-0-aa-
 ----pp----
 
-//drop mine elevator
 \!flip
-//\!ignore
 1111001111
 v0]0000]01
 v~~101~~00
@@ -618,8 +655,6 @@ vXXX0~~X00
 1X00000001
 1~~1111~~1
 
-//PB into lava drop
-//\!ignore
 ----------
 -v000000t-
 0v4a00000v
@@ -629,19 +664,15 @@ vXXX0~~X00
 -h4a-0p---
 -----F----
 
-//drop avoid robots
-//\!ignore
 ----------
 vp000000pv
-v0{0{O{-0v
+v0{00O{-0v
 v0opopo-0v
 v0o0-0-o0v
 v0-0o0o-0v
 -a-0p0-aa-
 ----pp----
 
-//whip mine above, activate below
-//\!ignore
 1---0-1111
 0-zt000]F0
 0v--ee0-00
@@ -651,19 +682,16 @@ v0-0o0o-0v
 0000--0000
 1111pp1111
 
-//drop thin ice avoid traps
-//\!ignore
 \!flip
 ----------
 v00H00000v
-v-0-bb-0-v
-v-a-oo-a-v
+v-000000-v
+v-a-bb-a-v
 v---oo---v
 0-00pp00-0
 0->-II-<-0
 ---~II~---
 
-//FP mine drop
 \!flip
 =1======1=
 =v000]00v=
@@ -678,9 +706,7 @@ XXXX11XXXX
 \.path_drop_notop
 ////////////////////////////////////////////////////////////////////////////////
 
-//top drop spike spear guantlet
 \!flip
-//\!ignore
 1111001111
 10P0000001
 1~~~~~~~01
@@ -690,8 +716,6 @@ P00000~001
 10000~~~~1
 1~~1001111
 
-//top drop mine elevator
-//\!ignore
 \!flip
 1]000000]1
 1111~0~111
@@ -702,8 +726,6 @@ XXXXX0XXXX
 1000000001
 1~~1~~1~~1
 
-//top drop lava elevator
-//\!ignore
 \!flip
 ----00----
 -0000000a-
@@ -714,8 +736,6 @@ t00000000t
 -00-00-00-
 ----00----
 
-//top drop push TNT elevator FP
-//\!ignore
 \!flip
 ---000h--X
 -t0000o0vX
@@ -726,7 +746,6 @@ t00000000t
 XetX-t-X0X
 XXXX---XXX
 
-//top drop thin ice avoid traps
 \!flip
 ----00----
 --P000P0--
@@ -737,7 +756,6 @@ XXXX---XXX
 -00~00~0t-
 ----00----
 
-//top drop thin ice whip lava
 \!flip
 ----00----
 -t0H0000t-
@@ -749,7 +767,7 @@ v---oo---v
 ---~II~---
 
 ////////////////////////////////////////////////////////////////////////////////
-\.idol				// Idol room
+\.idol // Idol room
 ////////////////////////////////////////////////////////////////////////////////
 
 ~00000000~
@@ -762,7 +780,7 @@ V00000000V
 0*------*0
 
 ////////////////////////////////////////////////////////////////////////////////
-\.coffin_unlockable		// Coffin room for unlockable characters (facing right, will flip for other side)
+\.coffin_unlockable // Coffin room for unlockable characters (facing right, will flip for other side)
 ////////////////////////////////////////////////////////////////////////////////
 
 1111111111
@@ -778,10 +796,8 @@ V00000000V
 \.machine_bigroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
-//big PB & bow/arrow puzzle. Two PB towers - 4 & 2
 \!flip
 \!dual
-//\!ignore
 11110011111111000111 XXXXZZXXXXXXXZZXXXXX
 10000000000000000001 X001ZZ--111111-----X
 0000004004h400000000 X00V000---11---000-X
@@ -799,7 +815,6 @@ V00000000V
 0000000000000000D000 XXXX11111XXXXXX0D0XX
 11110011111111001111 XXXXZZXXXXXXXXXXXXXX
 
-//big preserve FPs
 \!flip
 \!dual
 11110011111111001111 XXXXZZXXXXXXXZZXXXXX
@@ -818,7 +833,6 @@ H0000bbbbbbbbb000b0- XX000--1000---00-1XX
 00-t00t-----------00 XXX------000O------0
 000----000D00000000- XXXX-----0D0XXXXXXX0
 --000000------00---- XXXXZZXXXZXZXXXXXXXX
-
 
 ////////////////////////////////////////////////////////////////////////////////
 \.machine_bigroom_side
@@ -847,8 +861,6 @@ H0000bbbbbbbbb000b0- XX000--1000---00-1XX
 \.machine_wideroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
-//vine spike jump
-//\!ignore
 11111111*11*11111111
 10000001****11100001
 1000000v0F1F0v000001
@@ -858,20 +870,16 @@ T000000000000000000T
 1*^^^^********^^^^*1
 11111111111111111111
 
-//elevator conveyor
 \!flip
-//\!ignore
 11111111111111111111
 10y11111111111111y01
 10e000000r0000000e01
-fFf00000----00000fFf
-f]-00000----00000-]f
+0Ff00000----00000fF0
+0]-00000----00000-]0
 r1000000----0000001r
 110000000--000000011
 11>>>>>>>--<<<<<<<11
 
-//stationary elevator conveyor
-//\!ignore
 \!flip
 11111111111111111111
 10011111111111111001
@@ -882,8 +890,6 @@ f0000000----0000000f
 110000000--000000011
 11>>>>>>>--<<<<<<<11
 
-//long shopkeep conveyor
-//\!ignore
 ---A--A------A--A---
 -t00--00000000--00t-
 -000000000O00000000-
@@ -893,19 +899,15 @@ f0c0000000000000000f
 --a----ta--at----a--
 --------------------
 
-//long lava lavamander jump
-//\!ignore
 11111111111111111111
 v000000000000000000v
 v000000O0000O000000v
 v000000000000000000v
 v000000000000000000v
--000000000000000000-
--aLaaaaaaLaaaaaaaLa-
+----000000000000----
+----aLaaaLaaaaLa----
 --------------------
 
-//long avoid imp boom
-//\!ignore
 11111111111111111111
 10vf0f0vf+0fvf00fv01
 v0v0000v0000v0000v0v
@@ -915,8 +917,6 @@ v=00000v0000v00000=v
 ==^oooooooooooooo^==
 =XXXXXXXXXXXXXXXXXX=
 
-//long lava elevator whip/dodge
-//\!ignore
 11111111111111111111
 10a00000000000000000
 00e00000000000000000
@@ -926,8 +926,6 @@ v=00000v0000v00000=v
 -a0a0aaaaaa0aaaae0a-
 --------------------
 
-//long throw mines
-//\!ignore
 11111111111111111111
 100000000--000000001
 10000y-O00y0O-y00001
@@ -937,8 +935,6 @@ v=00000v0000v00000=v
 =--aaaaaaaaaaaaaa--=
 =111111111111111111=
 
-//wide torch bush race
-//\!ignore
 --------------------
 ----4------4--4-----
 -HbbbbbbbbbbbbbbbbH-
@@ -948,14 +944,13 @@ v=00000v0000v00000=v
 -F0aa0a0a00a0aa0a0F-
 --------------------
 
-//wide throw shopkeep
 -A----------------A-
 -0-00000044000000-0-
 -00000000ff00000000-
 f00000000ff00000000f
 f00000000ff00000000f
-->>000000ff000000<<-
--00aa0a0affa0aa0a00-
+---000000ff000000---
+---aa0a0affa0aa0a---
 --------------------
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -975,9 +970,7 @@ f00000000ff00000000f
 \.machine_tallroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
-//tall lava burn & tree
 \!flip
-//\!ignore
 v000000000
 v---------
 v-aa--aaa-
@@ -995,8 +988,6 @@ pz000000zp
 0000T00000
 111p1p1111
 
-//tall precise mine dig drop -- too hard for world 2
-//\!ignore
 -a--00--a-
 ---0]]0---
 --00--00--
@@ -1014,7 +1005,6 @@ pz000000zp
 -00000000-
 ----pp----
 
-//tall precise mine dig
 -a--00--a-
 ---0]]0---
 --00--00--
@@ -1058,7 +1048,6 @@ pz000000zp
 \.machine_keyroom
 ////////////////////////////////////////////////////////////////////////////////
 
-//\!ignore
 \!dual
 0000000000 1111111111
 0000000000 1000000001
@@ -1069,7 +1058,6 @@ pz000000zp
 0000000000 1000000001
 0000000000 1111111111
 
-//\!ignore
 1111111111
 0000000000
 0000000000
@@ -1094,7 +1082,6 @@ pz000000zp
 \.machine_rewardroom
 ////////////////////////////////////////////////////////////////////////////////
 
-//\!ignore
 \!dual
 0000000000 1111111111
 0000000000 1000000001
@@ -1152,7 +1139,6 @@ pz000000zp
 \.chunk_ground
 ////////////////////////////////////////////////////////////////////////////////
 
-//\!ignore
 00000
 00000
 00000

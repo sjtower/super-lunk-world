@@ -1,5 +1,15 @@
 # Room Ideas
+
+## Base Camp
+1. alter spelunker's dialog to talk about mod structure & lore
+1. Add Olmec above entrance
+
 ##Dwelling
+1. look at PB/FP puzzle rooms - FP are falling when PB on top
+1. look at replacing bones with BW for FP puzzle rooms
+1. Move CB rooms to tidepool
+1. replace CB drops with dodge spring trap into upside down spikes
+
 1. ~~jump on snakes over spikes~~
 1. ~~high horned lizard jump (can't spawn lizards :( )~~
 1. overhang ledge coyote jump (AKA stupid jump) (jump up past an overhanding ledge, 1 tile)
@@ -33,6 +43,12 @@
 1. SHotgun jump?
 
 ##Jungle / Volcana - prefer traps/enemies of these two levels
+1. avoid elevators coming directly down on you
+1. look at magma man drop on TNT room - REMOVE
+1. hard tall room - look at or keep !hard
+1. have to pick up torch the right way or go boom
+1. force lavamader to shoot lava at you and far away bushes
+
 1. ~~Climbing puzzles with trees~~
 1. ~~trap gauntlet - path~~
 1. ~~kill imp, drop magma man on falling platform~~
@@ -130,6 +146,9 @@
 1. jump off olmec as he rises
 
 #Temple / Tidepool
+1. puzzle where you have to carry a caveman corpse and have it revived by a necromancer to jump off of
+1. add more temple blocks to make clear combination
+
 1. ~~don't hit the door switch~~
 1. ~~throw rock at door switch / key~~
 1. ~~reflect throw via robots/forcefield to hit switch~~

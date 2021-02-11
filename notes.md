@@ -66,6 +66,9 @@
     it will combine with the `\.shop` defined in `generic.lvl` and rooms can be pulled from either section
 
 ### Notes on specific worlds and levels
+1. 1-4
+    1. normal entrance must be in 0-2 somewhere
+    1. shortcut entrance can be anywhere
 1. 4-1, 4-3: Tusks entrance will appear on the path
 1. 5:
     1. height can be increased, but bottomlewss pit will always spawn at the same depth
@@ -158,6 +161,8 @@
     1. If you want one Olmite only, put them on a falling platform with a solid block above
 1. Giant Frog: requires a back layer with connected door
 1. Quillback
+    1. will roll at you when 4-10 blocks away, will jump at you until 4 blocks away, must be looking at you
+    1. You can use conveyor belts to control which way he is looking
     1. Normally, Quillback's roll will continue as long as he drops in height and destroys some floor?
     1. Won't reset his rolling attack if he doesn't destroy anything
     1. If rolls into a 4-wide hole with unbreakable blocks on both walls, he will bounce/climb all the way up after hitting a wall
