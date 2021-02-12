@@ -163,6 +163,8 @@
 1. Quillback
     1. will roll at you when 4-10 blocks away, will jump at you until 4 blocks away, must be looking at you
     1. You can use conveyor belts to control which way he is looking
+    1. Conveyor belts will slow/speed him
+    1. Honey will slow him significantly
     1. Normally, Quillback's roll will continue as long as he drops in height and destroys some floor?
     1. Won't reset his rolling attack if he doesn't destroy anything
     1. If rolls into a 4-wide hole with unbreakable blocks on both walls, he will bounce/climb all the way up after hitting a wall
