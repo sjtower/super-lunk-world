@@ -148,6 +148,7 @@
 #Temple / Tidepool
 1. puzzle where you have to carry a caveman corpse and have it revived by a necromancer to jump off of
 1. add more temple blocks to make clear combination
+1. throw litr torch at unlit torch before falling in water
 
 1. ~~don't hit the door switch~~
 1. ~~throw rock at door switch / key~~

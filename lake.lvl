@@ -7,8 +7,6 @@
 // ------------------------------
 //  TILE CODES
 // ------------------------------
-\?bone_block f
-\?haunted_corpse 7
 \?chunk_ground 5
 \?chunk_air 6
 \?chunk_door 8
@@ -20,43 +18,66 @@
 \?floor_hard X
 \?floor_hard%50%floor Y
 \?adjacent_floor Z
-\?climbing_pole V
+\?climbing_pole L
 \?growable_climbing_pole B
 \?pagoda_platform p
 \?door 9
 \?door2 D
 \?spikes ^
+\?upsidedown_spikes v
 \?push_block 4
+\?bone_block f
 \?powder_keg o
-\?treasure t
+\?clover Q
+\?octopus §
+\?hermitcrab h
 \?giantclam C
-\?fountain_drain *
+\?madametusk M
+\?robot {
+\?sorceress s
+\?mummy U
+\?spark_trap A
+\?laser_trap z
+\?bush_block b
+\?vine V
+\?fountain_drain d
 \?slidingwall_switch c
-\?slidingwall_ceiling A
+\?conveyorbelt_left <
+\?conveyorbelt_right >
+\?thorn_vine *
+\?honey_upwards }
+\?honey_downwards )
+\?falling_platform F
+\?arrow_trap @
+\?landmine ]
+\?thinice I
+\?elevator e
+\?crushtrap g
+\?crushtraplarge G
+\?regenerating_block r
+\?quicksand q
+\?littorch H
+\?litwalltorch O
 \?key T
-\?altar x
-\?idol I
-\?vault_wall |
-\?coffin g
-\?shop_sign K
-\?shop_door k
+\?pot t
+\?rock k
+\?shop_sign ö
 \?lamp_hang l
 \?shop_wall .
-\?shop_pagodawall <
 \?shop_item S
 \?wanted_poster W
 \?shopkeeper $
-\?madametusk M
-\?bodyguard b
 \?locked_door /
 \?sleeping_hiredhand \
 \?water w
-\?ladder L
+\?stagnant_lava a
 \?ladder_plat P
 \?stone_floor +
-\?tomb_floor G
 \?cursed_pot u
-\?litwalltorch O
+\?haunted_corpse 7
+\?altar x
+\?vault_wall |
+\?shop_sign K
 \?shop_wall%50 ;
 \?shop_woodwall :
 \?die %
@@ -65,8 +86,8 @@
 \?forcefield ?
 \?forcefield_top '
 \?thief J
-\?crushtraplarge a
-\?temple_floor d
+\?slidingwall_ceiling i
+\?temple_floor j
 // ------------------------------
 //  MONSTER CHANCES
 // ------------------------------
@@ -92,9 +113,9 @@
 0000000000
 00O0000O00
 0000000000
-f00f00f00f
-f00f00f00f
-dddddddddd
+0000000000
+f00fwwf00f
+jjjjjjjjjj
 0000000000
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -102,25 +123,25 @@ dddddddddd
 ////////////////////////////////////////////////////////////////////////////////
 
 0000000000
-000pddp000
+000pjjp000
 0O000000O0
-0000dd0000
-0f0f0af0f0
-0f0f00f0f0
-dddddddddd
+0000jj0000
+0f000G00f0
+0fwf00fwf0
+jjjjjjjjjj
 0000002200
 
 ////////////////////////////////////////////////////////////////////////////////
 \.lake_exit
 ////////////////////////////////////////////////////////////////////////////////
 
-1120000ddd
+1120000jjj
 0000O00000
 0000000000
-0000900ddd
-0f0f0f00ad
-0f0f0f000d
-dddddddddd
+0000900jjj
+000f0000G0
+wf0fwf000f
+jjjjjjjjjj
 0000001112
 
 ////////////////////////////////////////////////////////////////////////////////
