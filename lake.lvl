@@ -1,26 +1,76 @@
 // ------------------------------
 //  LAKE (TIDEPOOL)
 // ------------------------------
-
-\-size 4 6									// level size in rooms
-\-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
-\-max_liquid_particles 500					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
-
+\-size 4 6  //    level size in rooms
+\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
+\-max_liquid_particles 500 //    Maximum number of liquid drops that can be created until no more liquid rooms are allowed
 // ------------------------------
 //  TILE CODES
 // ------------------------------
-
-//\?minewood_floor		>
-//\?excalibur_stone		s
-\?bone_block			f
-\?haunted_corpse		7
-
+\?bone_block f
+\?haunted_corpse 7
+\?chunk_ground 5
+\?chunk_air 6
+\?chunk_door 8
+\?empty 0
+\?floor 1
+\?floor%50 2
+\?pagoda_floor =
+\?pagoda_floor%50 -
+\?floor_hard X
+\?floor_hard%50%floor Y
+\?adjacent_floor Z
+\?climbing_pole V
+\?growable_climbing_pole B
+\?pagoda_platform p
+\?door 9
+\?door2 D
+\?spikes ^
+\?push_block 4
+\?powder_keg o
+\?treasure t
+\?giantclam C
+\?fountain_drain *
+\?slidingwall_switch c
+\?slidingwall_ceiling A
+\?key T
+\?altar x
+\?idol I
+\?vault_wall |
+\?coffin g
+\?shop_sign K
+\?shop_door k
+\?lamp_hang l
+\?shop_wall .
+\?shop_pagodawall <
+\?shop_item S
+\?wanted_poster W
+\?shopkeeper $
+\?madametusk M
+\?bodyguard b
+\?locked_door /
+\?sleeping_hiredhand \
+\?water w
+\?ladder L
+\?ladder_plat P
+\?stone_floor +
+\?tomb_floor G
+\?cursed_pot u
+\?litwalltorch O
+\?shop_wall%50 ;
+\?shop_woodwall :
+\?die %
+\?merchant #
+\?cavemanshopkeeper &
+\?forcefield ?
+\?forcefield_top '
+\?thief J
+\?crushtraplarge a
+\?temple_floor d
 // ------------------------------
 //  MONSTER CHANCES
 // ------------------------------
-
-\+fish			45
-
+\+fish 45 
 // ------------------------------
 //  TEMPLATES
 // ------------------------------
@@ -33,73 +83,50 @@
 //  !hard		The next template is hard (only appear in the second two levels of the area).
 //  !liquid		The next template contains liquid (used to limit the number of liquid drops)
 
+
 ////////////////////////////////////////////////////////////////////////////////
 \.lake_normal
 ////////////////////////////////////////////////////////////////////////////////
 
-\!flip
 1111221111
-0022000000
-0000000002
 0000000000
-0====00000
-0=11=000==
-0222200022
+00O0000O00
 0000000000
-
-\!flip
-2221221111
+f00f00f00f
+f00f00f00f
+dddddddddd
 0000000000
-2200000000
-0000000000
-00000B0000
-0002=====2
-0000221120
-0000002200
 
 ////////////////////////////////////////////////////////////////////////////////
 \.lake_notop
 ////////////////////////////////////////////////////////////////////////////////
 
-\!flip
 0000000000
-0000000000
-2200000000
-0000000000
-00000B0000
-0002=====2
-0000221120
+000pddp000
+0O000000O0
+0000dd0000
+0f0f0af0f0
+0f0f00f0f0
+dddddddddd
 0000002200
-
-\!flip
-0000000000
-0000000000
-0011000000
-0011001100
-0022001100
-0111002200
-0000000000
-0000000011
 
 ////////////////////////////////////////////////////////////////////////////////
 \.lake_exit
 ////////////////////////////////////////////////////////////////////////////////
 
-\!flip
-1120000===
+1120000ddd
+0000O00000
 0000000000
-2200000090
-0000000===
-0000000===
-0000B0====
-0000=00===
+0000900ddd
+0f0f0f00ad
+0f0f0f000d
+dddddddddd
 0000001112
-	
+
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-0
 ////////////////////////////////////////////////////////////////////////////////
 
-\!flip
 0000000000
 0000110000
 0001111000
@@ -108,38 +135,6 @@
 0000000000
 0000000200
 0000000200
-
-\!flip
-0002200000
-0021120000
-2111112200
-2111112000
-0211220000
-0212000000
-0020002200
-0020000000
-
-\!ignore
-\!dual
-0000000000 XXXXZZXXXX
-0000000000 XX000000XX
-0000000000 X00000000X
-0000000000 Z00000000Z
-0000000000 Z00000000Z
-0000000000 X00000000X
-0000000000 XX000000XX
-0000000000 XXXXZZXXXX
-
-\!dual
-\!rare
-0212002120 XXXXZZXXXX
-0012002100 XXXY00YXXX
-0D120021D0 XD000000DX
-2112002112 XXXY00YXXX
-2112002112 ZZZ0000ZZZ
-0220000220 XXXXZZXXXX
-0000000000 XXXXZZXXXX
-0000000000 XXXXZZXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-1
@@ -171,7 +166,6 @@
 \.setroom4-3
 ////////////////////////////////////////////////////////////////////////////////
 
-\!flip
 0000000000
 0000110000
 0001111000
@@ -180,38 +174,6 @@
 0000000000
 0000000200
 0000000200
-
-\!flip
-0002200000
-0021120000
-2111112200
-2111112000
-0211220000
-0212000000
-0020002200
-0020000000
-
-\!ignore
-\!dual
-0000000000 XXXXZZXXXX
-0000000000 XX000000XX
-0000000000 X00000000X
-0000000000 Z00000000Z
-0000000000 Z00000000Z
-0000000000 X00000000X
-0000000000 XX000000XX
-0000000000 XXXXZZXXXX
-
-\!dual
-\!rare
-0212002120 XXXXZZXXXX
-0012002100 XXXY00YXXX
-0D120021D0 XD000000DX
-2112002112 XXXY00YXXX
-2112002112 ZZZ0000ZZZ
-0220000220 XXXXZZXXXX
-0000000000 XXXXZZXXXX
-0000000000 XXXXZZXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom5-0 // LAKE BOTTOM

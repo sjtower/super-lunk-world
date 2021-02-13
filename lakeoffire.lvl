@@ -1,27 +1,75 @@
 // ------------------------------
 //  LAKE OF FIRE (TIDEPOOL)
 // ------------------------------
-
-\-size 4 6									// level size in rooms
-\-idol_room_chance 0						// 1/N chance of an altar room (default = 14)
-\-max_liquid_particles 500					// Maximum number of liquid drops that can be created until no more liquid rooms are allowed
-
+\-size 4 6  //    level size in rooms
+\-idol_room_chance 0 //    1/N chance of an altar room (default = 14)
+\-max_liquid_particles 500 //    Maximum number of liquid drops that can be created until no more liquid rooms are allowed
 // ------------------------------
 //  TILE CODES
 // ------------------------------
-
-\?pagoda_floor				=
-\?pagoda_floor%50			-
-\?climbing_pole				V
-\?growable_climbing_pole	B
-\?coarse_water				w
-\?stagnant_lava				a
-\?timed_powder_keg			o
-\?idol_floor				i	// Idol block
-\?slidingwall_switch		c
-\?slidingwall_ceiling		A
-\?fountain_head				Φ
-
+\?pagoda_floor =
+\?pagoda_floor%50 -
+\?climbing_pole V
+\?growable_climbing_pole B
+\?coarse_water w
+\?stagnant_lava a
+\?timed_powder_keg o
+\?idol_floor i
+\?slidingwall_switch c
+\?slidingwall_ceiling A
+\?fountain_head Φ
+\?chunk_ground 5
+\?chunk_air 6
+\?chunk_door 8
+\?empty 0
+\?floor 1
+\?floor%50 2
+\?floor_hard X
+\?floor_hard%50%floor Y
+\?adjacent_floor Z
+\?pagoda_platform p
+\?door 9
+\?door2 D
+\?spikes ^
+\?push_block 4
+\?bone_block f
+\?treasure t
+\?giantclam C
+\?fountain_drain *
+\?key T
+\?altar x
+\?idol I
+\?vault_wall |
+\?coffin g
+\?shop_sign K
+\?shop_door k
+\?lamp_hang l
+\?shop_wall .
+\?shop_pagodawall <
+\?shop_item S
+\?wanted_poster W
+\?shopkeeper $
+\?madametusk M
+\?bodyguard b
+\?locked_door /
+\?sleeping_hiredhand \
+\?ladder L
+\?ladder_plat P
+\?stone_floor +
+\?tomb_floor G
+\?cursed_pot u
+\?litwalltorch O
+\?haunted_corpse 7
+\?shop_wall%50 ;
+\?shop_woodwall :
+\?die %
+\?merchant #
+\?cavemanshopkeeper &
+\?forcefield ?
+\?forcefield_top '
+\?thief J
+\?crushtraplarge d
+\?temple_floor e
 // ------------------------------
 //  TEMPLATES
 // ------------------------------
@@ -34,74 +82,51 @@
 //  !hard		The next template is hard (only appear in the second two levels of the area).
 //  !liquid		The next template contains liquid (used to limit the number of liquid drops)
 
+
 ////////////////////////////////////////////////////////////////////////////////
 \.lake_normal
 ////////////////////////////////////////////////////////////////////////////////
 
-\!flip
 1111221111
-0022000000
-0000000002
 0000000000
-0====00000
-0=11=000==
-0222200022
-aaaaaaaaaa
-
-\!flip
-2221221111
+00O0000O00
+e000a0000e
+f00f00f00f
+f00f00f00f
+eeeeeeeeee
 0000000000
-2200000000
-0000000000
-00000B0000
-0002=====2
-0000221120
-aaaaaaaaaa
 
 ////////////////////////////////////////////////////////////////////////////////
 \.lake_notop
 ////////////////////////////////////////////////////////////////////////////////
 
-\!flip
 0000000000
-0000000000
-2200000000
-0000000000
-00000B0000
-0002=====2
-0000221120
-aaaaaaaaaa
-
-\!flip
-0000000000
-0000000000
-0011000000
-0011001100
-0022001100
-0111000200
-0000000001
-aaaaaaaaaa
+000peep000
+0O000000O0
+0000ee0000
+0f0f0df0f0
+0faf00faf0
+eeeeeeeeee
+0000002200
 
 ////////////////////////////////////////////////////////////////////////////////
 \.lake_exit
 ////////////////////////////////////////////////////////////////////////////////
 
-\!flip
-1120000211
+1120000eee
+0000O00000
 0000000000
-2200000090
-0000000===
-0000000===
-0000B0====
-0000=00===
-aaaaaaaaaa
+0000900eee
+0f0f0f00de
+0f0faf000e
+eeeeeeeeee
+0000001112
 
 ////////////////////////////////////////////////////////////////////////////////
-\.lakeoffire_back_entrance		// Room leading to back tunnel
+\.lakeoffire_back_entrance // Room leading to back tunnel
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-\!flip
 \!liquid
 1111001111 XXXXZZXXXX
 0000000001 XXXZZZZXXX
@@ -113,7 +138,7 @@ aaaaaaaaaa
 1==1001111 XXXXXZXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
-\.setroom4-0	// LAKE OF FIRE
+\.setroom4-0 // LAKE OF FIRE
 ////////////////////////////////////////////////////////////////////////////////
 
 aaaaaaaaaa
@@ -235,7 +260,7 @@ i=V0000000
 ==========
 
 ////////////////////////////////////////////////////////////////////////////////
-\.lakeoffire_back_exit			// Room that leads to the front layer
+\.lakeoffire_back_exit // Room that leads to the front layer
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
