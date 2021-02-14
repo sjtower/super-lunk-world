@@ -88,6 +88,7 @@
 \?imp Q
 \?caveman R
 \?honey_upwards T
+\?elevator U
 // ------------------------------
 //  LEVEL CHANCES
 // ------------------------------
@@ -156,14 +157,15 @@ XXXXXXXXXX
 \.setroom0-2
 ////////////////////////////////////////////////////////////////////////////////
 
-9111111111
-11111m0m01
-0000000000
-0000000000
-0000000000
-0000000000
-XXXX00000X
-'XXX^^^^^X
+\!dual
+90D1111111 X0DXX0XXXX
+11111m0m01 X0X0000XXX
+0000000000 XM00O0OXXX
+0000000000 XXXX000XXX
+0000000000 XXXXM00XXX
+0000000000 XXXXX0XXXX
+XXXX00000X XXXXX0XXXX
+'XXX^^^^^X XXXXX0XXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom0-3
@@ -221,14 +223,15 @@ wwwwwwXXXX
 \.setroom1-2 // blow up forcefield with mine
 ////////////////////////////////////////////////////////////////////////////////
 
-000XXXXXXX
-0000000000
-000o000000
-0000000000
-?XXXXwwwww
-XXXXXXXXXX
-0000000000
-0000A00000
+\!dual
+000XXXXXXX XXX0X0X0XX
+0000000000 XXXAX0XAXX
+000o000000 XXXXX0XXXX
+0000000000 XXX0X0X0XX
+?XXXXwwwww XXXOX0XOXX
+XXXXXXXXXX XXXXX0XXXX
+0000000000 XXXXX0XXXX
+0000A00000 XXXXX0XXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.coffin_player // Coffin room holding a dead player (both sides must be open)
@@ -299,14 +302,15 @@ XXXXXXXXXX
 \.setroom2-2 //bramble 1
 ////////////////////////////////////////////////////////////////////////////////
 
-EE00000000
-eR0111EEE0
-XXXXvvvvvv
-100XXXXXXX
-a00000NNj0
-a0000000p0
-1000000M00
-1011100Xww
+\!dual
+EE00000000 XXXXX0XXXX
+eR0111EEE0 XXXXX0XXXX
+XXXXvvvvvv XXXXX0XXXX
+100XXXXXXX XXX0X0X0XX
+a00000NNj0 XXXOX0XOXX
+a0000000p0 XXXXX0XXXX
+1000000M00 XXXXX0XXXX
+1011100Xww XXXXX0XXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom2-3 // bramble 2
@@ -331,7 +335,7 @@ wwwXXXXXXX
 XXXXX00000
 0000000000
 0000000000
-00wwwwXXX?
+11100XXXX?
 XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -364,14 +368,15 @@ XXX0000XX0
 \.setroom3-2
 ////////////////////////////////////////////////////////////////////////////////
 
-XXXXXXXXXX
-0000000000
-0000400000
-0000p40000
-40000p0400
-p40000040j
-^^^^^^^XXX
-XXXXXXXXXX
+\!dual
+XXXXXXXXXX XXXXX0XXXX
+0000000000 XXXXX0XXXX
+0000400000 XXXXX0XXXX
+0000p40000 XXX0X0X0XX
+40000p0400 XXXOX0XOXX
+p40000040j XXXXX0XXXX
+^^^^^^^XXX XXXXX0XXXX
+XXXXXXXXXX XXXXX0XXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-3
@@ -403,40 +408,43 @@ XXX0000000
 \.setroom4-0 //Jungle Exit
 ////////////////////////////////////////////////////////////////////////////////
 
-0XXXXXXXX0
-0f00000m00
-rX090000x0
-XXPpPXXXXX
-00L0L11111
-0001111111
-00011111ee
-s0s0XXXXXX
+\!dual
+DXXXXXXXX0 D0XXXXXXXX
+0f00000m00 00XXXXXXXX
+rXO9O00000 00XXXXXXXX
+XXPpPXXXXX 0OXXXXXXXX
+00L0L11111 00XXXXXXXX
+0001111111 U000000000
+00011111ee XXXXXXXXXX
+s0s0XXXXXX XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-1
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0AAA0AAA00
-XXXXXXXXXP
-XXXXXXXXXL
-111111111L
-1111111110
-11ee111111
-XXXXXXXXXX
+\!dual
+0000000000 XXXXXXXXXX
+0AAA0AAA00 XXXXXXXXXX
+XXXXXXXXXP XXXXXXXXXX
+XXXXXXXXXL XXX000XXXX
+111111111L XXX0O0XXXX
+1111111110 0000000000
+11ee111111 XXXXXXXXXX
+XXXXXXXXXX XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-2
 ////////////////////////////////////////////////////////////////////////////////
 
-0AAA0AAA0A
-0A000A0A0A
-0A0AXA0A00
-PAAA0AAA0A
-L000000000
-0jnj111000
-XXXXXXXXXX
-XXXXXXXXXX
+\!dual
+0AAA0AAA0A XXXXX0XXXX
+0A000A0A0A XXXXX0XXXX
+0A0A0A0A00 XXXXX0XXXX
+PAAA0AAA0A XXX00000XX
+L000000000 XXX0O0O0XX
+0jnj111000 0000XiXPXX
+XXXXXXXXXX XXXXXXXLXX
+XXXXxDXXXX XXXXXD0LXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-3
@@ -456,9 +464,9 @@ XXXXXXXXXX
 ////////////////////////////////////////////////////////////////////////////////
 
 0000000000
-0000000000
-0000A00000
-0000000000
+P000000000
+L000A00000
+L000000000
 1RnjXXXXX0
 XXXXXXXXX0
 XXXXXXXXX?
@@ -469,7 +477,7 @@ XXXXXXXXXX
 ////////////////////////////////////////////////////////////////////////////////
 
 0000000000
-Xh000000X0
+0Xh00000X0
 XXXXXXXXXX
 1110000011
 1111111111
