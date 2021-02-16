@@ -444,7 +444,7 @@ PAAA0AAA0A XXX00000XX
 L000000000 XXX0O0O0XX
 0jnj111000 0000XiXPXX
 XXXXXXXXXX XXXXXXXLXX
-XXXXxDXXXX XXXXXD0LXX
+XXXXxD09XX XXXXXD0LXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-3
@@ -476,14 +476,15 @@ XXXXXXXXXX
 \.coffin_unlockable // Coffin room for unlockable characters (facing right, will flip for other side)
 ////////////////////////////////////////////////////////////////////////////////
 
-0000000000
-0Xh00000X0
-XXXXXXXXXX
-1110000011
-1111111111
-1111100011
-XXXXXXXXXX
-XXXXXXXXXX
+\!dual
+0000000000 XXXXXXXXXX
+0Xh00000X0 XXXXXXXXXX
+XXXXXXXXXX XXXXXXXXXX
+1110000011 XXXXXXXXXX
+1111111111 XXXX00XXXX
+1111100011 0000OO0000
+XXXXXXXXXX XXXXXXXXXX
+XXXXXXXXXX XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.chunk_door
