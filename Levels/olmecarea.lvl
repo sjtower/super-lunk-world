@@ -95,6 +95,7 @@
 \?bush_block ,
 \?crate_ropes ]
 \?plasma_cannon [
+\?treasure_chest {
 // ------------------------------
 //  LEVEL CHANCES
 // ------------------------------
@@ -357,14 +358,14 @@ h0000a00L0 X,XX,XX,X0
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-XXXXXXXXXX X0XXXXXXX0
-XXXXXXXXXX 000XXXXXX0
-XXXXXXXXXX X000XXXXX0
-XXXXXXXXXX X0000XXXX0
-XX00000000 X00000XXX0
-4f00000000 X000000DX0
-4f00000000 XjXXXXXXX0
-4f00000000 XXXXXXXXX0
+XX00A000A0 XXXXXXX0XX
+XX00009000 XXXXXX000X
+XXD0UUUUU0 XXD0XXO0OX
+XXXXXXXXXX XXXO0X0000
+XX00000000 XXXX00000O
+4f00000000 XXXXXXX0XX
+4f00000000 XXXXXXX0X0
+4f00000000 XXXXXXX0XO
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-0
@@ -441,14 +442,14 @@ XXXXXXXXXX XXXXX00000
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-4f00000000 XXXXXX0000
-4f0000000D XXXXX0000D
-4f00000000 XXXX0O00XX
-XXXaaaaaXX XXX0000XXX
-XXX00000XX 000000X,,,
-XXX0O0O0XX XXXXXX,,XX
-XXX00000XX 000X0XX,XX
-XXXaaaaaXX 000000X,,X
+4f00000000 XXXXXXX0XX
+4f000D0000 XXXX0DX0XX
+4f00000000 XXX00XX0XX
+XXXaaaaaXX XX0AXXX0X0
+XXX00000XX 000XXXX0XO
+XXX0O0O0XX XXXXXXX0X0
+XXX00000XX 000X0XX0XX
+XXXaaaaaXX 000000X0XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-0
@@ -525,14 +526,14 @@ e0m000+000 0000--0000
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-00X00000X0 XXXL0LX,XX
-0000O0O000 X,XL0LX,XX
-0000000000 X,XL0LX,XX
-0000aaa000 ,,,X0X,,,,
-0000000000 X,,XOX,,XX
-0000000000 XX,X0X,XXX
-0000000000 X,,X0X,,XX
-0000000000 XX,X0X,XXX
+00X00000X0 XXXL0LX0XX
+0000O0O000 X,XL0LX0XX
+0000000000 X,XL0LX0X0
+0000aaa000 ,,,X0XX0XO
+0000000000 X,,XOXX0X0
+0000000000 XX,X0XX0XX
+0000000000 X,,X0XX0XX
+0000000000 XX,X0XX0XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom5-0
@@ -609,14 +610,14 @@ XXXXXXXXhh ,,X,XXXX,,
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-aaa0000000 XX,XXXXXXX
-00000O0000 XX,,,,,,XX
-0000bbb000 ,,XXXXX,XX
-0000bbb00/ X,,,,XX,XD
-000hhh000a XXXX,XX,X0
-hhhhXhhhhh XXXX,,,,XA
-XXXXX0000D XXXXXXXXXD
-XXXXX0---- XXX,,,,,,X
+aaa0000000 XX,XXXX0XX
+00000O0000 XX,,,,X0XX
+0000111000 ,,XXXXX0XX
+000011100/ X,,,,XX0XD
+000hhhh00a XXXX,XX0X0
+hhhhX0hhhh XXXX,,X0XA
+XXXXX0000D XXXXXXX0XD
+XXXXX0---- XXX,,,X0XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom6-0
@@ -693,14 +694,14 @@ wwwwwwwwww XXX,,XXXXX
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-XXXXX00o0f XX,,XX,X,X
-XXXXX----n XXX,X,,,,X
-XXXXXw-Q0n ,,,,X,XXXX
-XXXXX---an XXXXX,,,,X
-ww+++0s000 ,,,,XXXX,X
-www-----D0 ,XX,,,,,,X
-www---0000 ,XXXXXXX,X
-wwwwwwwwww ,XXXXXXXXX
+XXXXX00o0f XX,,XXX0XX
+XXXXX----n XXX,X,X0XX
+XXXXX0-F0n ,,,,X,X0XX
+XXXXX---an XXXXX,X0XX
+ww+{+0s000 ,,,,XXX000
+ww------D0 ,XX,,,X0DO
+ww----0000 ,XXXXXXaXX
+ww---0wwww ,XXXXXX0XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom7-0
@@ -777,7 +778,7 @@ XXXXXXXXXX XXXXXXX,,,
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-wwwwwwwwww ,XXXXXXXXX
+wwwwwwwwww ,XXXXXXjXX
 wwwwwwwwww ,XX,,,,XXX
 wwwwwwwwww ,,,,XX,,,X
 XXXXXXXXXX XXXX,,XX,X
