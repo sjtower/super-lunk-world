@@ -106,6 +106,8 @@
 #### Log trap
 1. Log is 5 tiles tall and two tiles wide
 1. There must be 6 tiles minimum between the log (T) and the idol (I)
+1. The log is held up with special tiles. Normally they surround the top of the log trap, and are destroyed when the player picks up the idol.
+    1. Crashes can occur if you cut the corners from the log tiles. It seems like auto fill-in is the issue. 
 
 #### spring trap
 1. does not work if placed under a anything but an empty space

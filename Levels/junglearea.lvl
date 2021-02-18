@@ -1,7 +1,7 @@
 // ------------------------------
 //  AREA TWO-A (JUNGLE)
 // ------------------------------
-\-size 8 5  //    level size in rooms - W / H
+\-size 6 5  //    level size in rooms - W / H
 \-back_room_chance 10 //    % chance of a second room (default = 5%)
 \-back_room_interconnection_chance 20 //    % chance of a second room interconnection (default = 20%)
 \-back_room_hidden_door_chance 500 //    1/N chance of a hidden door (default = 500)
@@ -280,9 +280,9 @@ ff0f00f0f0
 \.exit
 ////////////////////////////////////////////////////////////////////////////////
 
-----aa----
-0bo----ob0
-0bp----pb0
+--o-aa-o--
+0bb----bb0
+0bp-00-pb0
 0bbbbbbbb0
 0bbbbbbbb0
 0bb-b-bbb0
@@ -365,7 +365,7 @@ XXXXXXXXXX
 =0000O000=
 =0=0000=0=
 00=bbbb=00
-0r}pbbp}r0
+0r0pbbp0r0
 011obbo110
 11XXXXXX11
 
@@ -376,7 +376,7 @@ XXXXXXXXXX
 00=b00b=00
 00=b00b=00
 00=boob=00
-00}p11p}00
+000p11p000
 11XXXXX111
 
 \!flip
@@ -404,7 +404,7 @@ p-0000e0-p
 100a110000
 000e000000
 000000a000
-000000e000
+p00000e00p
 -aa0a00aa-
 -aaaaaaaa-
 ----------
@@ -414,7 +414,7 @@ p-0000e0-p
 1001v1e000
 00eav00000
 000ev00000
-0000v00e00
+p000v00e0p
 -aa0000aa-
 -aaaaaaaa-
 ----------
@@ -950,7 +950,7 @@ v=00000v0000v00000=v
 f00000000ff00000000f
 f00000000ff00000000f
 ---000000ff000000---
----aa0a0affa0aa0a---
+---aa0a0a44a0aa0a---
 --------------------
 
 ////////////////////////////////////////////////////////////////////////////////
