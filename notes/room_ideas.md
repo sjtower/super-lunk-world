@@ -150,6 +150,8 @@
 1. add more temple blocks to make clear combination
 1. throw litr torch at unlit torch before falling in water
 
+1. custom prison feeling, restless dead feeling
+
 1. ~~don't hit the door switch~~
 1. ~~throw rock at door switch / key~~
 1. ~~reflect throw via robots/forcefield to hit switch~~
@@ -228,6 +230,10 @@
 1. remove top room's floors, to allow dropping to side rooms (against a drop-top) and drop rooms
 
 ##Neo Babylon
+1. ride FP down on top of forcefield
+1. need to change pleasure palace - tilecodes fucked up
+1. need to make Tun not appear in Tiamat
+
 1. ~~give Vlad's cape~~
 1. ~~mech escort / excavation~~
 1. plasma cannon precise excavation
