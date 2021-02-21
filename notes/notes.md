@@ -178,12 +178,14 @@
     1. Does not have a physical hitbox, so things like falling blocks/log trap/TNT will not affect her
 
 # Things to test
-1. Entrance/exit on machine big/wide/tall rooms?
-1. will oldhunter kill vlad anywhere? Or do we have to meet him somewhere first? Same level?
-1. can we use `\.setroom#-#` in any lvl? A - no 
+1. Entrance/exit on machine big/wide/tall rooms? = NO
+1. will oldhunter kill vlad anywhere? Or do we have to meet him somewhere first? Same level? = NO
+1. can we use `\.setroom#-#` in any lvl? = NO 
 1. `\!purge` ? Multiple `\.setroom` rooms?
-1. Will Yang say anything if we put him at an entrance?
-1. can I place note? Will it replace crystal idol?
+1. Will Yang say anything if we put him at an entrance? = NO
+1. can I place note? Will it replace crystal idol? = NO
+
+1. can growing climbing poles only spawn in tidepool?
 
 ## Audio/Visual ideas
 1. reskin dog and hampster to be cat variations

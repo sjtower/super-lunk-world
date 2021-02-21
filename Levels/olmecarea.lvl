@@ -137,11 +137,11 @@
 ------0000 XX0XXXXXXX
 ------0D00 00O0000DXX
 ---------P XXXXXXXXXX
-000---000L XXXXXXXXXX
-000---0000 XXXXXXXXXX
-0000000000 ----------
-0000000000 11------11
-0000000000 11------11
+000---000L XX,,,X,,,X
+000---0000 ,,,X,,,X,,
+0000000000 ,----,----
+0000000000 11---,--11
+0000000000 11---,--11
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom0-2
@@ -152,10 +152,10 @@
 ---------- 0000000000
 000000---- 0O000000O0
 0000000000 XXXXXXXXXX
-0000000000 -----,,,,,
+0000000000 ,,,,,,,,,,
 0000000000 ----,,,---
 0000000000 11111,1111
-0000000000 1111,,,111
+0000000000 ,,,,,,,,,,
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom0-3
@@ -169,7 +169,7 @@
 0000000000 ,,-,,,-,,,
 0000000000 -,,,-,,,--
 0000nnn000 11-----,,,
-00nnnnnnn0 11------1,
+00nnnnnnn0 ,,,,,,,-1,
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom0-4 // PARACHUTE AND DOOR
@@ -204,35 +204,35 @@ XXXXXXXXXX XXX000XXX0
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0i00000000 0X0X0X0XXX
-'000000000 OX0XOX0XXX
-0000000000 XX0XXX0XXX
-ph0000O000 0X0X0X0XXX
-000000040h OX0XOX0XXX
-0000000aah XX0XXX0XXX
-00000D09hh XX0XXD0AXX
-hh000aaah- XX0XXXjXXX
+0i00000000 0X0X0X0X,,
+'000000000 OX0XOX0X,X
+0000000000 XX0XXX0X,X
+ph0000O000 0X0X0X0X,X
+000000040h OX0XOX0X,,
+0000000aah XX0XXX0XX,
+00000D09hh XX0XXD0AX,
+hh000aaah- XX0XXXjXX,
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom1-1
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0000000000 0000000000
-0000000000 0-----0000
-0000000000 0111110O00
-00000A0000 11111---00
-hhhhhhhhh0 111111110O
---------hh 1111111-XX
----------- 1111111XX,
----------- 1111111X,,
+0000000000 ,,,,,,XXX,
+0000000000 ,----,,X,,
+0000000000 ,1,,,1,,,X
+00000A0000 1,,1,,-,,X
+hhhhhhhhh0 ,,111,11,,
+--------hh 1111,,1,,X
+---------- ,,,,,1,,X,
+---------- 111,11,X,,
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom1-2 // Olmec
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0400000000 XXXXX,XXXX
+0400000000 X,XXX,XX,X
 0000000000 XXXX,,,XXX
 0000000000 ,,,,X,X,,,
 C000000000 ,,,,,,,,,,
@@ -246,10 +246,10 @@ hhhhh----- ,XX00O0XX,
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0nhhhhhh00 00000000X,
-00h----h00 XXXXXXX0X,
-0nh----h00 ,,X,,,X0X,
-00h----h00 X,X,X,XXX,
+0nhhhhhh00 ,XXXXX,XX,
+00h----h00 ,XXXXX,,X,
+0nh----h00 ,,X,,,X,X,
+00h----h00 X,X,X,X,X,
 hhh----hhh X,,,X,,,,X
 ---------- XXXXXXX,,X
 ---------- XX,,,,,X,X
@@ -288,28 +288,28 @@ XXXXXXXXXX XXXXXXXXX0
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
--h000000h- XX0XXXXXXX
--hhhhhhhh- XX0XXXXXXX
----'------ XX0XXXXXXX
-0000000000 0X0X0XXXXX
-F000000000 OX0XOXXXXX
-i000000000 XX0XXXXXXX
-+000000000 XX0XXXXXXX
--000000000 XX0XXXXXXX
+-h000000h- XX0X,X,,,,
+-hhhhhhhh- XX0X,,,XXX
+---'------ XX0XXX,,XX
+0000000000 0X0X0XX,,X
+F000000000 OX0XOXXX,X
+i000000000 XX0XXXX,,X
++000000000 XX0X,,,,XX
+-000000000 XX0X,XXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom2-1
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
----------- 111111X,,X
+---------- ,,,,,,X,,X
 ---------- 111111XX,X
--'-----'-+ ,,,,00X,,X
+-'-----'-+ ,,,,11X,,X
 0000h00000 XXX,XXXX,X
 0000h00000 ,,,,,,,,,X
-y000h000y0 ,XXXXXXXXX
-0000000000 ,,,,,,XXXX
-0000000000 XXXXX,XXXX
+y000h000y0 ,XXXXXX,XX
+0000000000 ,,,,,,X,,X
+0000000000 XXXXX,XX,X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom2-2
@@ -336,8 +336,8 @@ D=RH&=D000 D00-00D00-
 v000000000 X,X,XXXXX,
 -000000000 X,X,,,,,X,
 v00000B000 X,XXXXX,X,
--00000e000 XXXXXXX,X,
--000000000 XXXXXXX,X,
+-00000e000 XXX,,,X,X,
+-000000000 X,,,X,X,X,
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom2-4
@@ -372,28 +372,28 @@ XX00000000 XXXX00000O
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0000000000 XX0XXXXXXX
-0000000000 XX0XXXXXXX
-hhh0000000 0X0X0XXXXX
-0000000000 OX0XOXXXXX
-OxO0000000 XX0XXXXXXX
-0a00000000 XX0XXXXXX,
-90D?hhhhhh XXDXXXXX,,
-XXXXXXXXXX XXjXXXX,,X
+0000000000 XX0X,,,,XX
+0000000000 XX0XXXX,,,
+hhh0000000 0X0X0X,,XX
+0000000000 OX0XOX,XXX
+OxO0000000 XX0XXX,,,,
+0a00000000 ,X0X,,,XX,
+90D?hhhhhh ,XDX,XXX,,
+XXXXXXXXXX ,XjX,XX,,X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-1
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0000000000 XXXXX,,XXX
-0000000000 XXXX,,XXXX
-0000000000 XXX,,XXXXX
-0000000000 XX,,,,XXXX
-0000000000 X,,XX,XXXX
+0000000000 XX,XX,,X,X
+0000000000 ,,,X,,X,,X
+0000000000 XXX,,XX,XX
+0000000000 XX,,,,X,XX
+0000000000 X,,XX,X,,,
 0000000000 ,,--,,----
 h?hhhhh?hh 1111,1111h
-XXXXXXXXXX 1111,,,,11
+XXXXXXXXXX 1111,,,,,1
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-2
@@ -401,41 +401,41 @@ XXXXXXXXXX 1111,,,,11
 
 \!dual
 0000000000 XXXXXXXXXX
-0000000000 0000000000
-0000000000 0000000000
-0000000000 0000000000
-0000000000 0000000000
-0000000000 ---0000---
-hhhhh?hhhh 1110000111
-XXXXXXXXXX 11--00--11
+0000000000 0000,00000
+0000000000 0O0X,X00O0
+0000000000 00,,,,,,00
+0000000000 ,,,+,++,,,
+0000000000 --,+,,+,--
+hhhhh?hhhh ,1,++,+,11
+XXXXXXXXXX ,1,-,,-,11
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-3
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0000000000 000000X,X,
-0000000000 --0XXXX,X,
-0000000000 --0X,,,,X,
-0000000000 ---X,XXX,,
-0000000000 -XXX,XXXX,
-000000000h -X,,,X,,,,
-hhhhhhh?hh 1X,XXX11X,
-XXXXXXXXXX 1X,X1111X,
+0000000000 ,,,,,,X,X,
+0000000000 --,XXXX,X,
+0000000000 --,X,,,,X,
+0000000000 -,,X,XXX,,
+0000000000 ,,XX,XXXX,
+000000000h ,X,,,X,,,,
+hhhhhhh?hh ,X,XXX,1X,
+XXXXXXXXXX ,X,X1,,1X,
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-4
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-00000000L0 XXXXXXXXX0
-00000000L0 XXXXXXXXX0
-h0000000L0 XXXXX0000o
-h0000000L0 XXXXX000XX
-h4000000L/ XXXXX000XD
-hh00hhXXXX XXXXX000XX
-+hhhhXXXXX XXXXX00000
-XXXXXXXXXX XXXXX00000
+00000000L0 XXX,,,,,X0
+00000000L0 XX,,XXXXX0
+h0000000L0 X,,XX0000o
+h0000000L0 ,,XXX000XX
+h4000000L/ X,,,X000XD
+hh00hhXXXX XXX,X000XX
++hhhhXXXXX XX,,X00000
+XXXXXXXXXX XXX,X00000
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-5
@@ -456,53 +456,53 @@ XXXaaaaaXX 000000X0XX
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
----------- XXXXX,X,XX
----------- X,,,X,X,,X
----------- XXX,X,XX,X
----------- ,,,,X,,,,X
----------- XXX,XX,XXX
----------- ,,,,X,,,XX
----------- ,XXXX,X,XX
----------- ,,,,,,X,,X
+XXXXXXXXXX ,XXXX,X,XX
+XXXXXXXXXX ,,,,X,X,,X
+XXXXXXXXXX XXX,X,XX,X
+XXXXXXXXXX ,,,,X,,,,X
+XXXXXXXXXX XXX,XX,XXX
+XXXXXXXXXX ,,,,X,,,XX
+XXXXXXXXXX ,XXXX,X,XX
+XXXXXXXXXX ,,,,,,X,,X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-1
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
----X------ 1111111X,X
----X------ 1XXXXXXX,X
----X+--000 0X,,,,,,,X
----X+--000 0X,XXXXXXX
----X-00000 0X,XXX,,,,
----X-0000+ 0X,XXX,XXX
----X-i0m0+ 0X,,,,,X11
----X---00+ 0XXXXXXX11
+XXXX------ XXXXXXXX,X
+XXXX------ XXXXXXXX,X
+XXXX+--000 XX,,,,,,,X
+XXXX+--000 XX,XXXXXXX
+XXXX-00000 XX,X,,,,,,
+XXXX-0000+ XX,XXX,XXX
+XXXX-i0m0+ XX,,,,,X,,
+XXXX---00+ XXXXXXXX,X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-2
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
--0m000n000 0000000000
--000000000 0000--0000
-e0m000+000 0000--0000
+-0m000n000 ,XX,,X,,XX
+-000000000 ,XXX,X,XXX
+e0m000+000 ,,,,,X,,,,
 000000+s00 XXXXXXXXXX
 00000+--00 ,,,,,,,,,,
 00000-v-00 XXXXXXXXXX
-00000---00 11111X,,,,
-0000000000 11111X,XXX
+00000---00 ,,,,,X,,,,
+0000000000 XXXX,X,XXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-3
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0000000--0 1X,XXXXXX,
-0000000j-0 1X,X,,,,,,
-0000000--0 XX,X,XXXXX
+0000000--0 ,X,XXXXXX,
+0000000j-0 ,X,X,,,,,,
+0000000--0 ,X,X,XXXXX
 0000000j-0 X,,X,X0000
-0000000--0 ,,X,,X0000
+0000000--0 ,,X,,,,,,,
 0000000000 XXX,XX----
 0000000000 ,,,,X11111
 0000000000 XXXXX11111
@@ -513,13 +513,13 @@ e0m000+000 0000--0000
 
 \!dual
 0000000000 XXXXXXXXXX
-000-----00 XXXXXXXXXX
-00h-vuv-h0 XXXXXXXXXX
-0Ph-v-v-h0 XX,,,,,,,,
-0Lh-v-v-h0 XX,XXXXXXX
-0Lh=v=v=h0 XX,,,XXXXX
-0Lh=vQv=h0 XXXX,,XXXX
-0Lh=v=v=h0 XXXXX,,XXX
+000-----00 ,,,,,,,,,,
+00h-vuv-h0 ,XXXXXXXXX
+0Ph-v-v-h0 ,X,,,,,,,,
+0Lh-v-v-h0 ,X,XXXXXXX
+0Lh=v=v=h0 ,X,,,XXXXX
+0Lh=vQv=h0 ,XXX,,XXXX
+0Lh=v=v=h0 ,,,XX,,XXX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-5
@@ -540,9 +540,9 @@ e0m000+000 0000--0000
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0000000000 =======X,X
-0000000000 =]0000,,,X
-==00000000 ==0000,XXX
+XXXXXXXXXX =======X,X
+0000000000 =]]000,,,X
+==00000000 ===000,XXX
 O/00000000 =D0000,,,,
 ===hhhhhhh ==P000,XXX
 XXXXXXXXXX =>L0H0,,,X
@@ -554,28 +554,28 @@ XXXXXXXXXX =>L0H0,,,X
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0--X++hhh- XXXXXXXXXX
-0--X+----h XXXXXXXXXX
-0--X++---h XXXXXXXXXX
-0--X++hhhh 0000000000
-hhhhhhhXXX XXXXXXXXXX
-XXXXXXXXXX XXXXXXXXXX
----------- XXXXXXXXXX
----------- XXXXXXXXXX
+XXXX++hhh- XXX,,,X,,X
+0--X+----h XX,,X,,,XX
+0--X++---h XX,XXXXXXX
+0--X++hhhh ,,,,,,,,,,
+hhhhhhhXXX X,XXXXXXXX
+XXXXXXXXXX ,,X,,,,,,X
+---------- X,,,XXXX,X
+---------- XXXXXXXX,X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom5-2
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0000000000 XXXXXX,XXX
-hhhhh00hhh XXXXXX,,XX
-XXXXh00hXX XXXXXXX,,X
-XXXXh00hXX XXXXXXXX,,
-XXXXhwwhXX XXXXXXX,,X
-XXXXhhhhXX XXXXXX,,X,
----------- XXXXXX,XX,
----------- XXXXXXXXX,
+0000000000 XXXX,X,XXX
+hhhhh00hhh ,,,,,X,,XX
+XXXXh00hXX ,XXX,,X,,X
+XXXXh00hXX ,,,,,,,X,,
+XXXXhwwhXX XXXX,,X,,X
+XXXXhhhhXX X,,,,X,,X,
+---------- X,X,XX,XX,
+---------- X,,,XXXXX,
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom5-3
@@ -583,22 +583,22 @@ XXXXhhhhXX XXXXXX,,X,
 
 \!dual
 0000000000 XXXXXXXXXX
-hhhh000000 XX,,,,,XXX
-XXXh000000 XX,XXX,XXX
-XXXh00O000 ,,,XXX,XXX
+hhhh000000 XX,,,,,X,,
+XXXh000000 XX,XnX,XX,
+XXXh00O000 ,,,X]X,X,,
 XXXhhhhhhh XXXXXX,XXX
-XXXXXXXXXX ,,XXXX,,,,
----------- X,,XXXXXXX
----------- X,XXXXXXXX
+XXXXXXXXXX ,,X,,X,,,,
+---------- X,,,,,XXXX
+---------- X,XXX,,,,,
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom5-4
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-0Lh-v-v-h0 XXXXX,,XXX
-0L0---v-h0 XXXXXX,,XX
-0L00svv-h0 XX,,,,,,X,
+0Lh-v-v-h0 X,,XX,,XXX
+0L0---v-h0 ,,XXXX,,XX
+0L00svv-h0 ,X,,,,,,X,
 000+----h0 XX,XX,X,X,
 hhh-----h0 XX,,X,,,X,
 XXXXXXXXhh ,,X,XXXX,,
@@ -611,12 +611,12 @@ XXXXXXXXhh ,,X,XXXX,,
 
 \!dual
 aaa0000000 XX,XXXX0XX
-00000O0000 XX,,,,X0XX
-0000111000 ,,XXXXX0XX
+00000O0000 X,,,,,X0XX
+0000111000 ,,XX,XX0XX
 000011100/ X,,,,XX0XD
-000hhhh00a XXXX,XX0X0
-hhhhX0hhhh XXXX,,X0XA
-XXXXX0000D XXXXXXX0XD
+000hhhh00a X,XX,XX0X0
+hhhhX0hhhh X,,,,,X0XA
+XXXXX0000D XXXXX,X0XD
 XXXXX0---- XXX,,,X0XX
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -626,10 +626,10 @@ XXXXX0---- XXX,,,X0XX
 \!dual
 ---------- ,XX,,,,,,X
 ---------- ,,,,XXXXXX
----------- XX,XXXXXXX
+---------- XX,XXXXX,,
 -00000000- ,,,X000XXX
 -0A0A0A0A- ,XXXnX0X,,
--0000<000- ,,,,,X0++X
+-0000<000- ,,,,,XA++X
 -0000[000- ,X,X,XXX++
 -0900V00D- ,,,X,,XX/X
 
@@ -638,28 +638,28 @@ XXXXX0---- XXX,,,X0XX
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
----------- XXXXXXXXXX
----------- XXXXXXXXXX
----------- XXXX,,,,,X
+---------- XX,,,,,,,,
+---------- XX,XXXXXXX
+---------- ,,,X,,,,,X
 wwwwwwwwww XXXX,XXX,X
-wwDwwwwDww ,,,,,X,,,X
-wwwwwwwwww XXXXXX,X,,
-wwwwwwwwww XXXXX,,XXX
-wwwwwwwwww XXXXXXXXXX
+wwDwwwwDww ,,,,,XXX,X
+wwwwwwwwww XXXXXXXX,,
+wwwwwwwwww X,,,,,,,XX
+wwwwwwwwww ,,XX,XX,,X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom6-2
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
----------- XXXXXXXXX,
----------- XXXXXXXXX,
----------- XXXXX,,,,,
-wwwwwwwwww XXX,,,XXXX
-wwDwwwwDww XXX,XXXXXX
-wwwwwwwwww ,,,,XXXXXX
-wwwwwwwwww ,XXXXXXXXX
-wwwwwwwwww ,XXXXXXXXX
+---------- ,,X,,,,,X,
+---------- X,,,XXXXX,
+---------- X,XXX,,,,,
+wwwwwwwwww ,,X,,,XXXX
+wwDwwwwDww XXX,XXXX,,
+wwwwwwwwww ,,,,X,,,,X
+wwwwwwwwww ,XXXX,XX,X
+wwwwwwwwww ,X,,,,XX,X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom6-3
@@ -669,11 +669,11 @@ wwwwwwwwww ,XXXXXXXXX
 ---------- X,,XXXXXXX
 ---------- XX,XX,,,XX
 ---------- X,,XX,X,,,
-wwwwwwwwww XX,,X,,XXX
-wwDwwwwDww XX,,XX,,XX
-wwwwwwwwww XXX,XXX,XX
-wwwwwwwwww XXX,,X,,XX
-wwwwwwwwww XXXX,,,XXX
+wwwwwwwwww ,X,,X,,XXX
+wwDwwwwDww ,X,,XX,,XX
+wwwwwwwwww ,,X,XXX,X,
+wwwwwwwwww ,XX,,X,,X,
+wwwwwwwwww ,,XX,,,XX,
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom6-4
@@ -683,10 +683,10 @@ wwwwwwwwww XXXX,,,XXX
 ---------- XXXX,,,XXX
 ---------- XXX,,X,,,X
 ---------- ,,,XXXXX,,
-wwwwwwwwww X,,,,,XXXX
-ww0wwww0ww XX,,XXXXXX
-wwwwwwwwww XX,XXXXXXX
-wwwwwwwwww XX,,XXXXXX
+wwwwwwwwww X,,,,,XX,X
+ww0wwww0ww XX,,X,,,,X
+wwwwwwwwww ,X,XXX,XXX
+wwwwwwwwww XX,,XX,,,X
 wwwwwwwwww XXX,,XXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -695,13 +695,13 @@ wwwwwwwwww XXX,,XXXXX
 
 \!dual
 XXXXX00o0f XX,,XXX0XX
-XXXXX----n XXX,X,X0XX
+XXXXX----n XXX,,,X0XX
 XXXXX0-F0n ,,,,X,X0XX
 XXXXX---an XXXXX,X0XX
 ww+{+0s000 ,,,,XXX000
 ww------D0 ,XX,,,X0DO
-ww----0000 ,XXXXXXaXX
-ww---0wwww ,XXXXXX0XX
+ww----0000 ,XXXX,XaXX
+ww---0wwww ,XXXX,X0XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom7-0
@@ -709,10 +709,10 @@ ww---0wwww ,XXXXXX0XX
 
 \!dual
 ---------- XXXXXXXXXX
-XXXXXXXXXX XXXXXXXXXX
-XXXXXXXXXX XXXXXXXXXX
-XXXXXXXXXX XXXXXXXXXX
-XXXXXXXXXX XXXXXXXXXX
+XXXXXXXXXX ,,,,,,,,,,
+XXXXXXXXXX X+XX+XX+X,
+XXXXXXXXXX Xj00i00jXX
+XXXXXXXXXX XXXOXOXXXX
 XXXXXXXXXX XXXXXXXXXX
 XXXXXXXXXX XXXXXXXXXX
 XXXXXXXXXX XXXXXXXXXX
@@ -722,9 +722,9 @@ XXXXXXXXXX XXXXXXXXXX
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-wwwwwwwwww XXXXXXXXXX
-wwwwwwwwww XXXXXXXXXX
-wwwwwwwwww XXXXXXXXXX
+wwwwwwwwww ,XXX,XXX,X
+wwwwwwwwww XX,,,,X,,,
+wwwwwwwwww ,,,XX,,,XX
 XXXXXXXXXX XXXXXXXXXX
 XXXXXXXXXX XXXXXXXXXX
 0000000000 XXXXXXXXXX
@@ -736,10 +736,10 @@ XXXXXXXXXX XXXXXXXXXX
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-wwwwwwwwww XXXXXXXXXX
-wwwwwwwwww XXXXXXXXXX
-wwwwwwwwww XXXXXXXXXX
-XXXXXXXXXX XXXXXXXXXX
+wwwwwwwwww XXXXXXXX,X
+wwwwwwwwww ,,,X,,,X,,
+wwwwwwwwww XX,,,X,X,X
+XXXXXXXXXX XXXXXX,,,X
 XXXXXXXXXX XXXXXXXXXX
 0000000000 XXXXXXXXXX
 0000000000 XXXXXXXXXX
@@ -750,10 +750,10 @@ XXXXXXXXXX XXXXXXXXXX
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
-wwwwwwwwww XXXXXXXXXX
-wwwwwwwwww XXXXXXXXXX
-wwwwwwwwww XXXXXXXXXX
-XXXXXXXXXX XXXXXXXXXX
+wwwwwwwwww XXXXXXXX,,
+wwwwwwwwww ,,,,,,XXX,
+wwwwwwwwww X,XXX,XX,,
+XXXXXXXXXX X,,,,,,,,X
 XXXXXXXXXX XXXXXXXXXX
 0000000000 XXXXXXXXXX
 0000000000 XXXXXXXXXX
@@ -765,10 +765,10 @@ XXXXXXXXXX XXXXXXXXXX
 
 \!dual
 wwwwwwwwww XXX,XXXXXX
-wwwwwwwwww XXX,,,XXXX
-wwwwwwwwww XXXXX,XXXX
-XXXXXXXXXX XXXXX,,,XX
-XXXXXXXXXX XXXXXXX,,,
+wwwwwwwwww X,X,,,XXXX
+wwwwwwwwww ,,XXX,XXXX
+XXXXXXXXXX X,,X,,,,XX
+XXXXXXXXXX XX,,,XX,,,
 0000000000 XXXXXXXXXX
 0000000000 XXXXXXXXXX
 0000000000 XXXXXXXXXX
@@ -784,7 +784,7 @@ wwwwwwwwww ,,,,XX,,,X
 XXXXXXXXXX XXXX,,XX,X
 XXXXXXXXXX ,,,,,,,,,X
 0000000000 XXXXXXXXXX
-0000000000 ,,,,,,XXXX
+0000000000 XXXXXXXXXX
 0000000000 XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -797,9 +797,9 @@ XXXXXXXXXX ,,,,,,,,,X
 +000++000+ XO0O000000
 0000000000 X00000000B
 0000000000 XX0XXXaXXX
-0000000000 0X0X0X0XXX
-0000000000 OX0XOX0XXX
-0000000000 XX0XXX0XXX
+0000000000 0X0X0X0X,,
+0000000000 OX0XOX0X,X
+0000000000 XX0XXX0X,X
 
 ////////////////////////////////////////////////////////////////////////////////
 \.cache // Flip room for other side

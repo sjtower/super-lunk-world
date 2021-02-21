@@ -1,7 +1,7 @@
 // ------------------------------
 //  AREA FOUR-B (TIDEPOOL)
 // ------------------------------
-\-size 5 7  //    level size in rooms - W / H
+\-size 5 5 //    level size in rooms - W / H
 \-back_room_chance 5 //    % chance of a second room (default = 5%)
 \-back_room_interconnection_chance 20 //    % chance of a second room interconnection (default = 20%)
 \-back_room_hidden_door_chance 500 //    1/N chance of a hidden door (default = 500)
@@ -11,8 +11,8 @@
 \-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
 \-floor_side_spread_chance 0 //    1/N chance of a spreadable floor spreading to its side (default = 10)
 \-floor_bottom_spread_chance 0 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
-//\-max_liquid_particles 6000 //   \-max_liquid_particles 6000
-//\-flagged_liquid_rooms 20 //   \-flagged_liquid_rooms 20
+//\-max_liquid_particles 6000 //   \-max_liquid_particles 6000 
+//\-flagged_liquid_rooms 20 //   \-flagged_liquid_rooms 20 
 \-machine_bigroom_chance 5 //    1/N chance of spawning a machine big room (default = 0)
 \-machine_wideroom_chance 5 //    1/N chance of spawning a machine wide room (default = 0)
 \-machine_tallroom_chance 5 //    1/N chance of spawning a machine tall room (default = 0)
@@ -26,7 +26,7 @@
 \?empty 0
 \?floor 1
 \?floor%50 2
-\?pagoda_floor =
+\?temple_floor =
 \?pagoda_floor%50 -
 \?floor_hard X
 \?floor_hard%50%floor Y
@@ -100,24 +100,25 @@
 \?forcefield_top '
 \?thief J
 \?slidingwall_ceiling i
+\?anubis j
 // ------------------------------
 //  LEVEL CHANCES
 // ------------------------------
-\%liontrap_chance 0
-\%snap_trap_chance 0
+\%liontrap_chance 0 
+\%snap_trap_chance 0 
 \%leprechaun_chance 0 //    1/n chance that a Leprechaun will spawn
 // ------------------------------
 //  MONSTER CHANCES
 // ------------------------------
-\+jiangshi 0
-\+fish 0
-\+octopus 0
-\+hermitcrab 0
-\+female_jiangshi 0
-\+crabman 0
-\+critterfish 80
-\+critteranchovy 80
-\+crittercrab 80
+\+jiangshi 0 
+\+fish 0 
+\+octopus 0 
+\+hermitcrab 0 
+\+female_jiangshi 0 
+\+crabman 0 
+\+critterfish 80 
+\+critteranchovy 80 
+\+crittercrab 80 
 // ------------------------------
 //  TEMPLATES
 // ------------------------------
@@ -205,11 +206,11 @@
 \!flip
 ===={0====
 000=Fw=000
-000=w==000
-0=0=w==0=0
-0=Qr9rQ0=0
-0========0
-B========B
+L00=w==00L
+L=0=w==0=L
+L=Qr9rQ0=L
+L========L
+L========L
 1111==1111
 
 ==========
@@ -251,11 +252,11 @@ r00090000r
 
 ==========
 =00000==g=
-0000000400
-000000==00
-000O090000
-0000000000
-=00B00000=
+000L000400
+000L00==00
+000LO90000
+000L000000
+=00L00000=
 ==========
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -302,9 +303,9 @@ r00090000r
 1111111111
 00ww*VVw00
 O=ww*w*w=O
-0=w**w**=0
-B=w*wwww=0
-==wwwww*=B
+L=w**w**=L
+L=w*wwww=L
+==wwwww*=L
 1=www*ww=1
 11*===*=11
 
@@ -312,19 +313,19 @@ B=w*wwww=0
 1aaa00aaa1
 111i11i111
 000r00r000
-00co00oc00
-0B00c000B0
+0Lco00ocL0
+0L00c000L0
 ==000000==
 ==========
 ==========
 
 10v1111v01
 kr001100rk
-0=000000=0
-0=00O000=0
-0=00kk00=0
-0=r0==0r=0
-B=g0==0g=B
+L=000000=L
+L=00O000=L
+L=00kk00=L
+L=r0==0r=L
+L=g0==0g=L
 1111111111
 
 \!flip
@@ -380,9 +381,9 @@ B=g0==0g=B
 \!flip
 1111111111
 0000110000
-0t001100t0
-0=000000=0
-B=00O000=B
+Lt001100tL
+L=000000=L
+L=00O000=L
 ==0000000=
 =0000M000=
 ==========
@@ -567,18 +568,18 @@ V4ggg0gg4V
 1111111111
 0H000000H0
 O10000011O
-0100=00110
-01b000b110
-01bbdwb110
-B1bbbbb11B
+L100=0011L
+L1b000b11L
+L1bbdwb11L
+L1bbbbb11L
 1111001111
 
 \!flip
 1111111111
 0k000000k0
-0=000000=p
-0=000000=p
-B=00O000=p
+L=000000=L
+L=000000=L
+L=00O000=L
 =G000000G=
 =00000000=
 ====rr====
@@ -586,9 +587,9 @@ B=00O000=p
 \!flip
 1111111111
 0000000000
-p==O=====p
-p=gw00r0=p
-p=====00=p
+L==O=====L
+L=gw00r0=L
+L=====00=L
 =000r000g=
 =0O00=====
 ====rr====
@@ -775,13 +776,13 @@ XXX11gXXXX
 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
-\.anubis_room			// ANUBIS
+\.anubis_room // ANUBIS
 ////////////////////////////////////////////////////////////////////////////////
 
 =00000000=
 0000000000
 0000000000
-0000a00000
+0000j00000
 000p==p000
 00p====p00
 00======00
@@ -830,15 +831,15 @@ XXX11gXXXX
 100000===00===000001 XXXXXXXXXXXXXXXXXXXX
 04040000000000004040 XXXXXXXXXXXXXXXXXXXX
 pppp>t00pppp00t<pppp ZXXXXXXXXXXXXXXXXXXZ
-1100t>00000000<00011 XXXXXXXXXXXXXXXXXXXX
-11001100000000001111 XXXXXXXXXXXXXXXXXXXX
-100000000000000010T1 XXXXXXXXXXXXXXXXXXXX
-100000000O0000000011 XXXXXXXXXXXXXXXXXXXX
-11000000000000000011 XXXXXXXXXXXXXXXXXXXX
-1G000000000000000001 XXXXXXXXXXXXXXXXXXXX
-10000000000000000001 XXXXXXXXX==========X
-11100000000000000111 XXXXXXXXX======000=X
-001B000000000000/100 ZXXXXXXXX======0D00Z
+110Lt>00000000<00011 XXXXXXXXXXXXXXXXXXXX
+110L1100000000001111 XXXXXXXXXXXXXXXXXXXX
+100L00000000000010T1 XXXXXXXXXXXXXXXXXXXX
+100L00000O0000000011 XXXXXXXXXXXXXXXXXXXX
+110L0000000000000011 XXXXXXXXXXXXXXXXXXXX
+1G0L0000000000000001 XXXXXXXXXXXXXXXXXXXX
+100L0000000000000001 XXXXXXXXX==========X
+111L0000000000000111 XXXXXXXXX======000=X
+001L000000000000/100 ZXXXXXXXX======0D00Z
 00111111111111111100 XXXXXXXXX======000OX
 0000000000000000D000 XXXXXXXXXXXXXXX0D0XX
 11110011111111001111 XXXXZZXXXXXXXXXXXXXX
@@ -848,11 +849,11 @@ pppp>t00pppp00t<pppp ZXXXXXXXXXXXXXXXXXXZ
 100000===00===000001 XXXXXXXXXXXXXXXXXXXX
 00040000000000004000 XXXXXXXXXXXXXXXXXXXX
 pppp>000pppp000<pppp ZXXXXXXXXXXXXXXXXXXZ
-01001>00000000<11110 XXXXXXXXXXXXXXXXXXXX
-110011>000000<1000T1 XXXXXXXXXXXXXXXXXXXX
-100000000000<1100111 XXXXXXXXXXXXXXXXXXXX
-100000000O0000001111 XXXXXXXXXXXXXXXXXXXX
-11B00000000000001111 XXXXXXXXXXXXXXXXXXXX
+01L01>00000000<11110 XXXXXXXXXXXXXXXXXXXX
+11L011>000000<1000T1 XXXXXXXXXXXXXXXXXXXX
+10L000000000<1100111 XXXXXXXXXXXXXXXXXXXX
+10L000000O0000001111 XXXXXXXXXXXXXXXXXXXX
+11L00000000000001111 XXXXXXXXXXXXXXXXXXXX
 11110000000000001111 XXXXXXXXXXXXXXXXXXXX
 11G0wwwwwwwwwwww0111 XXXXXXXXX==========X
 1100wwwwwwwwwwwww111 XXXXXXXXX======000=X
@@ -889,9 +890,9 @@ pppp>000pppp000<pppp ZXXXXXXXXXXXXXXXXXXZ
 
 11111111111111111111
 00000000000000000000
-0t00000O0000O00000t0
-01F00000000000000F10
-Bf0000000000000000fB
+Lt00000O0000O00000tL
+L1F00000000000000F1L
+Lf0000000000000000fL
 =f0000000000000000f=
 =^M^^^^^^^^^^^^^^M^=
 =111111111111111111=
@@ -899,9 +900,9 @@ Bf0000000000000000fB
 \!flip
 1111111======1111111
 0000000======0000000
-0=00O00======00O00=0
-0=00000======00000=0
-B0=000000ff000000=0B
+L=00O00======00O00=L
+L=00000======00000=L
+L0=000000ff000000=0L
 =00000000G000000000=
 ==^^^^^^^00^^^^^^^==
 ==1111111**1111111==
@@ -910,9 +911,9 @@ B0=000000ff000000=0B
 \!flip
 ==================== ====================
 0===0000/000/====D00 =0000000D==0D0000D0=
-00==O00============0 =0000O00p==0p0O00p0=
-0D=00000000000000p=0 =D0T=========00T0===
-B==00000000000000T=B =========0==========
+00==O00============L =0000O00p==0p0O00p0=
+0D=00000000000000p=L =D0T=========00T0===
+0==00000000000000T=L =========0==========
 ===g0000000000000=== ========0O0=========
 ====^^^^^^^^^^^^^^== =========0==========
 ==1111111111111111== ====================
@@ -939,8 +940,8 @@ B==00000000000000T=B =========0==========
 ====00====
 0000000000
 O=pppp===O
-0=00000b=0
-B=00000b=B
+L=00000b=0
+L=00000b=B
 ==00000b==
 ==00000b==
 ==00000b==
@@ -957,16 +958,16 @@ B000000b=B
 1111001111
 0HO0000000
 O1ppp=p11O
-0100000010
-B10000=01B
-110000w011
-1100=wdb11
-1100===b11
-1100000b11
-1100=dwb11
-0100===b10
-0100000b10
-01B00wdb10
+L1L0O00010
+L1L000=01B
+11L000w011
+11L0=wdb11
+11L0===b11
+11L0000b11
+11L0=dwb11
+01L0===b10
+01L0000b10
+01L00wdb10
 0111111b10
 B000000b0B
 1111pp1111
@@ -976,16 +977,16 @@ B000000b0B
 1111001111 1111001111
 0HO0000000 1111111111
 O1ppp=p11O 1111H11111
-0100000010 1111T11111
-B10000=01B 1111f11111
-110000w011 110b00b011
-1100=Ddb11 110b0Db011
-1100===b11 100bbbb001
-110000wb11 1000000001
-1100=dwb11 1000000001
-0100===b10 1000000001
-010000wb10 1000000001
-01B00wdb10 1000000001
+01L0O00010 1111T11111
+B1L000=01B 1111f11111
+11L000w011 110b00b011
+11L0=Ddb11 110b0Db011
+11L0===b11 100bbbb001
+11L000wb11 1000000001
+11L0=dwb11 1000000001
+01L0===b10 1000000001
+01L000wb10 1000000001
+01L00wdb10 1000000001
 0111111b10 1000000001
 B000000/0B 100L00LD01
 1111pp1111 1111111111
@@ -995,18 +996,18 @@ B000000/0B 100L00LD01
 ==000000== 11111ii111
 000====000 11G0000001
 O=0=G0=0=O 1100000001
-0=000000=0 G00O000Oc1
-B==0000=/= 00000000D1
-====00==p= 1100111111
-==ff00ffp= 1100111111
-====00==== 1100000001
-===f00f=D= 1=0T0000/1
-====00=00= 1========1
-0===00=D=0 1===T00D=1
-0===00===0 1===FF===1
-0=TfBBf==0 1==0000==1
-0========0 G000O0000G
-B000D0000B 0000/00000
+L=000000=0 G00O000Oc1
+L==0LL0=/= 00000000D1
+====LL==p= 1100111111
+==ffLLffp= 1100111111
+====LL==== 1100000001
+===fLLf=D= 1=0T0000/1
+====LL=00= 1========1
+0===LL=D=0 1===T00D=1
+L===LL===L 1===FF===1
+L=TfLLf==L 1==0000==1
+L========L G000O0000G
+L000D0000L 0000/00000
 ====pp==== 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
