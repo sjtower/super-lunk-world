@@ -48,6 +48,7 @@
 1. hard tall room - look at or keep !hard
 1. have to pick up torch the right way or go boom
 1. force lavamader to shoot lava at you and far away bushes
+1. trigger expostion in front layer from back, need to remember which TNT is where
 
 1. ~~Climbing puzzles with trees~~
 1. ~~trap gauntlet - path~~
@@ -149,6 +150,8 @@
 1. puzzle where you have to carry a caveman corpse and have it revived by a necromancer to jump off of
 1. add more temple blocks to make clear combination
 1. throw litr torch at unlit torch before falling in water
+1. Clam on CB
+1. clam crush CB
 
 1. custom prison feeling, restless dead feeling
 

@@ -1,66 +1,58 @@
 // ------------------------------
 //  BASE CAMP
 // ------------------------------
-
-\-size 7 8									// level size in rooms
-\-back_room_chance 0						// % chance of a second room (default = 5%)
-\-back_room_interconnection_chance 0		// % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance 0			// 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance 0		// 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance 0							// 1/N chance of a mount (default = 5000)
-\-altar_room_chance 0						// 1/N chance of an altar room (default = 14)
-\-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-background_chance 1						// 1/N chance of putting a wall background where it fits (default = 1)
-\-ground_background_chance 2				// 1/N chance of putting a ground background where it fits (default = 1)
-
+\-size 7 8  //    level size in rooms
+\-back_room_chance 0 //    % chance of a second room (default = 5%)
+\-back_room_interconnection_chance 0 //    % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance 0 //    1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance 0 //    1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance 0 //    1/N chance of a mount (default = 5000)
+\-altar_room_chance 0 //    1/N chance of an altar room (default = 14)
+\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance 0 //    1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance 0 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-background_chance 1 //    1/N chance of putting a wall background where it fits (default = 1)
+\-ground_background_chance 2 //    1/N chance of putting a ground background where it fits (default = 1)
 // ------------------------------
 //  TILE CODES
 // ------------------------------
-
-\?empty							0
-\?floor							1
-\?surface_floor					2
-\?surface_hidden_floor			3
-\?minewood_floor				=
-\?minewood_floor_hanging_hide	h
-\?floor_hard					X	// Indestructible ("hard") floor
-\?ladder						L
-\?ladder_plat					P	// Ladder with platform across it
-\?platform						p
-\?starting_exit					s
-\?door2							D	// Door to other Layer
-\?door_drop_held				W
-\?push_block					4
-\?chain_ceiling					H
-\?spring_trap					^
-\?conveyorbelt_left				<
-\?conveyorbelt_right			>
-
-\?lamp_hang						l
-\?litwalltorch					O
-
-\?dresser						d	// Furniture Start
-\?bunkbed						u
-\?singlebed						b
-\?diningtable					i
-\?sidetable						S
-\?chair_looking_left			5
-\?chair_looking_right			6
-\?dog_sign						7
-\?telescope						9
-
-\?pot							o
-
-\?treasure_chest				t
-//\?goldbars					g
-\?crate_bombs					B
-\?crate_ropes					R
-\?rock							r
-
-\?water							w
-
+\?empty 0
+\?floor 1
+\?surface_floor 2
+\?surface_hidden_floor 3
+\?minewood_floor =
+\?minewood_floor_hanging_hide h
+\?floor_hard X
+\?ladder L
+\?ladder_plat P
+\?platform p
+\?starting_exit s
+\?door2 D
+\?door_drop_held W
+\?push_block 4
+\?chain_ceiling H
+\?spring_trap ^
+\?conveyorbelt_left <
+\?conveyorbelt_right >
+\?lamp_hang l
+\?litwalltorch O
+\?dresser d
+\?bunkbed u
+\?singlebed b
+\?diningtable i
+\?sidetable S
+\?chair_looking_left 5
+\?chair_looking_right 6
+\?dog_sign 7
+\?telescope 9
+\?pot o
+\?treasure_chest t
+\?crate_bombs B
+\?crate_ropes R
+\?rock r
+\?water w
+\?olmec a
+\?stone_floor c
 // ------------------------------
 //  TEMPLATES
 // ------------------------------
@@ -72,6 +64,12 @@
 //  !rare		The next template is rare (only 5% chance of a rare template being used).
 //  !hard		The next template is hard (only appear in the second two levels of the area).
 //  !liquid		The next template contains liquid (used to limit the number of liquid drops)
+// Set on basecamp_X file
+// Set on basecamp_X file
+// Set on basecamp_X file
+// Set on basecamp_X file
+// Set on basecamp_tv_room_x file
+
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom0-0
@@ -364,13 +362,9 @@
 \.setroom3-1
 ////////////////////////////////////////////////////////////////////////////////
 
-// Set on basecamp_X file
-
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-2
 ////////////////////////////////////////////////////////////////////////////////
-
-// Set on basecamp_X file
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-3 // ABOVE ENTRANCE TO CAVES
@@ -380,10 +374,10 @@
 1111111111
 1111111111
 1111111111
-1111111111
-1111111111
 1111000000
-111=000000
+111100cc00
+111100cc00
+111=00cc00
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-4 // HOLE
@@ -393,10 +387,10 @@
 1111111011
 1111111011
 1111111011
-1111111011
-11====1011
-0000011011
-0000011011
+0000000011
+00c0000011
+00c0000011
+00c0000011
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom3-5 // DORMS TOP-LEFT (DORM SECTION 3)
@@ -404,11 +398,11 @@
 
 \!dual
 =====h==L= XXXXXXXXXX
-=h==oL00L0 =====XXXXX
-=00==P==== =000=XXXXX
+=h==oLl0L0 =====XXXXX
+=0l==P==== =0l0=XXXXX
 =DS00Ld0Sd =Ddb=XXXXX
 =====P=h11 =======111
-1000=L1001 =0000=0001
+10l0=L10l1 =0l00=0l01
 16DS0L00D1 =dDbb=bdD1
 1=====1111 ======1111
 
@@ -418,11 +412,11 @@
 
 \!dual
 ========h= ==========
-======DL0= ======D00=
-=000===Po= =000===00=
-0oDS0L0L== =bDd==dbO=
+======DLl= ======Dl0=
+=0l0===Po= =0l0===00=
+0oDS0L0L== =bDd==db0=
 =====P==== ==========
-=000=L=00= =000==000=
+=0l0=L=0l= =0l0==0l0=
 =oDS0L00D= =bDd==bdD=
 =====P==== ==========
 
@@ -443,34 +437,30 @@
 \.setroom4-1 // SHORTCUT STATION
 ////////////////////////////////////////////////////////////////////////////////
 
-// Set on basecamp_X file
-
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-2
 ////////////////////////////////////////////////////////////////////////////////
-
-// Set on basecamp_X file
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-3 // ENTRANCE TO THE CAVES
 ////////////////////////////////////////////////////////////////////////////////
 
-111=000000
-====000000
+111=00cca0
+====00cccc
 0000000000
-00L0000000
-==P0000000
-0=L0000000
-00L070000s
+0000000000
+ppp0000000
+0000000000
+00^070000s
 ====111111
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom4-4
 ////////////////////////////////////////////////////////////////////////////////
 
-0000011011
-0000011011
-0000000011
+00c0000011
+ccc0000011
+0000000010
 0000000011
 0000000011
 0000000011
@@ -534,8 +524,6 @@ XXXXXXXXXX
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom5-2
 ////////////////////////////////////////////////////////////////////////////////
-
-// Set on basecamp_tv_room_x file
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom5-3

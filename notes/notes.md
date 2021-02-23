@@ -64,6 +64,9 @@
 1. Seems like switches and doors are only usable in certain levels (tidepool, vlad's, COG, Eggplant)
 1. You can combine room sections that are defined in other files. For example, if you define a `.shop` section,
     it will combine with the `\.shop` defined in `generic.lvl` and rooms can be pulled from either section
+    
+### Items and Damsels
+1. when trying to leave through an exit door with no floor, the damsel will jump out of your hands at the door and fall
 
 ### Notes on specific worlds and levels
 1. 1-4
