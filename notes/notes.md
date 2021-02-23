@@ -172,8 +172,9 @@
     1. If rolls into a 4-wide hole with unbreakable blocks on both walls, he will bounce/climb all the way up after hitting a wall
     1. not effected by spring traps
 1. Olmec:
-    1. room 0-0 seems to be uneditable?
-    1. olmec seems to spawn in vanilla location regardless of placement
+    1. room 0-0 is unused - use `coffin_unlockable` instead
+    1. olmec seems to spawn in vanilla location regardless of placement in the level
+    1. You cannot spawn any cavemen 
 1. Tiamat:
     1. Does not have a physical hitbox, so things like falling blocks/log trap/TNT will not affect her
 
