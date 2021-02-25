@@ -143,6 +143,9 @@
 #### Quicksand
 1. if platform is placed below quicksand, player cannot dop below it
 
+#### Honey
+1. can be pushed by crush blocks, push blocks, etc. Even on the ceiling!
+
 #### Elevators
 1. you can push elevator if it lands on a PB/TNT
 
