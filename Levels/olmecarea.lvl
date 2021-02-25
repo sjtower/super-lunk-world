@@ -288,8 +288,8 @@ XXXXXXXXXX XXXXXXXXX0
 ////////////////////////////////////////////////////////////////////////////////
 
 \!dual
--h000000h- XX0X,X,,,,
--hhhhhhhh- XX0X,,,XXX
+-h000000h- XX0X,XX,,,
+-hhhhhhhh- XX0X,,,,XX
 ---'------ XX0XXX,,XX
 0000000000 0X0X0XX,,X
 F000000000 OX0XOXXX,X
