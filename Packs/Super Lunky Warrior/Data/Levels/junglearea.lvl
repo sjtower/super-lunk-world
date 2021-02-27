@@ -1,257 +1,120 @@
-// ------------------------------
-//  AREA TWO-A (JUNGLE)
-// ------------------------------
-\-size 4 5  //    level size in rooms - W / H
-\-back_room_chance 10 //    % chance of a second room (default = 5%)
-\-back_room_interconnection_chance 20 //    % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance 500 //    1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance 1000 //    1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance 5000 //    1/N chance of a mount (default = 5000)
-\-altar_room_chance 0 //    1/N chance of an altar room (default = 14)
-\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance 0 //    1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance 0 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
-//\-max_liquid_particles 6000 //   \-max_liquid_particles 6000 
-//\-flagged_liquid_rooms 20 //   \-flagged_liquid_rooms 20 
-\-machine_bigroom_chance 10 //    1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance 2 //    1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 5 //    1/N chance of spawning a machine tall room (default = 0)
-\-machine_rewardroom_chance 0 //    1/N chance of spawning a machine reward room (default = 0)
-// ------------------------------
-//  TILE CODES
-// ------------------------------
-\?chunk_ground 5
-\?chunk_air 6
-\?chunk_door 8
-\?empty 0
-\?floor 1
-\?floor%50 2
-\?minewood_floor =
-\?stone_floor -
-\?floor_hard X
-\?floor_hard%50%floor Y
-\?adjacent_floor Z
-\?vine v
-\?growable_vine V
-\?door 9
-\?door2 D
-\?platform p
-\?spikes ^
-\?push_block 4
-\?bone_block f
-\?bush_block b
-\?thorn_vine *
-\?jungle_spear_trap ~
-\?bigspear_trap M
-\?laser_trap z
-\?arrow_trap @
-\?powder_keg o
-\?landmine ]
-\?thinice I
-\?elevator e
-\?honey_upwards }
-\?stagnant_lava a
-\?water w
-\?alien_generator A
-\?giantclam C
-\?spring_trap c
-\?falling_platform F
-\?chainandblocks_ceiling B
-\?conveyorbelt_left <
-\?conveyorbelt_right >
-\?littorch H
-\?pot t
-\?tree_base T
-\?rock r
-\?key s
-\?locked_door /
-\?fountain_drain d
-\?clover Q
-\?houyibow h
-\?robot {
-\?imp +
-\?yeti y
-\?caveman_asleep n
-\?lavamander L
-\?giant_spider N
-\?altar x
-\?vault_wall |
-\?coffin g
-\?shop_sign K
-\?shop_door k
-\?lamp_hang l
-\?shop_wall .
-\?shop_item S
-\?wanted_poster W
-\?shopkeeper $
-\?tomb_floor G
-\?cursed_pot u
-\?litwalltorch O
-\?haunted_corpse 7
-\?shop_wall%50 ;
-\?shop_woodwall :
-\?die %
-\?merchant #
-\?cavemanshopkeeper &
-\?sleeping_hiredhand \
-\?forcefield ?
-\?forcefield_top '
-\?thief J
-\?ladder i
-\?ladder_plat P
-// ------------------------------
-//  LEVEL CHANCES
-// ------------------------------
-\%jungle_spear_trap_chance 0 
-\%snap_trap_chance 0 
-\%beehive_chance 0 
-\%leprechaun_chance 0 
-// ------------------------------
-//  MONSTER CHANCES
-// ------------------------------
-\+bat 0 
-\+hangspider 0 
-\+giantspider 0 
-\+caveman 0 
-\+tikiman 0 
-\+witchdoctor 0 
-\+mantrap 0 
-\+mosquito 0 
-\+monkey 0 
-\+critterbutterfly 60 
-// ------------------------------
-//  TEMPLATES
-// ------------------------------
-//
-//  !ignore		Ignore the following template. This is to make building rooms easier.
-//  !flip		Flip the following template to make another. i.e. The following template = two templates.
-//  !onlyflip	Flip the following template (original is ignored)
-//  !dual		The next template contains both a frontal and back room
-//  !rare		The next template is rare (only 5% chance of a rare template being used).
-//  !hard		The next template is hard (only appear in the second two levels of the area).
-//  !liquid		The next template contains liquid (used to limit the number of liquid drops)
-//spike spear gauntlet 1
-//\!ignore
-//spike spear gauntlet 2
-//\!ignore
-//bush powderkeg run
-//\!ignore
-//bush bomb avoid
-//\!ignore
-//throw rock at imp or bombs to clear path
-//\!ignore
-//imp drop on bombs to clear path
-//\!ignore
-//spike bow arrow jump
-//\!ignore
-//lava elevator whip
-//\!ignore
-//lava elevator whip 2
-//\!ignore
-//lava elevator dodge
-//\!ignore
-//lava elevator dodge 2
-//\!ignore
-//elevator mine
-//\!ignore
-//elevator mine 2
-//\!ignore
-//short throw mine
-//\!ignore
-//lava lavamander jump
-//\!ignore
-//path don't wake caveman
-//\!ignore
-//path robots in bramble
-//top don't wake caveman
-//\!ignore
-//top spike spear guantlet
-//\!ignore
-//top tree dodge
-//\!ignore
-//top mine dig
-//\!ignore
-//top lava elevator dodge
-//\!ignore
-//top shopkeep conveyor
-//\!ignore
-//top torch bush race
-//\!ignore
-//top lava elevator vine/tree dodge
-//\!ignore
-//top lava elevator FP drop slow
-//top robots in bramble
-//\!ignore
-//top backlayer lava lock
-//\!ignore
-//drop spike spear gauntlet
-//\!ignore
-//throw rock at imp to open bottom drop
-//\!ignore
-//robot escort drop
-//\!ignore
-//precise mine dig drop
-//\!ignore
-//avoid mine bridge drop
-//\!ignore
-//drop mine elevator
-//\!ignore
-//PB into lava drop
-//\!ignore
-//drop avoid robots
-//\!ignore
-//whip mine above, activate below
-//\!ignore
-//drop thin ice avoid traps
-//\!ignore
-//FP mine drop
-//top drop spike spear guantlet
-//\!ignore
-//top drop mine elevator
-//\!ignore
-//top drop lava elevator
-//\!ignore
-//top drop push TNT elevator FP
-//\!ignore
-//top drop thin ice avoid traps
-//top drop thin ice whip lava
-//big PB & bow/arrow puzzle. Two PB towers - 4 & 2
-//\!ignore
-//big preserve FPs
-//vine spike jump
-//\!ignore
-//elevator conveyor
-//\!ignore
-//stationary elevator conveyor
-//\!ignore
-//long shopkeep conveyor
-//\!ignore
-//long lava lavamander jump
-//\!ignore
-//long avoid imp boom
-//\!ignore
-//long lava elevator whip/dodge
-//\!ignore
-//long throw mines
-//\!ignore
-//wide torch bush race
-//\!ignore
-//wide throw shopkeep
-//tall lava burn & tree
-//\!ignore
-//tall precise mine dig drop -- too hard for world 2
-//\!ignore
-//tall precise mine dig
-//\!ignore
-//\!ignore
-//\!ignore
-//\!ignore
 
+\-size                                  4 5        // level size in rooms - W / H
+\-back_room_chance                      10         // % chance of a second room (default = 5%)
+\-back_room_interconnection_chance      20         // % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance          500        // 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance    1000       // 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance                          5000       // 1/N chance of a mount (default = 5000)
+\-altar_room_chance                     0          // 1/N chance of an altar room (default = 14)
+\-idol_room_chance                      0          // 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance              0          // 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance            0          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-machine_bigroom_chance                10         // 1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance               2          // 1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance               5          // 1/N chance of spawning a machine tall room (default = 0)
+\-machine_rewardroom_chance             0          // 1/N chance of spawning a machine reward room (default = 0)
+
+\?chunk_ground                    5
+\?chunk_air                       6
+\?chunk_door                      8
+\?empty                           0
+\?floor                           1
+\?floor%50                        2
+\?minewood_floor                  =
+\?stone_floor                     -
+\?floor_hard                      X
+\?floor_hard%50%floor             Y
+\?adjacent_floor                  Z
+\?vine                            v
+\?growable_vine                   V
+\?door                            9
+\?door2                           D
+\?platform                        p
+\?spikes                          ^
+\?push_block                      4
+\?bone_block                      f
+\?bush_block                      b
+\?thorn_vine                      *
+\?jungle_spear_trap               ~
+\?bigspear_trap                   M
+\?laser_trap                      z
+\?arrow_trap                      @
+\?powder_keg                      o
+\?landmine                        ]
+\?thinice                         I
+\?elevator                        e
+\?honey_upwards                   }
+\?stagnant_lava                   a
+\?water                           w
+\?alien_generator                 A
+\?giantclam                       C
+\?spring_trap                     c
+\?falling_platform                F
+\?chainandblocks_ceiling          B
+\?conveyorbelt_left               <
+\?conveyorbelt_right              >
+\?littorch                        H
+\?pot                             t
+\?tree_base                       T
+\?rock                            r
+\?key                             s
+\?locked_door                     /
+\?fountain_drain                  d
+\?clover                          Q
+\?houyibow                        h
+\?robot                           {
+\?imp                             +
+\?yeti                            y
+\?caveman_asleep                  n
+\?lavamander                      L
+\?giant_spider                    N
+\?altar                           x
+\?vault_wall                      |
+\?coffin                          g
+\?shop_sign                       K
+\?shop_door                       k
+\?lamp_hang                       l
+\?shop_wall                       .
+\?shop_item                       S
+\?wanted_poster                   W
+\?shopkeeper                      $
+\?tomb_floor                      G
+\?cursed_pot                      u
+\?litwalltorch                    O
+\?haunted_corpse                  7
+\?shop_wall%50                    ;
+\?shop_woodwall                   :
+\?die                             %
+\?merchant                        #
+\?cavemanshopkeeper               &
+\?sleeping_hiredhand              \
+\?forcefield                      ?
+\?forcefield_top                  '
+\?thief                           J
+\?ladder                          i
+\?ladder_plat                     P
+
+\%jungle_spear_trap_chance    0
+\%snap_trap_chance            0
+\%beehive_chance              0
+\%leprechaun_chance           0
+
+\+bat                  0
+\+hangspider           0
+\+giantspider          0
+\+caveman              0
+\+tikiman              0
+\+witchdoctor          0
+\+mantrap              0
+\+mosquito             0
+\+monkey               0
+\+critterbutterfly     60
 
 ////////////////////////////////////////////////////////////////////////////////
 \.entrance
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 ---0------
 --aa---a--
 0faa00faf0
@@ -265,6 +128,7 @@
 \.entrance_drop
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 1a111111a1
 1a000V0001
@@ -279,6 +143,7 @@ ff0f00f0f0
 \.exit
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 ----aa----
 0bo----ob0
 0bp-00-pb0
@@ -292,6 +157,7 @@ H1------1H
 \.exit_notop
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 -000000---
 000--taa-b
 0bbb----bb
@@ -305,6 +171,7 @@ H1--9b0011
 \.side
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -318,6 +185,7 @@ H1--9b0011
 \.path_normal
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 1111111111
 M0000000M0
@@ -328,6 +196,7 @@ M0000000M0
 0~~~==~~~0
 1111111111
 
+// room
 \!flip
 1111111111
 M0000000M0
@@ -338,6 +207,7 @@ M0000000M0
 0~~~~~~~~0
 1111111111
 
+// room
 \!flip
 1111111111
 1000oo0001
@@ -348,6 +218,7 @@ M0000000M0
 H011XX110H
 XXXXXXXXXX
 
+// room
 \!flip
 1111111111
 10v0bb0v01
@@ -358,6 +229,7 @@ XXXXXXXXXX
 H0b-aa-b0H
 XXXXXXXXXX
 
+// room
 \!flip
 =f000+00f=
 =00000000=
@@ -368,6 +240,7 @@ XXXXXXXXXX
 011obbo110
 11XXXXXX11
 
+// room
 \!flip
 =f000+00f=
 =00000000=
@@ -378,6 +251,7 @@ XXXXXXXXXX
 000p11p000
 11XXXXX111
 
+// room
 \!flip
 1111111111
 v00011000v
@@ -388,6 +262,7 @@ v=00O000=v
 =000==000=
 =***==***=
 
+// room
 \!flip
 1111111111
 100a000000
@@ -398,6 +273,7 @@ p-0000e0-p
 -aaaaaaaa-
 ----------
 
+// room
 \!flip
 1111111111
 100a110000
@@ -408,6 +284,7 @@ Xaa0a00aaX
 XaaaaaaaaX
 ----------
 
+// room
 \!flip
 111111a111
 1001v1e000
@@ -418,6 +295,7 @@ Xaa0000aaX
 XaaaaaaaaX
 ----------
 
+// room
 \!flip
 1111111111
 10vvvvvv01
@@ -428,6 +306,7 @@ X00000a00X
 Xa00aaea0X
 ----------
 
+// room
 \!flip
 111-a-1111
 100---0001
@@ -438,6 +317,7 @@ Xa00aaea0X
 -]e-a-ee]-
 --******--
 
+// room
 \!flip
 111---1111
 100---0001
@@ -448,6 +328,7 @@ Xa00aaea0X
 -]e---ee]-
 --******--
 
+// room
 \!flip
 111----111
 100ffff001
@@ -458,6 +339,7 @@ Xa00aaea0X
 X00----00X
 **********
 
+// room
 \!flip
 1111111111
 v000--000v
@@ -468,6 +350,7 @@ v-000000-v
 v-aaaLaa-v
 ----------
 
+// room
 \!flip
 ----------
 --a-]n-a--
@@ -478,6 +361,7 @@ f00v--v00f
 Xaa0aaa0aX
 X--------X
 
+// room
 \!flip
 1111111111
 1111111111
@@ -492,6 +376,8 @@ X********X
 \.path_notop
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
+\!flip
 ----00----
 -00000000-
 -00-n]0-0-
@@ -501,6 +387,7 @@ f0~v--v~0f
 -aa0aaa0a-
 ----------
 
+// room
 1111001111
 M0000000M0
 1~00~~00~1
@@ -510,6 +397,8 @@ p~0O~~O0~p
 0~~~~~~~~0
 1111111111
 
+// room
+\!flip
 1110000111
 1100000011
 v10000O01v
@@ -519,6 +408,8 @@ vz000000=v
 0000T00000
 1111111111
 
+// room
+\!flip
 1110001111
 111]]]1111
 1111111111
@@ -528,6 +419,7 @@ vz000000=v
 1111111111
 1111111111
 
+// room
 ----pp----
 -tt-00-tt-
 -e0-00-0e-
@@ -537,6 +429,8 @@ F00000000F
 -ae----ea-
 ----------
 
+// room
+\!flip
 --A-00A---
 -t000000t-
 -0>>>>>00-
@@ -546,6 +440,8 @@ f00<<<<<Ff
 ----------
 ----------
 
+// room
+\!flip
 ----00-H--
 -4--000f4-
 -bbbbbbbb-
@@ -555,6 +451,7 @@ f00<<<<<Ff
 -a0aa0a0a-
 ----------
 
+// room
 ----ii----
 ---vFFv---
 -00v00v00-
@@ -564,6 +461,7 @@ t--00a0--t
 ---eeee---
 ----------
 
+// room
 ----ii----
 ----FF----
 -00400400-
@@ -573,6 +471,8 @@ t--00a0--t
 ----ee----
 ----------
 
+// room
+\!flip
 1111pp1111
 1100000011
 1100000011
@@ -582,6 +482,7 @@ t--00a0--t
 1********1
 XXXXXXXXXX
 
+// room
 \!dual
 \!flip
 ----00---- ----------
@@ -597,6 +498,8 @@ XXXXXXXXXX ----------
 \.path_drop
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
+\!flip
 1111111111
 M0000000M0
 1~0~0~~0~1
@@ -606,6 +509,7 @@ M0000000M0
 0~~~0~~~~0
 1111001111
 
+// room
 \!flip
 =00f0+0f0=
 =00000000=
@@ -616,6 +520,7 @@ v000*0*00v
 01111o1110
 1111111111
 
+// room
 \!flip
 ======1===
 =00000v00=
@@ -626,6 +531,7 @@ v000*0*00v
 ----00--00
 XXXX--XXXX
 
+// room
 -a-XXXX-a-
 ---0]]0---
 --00--00--
@@ -635,6 +541,8 @@ XXXX--XXXX
 -0a-00-a0-
 ----pp----
 
+// room
+\!flip
 ----------
 ----------
 0]]]]]]]]0
@@ -644,6 +552,7 @@ X000-0-00X
 Xaaa-0-aaX
 X---pp---X
 
+// room
 \!flip
 1111001111
 v0]0O00]01
@@ -654,6 +563,8 @@ vX0XXXXXXX
 1X00000001
 1~~1111~~1
 
+// room
+\!flip
 ----------
 -v000000t-
 0v4a00000v
@@ -663,6 +574,8 @@ Xp4a-0bb-0
 Xh4a-0p--X
 X----F---X
 
+// room
+\!flip
 ----------
 v00000000v
 v0{00O{-0v
@@ -672,6 +585,8 @@ v0-0o0o-0v
 -a-0p0-aa-
 ----pp----
 
+// room
+\!flip
 1---0-1111
 0-zt000]F0
 0v--ee0-00
@@ -681,6 +596,7 @@ v0-0o0o-0v
 0000--0000
 1111pp1111
 
+// room
 \!flip
 ----------
 v00H00H00v
@@ -691,6 +607,7 @@ v---oo---v
 0->-II-<-0
 ---~II~---
 
+// room
 \!flip
 =1======1=
 =v000]00v=
@@ -705,6 +622,7 @@ XXXX11XXXX
 \.path_drop_notop
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 1111001111
 10M0000001
@@ -715,6 +633,7 @@ M00000~001
 10000~~~~1
 1~~1001111
 
+// room
 \!flip
 1]000000]1
 1111~0~111
@@ -725,6 +644,7 @@ XXXXX0XXXX
 1000000001
 1~~1~~1~~1
 
+// room
 \!flip
 ----00----
 -0000000a-
@@ -735,6 +655,7 @@ p00p00p00p
 -00-00-00-
 ----00----
 
+// room
 \!flip
 ---000h--X
 -t0000o0vX
@@ -745,6 +666,7 @@ p00p00p00p
 XetX-t-X0X
 XXXX---XXX
 
+// room
 \!flip
 ----00----
 --M000M0--
@@ -755,6 +677,7 @@ XXXX---XXX
 -00~00~0t-
 ----00----
 
+// room
 \!flip
 ----00----
 -t0H0000t-
@@ -766,9 +689,10 @@ v---oo---v
 ---~II~---
 
 ////////////////////////////////////////////////////////////////////////////////
-\.idol // Idol room
+\.idol   //  Idol room
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 ~00000000~
 V00000000V
 00~0000~00
@@ -779,9 +703,10 @@ V00000000V
 0*------*0
 
 ////////////////////////////////////////////////////////////////////////////////
-\.coffin_unlockable // Coffin room for unlockable characters (facing right, will flip for other side)
+\.coffin_unlockable   //  Coffin room for unlockable characters (facing right, will flip for other side)
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -795,6 +720,7 @@ V00000000V
 \.machine_bigroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 \!dual
 111ppp11111111ppp111 XXXXZZXXXXXXXZZXXXXX
@@ -814,6 +740,7 @@ V00000000V
 0000000000000000D000 XXXX11111XXXXXX0D0XX
 11110011111111001111 XXXXZZXXXXXXXXXXXXXX
 
+// room
 \!flip
 \!dual
 11100000000000001111 XXXXZZXXXXXXXZZXXXXX
@@ -837,6 +764,7 @@ H0000bbbbbbbbb000b0- XX000--1000---00-1XX
 \.machine_bigroom_side
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 \!flip
 11111111111111111111 XXXXZZXXXXXXXZZXXXXX
@@ -860,6 +788,7 @@ H0000bbbbbbbbb000b0- XX000--1000---00-1XX
 \.machine_wideroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 11111111*11*11111111
 10000001****11100001
 1000000v0F1F0v000001
@@ -869,6 +798,7 @@ T000000000000000000T
 1*^^^^********^^^^*1
 11111111111111111111
 
+// room
 \!flip
 11111111111111111111
 10y@111111111111@y01
@@ -879,6 +809,7 @@ r1000000----0000001r
 110000000--000000011
 11>>>>>>>--<<<<<<<11
 
+// room
 \!flip
 11111111111111111111
 10011111111111111001
@@ -889,6 +820,7 @@ f0000000----0000000f
 110000000--000000011
 11>>>>>>>--<<<<<<<11
 
+// room
 ---A--A------A--A---
 -t00--00000000--00t-
 -000000000O00000000-
@@ -898,6 +830,7 @@ f0c0000000000000000f
 --a----ta--at----a--
 --------------------
 
+// room
 11111111111111111111
 v000000000000000000v
 v000000O0000O000000v
@@ -907,6 +840,7 @@ v000000000000000000v
 ----aLaaaLaaaaLa----
 --------------------
 
+// room
 11111111111111111111
 10vf0f0vf+0fvf00fv01
 v0v0000v0000v0000v0v
@@ -916,6 +850,7 @@ v=00000v0000v00000=v
 ==^oooooooooooooo^==
 =XXXXXXXXXXXXXXXXXX=
 
+// room
 11111111111111111111
 10a00000000000000000
 00e00000000000000000
@@ -925,6 +860,7 @@ X00000000e000000a00X
 Xa0a0aaaaaa0aaaae0aX
 X------------------X
 
+// room
 11111111111111111111
 100000000--000000001
 10000y-O00y0O-y00001
@@ -934,6 +870,7 @@ X------------------X
 =--aaaaaaaaaaaaaa--=
 =111111111111111111=
 
+// room
 --------------------
 ----4------4--4-----
 -HbbbbbbbbbbbbbbbbH-
@@ -943,6 +880,7 @@ Xbbbbbbbb00bbbbbbbbX
 XF0aa0a0a00a0aa0a0FX
 X------------------X
 
+// room
 -A----------------A-
 -0-00000044000000-0-
 -00000000ff00000000-
@@ -956,6 +894,7 @@ f00000000ff00000000f
 \.machine_wideroom_side
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 11111111111111111111
 11111111111111111111
 11111111111111111111
@@ -969,6 +908,7 @@ f00000000ff00000000f
 \.machine_tallroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 v000000000
 v---------
@@ -987,6 +927,7 @@ pz000000zp
 0000T00000
 111p1p1111
 
+// room
 -a--00--a-
 ---0]]0---
 --00--00--
@@ -1004,6 +945,7 @@ pz000000zp
 -00000000-
 ----pp----
 
+// room
 -a--00--a-
 ---0]]0---
 --00--00--
@@ -1025,6 +967,7 @@ pz000000zp
 \.machine_tallroom_side
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 1111111111
 1111111111
@@ -1047,6 +990,7 @@ pz000000zp
 \.machine_keyroom
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 1111111111
 0000000000 1000000001
@@ -1057,16 +1001,19 @@ pz000000zp
 0000000000 1000000001
 0000000000 1111111111
 
+// room
 1111111111
 0000000000
 0000000000
 
+// room
 0000000000
 0000000000
 0000000000
 0000000000
 1111111111
 
+// room
 \!dual
 11100---11 1111111111
 0000----00 =V==11===1
@@ -1081,6 +1028,7 @@ pz000000zp
 \.machine_rewardroom
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 1111111111
 0000000000 1000000001
@@ -1091,6 +1039,7 @@ pz000000zp
 0000000000 1000000001
 0000000000 1111111111
 
+// room
 \!flip
 \!dual
 1*10000000 1111111111
@@ -1106,6 +1055,7 @@ pz000000zp
 \.sisters_room
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -1119,16 +1069,19 @@ pz000000zp
 \.chunk_door
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 009000
 021120
 211112
 
+// room
 \!flip
 000000
 000020
 290210
 
+// room
 \!flip
 020000
 019000
@@ -1138,33 +1091,40 @@ pz000000zp
 \.chunk_ground
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 00000
 00000
 00000
 
+// room
 01210
 01210
 11111
 
+// room
 \!flip
 11110
 00000
 00001
 
+// room
 00000
 00000
 11111
 
+// room
 00200
 10001
 *****
 
+// room
 \!rare
 \!flip
 01110
 210b0
 11111
 
+// room
 \!hard
 00200
 ~0~0~
@@ -1174,41 +1134,50 @@ pz000000zp
 \.chunk_air
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 00000
 00000
 00000
 
+// room
 22222
 00000
 22222
 
+// room
 \!flip
 11100
 22200
 00000
 
+// room
 \!flip
 11100
 11100
 22200
 
+// room
 01110
 02220
 00000
 
+// room
 01110
 01110
 02220
 
+// room
 \!flip
 22200
 11100
 22200
 
+// room
 02220
 01110
 02220
 
+// room
 12121
 10101
 20202
