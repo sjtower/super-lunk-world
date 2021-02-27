@@ -1,0 +1,127 @@
+// ------------------------------
+//  AREA SIX - LEVEL 1 (BABYLON)
+// ------------------------------
+// ------------------------------
+//  TILE CODES
+// ------------------------------
+\?vlad |
+\?houyibow y
+\?clover Q
+\?litwalltorch O
+\?chunk_ground 5
+\?chunk_air 6
+\?chunk_door 8
+\?empty 0
+\?floor 1
+\?floor%50 2
+\?babylon_floor =
+\?stone_floor -
+\?floor_hard X
+\?floor_hard%50%floor Y
+\?adjacent_floor Z
+\?platform p
+\?pipe E
+\?ladder L
+\?ladder_plat P
+\?door 9
+\?door2 D
+\?locked_door /
+\?spikes ^
+\?upsidedown_spikes v
+\?push_block 4
+\?laser_trap z
+\?spark_trap A
+\?forcefield (
+\?timed_forcefield )
+\?forcefield_top '
+\?elevator e
+\?falling_platform F
+\?key T
+\?pot t
+\?rock k
+\?honey_upwards }
+\?conveyorbelt_left <
+\?conveyorbelt_right >
+\?thorn_vine *
+\?spring_trap g
+\?robot {
+\?turkey u
+\?regenerating_block r
+\?bigspear_trap C
+\?bone_block f
+\?sticky_trap B
+\?giant_frog n
+\?powder_keg o
+\?landmine ]
+\?thinice I
+\?mushroom_base M
+\?ufo U
+\?lamassu S
+\?olmite l
+\?empty_mech m
+\?shop_sign .
+\?shopkeeper $
+\?lava w
+\?lava%50%floor a
+\?stone_floor +
+\?tomb_floor G
+\?haunted_corpse 7
+\?altar x
+\?shop_sign K
+\?shop_wall .
+\?shop_wall%50 ;
+\?shop_woodwall :
+\?wanted_poster W
+\?die %
+\?merchant #
+\?cavemanshopkeeper &
+\?sleeping_hiredhand \
+\?forcefield ?
+\?thief J
+\?snake b
+\?elevator V
+\?idol_floor i
+\?cursed_pot c
+\?littorch d
+// ------------------------------
+//  TEMPLATES
+// ------------------------------
+//
+//  !ignore		Ignore the following template. This is to make building rooms easier.
+//  !flip		Flip the following template to make another. i.e. The following template = two templates.
+//  !onlyflip	Flip the following template (original is ignored)
+//  !dual		The next template contains both a frontal and back room
+//  !rare		The next template is rare (only 5% chance of a rare template being used).
+//  !hard		The next template is hard (only appear in the second two levels of the area).
+//  !liquid		The next template contains liquid (used to limit the number of liquid drops)
+
+
+////////////////////////////////////////////////////////////////////////////////
+\.entrance
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+\!purge
+c000000000
+=0900Qy000
+=O=OO==Od=
+0======000
+00r00|r0u0
+0=======u0
+========u=
+====00====
+
+////////////////////////////////////////////////////////////////////////////////
+\.entrance_drop
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+\!purge
+c0000000d0
+=0900Qy000
+=O=OO==Ou=
+=======0u0
+==r00|r0u0
+==0=====0=
+==0000====
+====00====

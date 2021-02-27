@@ -1,0 +1,278 @@
+// ------------------------------
+//  PALACE OF PLEASURE LEVEL (BABYLON)
+// ------------------------------
+
+\-size 7 7									// level size in rooms
+\-back_room_chance 0						// % chance of a second room (default = 5%)
+\-back_room_interconnection_chance 0		// % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance 0			// 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance 0		// 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance 5000							// 1/N chance of a mount (default = 5000)
+\-altar_room_chance 0						// 1/N chance of an altar room (default = 14)
+\-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance 10				// 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance 5				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-machine_bigroom_chance 1					// 1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance 1					// 1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance 1					// 1/N chance of spawning a machine tall room (default = 0)
+\-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
+
+// ------------------------------
+//  TILE CODES
+// ------------------------------
+
+\?palace_floor				|
+\?treasure_vaultchest		R
+//\?palace_entrance			C
+\?palace_table				h
+\?palace_table_tray			H
+//\?palace_chandelier			v
+//\?palace_candle				h
+\?palace_bookcase			B
+\?chunk_ground 5
+\?chunk_air 6
+\?chunk_door 8
+\?empty 0
+\?floor 1
+\?floor%50 2
+\?babylon_floor =
+\?stone_floor -
+\?floor_hard X
+\?floor_hard%50%floor Y
+\?adjacent_floor Z
+\?platform p
+\?pipe E
+\?ladder L
+\?ladder_plat P
+\?door 9
+\?door2 D
+\?locked_door /
+\?spikes ^
+\?upsidedown_spikes v
+\?push_block 4
+\?laser_trap z
+\?spark_trap A
+\?forcefield (
+\?timed_forcefield )
+\?forcefield_top '
+\?elevator e
+\?clover Q
+\?litwalltorch O
+\?falling_platform F
+\?key T
+\?pot t
+\?rock k
+\?honey_upwards }
+\?conveyorbelt_left <
+\?conveyorbelt_right >
+\?thorn_vine *
+\?spring_trap g
+\?robot {
+\?turkey u
+\?regenerating_block r
+\?bigspear_trap C
+\?bone_block f
+\?sticky_trap B
+\?giant_frog n
+\?powder_keg o
+\?landmine ]
+\?thinice I
+\?mushroom_base M
+\?ufo U
+\?lamassu S
+\?olmite l
+\?empty_mech m
+\?shop_sign .
+\?shopkeeper $
+\?lava w
+\?lava%50%floor a
+\?stone_floor +
+\?tomb_floor G
+\?haunted_corpse 7
+\?altar x
+\?shop_sign K
+\?shop_wall .
+\?shop_wall%50 ;
+\?shop_woodwall :
+\?wanted_poster W
+\?die %
+\?merchant #
+\?cavemanshopkeeper &
+\?sleeping_hiredhand \
+\?forcefield ?
+\?thief J
+\?snake b
+\?cursed_pot c
+
+\?madametusk				∩
+//\?bodyguard					b
+
+// ------------------------------
+//  TEMPLATES
+// ------------------------------
+//
+//  !ignore		Ignore the following template. This is to make building rooms easier.
+//  !flip		Flip the following template to make another. i.e. The following template = two templates.
+//  !onlyflip	Flip the following template (original is ignored)
+//  !dual		The next template contains both a frontal and back room
+//  !rare		The next template is rare (only 5% chance of a rare template being used).
+//  !hard		The next template is hard (only appear in the second two levels of the area).
+//  !liquid		The next template contains liquid (used to limit the number of liquid drops)
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_0-0 // TOP FLOOR
+////////////////////////////////////////////////////////////////////////////////
+
+||||||||||
+|000v00|00
+|000000|00
+|000000|0B
+|000000|B0
+|hL000000B
+|0L0h00000
+||P|||||||
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_0-1 // Madame Tusk
+////////////////////////////////////////////////////////////////////////////////
+
+||||||||||
+0v000000v0
+0000000000
+0000000000
+0000000000
+Bh000000h0
+b00||||00b
+||B||||B||
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_0-2
+////////////////////////////////////////////////////////////////////////////////
+
+||||||||||
+00000v000|
+000000000|
+000000B00|
+00000B000|
+BB0H0000h|
+000h000L0|
+|||||||P||
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_1-0 // BOTTOM FLOOR
+////////////////////////////////////////////////////////////////////////////////
+
+||L|||||||
+||L0v00000
+||L000||00
+00L000||00
+I0LBBB||h0
+||L0000000
+||L0b00000
+||P|||||||
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_1-1 // Entrance
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+========== ||0||||0||
+00]0000]00 0000v00000
+p==A00A==p 0000000000
+p=000000=p 0000000000
+p=000000=p 0000000000
+p=000000=p 00B0h000hB
+X=******=X c00B00D000
+XXXX00XXXX ||||||||||
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_1-2
+////////////////////////////////////////////////////////////////////////////////
+
+|||||||L||
+00|Q0v0L0|
+00||000L0|
+00|t000L0|
+0h||BBBL0|
+B000000Lh|
+00000b0L0|
+||||||||||
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_2-0 // DUNGEON
+////////////////////////////////////////////////////////////////////////////////
+
+>>L>>>>>>>
+>0L0000000
+>0L0000000
+>0L0000000
+>0L0000000
+>0L0b00O00
+>>>>>>0000
+>>>>>>>>>>
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_2-1
+////////////////////////////////////////////////////////////////////////////////
+
+>>>>>>>>>>
+0000000000
+0000000000
+0000000000
+0000000000
+00O0000O00
+0000xx0000
+>>>>>>>>>>
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_2-2
+////////////////////////////////////////////////////////////////////////////////
+
+>>>'>>>>>>
+000000000>
+000000000>
+000000000>
+000000000>
+0000000ff>
+0000000f<>
+>>>(>>>>>>
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_3-0 // TREASURE ROOM
+////////////////////////////////////////////////////////////////////////////////
+
+>>>>>>>>>>
+^000000000
+>000000000
+>RRRR00000
+>>>>>00000
+>000000000
+>RRRR00000
+>>>>>>>>>>
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_3-1
+////////////////////////////////////////////////////////////////////////////////
+
+'>'>'>>>>>
+0000000000
+0000000000
+0000000000
+0000000000
+0000000O00
+0000000000
+(>(>(>>>>>
+
+////////////////////////////////////////////////////////////////////////////////
+\.palaceofpleasure_3-2 // TREASURE ROOM ENTRANCE
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+========== >>>>>>>>>>
+00]0000]00 000000000>
+p==A00A==p 000000000>
+p=000000=p 000000000>
+p=000000=p 000000000>
+p=000000=p O00O00O00>
+X=******=X 000b000D0>
+XXXX00XXXX >>>>>>>>>>

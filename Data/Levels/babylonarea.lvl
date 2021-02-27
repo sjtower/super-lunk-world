@@ -1,0 +1,1121 @@
+// ------------------------------
+//  AREA SIX (BABYLON)
+// ------------------------------
+\-size 4 4  //    level size in rooms
+\-back_room_chance 5 //    % chance of a second room (default = 5%)
+\-back_room_interconnection_chance 20 //    % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance 500 //    1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance 1000 //    1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance 5000 //    1/N chance of a mount (default = 5000)
+\-altar_room_chance 0 //    1/N chance of an altar room (default = 14)
+\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance 0 //    1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance 0 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
+//\-max_liquid_particles 2000 //   \-max_liquid_particles 2000 
+//\-flagged_liquid_rooms 6 //   \-flagged_liquid_rooms 6 
+\-machine_bigroom_chance 5 //    1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance 3 //    1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance 4 //    1/N chance of spawning a machine tall room (default = 0)
+\-machine_rewardroom_chance 0 //    1/N chance of spawning a machine reward room (default = 0)
+// ------------------------------
+//  TILE CODES
+// ------------------------------
+\?chunk_ground 5
+\?chunk_air 6
+\?chunk_door 8
+\?empty 0
+\?floor 1
+\?floor%50 2
+\?babylon_floor =
+\?stone_floor -
+\?floor_hard X
+\?floor_hard%50%floor Y
+\?adjacent_floor Z
+\?platform p
+\?pipe E
+\?ladder L
+\?ladder_plat P
+\?door 9
+\?door2 D
+\?locked_door /
+\?spikes ^
+\?upsidedown_spikes v
+\?push_block 4
+\?laser_trap z
+\?spark_trap A
+\?forcefield (
+\?timed_forcefield )
+\?forcefield_top '
+\?elevator e
+\?clover Q
+\?litwalltorch O
+\?falling_platform F
+\?key T
+\?pot t
+\?rock k
+\?honey_upwards }
+\?conveyorbelt_left <
+\?conveyorbelt_right >
+\?thorn_vine *
+\?spring_trap g
+\?robot {
+\?turkey u
+\?regenerating_block r
+\?bigspear_trap C
+\?bone_block f
+\?sticky_trap B
+\?giant_frog n
+\?powder_keg o
+\?landmine ]
+\?thinice I
+\?mushroom_base M
+\?ufo U
+\?lamassu S
+\?olmite l
+\?empty_mech m
+\?shop_sign .
+\?shopkeeper $
+\?lava w
+\?lava%50%floor a
+\?stone_floor +
+\?tomb_floor G
+\?haunted_corpse 7
+\?altar x
+\?vault_wall |
+\?shop_sign K
+\?shop_wall .
+\?shop_wall%50 ;
+\?shop_woodwall :
+\?wanted_poster W
+\?die %
+\?merchant #
+\?cavemanshopkeeper &
+\?sleeping_hiredhand \
+\?forcefield ?
+\?thief J
+\?snake b
+\?cursed_pot c
+// ------------------------------
+//  LEVEL CHANCES
+// ------------------------------
+\%lasertrap_chance 0 
+\%sparktrap_chance 0 
+// ------------------------------
+//  MONSTER CHANCES
+// ------------------------------
+\+olmite 0 
+\+ufo 0 
+\+lamassu 0 
+\+critterdrone 60 
+// ------------------------------
+//  TEMPLATES
+// ------------------------------
+//
+//  !ignore		Ignore the following template. This is to make building rooms easier.
+//  !flip		Flip the following template to make another. i.e. The following template = two templates.
+//  !onlyflip	Flip the following template (original is ignored)
+//  !dual		The next template contains both a frontal and back room
+//  !rare		The next template is rare (only 5% chance of a rare template being used).
+//  !hard		The next template is hard (only appear in the second two levels of the area).
+//  !liquid		The next template contains liquid (used to limit the number of liquid drops)
+//death waffle gauntlet
+//death waffle gauntlet 2
+//Jump from FP cape check
+//pipe puzzle 1
+//throw mine at pipe in the right place - NOT WORKING not enough room
+//path elevator smash 1
+//UFO jumps 1
+//UFO jumps 2
+//fake UFO jumps
+//Turkey jump 1
+//Turkey jump 2
+//push elevator via PB
+//Push TNT to jump off through forcefield 1
+//Push TNT to jump off through forcefield 2
+//double-jump over bramble
+//double-jump up bramble
+//olmites
+//Whip UFO right way
+//Guide TNT though torches
+//Carry mine though lasers
+//whip active mine
+//top pipe into FF
+//top waffle elevator dodge
+//PB to up pipes
+//UFO top
+//guide TNT through traps top - TOO HARD / JANKY?
+//float body lasers top
+//float dodge bramble top
+//Whip UFO right way top
+//Whip mine while floating down top
+//whip active mine top
+//TNT on PB drop
+//Giant Frog excavation drop
+//plumbus claw game drop - DUMB consider redesign
+//smack UFO drop
+//bone room full of waffles and olmites drop
+//guide TNT through traps drop
+//float body lasers drop
+//Pick pipe drop
+//mine through traps drop
+//whip mine drop
+//UFO excavation top drop
+//spike cape top drop
+//Spring spike cape top-drop
+//bone room full of waffles and olmites top-drop
+//guide TNT through traps top-drop
+//float body lasers top-drop
+//float dodge bramble top-drop
+//Whip mine while floating down top-drop
+//whip mine top-drop
+//big mech excavation
+//big mech precise excavation
+//big mine out pipe
+//wide throw mine & body
+//wide YEET self from FF
+//wide jumps
+//wide throw mine at laser
+//tall protect with FF
+//tall enter door via FP
+//tall reflect mine
+
+
+////////////////////////////////////////////////////////////////////////////////
+\.entrance
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+0000000000
+00==00OQO0
+00=z900=00
+0========0
+0========0
+0=00c000=0
+==0wpw0w==
+==========
+
+////////////////////////////////////////////////////////////////////////////////
+\.entrance_drop
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+=c00000000
+==000OQO00
+=z9000=000
+========00
+====A===00
+0000000000
+0000000000
+====00====
+
+////////////////////////////////////////////////////////////////////////////////
+\.exit
+////////////////////////////////////////////////////////////////////////////////
+
+=='====='=
+==4=====4=
+==r=====r=
+000A000A00
+0000000000
+0000090000
+00000I0000
+==(=====(=
+
+////////////////////////////////////////////////////////////////////////////////
+\.exit_notop
+////////////////////////////////////////////////////////////////////////////////
+
+==000O000=
+0000]0]000
+00'XXXXX'0
+000XA0AX00
+000==9==00
+000==I==00
+00)==0==)0
+==========
+
+////////////////////////////////////////////////////////////////////////////////
+\.side
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+
+////////////////////////////////////////////////////////////////////////////////
+\.path_normal
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+==========
+1004000001
+0011111100
+0011111100
+01AA0AAA10
+1111111111
+1111111111
+1111111111
+
+==========
+100f00f001
+00A1LL1A00
+001ALLA100
+00A1LL1A00
+1F100001F1
+1000110001
+1111111111
+
+\!flip
+1111111111
+0000110000
+p=0F11F0=p
+p=00vv00=p
+p=000000=p
+=000O0000=
+=0{0000{0=
+=********=
+
+==========
+10EE00EE01
+0F100001F0
+001F00F100
+0O100001O0
+1F000000F1
+1F0F00F0F1
+1***))***1
+
+==========
+1000110001
+00]O**O]00
+0010000100
+0F1>00<1F0
+1E******E1
+1EEEEEEEE1
+XXXXXXXXXX
+
+----------
+-zee0000z-
+-e00ee000-
+f00000000f
+f000OO000f
+f00000000f
+-000eeeee-
+----------
+
+\!flip
+0000110000
+0=001100=0
+p=00FF00=p
+p=000000=p
+p=000000=p
+XX00O000XX
+XUf0000fUX
+XXXXXXXXXX
+
+\!flip
+1110000111
+1100))0011
+1100XX0011
+1000XX0001
+0000XX0000
+00O0XX00O0
+f00FU0F00f
+XXXXXXXXXX
+
+\!flip
+0000110000
+0=001100=0
+p=000000=p
+p=00O000=p
+p=000000=p
+pX00ff00Xp
+pX4fU0f4Xp
+pXXXXXXXXp
+
+\!flip
+1100000011
+1100))0011
+1100==0011
+10O0==0O01
+0000==0000
+0000==0000
+000Fu0F000
+==========
+
+\!flip
+000=00=000
+0=000000=0
+0=000000=0
+p=w0000w=p
+0===0w===0
+p=0p==p0=p
+000Fu0F000
+XXXXXXXXXX
+
+\!flip
+1110000111
+1110))0111
+1110==0111
+0110==0110
+0000==0000
+0e0O==O0e0
+0040==0400
+==========
+
+\!flip
+1111111111
+1110000111
+1110==0111
+1110A=0111
+0110==0110
+0000==0000
+0o00==00o0
+XXX)XX)XXX
+
+\!flip
+1111111111
+1110000111
+1110==0111
+1110=A0111
+0110==0110
+0000==0000
+0o00==00o0
+XX)XXXX)XX
+
+\!flip
+1111111111
+1111001111
+1110OO0111
+1'000000'1
+0000**0000
+000*==*000
+0)**==**)0
+===****===
+
+\!flip
+1111111111
+1111111111
+1110000111
+1**0O00111
+0*0*0*0*00
+0***0*0**0
+00000*0000
+==========
+
+\!flip
+1111111111
+1110000111
+110O00O011
+100l==l001
+000====000
+0l======l0
+0========0
+==******==
+
+\!flip
+==========
+00======00
+0F000000F0
+p=00O000=p
+p==0000==p
+p==000U==p
+===0000z==
+XXXXXXXXXX
+
+\!flip
+==========
+00======00
+0F000O00F0
+p=k0o00k=p
+p==eeee==p
+p=A0000==p
+===0000z==
+XXXXXXXXXX
+
+\!flip
+1]======]1
+vr='=='=rv
+0F000000F0
+pz000000zp
+p=000O00=p
+p==0000==p
+===)00)===
+XXXXXXXXXX
+
+\!flip
+=]======]=
+0r='00'=r0
+0F00OO00F0
+p=000000=p
+p=00==00=p
+p**0000**p
+===)00)===
+XXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.path_notop
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+====00EEE=
+==EEEE==E=
+==E==EEEE=
+00EEE0r000
+0O00r0r0O0
+0000=0==00
+=000=0====
+=====)====
+
+1111001111
+100v00v001
+100e00e001
+f000OO000f
+f00000000f
+100A00A001
+1^^^^^^^^1
+1111111111
+
+EEE1001EEE
+E1E0OO0E1E
+E10000001E
+EA000000AE
+0100000010
+0100000010
+1100o00011
+1111AA1111
+
+\!flip
+1110kk0111
+100OrrO001
+1000000001
+10FFFFFF01
+1f00U000f1
+X********X
+XXXXXXXXXX
+X========X
+
+\!flip
+====00====
+X00o00000X
+XOpppppeOX
+100eppp0p1
+10p0p40p01
+X0040p000X
+XX040000XX
+XXXXXXXXXX
+
+\!flip
+===pppp===
+==000000==
+=z000000==
+p=A00000zp
+pz00O00A=p
+p0000000zp
+=z00000000
+==========
+
+\!flip
+1111001111
+1***000*11
+101*0O0011
+000***0001
+0*00000*00
+0*0O00O*00
+0**0000**0
+========*=
+
+\!flip
+====00====
+=000II000=
+=00O00O00=
+=00000000=
+==000000==
+0=0000U0=0
+^z000000z^
+XXXXXXXXXX
+
+\!flip
+====pp====
+=00O00O00=
+=0]0**0]0=
+=0*0000*0=
+=00000000=
+=00000000=
+=z000000z=
+XXXXXXXXXX
+
+\!flip
+===]00]===
+=0='00'=0=
+=00000000=
+=O000000O=
+=000II000=
+=**0000**=
+===)00)z==
+XXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.path_drop
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+==========
+0000o0====
+0O00pp4000
+000====e==
+0000000000
+0000000000
+=000000000
+XXXX==XXXX
+
+\!flip
+\!dual
+===]====== ==========
+=00r00000= ====0k0===
+00000n0000 ====0DO===
+00==00==O0 ====0=0===
+0000^^0000 ====000===
+X11111111X ====000===
+X1110D111X ====oDo===
+XXXX==XXXX ==========
+
+\!flip
+==0=B==0==
+0000000000
+0O=pppp=00
+00={00{=00
+00X0000X00
+00pXXXXp00
+ee000000ee
+XXXX==XXXX
+
+\!flip
+==========
+=000U0000=
+=O0000000=
+00p0000p00
+0p000000p0
+000X**X000
+000X11X000
+XXXX00XXXX
+
+\!flip
+==========
+=000OO000=
+EE00ll00EE
+E=ffffff=E
+0AffffffA0
+0=ffffff=0
+==ffffff==
+====ff====
+
+\!flip
+==========
+00o0000o00
+p==A00A==p
+p=000000=p
+p=000000=p
+p=000000=p
+X=00))00=X
+XXXX==XXXX
+
+\!flip
+==========
+0000000000
+p==z00===p
+p==A00z==p
+p==z00A==p
+p===00z==p
+===z00====
+====00====
+
+\!flip
+\!dual
+========== ==========
+EE000O00EE EEEEEEE00=
+E=E=E==E=E E00]A0E0E=
+E=E=EEAE=E E0EEE=E0E=
+0=E=AE=E=0 E0E0==E0E=
+O=E/EE=E=O E00DEEE0E=
+0=0F=D=0T= E0E=XD0EE=
+==**00==== EEEXXXXXXX
+
+\!flip
+==========
+00]0000]00
+p==A00A==p
+p=000000=p
+p=000000zp
+pz000000=p
+X=00))00=X
+XXXX==XXXX
+
+\!flip
+==========
+00]0000]00
+p==A00A==p
+p=000000=p
+p=000000=p
+p=00OO00=p
+X=******=X
+XXXX00XXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.path_drop_notop
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+====E=====
+====E=====
+=000000U0=
+=00000000=
+==w====w==
+00=0000==0
+0=0=w=0==0
+==00=00===
+
+\!flip
+====0=====
+=1v0^1111=
+=0^111111=
+=01111111=
+=^v111====
+=1^vvv====
+==1^00====
+====00====
+
+\!flip
+====0=====
+=1v0^1111=
+=10111111=
+=0g111111=
+=^v111====
+=10vvv====
+==g^00====
+====00====
+
+\!flip
+====00====
+=00000000=
+=00OllO00=
+=ffffffff=
+AffffffffA
+=ffffffff=
+=ffffffff=
+====ff====
+
+\!flip
+====00====
+=00o00000=
+=ppppppe0=
+=p0Aepp0p=
+=000000p0=
+=0000000O=
+=00p00p00=
+XXXX==XXXX
+
+\!flip
+====pp====
+===z00====
+====00====
+==A=00z===
+====0O====
+===z00====
+====00====
+====00z===
+
+\!flip
+1111001111
+***000***1
+*000O000*1
+100***0001
+1*000*00*1
+1*000000*1
+1***00***1
+====00====
+
+\!flip
+====pp====
+=0000]000=
+=0*00*00*=
+=00000000=
+=00O00O00=
+=00000000=
+=z000l00z=
+XX======XX
+
+\!flip
+====000===
+=00000]00=
+=00000*00=
+=*****^00=
+=0000*000=
+=00O0*00X=
+=0000**]X=
+XX0000**XX
+
+////////////////////////////////////////////////////////////////////////////////
+\.idol // Idol room
+////////////////////////////////////////////////////////////////////////////////
+
+11'0000'11
+1'000000'1
+0000000000
+0000000000
+000A00A000
+000=I0=000
+0))====))0
+11======11
+
+////////////////////////////////////////////////////////////////////////////////
+\.coffin_unlockable // Coffin room for unlockable characters (facing right, will flip for other side)
+////////////////////////////////////////////////////////////////////////////////
+
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+
+////////////////////////////////////////////////////////////////////////////////
+\.machine_bigroom_path
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+1A11pp0======0pp11A1 XXXXZZXXXXXXXZZXXXXX
+10000000000000000001 XXXXXXXXXXXXXXXXXXXX
+000000000m0000000000 XXXXXXXXXXXXXXXXXXXX
+000111110A1011111000 ZXXXXXXXXXXXXXXXXXXZ
+00011111011011111000 XXXXXXXXXXXXXXXXXXXX
+XX1111110110111111XX XXXXXXXXXXXXXXXXXXXX
+XX1100010110100011XX XXXXXXXXXXXXXXXXXXXX
+X1110A01011010A0111X XXXXXXXXXXXXXXXXXXXX
+X11100010110100011TX XXXXXXXXXXXXXXXXXXXX
+X111000101101000111X XXXXXXXXXXXXXXXXXXXX
+X111111101101111111X XXX==============XXX
+XX11A1110110111A11XX XXX==============XXX
+00XXXX00}00}00XXXX00 ZXX==============XXZ
+00XXXXXX)00)XXXXXX00 XXX=000000000000=XXX
+000000DX0/00XD000000 XXX=O0D00D000D0O=XXX
+111100XXXXXXXX001111 XXXXZZXXXXXXXXZZXXXX
+
+\!dual
+1A11pp0======0'p11A1 XXXXZZXXXXXXXZZXXXXX
+10000000000000000001 XXXXXXXXXXXXXXXXXXXX
+00000000=w0===0===00 XXXXXXXXXXXXXXXXXXXX
+00000000===w==0=w=00 ZXXXXXXXXXXXXXXXXXXZ
+00p00000======0=wXX0 XXXXXXXXXXXXXXXXXXXX
+m0p00000======0===XX XXXXXXXXXXXXXXXXXXXX
+XXp00000======0====X XXXXXXXXXXXXXXXXXXXX
+XXp00000==w===0===TX XXXXXXXXXXXXXXXXXXXX
+XXp00000==w===0=ww=X XXXXXXXXXXXXXXXXXXXX
+XXp00000==ww0=0====X XXXXXXXXXXXXXXXXXXXX
+XXp00000======0====X XXX==============XXX
+XX11111)011011)111XX XXX==============XXX
+00XXXX00000000XXXX00 ZXX==============XXZ
+00XXXXXX0000XXXXXX00 XXX=000000000000=XXX
+000000DX0/00XD000000 XXX=O0D00D000D0O=XXX
+111100XXXXXXXX001111 XXXXZZXXXXXXXXZZXXXX
+
+\!dual
+\!flip
+1A11pp0======0pp11A1 XXXXZZXXXXXXXZZXXXXX
+10000000000000000001 XXXXXXXXXXXXXXXXXXXX
+000000000]]000000000 XXXXXXXXXXXXXXXXXXXX
+00E00A000II000A00E00 ZXXXXXXXXXXXXXXXXXXZ
+00Ez0000)00)0000zE00 XXXXXXXXXXXXXXXXXXXX
+XXEXXXXXXXXXXXXXXEXX XXXXXXXXXXXXXXXXXXXX
+XXEEEEEEEEEEEEEEEEXX XXXXXXXXXXXXXXXXXXXX
+11000000]0A0]0000011 XXXXXXXXXXXXXXXXXXXX
+11E00000r000r0000E11 XXXXXXXXXXXXXXXXXXXX
+11E00A0)z000z)A00E11 XXXXXXXXXXXXXXXXXXXX
+XXEXXXXXXXXXXXXXXEXX XXXXXXXXX==========X
+XXEEEEEEEEEEEEEEEEXX XXXXXXXXX======000=X
+00XXXXXX0000XXXXXX00 ZXXXXXXXX======0D00Z
+00111111000011111100 XXXXXXXXX======000OX
+00000000000000000000 XXXXXXXXXXXXXXX0D0XX
+11110011111111001111 XXXXZZXXXXXXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.machine_bigroom_side
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+\!flip
+11111111111111111111 XXXXZZXXXXXXXZZXXXXX
+111111e1111111111111 X111ZZ1111111111111X
+11111111111111111111 X11e111111111111111X
+11111111111111111111 ZZ1111111111111111ZZ
+11111111111111111111 X111111111111111111X
+11111111111111111111 XX1111111111111111XX
+11111111111111111111 XX11111111O1111111XX
+11111111111111111111 XX1111111111111111XX
+11111111111111111111 XX1111111111111111XX
+11111111111111111111 XXX111111111111111XX
+111111111111111e1111 XX11111111111111111X
+11111111111111111111 X111111111111111111X
+11111111111111111111 ZZ1111111111111111ZZ
+11111111111111111111 X111111111111111111X
+111M1111111111111111 XXXX11111XXXXXZZXXXX
+11111111111111111111 XXXXZZXXXXXXXXZZXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.machine_wideroom_path
+////////////////////////////////////////////////////////////////////////////////
+
+--------------------
+--l-000004400000-l--
+--f00000044000000f--
+00000000044000000000
+0]00f0000440000f00]0
+p->>000004400000<<-p
+--0ww0*0wXXw0*w0w0--
+XXXXXX*XXXXXX*XXXXXX
+
+====================
+=0=000000FF000000=0=
+=0000=00000000=0000=
+00000=*00**00*=00000
+00000=*00*=00*=00000
+0===0=*00**00*=0===0
+===u)]000=*000])u===
+XXXXXXXXXXXXXXXXXXXX
+
+--------------------
+--0000000400000000--
+-z0000000400000000z-
+00000000040000000000
+00000000A=A000000000
+p000000000000000000p
+-000000w000w0000000-
+*******)***)********
+
+--------------------
+--0000000440000000--
+-z0000000zz0000000z-
+00000000044000000000
+0]0000000A40000000]0
+--00000004A0000000--
+--]00000w44w00000]--
+**-*****)**)*****-**
+
+////////////////////////////////////////////////////////////////////////////////
+\.machine_wideroom_side
+////////////////////////////////////////////////////////////////////////////////
+
+11111111111111111111
+11111111111111111111
+11111111111111111111
+11111111111111111111
+11111111111111111111
+11111111111111111111
+11111111111111111111
+11111111111111111111
+
+////////////////////////////////////////////////////////////////////////////////
+\.machine_tallroom_path
+////////////////////////////////////////////////////////////////////////////////
+
+=00000000=
+=0='=='=0=
+=0=0000=0=
+0]000000]0
+0=z0000z=0
+0=z0000z=0
+==z0000z==
+=C00000C0=
+===0II0===
+===0000===
+==z0000z==
+===0000===
+=00000000=
+=00000000=
+=^=)**)=^=
+==========
+
+\!dual
+=00000000= ]0======0T
+=0==F===0= =00000000=
+=0==00==0= =00000000=
+0004F00000 =00000000=
+0=0p0000=0 =000O0000=
+0=000000=0 =04040400=
+p=000000=p =p=====>0=
+0000D00000 =000D===0=
+==00000=== =0===A==O=
+==>>>==fD= =p======/=
+==00000F== =00000000=
+===00000== =40400000=
+=00000000= ======<<<=
+=00000000= ==========
+=^=)===)^= ==========
+========== ==========
+
+=000000000
+=00000='=0
+=00]]000=p
+00XXX000=0
+fXX00000=p
+XFb00000XX
+XlF0***0==
+X***XXX0==
+X000]000==
+XXXXX000==
+XFb00000==
+XlF00000==
+f**)***0=0
+0000XXX(00
+=00000000=
+====pp====
+
+////////////////////////////////////////////////////////////////////////////////
+\.machine_tallroom_side
+////////////////////////////////////////////////////////////////////////////////
+
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+
+////////////////////////////////////////////////////////////////////////////////
+\.quest_thief2
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+0000000000 1111111111
+0000000000 1200000111
+0000000000 1200000001
+0000000000 1111111101
+1111111011 1111111101
+1000000011 1000000001
+10D0400011 10D00000e1
+1111111111 1111111111
+
+////////////////////////////////////////////////////////////////////////////////
+\.chunk_door
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+009000
+0====0
+======
+
+\!flip
+000000
+0000=0
+0900=0
+
+\!flip
+0=0000
+0=0900
+======
+
+////////////////////////////////////////////////////////////////////////////////
+\.chunk_ground
+////////////////////////////////////////////////////////////////////////////////
+
+00000
+00000
+00000
+
+=====
+=0000
+00000
+
+\!flip
+=e===
+=0000
+00000
+
+00000
+00=00
+00=00
+
+00=00
+00=00
+00000
+
+\!flip
+00000
+=0000
+=0000
+
+\!flip
+00000
+0=00=
+0=00=
+
+00000
+=====
+=====
+
+////////////////////////////////////////////////////////////////////////////////
+\.chunk_air
+////////////////////////////////////////////////////////////////////////////////
+
+00000
+00000
+00000
+
+\!flip
+=0000
+=0000
+=====
+
+\!flip
+=====
+=0000
+=0000
+
+\!flip
+===00
+===00
+===00
+
+\!flip
+==000
+==000
+==000
+
+\!flip
+=0000
+=0000
+=0000
+
+0===0
+0===0
+00000
+
+=000=
+=000=
+=====
+
+=====
+=000=
+=000=
+
+\!flip
+=====
+=000=
+=0===

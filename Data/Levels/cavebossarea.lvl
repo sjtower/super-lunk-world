@@ -1,0 +1,513 @@
+// ------------------------------
+//  AREA ONE (CAVE BOSS LEVEL 1-4)
+// ------------------------------
+\-size 5 5  //    level size in rooms
+\-back_room_chance 0 //    % chance of a second room (default = 5%)
+\-back_room_interconnection_chance 0 //    % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance 0 //    1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance 0 //    1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance 5000 //    1/N chance of a mount (default = 5000)
+\-altar_room_chance 0 //    1/N chance of an altar room (default = 14)
+\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance 10 //    1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance 5 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
+// ------------------------------
+//  TILE CODES
+// ------------------------------
+\?chunk_ground 5
+\?chunk_air 6
+\?chunk_door 8
+\?empty 0
+\?floor 1
+\?floor%50 2
+\?minewood_floor_noreplace =
+\?floor_hard X
+\?floor_hard%50%floor Y
+\?adjacent_floor Z
+\?ladder L
+\?ladder_plat P
+\?platform p
+\?entrance_shortcut x
+\?door 9
+\?door2 D
+\?door2_secret d
+\?spikes ^
+\?push_block 4
+\?treasure t
+\?litwalltorch O
+\?cavemanboss B
+\?vault_wall |
+\?coffin g
+\?shop_sign K
+\?shop_door k
+\?lamp_hang l
+\?shop_wall .
+\?shop_item S
+\?wanted_poster W
+\?shopkeeper $
+\?ghist_shopkeeper #
+\?autowalltorch A
+\?locked_door /
+\?stone_floor +
+\?tomb_floor G
+\?cursed_pot u
+\?haunted_corpse 7
+\?bone_block f
+\?shop_wall%50 ;
+\?shop_woodwall :
+\?die %
+\?cavemanshopkeeper &
+\?sleeping_hiredhand \
+\?forcefield ?
+\?forcefield_top '
+\?thief J
+\?powder_keg a
+\?rock b
+\?falling_platform c
+\?pot e
+\?arrow_trap h
+\?crushtrap i
+\?caveman_asleep j
+\?crushtraplarge m
+\?cookfire n
+\?landmine o
+\?laser_trap q
+\?water r
+\?stagnant_lava s
+\?conveyorbelt_left v
+\?conveyorbelt_right w
+\?timed_forcefield y
+\?pillar z
+\?pipe C
+\?thorn_vine E
+\?regenerating_block F
+\?bigspear_trap H
+\?jungle_spear_trap I
+\?spring_trap M
+\?upsidedown_spikes N
+\?imp Q
+\?caveman R
+\?honey_upwards T
+\?elevator U
+// ------------------------------
+//  LEVEL CHANCES
+// ------------------------------
+\%arrowtrap_chance 0 
+\%totemtrap_chance 0 
+\%pushblock_chance 0 
+// ------------------------------
+//  MONSTER CHANCES
+// ------------------------------
+\+snake 0 
+\+bat 0 
+\+caveman 0 
+\+spider 0 
+\+hornedlizard 0 
+\+critterdungbeetle 120 
+// ------------------------------
+//  TEMPLATES
+// ------------------------------
+//
+//  !ignore		Ignore the following template. This is to make building rooms easier.
+//  !flip		Flip the following template to make another. i.e. The following template = two templates.
+//  !onlyflip	Flip the following template (original is ignored)
+//  !dual		The next template contains both a frontal and back room
+//  !rare		The next template is rare (only 5% chance of a rare template being used).
+//  !hard		The next template is hard (only appear in the second two levels of the area).
+//  !liquid		The next template contains liquid (used to limit the number of liquid drops)
+
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom0-0
+////////////////////////////////////////////////////////////////////////////////
+
+\!ignore
+1111111111
+0000000000
+0000000000
+0000000000
+0000000000
+0000000000
+0000000000
+1111111111
+
+0000x00100
+PX1111c001
+0X11111111
+0XcB011111
+0X00011TT1
+0XvvvXXXXX
+0XXXXXXXXX
+0XXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom0-1
+////////////////////////////////////////////////////////////////////////////////
+
+00000f0000
+1111041111
+00000f0000
+0000000000
+0000000000
+XXXXhO0011
+XXXXXXXXXX
+XXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom0-2
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+90D1111111 X0DXX0XXXX
+11111m0m01 X0X0000XXX
+0000000000 XM00O0OXXX
+0000000000 XXXX000XXX
+0000000000 XXXXM00XXX
+1000000000 XXXXX0XXXX
+XXXX00000X XXXXX0XXXX
+'XXX^^^^^X XXXXX0XXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom0-3
+////////////////////////////////////////////////////////////////////////////////
+
+1111111111
+0000000000
+0000000000
+0000000000
+000a000000
+000a000000
+XXXX000111
+XXXX0XXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom0-4 // sleeping caveman
+////////////////////////////////////////////////////////////////////////////////
+
+1111111111
+0000000111
+000000001'
+0000000000
+0000000000
+0000000000
+000nj00000
+XXXXhO0000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom1-0 // CB into mine - mine
+////////////////////////////////////////////////////////////////////////////////
+
+0'11111111
+0000110111
+0000010001
+0000010000
+000001o000
+000001XXww
+0000000000
+00M0000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom1-1 // CB into minr - CB
+////////////////////////////////////////////////////////////////////////////////
+
+1110000000
+1110000000
+1000000000
+0000011000
+00000iwwXX
+wwwwwwXXXX
+0000000000
+0000000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom1-2 // blow up forcefield with mine
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+000XXXXXXX XXX0X0X0XX
+0000000000 XXXAX0XAXX
+000o000000 XXXXX0XXXX
+0000000000 XXX0X0X0XX
+?XXXXwwwww XXXOX0XOXX
+XXXXXXXXXX XXXXX0XXXX
+0000000000 XXXXX0XXXX
+0000A00000 XXXXX0XXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.coffin_player // Coffin room holding a dead player (both sides must be open)
+////////////////////////////////////////////////////////////////////////////////
+
+1111111111
+0000000000
+00L0g00L00
+0=P====P=0
+00L0000L00
+ff100001ff
+fff0LL0fff
+11==PP==11
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom1-3 // mine forcefield approach
+////////////////////////////////////////////////////////////////////////////////
+
+XXXXXXXXXX
+0000000000
+0000000000
+0000001110
+wwwwwwwwXX
+XXXXXXXXX0
+0000000000
+00000A0000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom1-4 // ricochet forcefield 1
+////////////////////////////////////////////////////////////////////////////////
+
+0000000000
+0000000000
+000000000?
+0wwwwwwwwX
+XXXXXXXXXX
+XXXXXXXX==
+00000000=0
+0000A0000j
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom2-0 // ricochet forcefield 2
+////////////////////////////////////////////////////////////////////////////////
+
+0?Xvv00001
+0XXXXvvvvv
+0XXXXXXXXX
+0XXXXXXXXX
+0'XXXX0000
+000===0000
+000=Q=0000
+0000000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom2-1
+////////////////////////////////////////////////////////////////////////////////
+
+1100000000
+vvvvvvvvvv
+XXXXXXXXXX
+XXXXXXXXXX
+0000000011
+0000000001
+0000000001
+0000000011
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom2-2 //bramble 1
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+EE00000000 XXXXX0XXXX
+eR0111EEE0 XXXXX0XXXX
+XXXXvvvvvv XXXXX0XXXX
+100XXXXXXX XXX0X0X0XX
+a00000NNj0 XXXOX0XOXX
+a0000000p0 XXXXX0XXXX
+1000000M00 XXXXX0XXXX
+1011100Xww XXXXX0XXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom2-3 // bramble 2
+////////////////////////////////////////////////////////////////////////////////
+
+0000000000
+0000EE0000
+vvvvvv0011
+XXXXXXXXXX
+00NNNNNN00
+0000000000
+M00M0M0111
+wwwXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom2-4 // cursed pot / forcefield 4
+////////////////////////////////////////////////////////////////////////////////
+
+00000000='
+0001100000
+0001u00000
+XXXXX00000
+0000000000
+0000000000
+11100XXXX?
+XXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom3-0 // ricochet forcefield 3
+////////////////////////////////////////////////////////////////////////////////
+
+00000000XX
+0000000000
+0000000000
+0?w0vv0T11
+0XXXXXXXXX
+0XXXXXXXXX
+0XX0000000
+0XX0000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom3-1
+////////////////////////////////////////////////////////////////////////////////
+
+wwwwwwXXww
+0000000000
+0000000000
+00M0000000
+XXX0000XX0
+XXX0000XX0
+0XX0ss0XX^
+0XXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom3-2
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+XXXXXXXXXX XXXXX0XXXX
+0000000000 XXXXX0XXXX
+0000400000 XXXXX0XXXX
+0000p40000 XXX0X0X0XX
+40000p0000 XXXOX0XOXX
+p40000040j XXXXX0XXXX
+^^^^^^4XXX XXXXX0XXXX
+XXXXXXXXXX XXXXX0XXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom3-3
+////////////////////////////////////////////////////////////////////////////////
+
+XXXXXXXX00
+0004000000
+040F000000
+0F00000000
+0000000000
+0000000000
+^^^^^01100
+XXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom3-4
+////////////////////////////////////////////////////////////////////////////////
+
+00000XXXXX
+0000000XXX
+00000000X'
+0000000000
+0D00000000
+0000000000
+jn00000000
+XXX0000000
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom4-0 //Jungle Exit
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+DXXXXXXX00 D0XXXXXXXX
+0f000X0m00 00XXXXXXXX
+rXO9OX0000 00XXXXXXXX
+XXPpPXXXXX 0OXXXXXXXX
+00L0L11111 00XXXXXXXX
+0001111111 U000000000
+000111100X XXXXXXXXXX
+s0siXXXXX9 XXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom4-1
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+0000000000 XXXXXXXXXX
+0AAA0AAA00 XXXXXXXXXX
+XXXXX1111P XXXXXXXXXX
+111111111L XXX000XXX1
+1111111jR1 XXX0O0XXXX
+1111111111 0000000000
+XXXXXXXXXX XXXXXXXXXX
+0000000000 XXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom4-2
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+0AAA0AAA0A XXXXX0XXXX
+0A000A0A0A XXXXX0XXXX
+0A0A0A0A00 XXXXX0XXXX
+PAAA0AAA0A XXX00000XX
+L000011100 XXX0O0O0XX
+11jnj10011 0000XiXPXX
+XXXXXXXXXX XXXXXXXLXX
+0000xDXXXX XXXXXD0LXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom4-3
+////////////////////////////////////////////////////////////////////////////////
+
+1111111111
+0000000000
+0000A00000
+0000000000
+0000000011
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.setroom4-4 // Volcana exit
+////////////////////////////////////////////////////////////////////////////////
+
+0000000000
+P000000000
+L000A00000
+L000000000
+1RnjXXXXX0
+XXXXXXXXX0
+XXXXXXXXX?
+XXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.coffin_unlockable // Coffin room for unlockable characters (facing right, will flip for other side)
+////////////////////////////////////////////////////////////////////////////////
+
+\!dual
+0000000000 XXXXXXXXXX
+0Xh0000010 XXXXXXXXXX
+XXXXXP1111 XXXXXXXXXX
+11111L1100 XXXXXXXXXX
+1111111O01 XXXX00XXXX
+11111111jn 0000OO0000
+XXXXXXXXXX XXXXXXXXXX
+0000000000 XXXXXXXXXX
+
+////////////////////////////////////////////////////////////////////////////////
+\.chunk_door
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+009000
+0===00
+=====2
+
+////////////////////////////////////////////////////////////////////////////////
+\.chunk_ground
+////////////////////////////////////////////////////////////////////////////////
+
+\!ignore
+00000
+00000
+00000
+
+////////////////////////////////////////////////////////////////////////////////
+\.chunk_air
+////////////////////////////////////////////////////////////////////////////////
+
+00000
+00000
+00000
