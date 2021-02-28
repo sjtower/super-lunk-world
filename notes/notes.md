@@ -159,6 +159,9 @@
 #### Pipes
 1. Blocking a downward opening pipe with a platform will soft-lock the player
 
+#### Vines
+1. growable vines can grow through thin ice
+
 ### Enemies
 
 1. Imp: You can spawn an imp without their cauldron if you spawn them in a 1-tile high space.

@@ -1,229 +1,108 @@
-// ------------------------------
-//  AREA ONE (DWELLING)
-// ------------------------------
-\-size 5 5  //    level size in rooms - W / H
-\-back_room_chance 10 //    % chance of a second room (default = 5%)
-\-back_room_interconnection_chance 20 //    % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance 500 //    1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance 1000 //    1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance 5000 //    1/N chance of a mount (default = 5000)
-\-altar_room_chance 0 //    1/N chance of an altar room (default = 14)
-\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance 0 //    1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance 0 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-machine_bigroom_chance 10 //    1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance 3 //    1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 4 //    1/N chance of spawning a machine tall room (default = 0)
-\-machine_rewardroom_chance 0 //    1/N chance of spawning a machine reward room (default = 0)
-// ------------------------------
-//  TILE CODES
-// ------------------------------
-\?chunk_ground 5
-\?chunk_air 6
-\?chunk_door 8
-\?empty 0
-\?floor 1
-\?floor%50 2
-\?minewood_floor =
-\?floor_hard X
-\?floor_hard%50%floor Y
-\?adjacent_floor Z
-\?ladder L
-\?ladder_plat P
-\?platform p
-\?door 9
-\?door2 D
-\?door2_secret d
-\?locked_door /
-\?spikes ^
-\?upsidedown_spikes v
-\?push_block 4
-\?bone_block f
-\?arrow_trap A
-\?laser_trap *
-\?spring_trap >
-\?bigspear_trap -
-\?crushtrap <
-\?falling_platform F
-\?powder_keg o
-\?litwalltorch O
-\?rock r
-\?pot t
-\?key y
-\?clover Q
-\?snake m
-\?caveman c
-\?scorpion s
-\?caveman_asleep n
-\?turkey u
-\?imp +
-\?jiangshi j
-\?octopus M
-\?ufo U
-\?crate R
-\?altar x
-\?idol I
-\?idol_floor i
-\?woodenlog_trap T
-\?woodenlog_trap_ceiling C
-\?lamp_hang l
-\?shop_wall .
-\?shop_item S
-\?wanted_poster W
-\?shopkeeper $
-\?thief J
-\?tomb_floor G
-\?haunted_corpse 7
-\?vault_wall |
-\?shop_sign K
-\?shop_door k
-\?shop_wall%50 ;
-\?shop_woodwall :
-\?die %
-\?merchant #
-\?cavemanshopkeeper &
-\?sleeping_hiredhand \
-\?forcefield ?
-\?forcefield_top '
-\?treasure_chest a
-\?thorn_vine b
-\?cookfire e
-\?cursed_pot g
-// ------------------------------
-//  LEVEL CHANCES
-// ------------------------------
-\%arrowtrap_chance 0 
-\%totemtrap_chance 0 
-\%pushblock_chance 0 
-// ------------------------------
-//  MONSTER CHANCES
-// ------------------------------
-\+snake 0 
-\+bat 0 
-\+caveman 0 
-\+spider 0 
-\+hornedlizard 0 
-\+mole 0 
-\+critterdungbeetle 0 
-// ------------------------------
-//  TEMPLATES
-// ------------------------------
-//
-//  !ignore		Ignore the following template. This is to make building rooms easier.
-//  !flip		Flip the following template to make another. i.e. The following template = two templates.
-//  !onlyflip	Flip the following template (original is ignored)
-//  !dual		The next template contains both a frontal and back room
-//  !rare		The next template is rare (only 5% chance of a rare template being used).
-//  !hard		The next template is hard (only appear in the second two levels of the area).
-//  !liquid		The next template contains liquid (used to limit the number of liquid drops)
-//caveman jump
-//\!ignore
-//imp bat jump
-//caveman jump escort
-//\!ignore
-//bone pile room
-//\!ignore
-//bone pile room 2
-//\!ignore
-//bone pile room 3
-//\!ignore
-//platform fall imp jump room
-//jiangshi jump
-//\!ignore
-//small spring trap spike dodge
-//\!ignore
-//spring trap rock dodge
-//\!ignore
-//bigger spring trap rock dodge
-//\!ignore
-//imp jump
-//\!ignore
-//breakout imp jump 1
-//breakout imp jump 2
-//top platform fall/jump room
-//top arrow dodge & spike break
-//\!ignore
-//top arrow dodge & spike break 2
-//\!ignore
-//top arrow dodge
-//\!ignore
-//top imp jump
-//\!ignore
-//top arrow dodge
-//\!ignore
-//top push block trigger arrow preserve bones
-//\!ignore
-//top rock trigger arrow preserve bones
-//\!ignore
-//top Falling platforms powder keg
-//\!ignore
-//\!ignore -- too hard for world 1
-//drop arrow dodge
-//\!ignore
-//drop bones arrow trigger
-//\!ignore
-//crush spike drop
-//\!ignore
-//bone powder keg drop
-//bone powder keg drop 2
-//regrab
-//\!ignore
-//regrab 2
-//\!ignore
-//crush spike drop 2
-//\!ignore
-//vanilla platform bone spike drop
-//\!ignore
-//throw stone at caveman
-//\!ignore
-//throw pot at caveman
-//\!ignore
-//throw rock on bones
-//\!ignore
-//Falling platform arrow dodge 1
-//\!ignore
-//Falling platform arrow dodge 2
-//Falling platform powder keg dodge 1
-//top drop bones arrow trigger
-//top drop trigger arrow preserve bones
-//\!ignore
-//long caveman escort
-//\!ignore
-//long free the imp jump
-//long over-under-jump free the imp
-//long over-under-over free the imp jump
-//long snake jump
-//\!ignore
-//long snake spring jump
-//\!ignore
-//long bones snake jump
-//\!ignore
-//long imp jump
-//\!ignore
-//bone bridge trap
-//\!ignore
-//long spring trap jump
-//\!ignore
-//push block puzzle
-//\!ignore
-//\!ignore
-//idol log drop tall room
-////\!ignore
-//idol powder keg drop tall room
-////\!ignore
-//tall block drop puzzle
-////\!ignore
-//tall arrow dodge
-////\!ignore
-//\!ignore
-//\!ignore
-//\!ignore
 
+\-size                                  5 5        // level size in rooms - W / H
+\-back_room_chance                      10         // % chance of a second room (default = 5%)
+\-back_room_interconnection_chance      20         // % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance          500        // 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance    1000       // 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance                          5000       // 1/N chance of a mount (default = 5000)
+\-altar_room_chance                     0          // 1/N chance of an altar room (default = 14)
+\-idol_room_chance                      0          // 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance              0          // 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance            0          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-machine_bigroom_chance                0          // 1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance               3          // 1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance               4          // 1/N chance of spawning a machine tall room (default = 0)
+\-machine_rewardroom_chance             0          // 1/N chance of spawning a machine reward room (default = 0)
+
+\?chunk_ground                    5
+\?chunk_air                       6
+\?chunk_door                      8
+\?empty                           0
+\?floor                           1
+\?floor%50                        2
+\?minewood_floor                  =
+\?floor_hard                      X
+\?floor_hard%50%floor             Y
+\?adjacent_floor                  Z
+\?ladder                          L
+\?ladder_plat                     P
+\?platform                        p
+\?door                            9
+\?door2                           D
+\?door2_secret                    d
+\?locked_door                     /
+\?spikes                          ^
+\?upsidedown_spikes               v
+\?push_block                      4
+\?bone_block                      f
+\?arrow_trap                      A
+\?laser_trap                      *
+\?spring_trap                     >
+\?bigspear_trap                   -
+\?crushtrap                       <
+\?falling_platform                F
+\?powder_keg                      o
+\?litwalltorch                    O
+\?rock                            r
+\?pot                             t
+\?key                             y
+\?clover                          Q
+\?snake                           m
+\?caveman                         c
+\?scorpion                        s
+\?caveman_asleep                  n
+\?turkey                          u
+\?imp                             +
+\?jiangshi                        j
+\?octopus                         M
+\?ufo                             U
+\?crate                           R
+\?altar                           x
+\?idol                            I
+\?idol_floor                      i
+\?woodenlog_trap                  T
+\?woodenlog_trap_ceiling          C
+\?lamp_hang                       l
+\?shop_wall                       .
+\?shop_item                       S
+\?wanted_poster                   W
+\?shopkeeper                      $
+\?thief                           J
+\?tomb_floor                      G
+\?haunted_corpse                  7
+\?vault_wall                      |
+\?shop_sign                       K
+\?shop_door                       k
+\?shop_wall%50                    ;
+\?shop_woodwall                   :
+\?die                             %
+\?merchant                        #
+\?cavemanshopkeeper               &
+\?sleeping_hiredhand              \
+\?forcefield                      ?
+\?forcefield_top                  '
+\?treasure_chest                  a
+\?thorn_vine                      b
+\?cookfire                        e
+\?cursed_pot                      g
+
+\%arrowtrap_chance            0
+\%totemtrap_chance            0
+\%pushblock_chance            0
+
+\+snake                0
+\+bat                  0
+\+caveman              0
+\+spider               0
+\+hornedlizard         0
+\+mole                 0
+\+critterdungbeetle    0
 
 ////////////////////////////////////////////////////////////////////////////////
 \.entrance
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 ==========
 =ff00gff1=
 =fffOff01=
@@ -237,6 +116,7 @@
 \.entrance_drop
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 ==========
 =f0gf0ff1=
 =f0ffO0f1=
@@ -250,6 +130,7 @@ fff09Q0ff0
 \.exit
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 ==========
 01==000=10
 01A0090A10
@@ -263,6 +144,7 @@ fff09Q0ff0
 \.exit_notop
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 =00000====
 00=======0
 01A0090A10
@@ -276,6 +158,7 @@ fff09Q0ff0
 \.side
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -289,6 +172,7 @@ fff09Q0ff0
 \.path_normal
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 0000110000
 P11000011P
@@ -298,6 +182,7 @@ L11111111L
 0111111110
 1111111111
 
+// room
 1111111111
 0000110000
 P11000011P
@@ -307,6 +192,7 @@ L11000011L
 11+f00f+11
 1111111111
 
+// room
 1111111111
 0001111000
 0000110000
@@ -316,6 +202,7 @@ L11000011L
 11AO00OA11
 1111111111
 
+// room
 \!flip
 1111111111
 0000110000
@@ -326,6 +213,7 @@ L1f0ff0f1L
 01ffffff10
 1111111111
 
+// room
 \!flip
 1111111111
 0000110000
@@ -336,6 +224,7 @@ L10ffff01L
 01ff22ff10
 1111111111
 
+// room
 \!flip
 \!hard
 1111111111
@@ -347,6 +236,7 @@ L100ff001L
 01ff11ff10
 1111111111
 
+// room
 1111111111
 0000==0000
 P1LF==FL1P
@@ -356,6 +246,7 @@ L100+0001L
 1100000011
 11bbbbbb11
 
+// room
 1111111111
 0000110000
 P10011001P
@@ -365,6 +256,7 @@ L10f00f01L
 L1jf00fj1L
 1111111111
 
+// room
 1111111111
 1111111111
 1111111111
@@ -374,6 +266,7 @@ v0vvvvvv0v
 >0>0>>0>0>
 1111111111
 
+// room
 \!hard
 1111111111
 1111111111
@@ -384,6 +277,7 @@ P01100110P
 L^11^^11^L
 1111111111
 
+// room
 1111111111
 0000000000
 0000000000
@@ -393,6 +287,7 @@ P01100110P
 L^11^^11^L
 1111111111
 
+// room
 1111111111
 0000000000
 P10000001P
@@ -402,6 +297,7 @@ L10000001L
 L10000001L
 11bbbbbb11
 
+// room
 1111111111
 rr001100rr
 P10000001P
@@ -411,6 +307,7 @@ L1fFFFFf1L
 L1^^+^^^1L
 1111111111
 
+// room
 1111111111
 rr001100rr
 P=000000=P
@@ -424,6 +321,7 @@ L=+====+=L
 \.path_notop
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111pp1111
 1111001111
 1111001111
@@ -433,6 +331,7 @@ L=+====+=L
 1*000000=1
 1111111111
 
+// room
 \!flip
 1111001111
 1A00001111
@@ -443,6 +342,7 @@ L=+====+=L
 0011111fff
 1000000011
 
+// room
 \!flip
 1111001111
 1A00001111
@@ -453,6 +353,7 @@ P11^^^111P
 0ff0000ff0
 1111111111
 
+// room
 1111001111
 1A000000A1
 1A000000A1
@@ -462,6 +363,7 @@ PA000000AP
 000O>>O000
 1111111111
 
+// room
 1111PP1111
 0000000000
 P10000001P
@@ -471,6 +373,7 @@ L10000001L
 01bbbbbb10
 1111111111
 
+// room
 \!flip
 11==PP==11
 111=LL0011
@@ -481,6 +384,7 @@ P1A000001P
 0000000^00
 1111111111
 
+// room
 \!flip
 =040PP040=
 =0fP==Pf0=
@@ -491,6 +395,7 @@ P=000000=P
 01f^>>^f10
 1111111111
 
+// room
 \!flip
 =000PP000=
 =rpp==ppr=
@@ -501,6 +406,7 @@ L40000004L
 01f^^^^f10
 1111111111
 
+// room
 \!flip
 ===FPPF===
 0=00LL00=0
@@ -515,6 +421,7 @@ L400oo004L
 \.path_drop
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 1111111111
 000vvvv000
@@ -525,6 +432,7 @@ L10111101L
 L1>0000>1L
 1111pp1111
 
+// room
 \!flip
 1111111111
 0000000000
@@ -535,6 +443,7 @@ L1A000001L
 L110000^1L
 1111pp1111
 
+// room
 \!flip
 1111111111
 1111000000
@@ -545,6 +454,7 @@ p11A00001L
 111A0000A1
 1111pp1111
 
+// room
 \!flip
 1111441111
 1111ff1111
@@ -555,6 +465,7 @@ L10111101L
 L1p0000p1L
 1111001111
 
+// room
 \!flip
 11111frf11
 0000fffff0
@@ -565,6 +476,7 @@ L11000011L
 1111111111
 1111PP1111
 
+// room
 1111oo1111
 0000ff0000
 P10OffO01P
@@ -574,6 +486,7 @@ L11111111L
 1111111111
 1111111111
 
+// room
 \!dual
 \!flip
 1111111111 1111111111
@@ -585,6 +498,7 @@ L11111111L 1111000011
 1A00000/01 11110O0D11
 1111pp1111 111111===1
 
+// room
 \!dual
 \!flip
 1111111111 1111111111
@@ -596,6 +510,7 @@ L11111111L 1111000011
 111en00/n1 11110O0D11
 1111pp1111 111111===1
 
+// room
 \!flip
 1111111111
 11110+1111
@@ -606,6 +521,7 @@ L1A0000A1L
 L110bb011L
 111p00p111
 
+// room
 \!flip
 1111111111
 0002222000
@@ -616,6 +532,7 @@ L1O0000O1L
 11^^^^^^11
 1111f11111
 
+// room
 \!dual
 \!flip
 1111111=y= 1111111111
@@ -627,6 +544,7 @@ L1O0000O1L
 1111000D11 1111110D01
 1111pp1111 111111===1
 
+// room
 \!dual
 \!flip
 1111111=c= 1111111111
@@ -642,6 +560,7 @@ L1O0000O1L
 \.path_drop_notop
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 1111001111
 111r00r111
@@ -652,6 +571,7 @@ L1O0000O1L
 11^pppp^11
 1111001111
 
+// room
 \!flip
 1111001111
 1111000111
@@ -662,6 +582,7 @@ L1O0000O1L
 ==^^FF^111
 1111001111
 
+// room
 \!flip
 1111011111
 11110===11
@@ -672,6 +593,7 @@ L1O0000O1L
 ==00000=11
 1111001111
 
+// room
 \!flip
 1111011111
 11110===11
@@ -682,6 +604,7 @@ L1O0000O1L
 ==00110=11
 1111001111
 
+// room
 \!flip
 1111PP1411
 1100LL0f11
@@ -692,6 +615,7 @@ L1O0000O1L
 11=000001=
 1111pp1111
 
+// room
 \!flip
 =r000000==
 =AFppppFA=
@@ -703,9 +627,10 @@ A0f1001f0A
 1111PP1111
 
 ////////////////////////////////////////////////////////////////////////////////
-\.udjatentrance // Frontal Udjat cave entrance
+\.udjatentrance   //  Frontal Udjat cave entrance
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 0000000000
 0000000000
@@ -716,9 +641,10 @@ vv0v0v0v0v
 bbbbbbbbbb
 
 ////////////////////////////////////////////////////////////////////////////////
-\.udjattop // Frontal Udjat cave entrance
+\.udjattop   //  Frontal Udjat cave entrance
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1110001111
@@ -732,6 +658,7 @@ bbbbbbbbbb
 \.machine_bigroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!ignore
 \!dual
 11111111111111111111 11111111111111111111
@@ -755,6 +682,7 @@ bbbbbbbbbb
 \.machine_bigroom_side
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 11111111111111111111
 111111111L1111111111
@@ -777,6 +705,7 @@ bbbbbbbbbb
 \.machine_wideroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 11111111111111111111
 00001111111111110000
 P1nf00A111111A00fn1P
@@ -786,6 +715,7 @@ L1A0000010000000011L
 11100000000000000A11
 11111111111111111111
 
+// room
 11111111111111111111
 0rr0000000000000rr00
 P=====00000000=====P
@@ -795,6 +725,7 @@ L=0000000000000000=L
 11bbbbbbbbbbbbbbbb11
 11111111111111111111
 
+// room
 11111111111111111111
 0rr0000000000000rr00
 P=====00000000=====P
@@ -804,6 +735,7 @@ L=F00000000000000F=L
 11^^^0^^^^^^^^0^^^11
 11111111111111111111
 
+// room
 11111111111111111111
 0rr0000000000000rr00
 P=====00000000=====P
@@ -813,6 +745,7 @@ L=F00000000000000F=L
 11^^^0^^^^^^^^0^^^11
 11111111111111111111
 
+// room
 11111111111111111111
 00000000000000000000
 0000000O00000O000000
@@ -822,6 +755,7 @@ P000001000000100000P
 00000010000001000000
 bbbbbb1bbbbbb1bbbbbb
 
+// room
 11111111111111111111
 00000000000000000000
 0000000O00000O000000
@@ -831,6 +765,7 @@ P000001000000100000P
 bbbbbb1bbbbbb1bbbbbb
 b111111b1111b1b11111
 
+// room
 11111111111111111111
 00000000000000000000
 000000mO0000Om000000
@@ -840,6 +775,7 @@ P000001000000100000P
 bbbbbb1bbbbbb1bbbbbb
 11111bbb111111b11111
 
+// room
 11111111111111111111
 00000000000000000000
 P100000000000000001P
@@ -849,6 +785,7 @@ L100000000000000001L
 L1bbbbbbbbbbbbbbbb1L
 11111111111111111111
 
+// room
 11111111111111111111
 01A00000A11A000000A1
 0r0m0000fmmf0000m0r0
@@ -858,6 +795,7 @@ L100000000000000001L
 L1bbbbbbbbbbbbbbbb1L
 11111111111111111111
 
+// room
 b1b1bb1b1bb1b1bb1b1b
 00000000000000000000
 0O01000O0000O00010O0
@@ -867,6 +805,7 @@ Pp0100101001010010pP
 bbb1bb1b1bb1b1bb1bbb
 11111111111111111111
 
+// room
 04010401111110401040
 P1010pP100001Pp0101P
 L40v0p11011011p0v04L
@@ -880,6 +819,7 @@ L000000001100000000L
 \.machine_wideroom_side
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 11111111111111111111
 11111111111111111111
@@ -894,6 +834,7 @@ L000000001100000000L
 \.machine_tallroom_path
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 1111001111
 0000000000
@@ -912,6 +853,7 @@ b00000000b
 0011111100
 p00000000p
 
+// room
 \!flip
 11P00PCCP0
 11L00CT0C0
@@ -930,6 +872,7 @@ p00000000p
 1000000111
 11=pppp=11
 
+// room
 \!flip
 11P0000001
 11L00CooC1
@@ -948,6 +891,7 @@ p00000000p
 0000000110
 11=pppp=11
 
+// room
 \!flip
 1P00000P01
 0L40004L00
@@ -970,6 +914,7 @@ L00011000L
 \.machine_tallroom_side
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 1111001111
 P00000000P
@@ -988,6 +933,7 @@ L10000011L
 L0^^00^^0L
 1111PP1111
 
+// room
 \!flip
 1111111111
 1111111111
@@ -1010,6 +956,7 @@ L0^^00^^0L
 \.machine_keyroom
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 1111111111
 0000000000 1000000001
@@ -1020,6 +967,7 @@ L0^^00^^0L
 0000000000 1000000001
 0000000000 1111111111
 
+// room
 1111111111
 0000000000
 0000000000
@@ -1033,6 +981,7 @@ L0^^00^^0L
 \.machine_rewardroom
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 1111111111
 0000000000 1000000001
@@ -1044,9 +993,10 @@ L0^^00^^0L
 0000000000 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
-\.pen_room // YANG YANG YANG YANG
+\.pen_room   //  YANG YANG YANG YANG
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 1111111111
 1111111111
@@ -1061,16 +1011,19 @@ L0^^00^^0L
 \.chunk_door
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 009000
 0===00
 =====2
 
+// room
 \!flip
 000000
 000020
 090010
 
+// room
 \!flip
 020000
 010900
@@ -1080,35 +1033,42 @@ L0^^00^^0L
 \.chunk_ground
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 00000
 00000
 00000
 
+// room
 \!flip
 01210
 01210
 p111p
 
+// room
 \!flip
 11110
 02220
 00000
 
+// room
 00000
 02220
 11111
 
+// room
 \!flip
 00110
 02110
 1111p
 
+// room
 \!rare
 \!flip
 0f000
 011f0
 1f111
 
+// room
 \!rare
 \!flip
 ppppp
@@ -1119,45 +1079,55 @@ ppppp
 \.chunk_air
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 00000
 00000
 00000
 
+// room
 =====
 00000
 =====
 
+// room
 22222
 00000
 22222
 
+// room
 \!flip
 11100
 22200
 00000
 
+// room
 \!flip
 11100
 11100
 22200
 
+// room
 01110
 02220
 00000
 
+// room
 01110
 01110
 02220
 
+// room
 \!flip
 22200
 11100
 22200
 
+// room
 02220
 01110
 02220
 
+// room
 11111
 22222
 00000
