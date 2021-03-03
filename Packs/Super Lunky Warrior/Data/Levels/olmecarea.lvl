@@ -1,124 +1,104 @@
-// ------------------------------
-//  AREA THREE (OLMEC)
-// ------------------------------
-\-size 6 8  //    level size in rooms
-\-back_room_chance 0 //    % chance of a second room (default = 5%)
-\-back_room_interconnection_chance 0 //    % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance 0 //    1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance 0 //    1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance 0 //    1/N chance of a mount (default = 5000)
-\-altar_room_chance 0 //    1/N chance of an altar room (default = 14)
-\-idol_room_chance 0 //    1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance 10 //    1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance 5 //    1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-background_chance 0 //    1/N chance of putting a wall background where it fits (default = 1)
-\-ground_background_chance 0 //    1/N chance of putting a ground background where it fits (default = 1)
-// ------------------------------
-//  TILE CODES
-// ------------------------------
-\?chunk_air 6
-\?empty 0
-\?floor 1
-\?floor%50 2
-\?minewood_floor =
-\?stone_floor -
-\?floor_hard X
-\?floor_hard%50%floor Y
-\?adjacent_floor Z
-\?ladder L
-\?ladder_plat P
-\?entrance_shortcut x
-\?door 9
-\?door2 D
-\?door2_secret d
-\?push_block 4
-\?treasure t
-\?crate_parachute c
-\?litwalltorch O
-\?storage_guy G
-\?storage_floor q
-\?autowalltorch A
-\?coffin g
-\?olmec C
-\?ankh K
-\?pillar I
-\?stagnant_lava w
-\?locked_door /
-\?stone_floor +
-\?cursed_pot u
-\?haunted_corpse 7
-\?vault_wall |
-\?bone_block f
-\?shop_door k
-\?lamp_hang l
-\?shop_wall .
-\?shop_wall%50 ;
-\?shop_woodwall :
-\?wanted_poster W
-\?shopkeeper $
-\?die %
-\?merchant #
-\?cavemanshopkeeper &
-\?shop_item S
-\?sleeping_hiredhand \
-\?forcefield ?
-\?forcefield_top '
-\?thief J
-\?platform a
-\?spikes b
-\?upsidedown_spikes e
-\?thorn_vine h
-\?key i
-\?crushtrap j
-\?crushtraplarge m
-\?falling_platform n
-\?honey_upwards o
-\?timed_forcefield p
-\?honey_downwards r
-\?landmine s
-\?powder_keg v
-\?spark_trap y
-\?laser_trap z
-\?spring_trap B
-\?rock E
-\?octopus F
-\?cookfire H
-\?caveman M
-\?witchdoctor N
-\?tikiman Q
-\?caveman_asleep R
-\?lava T
-\?pagoda_floor U
-\?moai_statue V
-\?eggplant_child <
-\?crate_bombs >
-\?bush_block ,
-\?crate_ropes ]
-\?plasma_cannon [
-\?treasure_chest {
-// ------------------------------
-//  LEVEL CHANCES
-// ------------------------------
-// ------------------------------
-//  MONSTER CHANCES
-// ------------------------------
-// ------------------------------
-//  TEMPLATES
-// ------------------------------
-//
-//  !ignore		Ignore the following template. This is to make building rooms easier.
-//  !flip		Flip the following template to make another. i.e. The following template = two templates.
-//  !onlyflip	Flip the following template (original is ignored)
-//  !dual		The next template contains both a frontal and back room
-//  !rare		The next template is rare (only 5% chance of a rare template being used).
-//  !hard		The next template is hard (only appear in the second two levels of the area).
-//  !liquid		The next template contains liquid (used to limit the number of liquid drops)
+
+\-size                                  6 8        // level size in rooms
+\-back_room_chance                      0          // % chance of a second room (default = 5%)
+\-back_room_interconnection_chance      0          // % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance          0          // 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance    0          // 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance                          0          // 1/N chance of a mount (default = 5000)
+\-altar_room_chance                     0          // 1/N chance of an altar room (default = 14)
+\-idol_room_chance                      0          // 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance              10         // 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance            5          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-background_chance                     0          // 1/N chance of putting a wall background where it fits (default = 1)
+\-ground_background_chance              0          // 1/N chance of putting a ground background where it fits (default = 1)
+
+\?chunk_air                       6
+\?empty                           0
+\?floor                           1
+\?floor%50                        2
+\?minewood_floor                  =
+\?stone_floor                     +
+\?floor_hard                      X
+\?floor_hard%50%floor             Y
+\?adjacent_floor                  Z
+\?ladder                          L
+\?ladder_plat                     P
+\?entrance_shortcut               x
+\?door                            9
+\?door2                           D
+\?door2_secret                    d
+\?push_block                      4
+\?treasure                        t
+\?crate_parachute                 c
+\?litwalltorch                    O
+\?storage_guy                     G
+\?storage_floor                   q
+\?autowalltorch                   A
+\?coffin                          g
+\?olmec                           C
+\?ankh                            K
+\?pillar                          I
+\?stagnant_lava                   w
+\?locked_door                     /
+\?cursed_pot                      u
+\?haunted_corpse                  7
+\?vault_wall                      |
+\?bone_block                      f
+\?shop_door                       k
+\?lamp_hang                       l
+\?shop_wall                       .
+\?shop_wall%50                    ;
+\?shop_woodwall                   :
+\?wanted_poster                   W
+\?shopkeeper                      $
+\?die                             %
+\?merchant                        #
+\?cavemanshopkeeper               &
+\?shop_item                       S
+\?sleeping_hiredhand              \
+\?forcefield                      ?
+\?forcefield_top                  '
+\?thief                           J
+\?platform                        a
+\?spikes                          b
+\?upsidedown_spikes               e
+\?thorn_vine                      h
+\?key                             i
+\?crushtrap                       j
+\?crushtraplarge                  m
+\?falling_platform                n
+\?honey_upwards                   o
+\?timed_forcefield                p
+\?honey_downwards                 r
+\?landmine                        s
+\?powder_keg                      v
+\?spark_trap                      y
+\?laser_trap                      z
+\?spring_trap                     B
+\?rock                            E
+\?octopus                         F
+\?cookfire                        H
+\?caveman                         M
+\?witchdoctor                     N
+\?tikiman                         Q
+\?caveman_asleep                  R
+\?lava                            T
+\?pagoda_floor                    U
+\?moai_statue                     V
+\?eggplant_child                  <
+\?crate_bombs                     >
+\?bush_block                      ,
+\?crate_ropes                     ]
+\?plasma_cannon                   [
+\?treasure_chest                  {
+
 
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom0-0
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 XX0XXX0XXX
 000OOO0000 X000000000
@@ -133,6 +113,7 @@
 \.setroom0-1
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ------0000 XX0XXXXXXX
 ------0D00 00O0000DXX
@@ -147,6 +128,7 @@
 \.setroom0-2
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- 0000000000
 ---------- 0000000000
@@ -161,6 +143,7 @@
 \.setroom0-3
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- 0000000000
 ---------- 0000000000
@@ -172,9 +155,10 @@
 00nnnnnnn0 ,,,,,,,-1,
 
 ////////////////////////////////////////////////////////////////////////////////
-\.setroom0-4 // PARACHUTE AND DOOR
+\.setroom0-4   //  PARACHUTE AND DOOR
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- 0000000000
 ---------- 0000000000
@@ -189,6 +173,7 @@
 \.setroom0-5
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 XXXXXXXXXX XXX0000000
 XXXXXXXXXX XXX0000000
@@ -203,6 +188,7 @@ XXXXXXXXXX XXX000XXX0
 \.setroom1-0
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0i00000000 0X0X0X0X,,
 '000000000 OX0XOX0X,X
@@ -217,6 +203,7 @@ hh000aaah- XX0XXXjXX,
 \.setroom1-1
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 ,,,,,,XXX,
 0000000000 ,----,,X,,
@@ -228,9 +215,10 @@ hhhhhhhhh0 ,,111,11,,
 ---------- 111,11,X,,
 
 ////////////////////////////////////////////////////////////////////////////////
-\.setroom1-2 // Olmec
+\.setroom1-2   //  Olmec
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0400000000 X,XXX,XX,X
 0000000000 XXXX,,,XXX
@@ -245,6 +233,7 @@ hhhhh----- ,XX00O0XX,
 \.setroom1-3
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0nhhhhhh00 ,XXXXX,XX,
 00h----h00 ,XXXXX,,X,
@@ -256,9 +245,10 @@ hhh----hhh X,,,X,,,,X
 ---------- X,,XXX,,,X
 
 ////////////////////////////////////////////////////////////////////////////////
-\.setroom1-4 // Back room contains the storage guy
+\.setroom1-4   //  Back room contains the storage guy
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 XXXX000XX0
 0000000000 X,,X000XX0
@@ -273,20 +263,22 @@ XXXXX----a XX,XXXXXX0
 \.setroom1-5
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 XXXXXXXXXX XXX000XXX0
 XXXXXXXXXX XXX000XXX0
 XXXXXXXXXX XXXaaaXXX0
 XXXXXXXXXX XXX000XXX0
-XXXXXXXXXX XXXA0OXXX0
-XXXXXXXXXX XXX000XXX0
-XXXXXXXXXX XXX0D0XXX0
-XXXXXXXXXX XXXXXXXXX0
+XXXXXUUXXX XXXA0OXXX0
+XXXXUUUUXX XXX000XXX0
+XXXUU00UUX XXX0D0XXX0
+XX00000000 XXXXXXXXX0
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom2-0
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 -h000000h- XX0X,XX,,,
 -hhhhhhhh- XX0X,,,,XX
@@ -301,6 +293,7 @@ i000000000 XX0XXXX,,X
 \.setroom2-1
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- ,,,,,,X,,X
 ---------- 111111XX,X
@@ -315,6 +308,7 @@ y000h000y0 ,XXXXXX,XX
 \.setroom2-2
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- ----------
 -------000 0-000-000-
@@ -329,6 +323,7 @@ D=RH&=D000 D00-00D00-
 \.setroom2-3
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- X,,,XXXXXX
 00000000E- XXX,XXXXXX
@@ -343,6 +338,7 @@ v00000B000 X,XXXXX,X,
 \.setroom2-4
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 X4XXX-'--0 XX,XXXXXX0
 X4XXX0040o XX,,X,,,X0
@@ -357,6 +353,7 @@ h0000a00L0 X,XX,XX,X0
 \.setroom2-5
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 XX00A000A0 XXXXXXX0XX
 XX00009000 XXXXXX000X
@@ -371,6 +368,7 @@ XX00000000 XXXX00000O
 \.setroom3-0
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 XX0X,,,,XX
 0000000000 XX0XXXX,,,
@@ -385,6 +383,7 @@ XXXXXXXXXX ,XjX,XX,,X
 \.setroom3-1
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 XX,XX,,X,X
 0000000000 ,,,X,,X,,X
@@ -399,6 +398,7 @@ XXXXXXXXXX 1111,,,,,1
 \.setroom3-2
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 XXXXXXXXXX
 0000000000 0000,00000
@@ -413,6 +413,7 @@ XXXXXXXXXX ,1,-,,-,11
 \.setroom3-3
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 ,,,,,,X,X,
 0000000000 --,XXXX,X,
@@ -427,6 +428,7 @@ XXXXXXXXXX ,X,X1,,1X,
 \.setroom3-4
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 00000000L0 XXX,,,,,X0
 00000000L0 XX,,XXXXX0
@@ -441,6 +443,7 @@ XXXXXXXXXX XXX,X00000
 \.setroom3-5
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 4f00000000 XXXXXXX0XX
 4f000D0000 XXXX0DX0XX
@@ -455,6 +458,7 @@ XXXaaaaaXX 000000X0XX
 \.setroom4-0
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 XXXXXXXXXX ,XXXX,X,XX
 XXXXXXXXXX ,,,,X,X,,X
@@ -469,6 +473,7 @@ XXXXXXXXXX ,,,,,,X,,X
 \.setroom4-1
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 XXXX------ XXXXXXXX,X
 XXXX------ XXXXXXXX,X
@@ -483,6 +488,7 @@ XXXX---00+ XXXXXXXX,X
 \.setroom4-2
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 -0m000n000 ,XX,,X,,XX
 -000000000 ,XXX,X,XXX
@@ -497,6 +503,7 @@ e0m000+000 ,,,,,X,,,,
 \.setroom4-3
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000--0 ,X,XXXXXX,
 0000000j-0 ,X,X,,,,,,
@@ -511,6 +518,7 @@ e0m000+000 ,,,,,X,,,,
 \.setroom4-4
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 XXXXXXXXXX
 000-----00 ,,,,,,,,,,
@@ -525,6 +533,7 @@ e0m000+000 ,,,,,X,,,,
 \.setroom4-5
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 00X00000X0 XXXL0LX0XX
 0000O0O000 X,XL0LX0XX
@@ -539,6 +548,7 @@ e0m000+000 ,,,,,X,,,,
 \.setroom5-0
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 XXXXXXXXXX =======X,X
 0000000000 =]]000,,,X
@@ -553,6 +563,7 @@ XXXXXXXXXX =>L0H0,,,X
 \.setroom5-1
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 XXXX++hhh- XXX,,,X,,X
 0--X+----h XX,,X,,,XX
@@ -567,6 +578,7 @@ XXXXXXXXXX ,,X,,,,,,X
 \.setroom5-2
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 XXXX,X,XXX
 hhhhh00hhh ,,,,,X,,XX
@@ -581,6 +593,7 @@ XXXXhhhhXX X,,,,X,,X,
 \.setroom5-3
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0000000000 XXXXXXXXXX
 hhhh000000 XX,,,,,X,,
@@ -595,6 +608,7 @@ XXXXXXXXXX ,,X,,X,,,,
 \.setroom5-4
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 0Lh-v-v-h0 X,,XX,,XXX
 0L0---v-h0 ,,XXXX,,XX
@@ -609,20 +623,22 @@ XXXXXXXXhh ,,X,XXXX,,
 \.setroom5-5
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 aaa0000000 XX,XXXX0XX
 00000O0000 X,,,,,X0XX
 0000111000 ,,XX,XX0XX
 000011100/ X,,,,XX0XD
 000hhhh00a X,XX,XX0X0
-hhhhX0hhhh X,,,,,X0XA
-XXXXX0000D XXXXX,X0XD
-XXXXX0---- XXX,,,X0XX
+hhhh+0hhhh X,,,,,X0XA
+XXXX+0000D XXXXX,X0XD
+XXXX+0---- XXX,,,X0XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom6-0
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- ,XX,,,,,,X
 ---------- ,,,,XXXXXX
@@ -637,6 +653,7 @@ XXXXX0---- XXX,,,X0XX
 \.setroom6-1
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- XX,,,,,,,,
 ---------- XX,XXXXXXX
@@ -651,6 +668,7 @@ wwwwwwwwww ,,XX,XX,,X
 \.setroom6-2
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- ,,X,,,,,X,
 ---------- X,,,XXXXX,
@@ -665,6 +683,7 @@ wwwwwwwwww ,X,,,,XX,X
 \.setroom6-3
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- X,,XXXXXXX
 ---------- XX,XX,,,XX
@@ -679,6 +698,7 @@ wwwwwwwwww ,,XX,,,XX,
 \.setroom6-4
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- XXXX,,,XXX
 ---------- XXX,,X,,,X
@@ -693,20 +713,22 @@ wwwwwwwwww XXX,,XXXXX
 \.setroom6-5
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
-XXXXX00o0f XX,,XXX0XX
-XXXXX----n XXX,,,X0XX
-XXXXX0-F0n ,,,,X,X0XX
-XXXXX---an XXXXX,X0XX
-ww+{+0s000 ,,,,XXX000
-ww------D0 ,XX,,,X0DO
-ww----0000 ,XXXX,XaXX
-ww---0wwww ,XXXX,X0XX
+XXXX+00o0f XX,,XXX0XX
+XXXX++-++n XXX,,,X0XX
+XXXX+0-F0n ,,,,X,X0XX
+XXXX++++an XXXXX,X0XX
+w++{+0s000 ,,,,XXX000
+w++++++-D0 ,XX,,,X0DO
+w+++++0000 ,XXXX,XaXX
+w++++0wwww ,XXXX,X0XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom7-0
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 ---------- XXXXXXXXXX
 XXXXXXXXXX ,,,,,,,,,,
@@ -721,6 +743,7 @@ XXXXXXXXXX XXXXXXXXXX
 \.setroom7-1
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 wwwwwwwwww ,XXX,XXX,X
 wwwwwwwwww XX,,,,X,,,
@@ -735,6 +758,7 @@ XXXXXXXXXX XXXXXXXXXX
 \.setroom7-2
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 wwwwwwwwww XXXXXXXX,X
 wwwwwwwwww ,,,X,,,X,,
@@ -749,6 +773,7 @@ XXXXXXXXXX XXXXXXXXXX
 \.setroom7-3
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 wwwwwwwwww XXXXXXXX,,
 wwwwwwwwww ,,,,,,XXX,
@@ -763,6 +788,7 @@ XXXXXXXXXX XXXXXXXXXX
 \.setroom7-4
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 wwwwwwwwww XXX,XXXXXX
 wwwwwwwwww X,X,,,XXXX
@@ -777,6 +803,7 @@ XXXXXXXXXX XX,,,XX,,,
 \.setroom7-5
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 wwwwwwwwww ,XXXXXXjXX
 wwwwwwwwww ,XX,,,,XXX
@@ -788,9 +815,10 @@ XXXXXXXXXX ,,,,,,,,,X
 0000000000 XXXXXXXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
-\.coffin_unlockable // Coffin room for unlockable characters (facing right, will flip for other side)
+\.coffin_unlockable   //  Coffin room for unlockable characters (facing right, will flip for other side)
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 +000++000+ XX0XXX0XXX
 +---++---+ X00000O000
@@ -802,9 +830,10 @@ XXXXXXXXXX ,,,,,,,,,X
 0000000000 XX0XXX0X,X
 
 ////////////////////////////////////////////////////////////////////////////////
-\.cache // Flip room for other side
+\.cache   //  Flip room for other side
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 XXXXX
 XX11X
 XXt00
@@ -815,26 +844,31 @@ XXXXX
 \.chunk_air
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!flip
 02t-2
 0---0
 00--2
 
+// room
 \!flip
 00t-2
 00---
 -2-00
 
+// room
 \!flip
 00---
 -2-t0
 00--2
 
+// room
 \!flip
 -2222
 00000
 002-2
 
+// room
 \!flip
 22000
 10000

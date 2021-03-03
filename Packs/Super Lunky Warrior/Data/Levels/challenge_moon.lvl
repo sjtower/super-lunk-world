@@ -1,28 +1,91 @@
-// ------------------------------
-//  MOON CHALLENGE
-// ------------------------------
-// ------------------------------
-//  TILE CODES
-// ------------------------------
-\?empty 0
-\?floor 1
-// ------------------------------
-//  TEMPLATES
-// ------------------------------
-//
-//  !ignore		Ignore the following template. This is to make building rooms easier.
-//  !flip		Flip the following template to make another. i.e. The following template = two templates.
-//  !onlyflip	Flip the following template (original is ignored)
-//  !dual		The next template contains both a frontal and back room
-//  !rare		The next template is rare (only 5% chance of a rare template being used).
-//  !hard		The next template is hard (only appear in the second two levels of the area).
-//  !liquid		The next template contains liquid (used to limit the number of liquid drops)
 
+
+\?chunk_ground                    5
+\?chunk_air                       6
+\?chunk_door                      8
+\?empty                           0
+\?floor                           1
+\?floor%50                        2
+\?minewood_floor                  =
+\?stone_floor                     -
+\?floor_hard                      X
+\?floor_hard%50%floor             Y
+\?adjacent_floor                  Z
+\?vine                            v
+\?growable_vine                   V
+\?door                            9
+\?door2                           D
+\?platform                        p
+\?spikes                          ^
+\?push_block                      4
+\?bone_block                      f
+\?bush_block                      b
+\?thorn_vine                      *
+\?jungle_spear_trap               ~
+\?bigspear_trap                   M
+\?laser_trap                      z
+\?arrow_trap                      @
+\?powder_keg                      o
+\?landmine                        ]
+\?thinice                         I
+\?elevator                        e
+\?honey_upwards                   }
+\?stagnant_lava                   a
+\?water                           w
+\?alien_generator                 A
+\?giantclam                       C
+\?spring_trap                     c
+\?falling_platform                F
+\?chainandblocks_ceiling          B
+\?conveyorbelt_left               <
+\?conveyorbelt_right              >
+\?littorch                        H
+\?pot                             t
+\?tree_base                       T
+\?rock                            r
+\?key                             s
+\?locked_door                     /
+\?fountain_drain                  d
+\?clover                          Q
+\?houyibow                        h
+\?robot                           {
+\?imp                             +
+\?yeti                            y
+\?caveman_asleep                  n
+\?lavamander                      L
+\?giant_spider                    N
+\?altar                           x
+\?vault_wall                      |
+\?coffin                          g
+\?shop_sign                       K
+\?shop_door                       k
+\?lamp_hang                       l
+\?shop_wall                       .
+\?shop_item                       S
+\?wanted_poster                   W
+\?shopkeeper                      $
+\?tomb_floor                      G
+\?cursed_pot                      u
+\?litwalltorch                    O
+\?haunted_corpse                  7
+\?shop_wall%50                    ;
+\?shop_woodwall                   :
+\?die                             %
+\?merchant                        #
+\?cavemanshopkeeper               &
+\?sleeping_hiredhand              \
+\?forcefield                      ?
+\?forcefield_top                  '
+\?thief                           J
+\?ladder                          i
+\?ladder_plat                     P
+\?lava                            !
 
 ////////////////////////////////////////////////////////////////////////////////
-\.challenge_entrance // Dual entrance to the challenge rooms facing right, flipped for other side
+\.challenge_entrance   //  Dual entrance to the challenge rooms facing right, flipped for other side
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 0000000000
 1111000111
 0111101110
@@ -33,9 +96,10 @@
 1001101101
 
 ////////////////////////////////////////////////////////////////////////////////
-\.challenge_bottom // Room appearing right below challenge entrance
+\.challenge_bottom   //  Room appearing right below challenge entrance
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -49,6 +113,7 @@
 \.challenge_0-0
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -62,6 +127,7 @@
 \.challenge_0-1
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -75,6 +141,7 @@
 \.challenge_0-2
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -88,6 +155,7 @@
 \.challenge_0-3
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -101,6 +169,7 @@
 \.challenge_1-0
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -114,6 +183,7 @@
 \.challenge_1-1
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -127,6 +197,7 @@
 \.challenge_1-2
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -140,6 +211,7 @@
 \.challenge_1-3
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111
@@ -153,6 +225,7 @@
 \.challenge_special
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 1111111111
 1111111111
 1111111111

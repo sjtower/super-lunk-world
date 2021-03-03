@@ -1,46 +1,98 @@
-// ------------------------------
-//  HALL OF USHABTI LEVEL (BABYLON)
-// ------------------------------
 
-\-size 6 6									// level size in rooms
-\-back_room_chance 0						// % chance of a second room (default = 5%)
-\-back_room_interconnection_chance 0		// % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance 0			// 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance 0		// 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance 5000							// 1/N chance of a mount (default = 5000)
-\-altar_room_chance 0						// 1/N chance of an altar room (default = 14)
-\-idol_room_chance 0						// 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance 0				// 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance 0				// 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-machine_bigroom_chance 1					// 1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance 1					// 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance 1					// 1/N chance of spawning a machine tall room (default = 0)
-\-machine_rewardroom_chance 0				// 1/N chance of spawning a machine reward room (default = 0)
+\-size                                  6 6        // level size in rooms
+\-back_room_chance                      0          // % chance of a second room (default = 5%)
+\-back_room_interconnection_chance      0          // % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance          0          // 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance    0          // 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance                          5000       // 1/N chance of a mount (default = 5000)
+\-altar_room_chance                     0          // 1/N chance of an altar room (default = 14)
+\-idol_room_chance                      0          // 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance              0          // 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance            0          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-machine_bigroom_chance                1          // 1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance               1          // 1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance               1          // 1/N chance of spawning a machine tall room (default = 0)
+\-machine_rewardroom_chance             0          // 1/N chance of spawning a machine reward room (default = 0)
 
-// ------------------------------
-//  TILE CODES
-// ------------------------------
-
+\?chunk_ground                    5
+\?chunk_air                       6
+\?chunk_door                      8
+\?empty                           0
+\?floor                           1
+\?floor%50                        2
+\?babylon_floor                   =
+\?stone_floor                     +
+\?floor_hard                      X
+\?floor_hard%50%floor             Y
+\?adjacent_floor                  Z
+\?platform                        p
+\?pipe                            E
+\?ladder                          L
+\?ladder_plat                     P
+\?door                            9
+\?door2                           D
+\?locked_door                     /
+\?spikes                          ^
+\?upsidedown_spikes               v
+\?push_block                      4
+\?laser_trap                      z
+\?spark_trap                      A
+\?forcefield                      ?
+\?timed_forcefield                )
+\?forcefield_top                  '
+\?elevator                        e
+\?litwalltorch                    O
+\?falling_platform                F
+\?key                             T
+\?pot                             t
+\?rock                            k
+\?honey_upwards                   }
+\?conveyorbelt_left               <
+\?conveyorbelt_right              >
+\?thorn_vine                      *
+\?spring_trap                     g
+\?robot                           {
+\?turkey                          u
+\?regenerating_block              r
+\?bigspear_trap                   C
+\?bone_block                      f
+\?sticky_trap                     B
+\?giant_frog                      n
+\?powder_keg                      o
+\?landmine                        ]
+\?thinice                         I
+\?mushroom_base                   M
+\?ufo                             U
+\?lamassu                         S
+\?olmite                          l
+\?empty_mech                      m
+\?shop_sign                       K
+\?shopkeeper                      $
+\?lava                            w
+\?lava%50%floor                   a
+\?tomb_floor                      G
+\?haunted_corpse                  7
+\?altar                           x
+\?vault_wall                      |
+\?shop_wall                       .
+\?shop_wall%50                    ;
+\?shop_woodwall                   :
+\?wanted_poster                   W
+\?die                             %
+\?merchant                        #
+\?cavemanshopkeeper               &
+\?sleeping_hiredhand              \
+\?thief                           J
+\?snake                           b
 \?ushabti					j
 \?clover					Q
 \?cursed_pot				J
-
-// ------------------------------
-//  TEMPLATES
-// ------------------------------
-//
-//  !ignore		Ignore the following template. This is to make building rooms easier.
-//  !flip		Flip the following template to make another. i.e. The following template = two templates.
-//  !onlyflip	Flip the following template (original is ignored)
-//  !dual		The next template contains both a frontal and back room
-//  !rare		The next template is rare (only 5% chance of a rare template being used).
-//  !hard		The next template is hard (only appear in the second two levels of the area).
-//  !liquid		The next template contains liquid (used to limit the number of liquid drops)
 
 ////////////////////////////////////////////////////////////////////////////////
 \.ushabti_entrance
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!dual
 \!flip
 1111111111 jjjjjjjjjj
@@ -49,13 +101,14 @@
 1111111111 ==========
 1111111111 jjjjjjjjjj
 1111111111 ==========
-1111111111 00000000J0
+1111111111 0000000000
 1111111111 0========0
 
 ////////////////////////////////////////////////////////////////////////////////
 \.ushabti_room
 ////////////////////////////////////////////////////////////////////////////////
 
+// room
 \!ignore
 00======00
 0000000000
@@ -66,6 +119,7 @@
 0000000000
 00======00
 
+// room
 \!flip
 00======00
 00=0j00000
@@ -76,6 +130,7 @@ V0======0V
 0000000000
 00======00
 
+// room
 00======00
 =00====00=
 =000==j00=
@@ -85,6 +140,7 @@ V0======0V
 0000000000
 00======00
 
+// room
 \!flip
 00======00
 =000000000
@@ -95,6 +151,7 @@ V0======0V
 00=====V00
 00======00
 
+// room
 \!flip
 00======00
 =00000000=
@@ -105,6 +162,7 @@ V0======0V
 000=jj=000
 00======00
 
+// room
 \!flip
 00======00
 =000000000

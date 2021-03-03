@@ -140,6 +140,9 @@
 1. You cannot push a PB on to a moving CB because the PB will bounce upon landing and fall off the CB.
 1. Big crush blocks are 2x2 tiles big. Spawn location can vary - placement conforms to surrounding blocks?
 
+#### Land mines
+1. can fit under a falling platform, if FP triggered, will set off mine
+
 #### Quicksand
 1. if platform is placed below quicksand, player cannot dop below it
 
@@ -148,6 +151,8 @@
 
 #### Elevators
 1. you can push elevator if it lands on a PB/TNT
+1. can carry lava
+1. if two elevators collide, with lava on the lower elevator, the lava can transfer up to the top elevator
 
 #### Force Fields
 1. can block the generator block with TNT, and TNT will not explode
