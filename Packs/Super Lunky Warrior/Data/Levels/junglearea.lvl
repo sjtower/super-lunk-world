@@ -14,6 +14,7 @@
 \-machine_tallroom_chance               5          // 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance             0          // 1/N chance of spawning a machine reward room (default = 0)
 
+\?ladder                          i
 \?chunk_ground                    5
 \?chunk_air                       6
 \?chunk_door                      8
@@ -90,7 +91,6 @@
 \?forcefield                      ?
 \?forcefield_top                  '
 \?thief                           J
-\?ladder                          i
 \?ladder_plat                     P
 \?lava                            !
 \?lavamander                      "
@@ -191,7 +191,7 @@ H1--9b0011
 1111111111
 M0000000M0
 0~00~~00~0
-~p0~44~0p1
+0p0~44~0p0
 0~0O~~O0~0
 000~==~000
 0~~~==~~~0
@@ -202,7 +202,7 @@ M0000000M0
 1111111111
 M0000000M0
 1~0OM0O0~1
-100~~~~001
+000~~~~000
 0~00M000~0
 000~~~~000
 0~~~~~~~~0
@@ -211,10 +211,10 @@ M0000000M0
 // room
 \!flip
 1111111111
-1000oo0001
-1bbbbbbbb1
-1bbbbbbbb1
-01oobboo10
+1100000011
+01bbbbbb10
+01bbbbbb10
+01oooooo10
 00ppbbpp00
 H011XX110H
 XXXXXXXXXX
@@ -224,8 +224,8 @@ XXXXXXXXXX
 1111111111
 10v0bb0v01
 1ov1bb1vo1
-11v1oo1v11
-010o--o010
+v1v1oo1v1v
+v10o--o01v
 000-aa-000
 H0b-aa-b0H
 XXXXXXXXXX
@@ -234,9 +234,9 @@ XXXXXXXXXX
 \!flip
 =ff00+0ff=
 =0b0000b0=
-=0b0000b0=
-=0bobbob0=
-000bbbb000
+10b0000b01
+v0bobbob0v
+v00bbbb00v
 0b0p40p0b0
 0bbbbbbbb0
 11XXXXXX11

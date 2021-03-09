@@ -14,6 +14,9 @@
 \-machine_tallroom_chance               1          // 1/N chance of spawning a machine tall room (default = 0)
 \-machine_rewardroom_chance             0          // 1/N chance of spawning a machine reward room (default = 0)
 
+\?babylon_floor%50%floor          -
+\?elevator                        e
+\?idol_floor                      i
 \?chunk_ground                    5
 \?chunk_air                       6
 \?chunk_door                      8
@@ -37,10 +40,8 @@
 \?push_block                      4
 \?laser_trap                      z
 \?spark_trap                      A
-\?forcefield                      ?
 \?timed_forcefield                )
 \?forcefield_top                  '
-\?elevator                        e
 \?litwalltorch                    O
 \?falling_platform                F
 \?key                             T
@@ -82,11 +83,12 @@
 \?merchant                        #
 \?cavemanshopkeeper               &
 \?sleeping_hiredhand              \
-\?thief                           J
 \?snake                           b
-\?ushabti					j
-\?clover					Q
-\?cursed_pot				J
+\?ushabti                         j
+\?clover                          Q
+\?cursed_pot                      J
+
+
 
 ////////////////////////////////////////////////////////////////////////////////
 \.ushabti_entrance
