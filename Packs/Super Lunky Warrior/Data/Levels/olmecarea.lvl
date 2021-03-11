@@ -722,7 +722,7 @@ XXXX----an XXXXX,X0XX
 w--{-0s000 ,,,,XXX000
 w-------D0 ,XX,,,X0DO
 w-----0000 ,XXXX,XaXX
-w----0wwww ,XXXX,X0XX
+w-00000000 ,XXXX,X0XX
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom7-0
@@ -805,7 +805,7 @@ XXXXXXXXXX XX,,,XX,,,
 
 // room
 \!dual
-wwwwwwwwww ,XXXXXXjXX
+w-00000000 ,XXXXXXjXX
 wwwwwwwwww ,XX,,,,XXX
 wwwwwwwwww ,,,,XX,,,X
 XXXXXXXXXX XXXX,,XX,X
