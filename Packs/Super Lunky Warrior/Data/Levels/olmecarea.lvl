@@ -1,96 +1,96 @@
 
-\-size                                  6 8        // level size in rooms
-\-back_room_chance                      0          // % chance of a second room (default = 5%)
-\-back_room_interconnection_chance      0          // % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance          0          // 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance    0          // 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance                          0          // 1/N chance of a mount (default = 5000)
-\-altar_room_chance                     0          // 1/N chance of an altar room (default = 14)
-\-idol_room_chance                      0          // 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance              10         // 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance            5          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-background_chance                     0          // 1/N chance of putting a wall background where it fits (default = 1)
-\-ground_background_chance              0          // 1/N chance of putting a ground background where it fits (default = 1)
+\-size                                   6 8        // level size in rooms
+\-back_room_chance                       0          // % chance of a second room (default = 5%)
+\-back_room_interconnection_chance       0          // % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance           0          // 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance     0          // 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance                           0          // 1/N chance of a mount (default = 5000)
+\-altar_room_chance                      0          // 1/N chance of an altar room (default = 14)
+\-idol_room_chance                       0          // 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance               10         // 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance             5          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-background_chance                      0          // 1/N chance of putting a wall background where it fits (default = 1)
+\-ground_background_chance               0          // 1/N chance of putting a ground background where it fits (default = 1)
 
-\?stone_floor                     -
-\?chunk_air                       6
-\?empty                           0
-\?floor                           1
-\?floor%50                        2
-\?minewood_floor                  =
-\?floor_hard                      X
-\?floor_hard%50%floor             Y
-\?adjacent_floor                  Z
-\?ladder                          L
-\?ladder_plat                     P
-\?entrance_shortcut               x
-\?door                            9
-\?door2                           D
-\?door2_secret                    d
-\?push_block                      4
-\?treasure                        t
-\?crate_parachute                 c
-\?litwalltorch                    O
-\?storage_guy                     G
-\?storage_floor                   q
-\?autowalltorch                   A
-\?coffin                          g
-\?olmec                           C
-\?ankh                            K
-\?pillar                          I
-\?stagnant_lava                   w
-\?locked_door                     /
-\?cursed_pot                      u
-\?haunted_corpse                  7
-\?vault_wall                      |
-\?bone_block                      f
-\?shop_door                       k
-\?lamp_hang                       l
-\?shop_wall                       .
-\?shop_wall%50                    ;
-\?shop_woodwall                   :
-\?wanted_poster                   W
-\?shopkeeper                      $
-\?die                             %
-\?merchant                        #
-\?cavemanshopkeeper               &
-\?shop_item                       S
-\?sleeping_hiredhand              \
-\?forcefield                      ?
-\?forcefield_top                  '
-\?thief                           J
-\?platform                        a
-\?spikes                          b
-\?upsidedown_spikes               e
-\?thorn_vine                      h
-\?key                             i
-\?crushtrap                       j
-\?crushtraplarge                  m
-\?falling_platform                n
-\?honey_upwards                   o
-\?timed_forcefield                p
-\?honey_downwards                 r
-\?landmine                        s
-\?powder_keg                      v
-\?spark_trap                      y
-\?laser_trap                      z
-\?spring_trap                     B
-\?rock                            E
-\?octopus                         F
-\?cookfire                        H
-\?caveman                         M
-\?witchdoctor                     N
-\?tikiman                         Q
-\?caveman_asleep                  R
-\?lava                            T
-\?pagoda_floor                    U
-\?moai_statue                     V
-\?eggplant_child                  <
-\?crate_bombs                     >
-\?bush_block                      ,
-\?crate_ropes                     ]
-\?plasma_cannon                   [
-\?treasure_chest                  {
+\?stone_floor                      -
+\?chunk_air                        6
+\?empty                            0
+\?floor                            1
+\?floor%50                         2
+\?minewood_floor                   =
+\?floor_hard                       X
+\?floor_hard%50%floor              Y
+\?adjacent_floor                   Z
+\?ladder                           L
+\?ladder_plat                      P
+\?entrance_shortcut                x
+\?door                             9
+\?door2                            D
+\?door2_secret                     d
+\?push_block                       4
+\?treasure                         t
+\?crate_parachute                  c
+\?litwalltorch                     O
+\?storage_guy                      G
+\?storage_floor                    q
+\?autowalltorch                    A
+\?coffin                           g
+\?olmec                            C
+\?ankh                             K
+\?pillar                           I
+\?stagnant_lava                    w
+\?locked_door                      /
+\?cursed_pot                       u
+\?haunted_corpse                   7
+\?vault_wall                       |
+\?bone_block                       f
+\?shop_door                        k
+\?lamp_hang                        l
+\?shop_wall                        .
+\?shop_wall%50                     ;
+\?shop_woodwall                    :
+\?wanted_poster                    W
+\?shopkeeper                       $
+\?die                              %
+\?merchant                         #
+\?cavemanshopkeeper                &
+\?shop_item                        S
+\?sleeping_hiredhand               \
+\?forcefield                       ?
+\?forcefield_top                   '
+\?thief                            J
+\?platform                         a
+\?spikes                           b
+\?upsidedown_spikes                e
+\?thorn_vine                       h
+\?key                              i
+\?crushtrap                        j
+\?crushtraplarge                   m
+\?falling_platform                 n
+\?honey_upwards                    o
+\?timed_forcefield                 p
+\?honey_downwards                  r
+\?landmine                         s
+\?powder_keg                       v
+\?spark_trap                       y
+\?laser_trap                       z
+\?spring_trap                      B
+\?rock                             E
+\?octopus                          F
+\?cookfire                         H
+\?caveman                          M
+\?witchdoctor                      N
+\?tikiman                          Q
+\?caveman_asleep                   R
+\?lava                             T
+\?pagoda_floor                     U
+\?moai_statue                      V
+\?eggplant_child                   <
+\?crate_bombs                      >
+\?bush_block                       ,
+\?crate_ropes                      ]
+\?plasma_cannon                    [
+\?treasure_chest                   {
 
 
 
@@ -821,12 +821,12 @@ XXXXXXXXXX ,,,,,,,,,X
 // room
 \!dual
 -000000000 XX0XXX0XXX
----P------ X00000O000
--000--000- XO0O000000
+---P------ X00000A000
+-000--000- XA0A000000
 000a000000 X00000000B
 0000000000 XX0XXXaXXX
 000O00O000 0X0X0X0X,,
-0000000000 OX0XOX0X,X
+0000000000 AX0XAX0X,X
 0000000000 XX0XXX0X,X
 
 ////////////////////////////////////////////////////////////////////////////////

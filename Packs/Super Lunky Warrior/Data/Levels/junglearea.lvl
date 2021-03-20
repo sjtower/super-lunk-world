@@ -1,115 +1,115 @@
 
-\-size                                  4 5        // level size in rooms - W / H
-\-back_room_chance                      10         // % chance of a second room (default = 5%)
-\-back_room_interconnection_chance      20         // % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance          500        // 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance    1000       // 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance                          5000       // 1/N chance of a mount (default = 5000)
-\-altar_room_chance                     0          // 1/N chance of an altar room (default = 14)
-\-idol_room_chance                      0          // 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance              0          // 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance            0          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-machine_bigroom_chance                10         // 1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance               2          // 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance               5          // 1/N chance of spawning a machine tall room (default = 0)
-\-machine_rewardroom_chance             0          // 1/N chance of spawning a machine reward room (default = 0)
+\-size                                   4 5        // level size in rooms - W / H
+\-back_room_chance                       10         // % chance of a second room (default = 5%)
+\-back_room_interconnection_chance       20         // % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance           500        // 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance     1000       // 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance                           5000       // 1/N chance of a mount (default = 5000)
+\-altar_room_chance                      0          // 1/N chance of an altar room (default = 14)
+\-idol_room_chance                       0          // 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance               0          // 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance             0          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-machine_bigroom_chance                 10         // 1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance                2          // 1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance                5          // 1/N chance of spawning a machine tall room (default = 0)
+\-machine_rewardroom_chance              0          // 1/N chance of spawning a machine reward room (default = 0)
 
-\?ladder                          i
-\?chunk_ground                    5
-\?chunk_air                       6
-\?chunk_door                      8
-\?empty                           0
-\?floor                           1
-\?floor%50                        2
-\?minewood_floor                  =
-\?stone_floor                     -
-\?floor_hard                      X
-\?floor_hard%50%floor             Y
-\?adjacent_floor                  Z
-\?vine                            v
-\?growable_vine                   V
-\?door                            9
-\?door2                           D
-\?platform                        p
-\?spikes                          ^
-\?push_block                      4
-\?bone_block                      f
-\?bush_block                      b
-\?thorn_vine                      *
-\?jungle_spear_trap               ~
-\?bigspear_trap                   M
-\?laser_trap                      z
-\?arrow_trap                      @
-\?powder_keg                      o
-\?landmine                        ]
-\?thinice                         I
-\?elevator                        e
-\?honey_upwards                   }
-\?stagnant_lava                   a
-\?water                           w
-\?alien_generator                 A
-\?giantclam                       C
-\?spring_trap                     c
-\?falling_platform                F
-\?chainandblocks_ceiling          B
-\?conveyorbelt_left               <
-\?conveyorbelt_right              >
-\?littorch                        H
-\?pot                             t
-\?tree_base                       T
-\?rock                            r
-\?key                             s
-\?locked_door                     /
-\?fountain_drain                  d
-\?clover                          Q
-\?houyibow                        h
-\?robot                           {
-\?imp                             +
-\?yeti                            y
-\?caveman_asleep                  n
-\?giant_spider                    N
-\?altar                           x
-\?vault_wall                      |
-\?coffin                          g
-\?shop_sign                       K
-\?shop_door                       k
-\?lamp_hang                       l
-\?shop_wall                       .
-\?shop_item                       S
-\?wanted_poster                   W
-\?shopkeeper                      $
-\?tomb_floor                      G
-\?cursed_pot                      u
-\?litwalltorch                    O
-\?haunted_corpse                  7
-\?shop_wall%50                    ;
-\?shop_woodwall                   :
-\?die                             %
-\?merchant                        #
-\?cavemanshopkeeper               &
-\?sleeping_hiredhand              \
-\?forcefield                      ?
-\?forcefield_top                  '
-\?thief                           J
-\?ladder_plat                     P
-\?lava                            !
-\?lavamander                      "
+\?ladder                           i
+\?chunk_ground                     5
+\?chunk_air                        6
+\?chunk_door                       8
+\?empty                            0
+\?floor                            1
+\?floor%50                         2
+\?minewood_floor                   =
+\?stone_floor                      -
+\?floor_hard                       X
+\?floor_hard%50%floor              Y
+\?adjacent_floor                   Z
+\?vine                             v
+\?growable_vine                    V
+\?door                             9
+\?door2                            D
+\?platform                         p
+\?spikes                           ^
+\?push_block                       4
+\?bone_block                       f
+\?bush_block                       b
+\?thorn_vine                       *
+\?jungle_spear_trap                ~
+\?bigspear_trap                    M
+\?laser_trap                       z
+\?arrow_trap                       @
+\?powder_keg                       o
+\?landmine                         ]
+\?thinice                          I
+\?elevator                         e
+\?honey_upwards                    }
+\?stagnant_lava                    a
+\?water                            w
+\?alien_generator                  A
+\?giantclam                        C
+\?spring_trap                      c
+\?falling_platform                 F
+\?chainandblocks_ceiling           B
+\?conveyorbelt_left                <
+\?conveyorbelt_right               >
+\?littorch                         H
+\?pot                              t
+\?tree_base                        T
+\?rock                             r
+\?key                              s
+\?locked_door                      /
+\?fountain_drain                   d
+\?clover                           Q
+\?houyibow                         h
+\?robot                            {
+\?imp                              +
+\?yeti                             y
+\?caveman_asleep                   n
+\?giant_spider                     N
+\?altar                            x
+\?vault_wall                       |
+\?coffin                           g
+\?shop_sign                        K
+\?shop_door                        k
+\?lamp_hang                        l
+\?shop_wall                        .
+\?shop_item                        S
+\?wanted_poster                    W
+\?shopkeeper                       $
+\?tomb_floor                       G
+\?cursed_pot                       u
+\?litwalltorch                     O
+\?haunted_corpse                   7
+\?shop_wall%50                     ;
+\?shop_woodwall                    :
+\?die                              %
+\?merchant                         #
+\?cavemanshopkeeper                &
+\?sleeping_hiredhand               \
+\?forcefield                       ?
+\?forcefield_top                   '
+\?thief                            J
+\?ladder_plat                      P
+\?lava                             !
+\?lavamander                       "
 
-\%jungle_spear_trap_chance    0
-\%snap_trap_chance            0
-\%beehive_chance              0
-\%leprechaun_chance           0
+\%jungle_spear_trap_chance     0
+\%snap_trap_chance             0
+\%beehive_chance               0
+\%leprechaun_chance            0
 
-\+bat                  0
-\+hangspider           0
-\+giantspider          0
-\+caveman              0
-\+tikiman              0
-\+witchdoctor          0
-\+mantrap              0
-\+mosquito             0
-\+monkey               0
-\+critterbutterfly     60
+\+bat                   0
+\+hangspider            0
+\+giantspider           0
+\+caveman               0
+\+tikiman               0
+\+witchdoctor           0
+\+mantrap               0
+\+mosquito              0
+\+monkey                0
+\+critterbutterfly      60
 
 ////////////////////////////////////////////////////////////////////////////////
 \.entrance
@@ -123,7 +123,7 @@
 00f0000ff0
 00f090Q000
 --0----0--
-1111111111
+1101111011
 
 ////////////////////////////////////////////////////////////////////////////////
 \.entrance_drop

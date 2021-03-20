@@ -1,43 +1,42 @@
 
 
-\?ladder                          .
-\?ladder_plat                     .
-\?stone_floor                     -
-\?cursed_pot                      u
-\?treasure                        t
-\?shop_sign                       K
-\?shop_door                       k
-\?empty                           0
-\?floor                           1
-\?floor%50                        2
-\?floor_hard                      X
-\?floor_hard%50%floor             Y
-\?adjacent_floor                  Z
-\?door2                           D
-\?locked_door                     /
-\?tomb_floor                      G
-\?litwalltorch                    O
-\?haunted_corpse                  7
-\?altar                           x
-\?vault_wall                      |
-\?bone_block                      f
-\?lamp_hang                       l
-\?shop_wall                       .
-\?shop_wall%50                    ;
-\?shop_woodwall                   :
-\?wanted_poster                   W
-\?shopkeeper                      $
-\?die                             %
-\?merchant                        #
-\?cavemanshopkeeper               &
-\?shop_item                       S
-\?sleeping_hiredhand              \
-\?forcefield                      ?
-\?forcefield_top                  '
-\?thief                           J
-\?push_block                      4
-\?chunk_air                       6
-\?minewood_floor_noreplace        =
+\?ladder                           L
+\?ladder_plat                      P
+\?stone_floor                      -
+\?treasure                         t
+\?shop_sign                        K
+\?shop_door                        k
+\?empty                            0
+\?floor                            1
+\?floor%50                         2
+\?floor_hard                       X
+\?floor_hard%50%floor              Y
+\?adjacent_floor                   Z
+\?door2                            D
+\?locked_door                      /
+\?tomb_floor                       G
+\?litwalltorch                     O
+\?haunted_corpse                   7
+\?altar                            x
+\?vault_wall                       |
+\?bone_block                       f
+\?lamp_hang                        l
+\?shop_wall                        .
+\?shop_wall%50                     ;
+\?shop_woodwall                    :
+\?wanted_poster                    W
+\?shopkeeper                       $
+\?die                              %
+\?merchant                         #
+\?cavemanshopkeeper                &
+\?shop_item                        S
+\?sleeping_hiredhand               \
+\?forcefield                       ?
+\?forcefield_top                   '
+\?thief                            J
+\?push_block                       4
+\?chunk_air                        6
+\?minewood_floor_noreplace         =
 
 
 
@@ -275,7 +274,7 @@ XX.....:::
 1f0000l0000000000111 X11---20000--0-00f-X
 11GG000000-GGGGG1111 X---2--000--11-----X
 011100000011--111110 Z-0000-000--000000fZ
-0220000GG00000002200 X-uf0040-0040000f0fX
+0220000GG00000002200 X-0f0040-0040000f0fX
 00000001-00000000000 X---ZZ1-------ZZ---X
 11110011111-11001111 XXXXZZXXXXXXXXZZXXXX
 
@@ -288,7 +287,7 @@ XX.....:::
 21-120000--000000000 ZZ000-111111-11000ZZ
 00l0000-G-1GG0000000 X-00111-------110--X
 00000------1--000000 X00--11-00l00-1-001X
-000GG--0000004000000 X000004000000u40001X
+000GG--0000004000000 X000004000000040001X
 G20011-0-------G0001 X-0011---000---1111X
 1f0002-000000-11000- X00--1-0000000-1111X
 111000-00ODO04011000 X00000400ODO004000-X
@@ -310,7 +309,7 @@ G20011-0-------G0001 X-0011---000---1111X
 GG-00-ODO000000000-- X--110ODO0-----00--X
 11-0G-11111-GGG00011 X--11-111---11100-0X
 00l011111-1111-10001 X---1-------11100-0X
-00000002----11-10001 X-u000-00l000000040X
+00000002----11-10001 X-0000-00l000000040X
 000000000l0000000GG1 X-f0000000000-----0X
 GGGGf000000-1-----11 X1-----000000-ff0-0X
 1--1100000011040D-11 X1100000000000ffD-0Z
