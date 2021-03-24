@@ -16,3 +16,4 @@ Links:
 * Ask questions, report bugs or hang out in [Discord](https://discord.gg/dRnr5fm387)
 * Stuck? Check the [Clear Video](https://www.youtube.com/watch?v=yQXZ-SH3riI)
 * Open source [Github Repository](https://github.com/sjtower/super-lunk-world)
+* Read about installing mods over at [Spelunky.fyi](https://spelunky.fyi/mods/overview/)
