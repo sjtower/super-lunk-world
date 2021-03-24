@@ -1,107 +1,107 @@
 
-\-size                                  3 11       // level size in rooms
-\-back_room_chance                      0          // % chance of a second room (default = 5%)
-\-back_room_interconnection_chance      0          // % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance          0          // 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance    0          // 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance                          0          // 1/N chance of a mount (default = 5000)
-\-altar_room_chance                     0          // 1/N chance of an altar room (default = 14)
-\-idol_room_chance                      0          // 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance              0          // 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance            0          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-max_liquid_particles                  2000       // Maximum number of liquid drops that can be created until no more liquid rooms are allowed
-\-flagged_liquid_rooms                  7          // Number of random rooms that will be flagged for being eligible to spawn liquid
+\-size                                   3 11       // level size in rooms
+\-back_room_chance                       0          // % chance of a second room (default = 5%)
+\-back_room_interconnection_chance       0          // % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance           0          // 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance     0          // 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance                           0          // 1/N chance of a mount (default = 5000)
+\-altar_room_chance                      0          // 1/N chance of an altar room (default = 14)
+\-idol_room_chance                       0          // 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance               0          // 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance             0          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-max_liquid_particles                   2000       // Maximum number of liquid drops that can be created until no more liquid rooms are allowed
+\-flagged_liquid_rooms                   7          // Number of random rooms that will be flagged for being eligible to spawn liquid
 
-\?chunk_air                       6
-\?empty                           0
-\?floor                           1
-\?floor%50                        2
-\?babylon_floor                   =
-\?floor_hard                      X
-\?floor_hard%50%floor             Y
-\?adjacent_floor                  Z
-\?ladder                          L
-\?ladder_plat                     P
-\?door                            9
-\?door2                           D
-\?spikes                          ^
-\?push_block                      4
-\?spark_trap                      A
-\?timed_forcefield                )
-\?forcefield_top                  '
-\?tiamat                          T
-\?olmecship                       G
-\?treasure                        t
-\?altar                           x
-\?vault_wall                      |
-\?shop_sign                       K
-\?shop_door                       k
-\?lamp_hang                       l
-\?shop_wall                       .
-\?shop_item                       S
-\?wanted_poster                   W
-\?shopkeeper                      $
-\?water                           w
-\?locked_door                     /
-\?stone_floor                     +
-\?cursed_pot                      u
-\?litwalltorch                    O
-\?haunted_corpse                  7
-\?bone_block                      f
-\?shop_wall%50                    ;
-\?shop_woodwall                   :
-\?die                             %
-\?merchant                        #
-\?cavemanshopkeeper               &
-\?sleeping_hiredhand              \
-\?forcefield                      ?
-\?woodenlog_trap                  a
-\?woodenlog_trap_ceiling          b
-\?idol_floor                      c
-\?idol                            e
-\?powder_keg                      g
-\?mattock                         h
-\?spring_trap                     i
-\?platform                        j
-\?landmine                        m
-\?thief                           J
-\?lava                            d
-\?olmite                          n
-\?falling_platform                o
-\?laser_trap                      p
-\?crushtrap                       q
-\?upsidedown_spikes               r
-\?caveman                         s
-\?honey_upwards                   v
-\?bush_block                      y
-\?octopus                         z
-\?key                             B
-\?crushtraplarge                  C
-\?elevator                        E
-\?honey_downwards                 F
-\?arrow_trap                      H
-\?thorn_vine                      I
-\?thinice                         M
-\?rock                            N
-\?minewood_floor_hanging_hide     Q
-\?minewood_floor_noreplace        R
-\?cookfire                        U
-\?caveman_asleep                  V
-\?necromancer                     <
-\?yeti                            >
-\?ufo                             ,
-\?cavemanboss                     ]
-\?snake                           [
-\?turkey                          {
-\?imp                             }
-\?crate_ropes                     -
-\?ankh                            _
-\?plasma_cannon                   (
-\?autowalltorch                   !
+\?chunk_air                        6
+\?empty                            0
+\?floor                            1
+\?floor%50                         2
+\?babylon_floor                    =
+\?floor_hard                       X
+\?floor_hard%50%floor              Y
+\?adjacent_floor                   Z
+\?ladder                           L
+\?ladder_plat                      P
+\?door                             9
+\?door2                            D
+\?spikes                           ^
+\?push_block                       4
+\?spark_trap                       A
+\?timed_forcefield                 )
+\?forcefield_top                   '
+\?tiamat                           T
+\?olmecship                        G
+\?treasure                         t
+\?altar                            x
+\?vault_wall                       |
+\?shop_sign                        K
+\?shop_door                        k
+\?lamp_hang                        l
+\?shop_wall                        .
+\?shop_item                        S
+\?wanted_poster                    W
+\?shopkeeper                       $
+\?water                            w
+\?locked_door                      /
+\?stone_floor                      +
+\?cursed_pot                       u
+\?litwalltorch                     O
+\?haunted_corpse                   7
+\?bone_block                       f
+\?shop_wall%50                     ;
+\?shop_woodwall                    :
+\?die                              %
+\?merchant                         #
+\?cavemanshopkeeper                &
+\?sleeping_hiredhand               \
+\?forcefield                       ?
+\?woodenlog_trap                   a
+\?woodenlog_trap_ceiling           b
+\?idol_floor                       c
+\?idol                             e
+\?powder_keg                       g
+\?mattock                          h
+\?spring_trap                      i
+\?platform                         j
+\?landmine                         m
+\?thief                            J
+\?lava                             d
+\?olmite                           n
+\?falling_platform                 o
+\?laser_trap                       p
+\?crushtrap                        q
+\?upsidedown_spikes                r
+\?caveman                          s
+\?honey_upwards                    v
+\?bush_block                       y
+\?octopus                          z
+\?key                              B
+\?crushtraplarge                   C
+\?elevator                         E
+\?honey_downwards                  F
+\?arrow_trap                       H
+\?thorn_vine                       I
+\?thinice                          M
+\?rock                             N
+\?minewood_floor_hanging_hide      Q
+\?minewood_floor_noreplace         R
+\?cookfire                         U
+\?caveman_asleep                   V
+\?necromancer                      <
+\?yeti                             >
+\?ufo                              ,
+\?cavemanboss                      ]
+\?snake                            [
+\?turkey                           {
+\?imp                              }
+\?crate_ropes                      -
+\?ankh                             _
+\?plasma_cannon                    (
+\?autowalltorch                    !
 
 
-\+critterfish          80
-\+critteranchovy       80
+\+critterfish           80
+\+critteranchovy        80
 
 ////////////////////////////////////////////////////////////////////////////////
 \.entrance
@@ -411,7 +411,7 @@ Xjyj00000y
 // room
 \!dual
 o00000000X 0000000000
-n0pXX0000X 000000!000
+n0XXX0000X 000000!000
 o0XXX0ddqX 0000000000
 00XXXXXXXX 000000XXXX
 0000000000 00000XXXXX

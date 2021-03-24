@@ -170,6 +170,9 @@
 ### Enemies
 
 1. Imp: You can spawn an imp without their cauldron if you spawn them in a 1-tile high space.
+1. Robot:
+    1. Will remain stationary if standing on thorny vines
+    1. Are affected by spark traps
 1. UFO: its range is 5 tiles for back & forth routine
 1. Olmite:
     1. Will spawn in random stacks of 1-4
