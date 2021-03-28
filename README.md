@@ -17,3 +17,19 @@ Links:
 * Stuck? Check the [Clear Video](https://www.youtube.com/watch?v=yQXZ-SH3riI)
 * Open source [Github Repository](https://github.com/sjtower/super-lunk-world)
 * Read about installing mods over at [Spelunky.fyi](https://spelunky.fyi/mods/overview/)
+
+Music credits:
+
+* Plok - Boss by SiameseTwins [...](https://www.smwcentral.net/?p=section&a=details&id=22690)
+* Mega Man 8 (PSX) - The Blue Bomber's Back!! ~ Title Screen (SMW Mix) by Hooded Edge [...](https://www.smwcentral.net/?p=section&a=details&id=24575)
+* Mega Man 8 - The Blue Bomber's Back!! ~ Title Screen (Remix) by Hooded Edge [...](https://www.smwcentral.net/?p=section&a=details&id=24357)
+* Baba Is You - Cog Is Push (Chrono Trigger style) by Lazy [...](https://www.smwcentral.net/?p=section&a=details&id=23722)
+* Sonic 3 & Knuckles - Ice Cap Zone Act 1 by bebn legg [...](https://www.smwcentral.net/?p=section&a=details&id=23872)
+* MF DOOM - Coffin Nails/Rapp Snitch Knishes by BoneFish [...](https://www.smwcentral.net/?p=section&a=details&id=25612)
+* Arcana/Cardmaster - Second Armageddon by KevinM [...](https://www.smwcentral.net/?p=section&a=details&id=23003)
+* Donkey Kong Country 3 - Rockface Rumble by Slash Man [...](https://www.smwcentral.net/?p=section&a=details&id=7499)
+* Mega Man Perfect Blue - The Intro Stage (X1 Style) by Ultima [...](https://www.smwcentral.net/?p=section&a=details&id=25730)
+* Spelunky - Mines B by Dippy [...](https://www.smwcentral.net/?p=section&a=details&id=21004)
+* Hungarorized (Lobby Groove Edition) by Dispace [...](https://www.smwcentral.net/?p=section&a=details&id=25410)
+* Final Fantasy X - Underwater Ruins by	KevinM [...](https://www.smwcentral.net/?p=section&a=details&id=25996)
+* Super Castlevania IV - Cellar by DanTheVP[...](https://www.smwcentral.net/?p=section&a=details&id=19130)
