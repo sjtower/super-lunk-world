@@ -114,6 +114,7 @@
 
 #### spring trap
 1. does not work if placed under a anything but an empty space
+1. behaves differently if placed to the left of a wall. PB will not bounce on it, player can land on right side w/o bounce. 
 
 #### lava
 1. can be pushed through kitty-corner openings via PBs

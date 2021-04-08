@@ -1,101 +1,102 @@
 
-\-size                                  5 5        // level size in rooms
-\-back_room_chance                      0          // % chance of a second room (default = 5%)
-\-back_room_interconnection_chance      0          // % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance          0          // 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance    0          // 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance                          5000       // 1/N chance of a mount (default = 5000)
-\-altar_room_chance                     0          // 1/N chance of an altar room (default = 14)
-\-idol_room_chance                      0          // 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance              10         // 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance            5          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-size                                   5 5        // level size in rooms
+\-back_room_chance                       0          // % chance of a second room (default = 5%)
+\-back_room_interconnection_chance       0          // % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance           0          // 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance     0          // 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance                           5000       // 1/N chance of a mount (default = 5000)
+\-altar_room_chance                      0          // 1/N chance of an altar room (default = 14)
+\-idol_room_chance                       0          // 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance               10         // 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance             5          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
 
-\?chunk_ground                    5
-\?chunk_air                       6
-\?chunk_door                      8
-\?empty                           0
-\?floor                           1
-\?floor%50                        2
-\?minewood_floor_noreplace        =
-\?floor_hard                      X
-\?floor_hard%50%floor             Y
-\?adjacent_floor                  Z
-\?ladder                          L
-\?ladder_plat                     P
-\?platform                        p
-\?entrance_shortcut               x
-\?door                            9
-\?door2                           D
-\?door2_secret                    d
-\?spikes                          ^
-\?push_block                      4
-\?treasure                        t
-\?litwalltorch                    O
-\?cavemanboss                     B
-\?vault_wall                      |
-\?coffin                          g
-\?shop_sign                       K
-\?shop_door                       k
-\?lamp_hang                       l
-\?shop_wall                       .
-\?shop_item                       S
-\?wanted_poster                   W
-\?shopkeeper                      $
-\?ghist_shopkeeper                #
-\?autowalltorch                   A
-\?locked_door                     /
-\?stone_floor                     +
-\?tomb_floor                      G
-\?cursed_pot                      u
-\?haunted_corpse                  7
-\?bone_block                      f
-\?shop_wall%50                    ;
-\?shop_woodwall                   :
-\?die                             %
-\?cavemanshopkeeper               &
-\?sleeping_hiredhand              \
-\?forcefield                      ?
-\?forcefield_top                  '
-\?thief                           J
-\?powder_keg                      a
-\?rock                            b
-\?falling_platform                c
-\?pot                             e
-\?arrow_trap                      h
-\?crushtrap                       i
-\?caveman_asleep                  j
-\?crushtraplarge                  m
-\?cookfire                        n
-\?landmine                        o
-\?laser_trap                      q
-\?water                           r
-\?stagnant_lava                   s
-\?conveyorbelt_left               v
-\?conveyorbelt_right              w
-\?timed_forcefield                y
-\?pillar                          z
-\?pipe                            C
-\?thorn_vine                      E
-\?regenerating_block              F
-\?bigspear_trap                   H
-\?jungle_spear_trap               I
-\?spring_trap                     M
-\?upsidedown_spikes               N
-\?imp                             Q
-\?caveman                         R
-\?honey_upwards                   T
-\?elevator                        U
+\?chunk_ground                     5
+\?chunk_air                        6
+\?chunk_door                       8
+\?empty                            0
+\?floor                            1
+\?floor%50                         2
+\?minewood_floor_noreplace         =
+\?floor_hard                       X
+\?floor_hard%50%floor              Y
+\?adjacent_floor                   Z
+\?ladder                           L
+\?ladder_plat                      P
+\?platform                         p
+\?entrance_shortcut                x
+\?door                             9
+\?door2                            D
+\?door2_secret                     d
+\?spikes                           ^
+\?push_block                       4
+\?treasure                         t
+\?litwalltorch                     O
+\?cavemanboss                      B
+\?vault_wall                       |
+\?coffin                           g
+\?shop_sign                        K
+\?shop_door                        k
+\?lamp_hang                        l
+\?shop_wall                        .
+\?shop_item                        S
+\?wanted_poster                    W
+\?shopkeeper                       $
+\?ghist_shopkeeper                 #
+\?autowalltorch                    A
+\?locked_door                      /
+\?stone_floor                      +
+\?tomb_floor                       G
+\?cursed_pot                       u
+\?haunted_corpse                   7
+\?bone_block                       f
+\?shop_wall%50                     ;
+\?shop_woodwall                    :
+\?die                              %
+\?cavemanshopkeeper                &
+\?sleeping_hiredhand               \
+\?forcefield                       ?
+\?forcefield_top                   '
+\?thief                            J
+\?powder_keg                       a
+\?rock                             b
+\?falling_platform                 c
+\?pot                              e
+\?arrow_trap                       h
+\?crushtrap                        i
+\?caveman_asleep                   j
+\?crushtraplarge                   m
+\?cookfire                         n
+\?landmine                         o
+\?laser_trap                       q
+\?water                            r
+\?stagnant_lava                    s
+\?conveyorbelt_left                v
+\?conveyorbelt_right               w
+\?timed_forcefield                 y
+\?pillar                           z
+\?pipe                             C
+\?thorn_vine                       E
+\?regenerating_block               F
+\?bigspear_trap                    H
+\?jungle_spear_trap                I
+\?spring_trap                      M
+\?upsidedown_spikes                N
+\?imp                              Q
+\?caveman                          R
+\?honey_upwards                    T
+\?elevator                         U
+\?empress_grave                    !
 
-\%arrowtrap_chance            0
-\%totemtrap_chance            0
-\%pushblock_chance            0
+\%arrowtrap_chance             0
+\%totemtrap_chance             0
+\%pushblock_chance             0
 
-\+snake                0
-\+bat                  0
-\+caveman              0
-\+spider               0
-\+hornedlizard         0
-\+critterdungbeetle    120
+\+snake                 0
+\+bat                   0
+\+caveman               0
+\+spider                0
+\+hornedlizard          0
+\+critterdungbeetle     120
 
 ////////////////////////////////////////////////////////////////////////////////
 \.setroom0-0
@@ -144,10 +145,10 @@ XXXXXXXXXX
 \!dual
 90D1111111 X0DXX0XXXX
 11111m0m01 X0X0000XXX
-0000000000 XM00O0OXXX
-0000000000 XXXX000XXX
-0000000000 XXXXM00XXX
-1000000000 XXXXX0XXXX
+0000000000 XM00O0O000
+0000000000 XXXX000000
+0000000000 XXXXM00000
+1000000000 XXXXX0XX!X
 XXXX00000X XXXXX0XXXX
 'XXX^^^^^X XXXXX0XXXX
 

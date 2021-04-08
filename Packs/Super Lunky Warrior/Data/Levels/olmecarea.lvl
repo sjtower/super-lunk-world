@@ -116,7 +116,7 @@
 // room
 \!dual
 0-----0000 XX0XXXXXXX
-0000000D00 00O0000DXX
+0000000D00 00O0000D0X
 ---------P XXXXXXXXXX
 000---000L XX,,,X,,,X
 000---0000 ,,,X,,,X,,
@@ -130,7 +130,7 @@
 
 // room
 \!dual
---0----0-- XXXXX,,,,X
+--0--0-+-- XXXXX,,,,X
 00O0000O00 XXXXX,XX,X
 ---------- XXXX,,,X,,
 0000000000 XXXX,X,XXX
