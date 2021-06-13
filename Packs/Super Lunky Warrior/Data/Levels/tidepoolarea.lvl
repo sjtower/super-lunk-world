@@ -1,112 +1,112 @@
+\-size                                   5 5        // level size in rooms - W / H
+\-back_room_chance                       5          // % chance of a second room (default = 5%)
+\-back_room_interconnection_chance       20         // % chance of a second room interconnection (default = 20%)
+\-back_room_hidden_door_chance           500        // 1/N chance of a hidden door (default = 500)
+\-back_room_hidden_door_cache_chance     1000       // 1/N chance of a hidden door to a cache (default = 1000)
+\-mount_chance                           0          // 1/N chance of a mount (default = 5000)
+\-altar_room_chance                      0          // 1/N chance of an altar room (default = 14)
+\-idol_room_chance                       0          // 1/N chance of an idol room (default = 10)
+\-floor_side_spread_chance               0          // 1/N chance of a spreadable floor spreading to its side (default = 10)
+\-floor_bottom_spread_chance             0          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
+\-machine_bigroom_chance                 5          // 1/N chance of spawning a machine big room (default = 0)
+\-machine_wideroom_chance                5          // 1/N chance of spawning a machine wide room (default = 0)
+\-machine_tallroom_chance                5          // 1/N chance of spawning a machine tall room (default = 0)
+\-machine_rewardroom_chance              0          // 1/N chance of spawning a machine reward room (default = 0)
 
-\-size                                  5 5        // level size in rooms - W / H
-\-back_room_chance                      5          // % chance of a second room (default = 5%)
-\-back_room_interconnection_chance      20         // % chance of a second room interconnection (default = 20%)
-\-back_room_hidden_door_chance          500        // 1/N chance of a hidden door (default = 500)
-\-back_room_hidden_door_cache_chance    1000       // 1/N chance of a hidden door to a cache (default = 1000)
-\-mount_chance                          0          // 1/N chance of a mount (default = 5000)
-\-altar_room_chance                     0          // 1/N chance of an altar room (default = 14)
-\-idol_room_chance                      0          // 1/N chance of an idol room (default = 10)
-\-floor_side_spread_chance              0          // 1/N chance of a spreadable floor spreading to its side (default = 10)
-\-floor_bottom_spread_chance            0          // 1/N chance of a spreadable floor spreading to its bottom (default = 5)
-\-machine_bigroom_chance                5          // 1/N chance of spawning a machine big room (default = 0)
-\-machine_wideroom_chance               5          // 1/N chance of spawning a machine wide room (default = 0)
-\-machine_tallroom_chance               5          // 1/N chance of spawning a machine tall room (default = 0)
-\-machine_rewardroom_chance             0          // 1/N chance of spawning a machine reward room (default = 0)
+\?chunk_ground                     5
+\?chunk_air                        6
+\?chunk_door                       8
+\?empty                            0
+\?floor                            1
+\?floor%50                         2
+\?pagoda_floor                     =
+\?pagoda_floor%50                  -
+\?floor_hard                       X
+\?floor_hard%50%floor              Y
+\?adjacent_floor                   Z
+\?climbing_pole                    L
+\?growable_climbing_pole           B
+\?pagoda_platform                  p
+\?coffin                           ~
+\?door                             9
+\?door2                            D
+\?spikes                           ^
+\?upsidedown_spikes                v
+\?push_block                       4
+\?bone_block                       f
+\?powder_keg                       o
+\?clover                           Q
+\?hermitcrab                       h
+\?giantclam                        C
+\?madametusk                       M
+\?robot                            {
+\?sorceress                        s
+\?mummy                            U
+\?spark_trap                       A
+\?laser_trap                       z
+\?bush_block                       b
+\?vine                             V
+\?fountain_drain                   d
+\?slidingwall_switch               c
+\?conveyorbelt_left                <
+\?conveyorbelt_right               >
+\?thorn_vine                       *
+\?honey_upwards                    }
+\?honey_downwards                  )
+\?falling_platform                 F
+\?arrow_trap                       @
+\?landmine                         ]
+\?thinice                          I
+\?elevator                         e
+\?crushtrap                        g
+\?crushtraplarge                   G
+\?regenerating_block               r
+\?quicksand                        q
+\?littorch                         H
+\?litwalltorch                     O
+\?key                              T
+\?pot                              t
+\?rock                             k
+\?shop_sign                        K
+\?lamp_hang                        l
+\?shop_wall                        .
+\?shop_item                        S
+\?wanted_poster                    W
+\?shopkeeper                       $
+\?locked_door                      /
+\?sleeping_hiredhand               \
+\?water                            w
+\?stagnant_lava                    a
+\?ladder_plat                      P
+\?stone_floor                      +
+\?cursed_pot                       u
+\?haunted_corpse                   7
+\?altar                            x
+\?vault_wall                       |
+\?shop_wall%50                     ;
+\?shop_woodwall                    :
+\?die                              %
+\?merchant                         #
+\?cavemanshopkeeper                &
+\?forcefield                       ?
+\?forcefield_top                   '
+\?thief                            J
+\?slidingwall_ceiling              i
+\?temple_floor                     j
 
-\?chunk_ground                    5
-\?chunk_air                       6
-\?chunk_door                      8
-\?empty                           0
-\?floor                           1
-\?floor%50                        2
-\?pagoda_floor                    =
-\?pagoda_floor%50                 -
-\?floor_hard                      X
-\?floor_hard%50%floor             Y
-\?adjacent_floor                  Z
-\?climbing_pole                   L
-\?growable_climbing_pole          B
-\?pagoda_platform                 p
-\?door                            9
-\?door2                           D
-\?spikes                          ^
-\?upsidedown_spikes               v
-\?push_block                      4
-\?bone_block                      f
-\?powder_keg                      o
-\?clover                          Q
-\?hermitcrab                      h
-\?giantclam                       C
-\?madametusk                      M
-\?robot                           {
-\?sorceress                       s
-\?mummy                           U
-\?spark_trap                      A
-\?laser_trap                      z
-\?bush_block                      b
-\?vine                            V
-\?fountain_drain                  d
-\?slidingwall_switch              c
-\?conveyorbelt_left               <
-\?conveyorbelt_right              >
-\?thorn_vine                      *
-\?honey_upwards                   }
-\?honey_downwards                 )
-\?falling_platform                F
-\?arrow_trap                      @
-\?landmine                        ]
-\?thinice                         I
-\?elevator                        e
-\?crushtrap                       g
-\?crushtraplarge                  G
-\?regenerating_block              r
-\?quicksand                       q
-\?littorch                        H
-\?litwalltorch                    O
-\?key                             T
-\?pot                             t
-\?rock                            k
-\?shop_sign                       K
-\?lamp_hang                       l
-\?shop_wall                       .
-\?shop_item                       S
-\?wanted_poster                   W
-\?shopkeeper                      $
-\?locked_door                     /
-\?sleeping_hiredhand              \
-\?water                           w
-\?stagnant_lava                   a
-\?ladder_plat                     P
-\?stone_floor                     +
-\?cursed_pot                      u
-\?haunted_corpse                  7
-\?altar                           x
-\?vault_wall                      |
-\?shop_wall%50                    ;
-\?shop_woodwall                   :
-\?die                             %
-\?merchant                        #
-\?cavemanshopkeeper               &
-\?forcefield                      ?
-\?forcefield_top                  '
-\?thief                           J
-\?slidingwall_ceiling             i
-\?temple_floor                    j
+\%liontrap_chance              0
+\%snap_trap_chance             0
+\%leprechaun_chance            0                            // 1/n chance that a Leprechaun will spawn
 
-\%liontrap_chance             0
-\%snap_trap_chance            0
-\%leprechaun_chance           0                            // 1/n chance that a Leprechaun will spawn
-
-\+jiangshi             0
-\+fish                 0
-\+octopus              0
-\+hermitcrab           0
-\+female_jiangshi      0
-\+crabman              0
-\+critterfish          80
-\+critteranchovy       80
-\+crittercrab          80
+\+jiangshi              0
+\+fish                  0
+\+octopus               0
+\+hermitcrab            0
+\+female_jiangshi       0
+\+crabman               0
+\+critterfish           80
+\+critteranchovy        80
+\+crittercrab           80
 
 ////////////////////////////////////////////////////////////////////////////////
 \.entrance
@@ -777,7 +777,7 @@ XXX11gXXXX
 ====pp====
 
 ////////////////////////////////////////////////////////////////////////////////
-\.idol   //  Idol room
+\.idol   // Idol room
 ////////////////////////////////////////////////////////////////////////////////
 
 // room
@@ -801,17 +801,43 @@ XXX11gXXXX
 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
-\.coffin_unlockable   //  Coffin room for unlockable characters (facing right, will flip for other side)
+\.coffin_player // Coffin room holding a dead player (both sides must be open)
 ////////////////////////////////////////////////////////////////////////////////
 
-// room
-1111111111
-1111111111
-1111111111
-1111111111
-1111111111
-1111111111
-1111111111
+==========
+=00000000=
+=000~0000=
+==0====0==
+0000000000
+00B0000B00
+0==^^^^==0
+11=1111=11
+
+////////////////////////////////////////////////////////////////////////////////
+\.coffin_player_vertical // Coffin room holding a dead player (opened on all sides)
+////////////////////////////////////////////////////////////////////////////////
+
+\!flip
+====00====
+=00000000=
+=000000~0=
+==0=======
+0000000000
+00B0000000
+0===000110
+1111001111
+
+////////////////////////////////////////////////////////////////////////////////
+\.coffin_unlockable // Coffin room for unlockable characters (facing right, will flip for other side)
+////////////////////////////////////////////////////////////////////////////////
+
+==========
+=00000000=
+=000000~0=
+==0=======
+0000000000
+00B0000000
+0===111110
 1111111111
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1169,7 +1195,7 @@ B00000000B
 00111000000000000000 XXXXZZXXXXXXXXZZXXXX
 
 ////////////////////////////////////////////////////////////////////////////////
-\.tuskfrontdiceshop   //  Madame Tusk's front dice shop facing right, flipped for other side
+\.tuskfrontdiceshop   // Madame Tusk's front dice shop facing right, flipped for other side
 ////////////////////////////////////////////////////////////////////////////////
 
 // room
@@ -1183,7 +1209,7 @@ B00000000B
 ====pp====
 
 ////////////////////////////////////////////////////////////////////////////////
-\.tuskdiceshop   //  Madame Tusk's dice shop facing right, flipped for other side
+\.tuskdiceshop   // Madame Tusk's dice shop facing right, flipped for other side
 ////////////////////////////////////////////////////////////////////////////////
 
 // room
