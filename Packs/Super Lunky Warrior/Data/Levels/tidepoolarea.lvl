@@ -76,7 +76,7 @@
 \?locked_door                      /
 \?sleeping_hiredhand               \
 \?water                            w
-\?stagnant_lava                    a
+\?coarse_lava                    a
 \?ladder_plat                      P
 \?stone_floor                      +
 \?cursed_pot                       u

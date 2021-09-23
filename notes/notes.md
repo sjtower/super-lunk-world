@@ -187,8 +187,9 @@
     1. Honey will slow him significantly
     1. Normally, Quillback's roll will continue as long as he drops in height and destroys some floor?
     1. Won't reset his rolling attack if he doesn't destroy anything
-    1. If rolls into a 4-wide hole with unbreakable blocks on both walls, he will bounce/climb all the way up after hitting a wall
+    1. If rolls into a 4-wide hole with unbreakable blocks on both walls, he will bounce back and forth endlessly
     1. not effected by spring traps
+    1. If he bounces off a wall while rolling, he can become stuck in honey
 1. Olmec:
     1. room 0-0 is unused - use `coffin_unlockable` instead
     1. olmec seems to spawn in vanilla location regardless of placement in the level

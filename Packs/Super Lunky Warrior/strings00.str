@@ -3,6 +3,7 @@ Yes
 No
 <SYS_ACCEPT/>
 <SYS_BACK/>
+<LOG_BOMB/>
 <SYS_SPECIAL/>
 <SYS_SPECIAL2/>
 <SYS_SPECIAL3/>
@@ -13,6 +14,8 @@ No
 Continue
 Cancel
 Reset
+Disabled
+Enabled
 ########################################
 ## INTRO POEM                         ##
 ##   Three lines chosen randomly...   ##
@@ -59,12 +62,14 @@ PAUSED
 Resume Game
 Restart Tutorial
 End Adventure
+End Match
 Instant Restart
 Options
 Main Menu
 Exit Game
 Are you sure you want to restart the tutorial?
 Are you sure you want to end the adventure? All unsaved progress will be lost.
+Are you sure you want to end the match?
 Are you sure you want to restart? All unsaved progress will be lost.
 Are you sure you want to exit to the Main Menu? All unsaved progress will be lost.
 Are you sure you want to exit the game? All unsaved progress will be lost.
@@ -113,6 +118,7 @@ Controls
 Gameplay
 HUD and Text
 Language
+Cross-Progress
 Data Management
 Credits
 #### Shared values
@@ -158,6 +164,7 @@ Set the master volume.
 ########################################
 Keyboard Config
 Controller Config
+Controller Config
 Current Player
 The current player whose controls we're configuring.
 Player %d
@@ -178,10 +185,19 @@ Walk
 Run
 Right Stick
 Toggle the right stick for movement.
+Right Stick
+Toggle the right stick for movement.
 Vibration
 Set the controller vibration mode.
+Rumble
+Set the controller rumble mode.
 <SYS_ACCEPT/> Change Key
 <SYS_ACCEPT/> Change Button
+<SYS_ACCEPT/> Change Button
+<SYS_ACCEPT/> Change Button
+<SYS_ACCEPT/> Change Button
+Press the button you'd like to use for %ls
+Press the button you'd like to use for %ls
 Press the button you'd like to use for %ls
 This key is already in use! If you continue, this key will be unset for player %d.
 Unset key for player %d
@@ -197,6 +213,21 @@ Output Delay
 Delays displaying other players' actions to reduce visual glitches.
 Pseudonymization
 Use pseudonyms for players from third-party sources.
+#### Cross-Progress
+########################################
+Cross-Progress
+Enable sharing progress with other platforms.
+Auto-Sync
+Auto-sync progress with other devices.
+Request Sync Code
+Request a code to share progress with another platform.
+Enter Sync Code
+Enter a code from another platform to share progress.
+Sync Progress
+Download, merge and upload your progress.
+Sync Code:
+Requesting Code
+Syncing
 #### Gameplay
 ########################################
 Pet Style
@@ -234,12 +265,18 @@ Seconds
 Milliseconds
 Level Number
 Toggle if the level number is displayed.
-Angry Shopkeeper icon
+Angry Shopkeeper Icon
 Toggle whether an icon is displayed when shopkeepers are angry.
 Button Prompts
 Choose whether or not to display button prompts.
-Button icons
+Button Prompts
+Choose whether or not to display button prompts.
+Button Prompts
+Choose whether or not to display button prompts.
+Button Icons
 Force button icons to a particular platform.
+Feat Pop-Ups
+Toggle if Feat pop-ups are displayed.
 TEXT BOXES
 Text Box Size
 Set the size of text boxes.
@@ -307,6 +344,9 @@ Friends
 Cross-Play
 Total Players
 <SYS_SPECIAL2/> Me
+Watch replay
+<SYS_ACCEPT/> Watch replay
+<SYS_ACCEPT/> Contextual menu
 ########################################
 ## ENTER SEED SCREEN                  ##
 ########################################
@@ -321,8 +361,18 @@ CHOOSE ADVENTURER
 Player %d
 <SYS_ACCEPT/> Start
 Back <SYS_BACK/>
-<LOG_ACTION/> Start with bots
-<SYS_SPECIAL/> Start with bots
+<LOG_ACTION/> Add Bot
+<SYS_SPECIAL/> Add Bot
+<LOG_BOMB/> Remove Bot
+<SYS_BACK/> Remove Bot
+<LOG_SPECIAL/> Change Bot AI
+<SYS_SPECIAL3/> Change Bot AI
+Chill
+Normal
+Aggro
+Turtle
+Tactical
+Random
 QUICK SELECT
 <LOG_ROPE/> Quick Select
 <SYS_SPECIAL2/> Quick Select
@@ -383,6 +433,7 @@ Round Ends
 Death Mist
 Alien Blast
 Loose Bombs
+Ghost
 Random
 Wins
 Set how many wins are required to decide the victor.
@@ -427,6 +478,22 @@ Set how much damage the whip does.
 5
 10
 99
+Final Ghost
+Set whether a player ghost is created after the final life is lost.
+Off
+On
+Breath Cooldown
+Set a cooldown for the ghost breath attack or toggle it off.
+None
+0.25
+0.5
+0.75
+1.0
+1.25
+1.5
+1.75
+2.0
+Breath Off
 Mount
 Choose whether players begin each round mounted.
 None
@@ -434,6 +501,10 @@ Turkey
 Rock Dog
 Axolotl
 Random
+Punish Ball
+Set whether players spawn with a punish ball.
+Off
+On
 Arena Select
 Choose how arenas are selected between rounds.
 Take Turns
@@ -453,6 +524,7 @@ None
 Low
 Medium
 High
+Very High
 Items
 Choose which items are available in crates and which you start holding.
 <SYS_ACCEPT_SECONDARY/>
@@ -531,15 +603,16 @@ Held Item
 Equipment
 Backwear
 Special
-<SYS_ACCEPT/> Toggle all items on/off.
-<SYS_ACCEPT/> Toggle level features on/off.
-<SYS_ACCEPT/> Toggle power-ups on/off.
-<SYS_ACCEPT/> Toggle weapons on/off.
-<SYS_ACCEPT/> Toggle equipment on/off.
-<SYS_ACCEPT/> Toggle backwear on/off.
-<SYS_ACCEPT/> Toggle special items on/off.
-<SYS_ACCEPT/> Toggle this item on/off.
-<SYS_ACCEPT/> Enable this item as a starting item or simply toggle it on/off.
+<LOG_ACCEPT/> Toggle all items on/off.
+<LOG_ACCEPT/> Toggle level features on/off.
+<LOG_ACCEPT/> Toggle power-ups on/off.
+<LOG_ACCEPT/> Toggle weapons on/off.
+<LOG_ACCEPT/> Toggle equipment on/off.
+<LOG_ACCEPT/> Toggle backwear on/off.
+<LOG_ACCEPT/> Toggle special items on/off.
+<LOG_ACCEPT/> Toggle this item on/off.
+<LOG_ACCEPT/> Enable this item as a starting item or simply toggle it on/off.
+<LOG_SPECIAL/> Skip
 ########################################
 ## DM RESULTS SCREEN                  ##
 ########################################
@@ -573,7 +646,7 @@ This level:
 Total:
 Stats
 Loot
-Press <LOG_JUMP/> to go to the next level
+Press <LOG_ACCEPT/> to go to the next level
 ########################################
 ## GAME OVER                          ##
 ########################################
@@ -585,6 +658,7 @@ Exit to Title
 ########################################
 ## CONTROLLER DISCONNECTION           ##
 ########################################
+Controller for player %d has been disconnected. Reconnect the controller or connect a new one and press <LOG_ACCEPT/> to continue.
 Controller for player %d has been disconnected. Reconnect the controller or connect a new one and press <LOG_ACCEPT/> to continue.
 <LOG_CANCEL/> Return to title screen
 <LOG_CANCEL/> Return to main menu
@@ -1030,7 +1104,7 @@ In alien society, bouncing up and down is a common form of recreation and exerci
 LANDMINE
 An explosive device triggered by proximity. Disable it before it's too late!
 LASER TRAP
-A fixed laser gun trigged by a motion detector.
+A fixed laser gun triggered by a motion detector.
 SPARK TRAP
 The enormous amount of excess energy generated by Neo Babylon is channeled into dangerous contraptions such as these.
 FROG TRAP
@@ -1909,7 +1983,7 @@ Yikes!
 #### Ana basic dialogue
 ########################################
 This challenge is something else!
-You can extend your short jumps by holding jump on your descent!
+If you jump while you throw an item upwards, you can throw it higher!
 Have you seen Quilliam? I feel compelled to make friends with him...
 ########################################
 #### Margaret basic dialogue
@@ -1933,7 +2007,7 @@ I use bombs every time I play, why not?
 #### Alto basic dialogue
 ########################################
 The key to my success? Use your resources!
-Practice makes progress!
+Don't give up!
 Have you seen all the lava in the jungle? Yikes!
 ########################################
 #### Liz basic dialogue
@@ -1945,7 +2019,7 @@ Have you seen Tiamat? She has done some redecorating!
 #### Nekka basic dialogue
 ########################################
 If you throw up while jumping, you can throw higher.
-%ls. I admire your courage.
+%ls. I like you. I will bring skulls.
 I use bombs and ropes, but Olmec's challenge is withstanding my attempts...
 ########################################
 #### LISE basic dialogue
@@ -1958,7 +2032,7 @@ Calculating the chance of victory on your next run... [REDACTED]
 ########################################
 if some jumps seem impossible, try researching Coyote Time and Regrab techniques.
 Make sure to use the shortcuts dear. The challenge is built around them!
-I spoiled Demi too as a little girl, but she's turned out just fine!
+I might be biased, but Demi is the best at Olmec's Challenge!
 ########################################
 #### Manfred basic dialogue
 ########################################
@@ -1982,12 +2056,12 @@ You can whip water and lava away from you.
 ########################################
 You can push TNT onto elevators if you're quick enough.
 You can whip a mine after it is activated to send it forward.
-(She seems lost in her own little world.)
+I really think we need to protect Quillback in his challenge...
 ########################################
 #### Au basic dialogue
 ########################################
 Olmec himself is a challenging fight. Try ducking on him during his second phase.
-I can see you've learned a lot since you began this journey.
+I can see you've learned a lot, even more than I ever anticipated.
 There is not a lot of gold in Olmec's challenge...
 ########################################
 #### Demi basic dialogue
@@ -2011,7 +2085,7 @@ I ran into a friendly cave man who was selling rocks!
 #### Dirk basic dialogue
 ########################################
 I haven't seen my sister since the blood moon began...
-I'm having trouble sleeping, so I'm doing exercise.
+Have you been to the back layer yet? Tun sometimes appears...
 I have a feeling that Olmec's challenge is hiding something...
 ########################################
 #### Guy basic dialogue
@@ -2022,9 +2096,9 @@ Did the caves on Earth change too?
 ########################################
 #### Spelunky (Classic) basic dialogue
 ########################################
-???
-!!!!!...!
-:)
+¯\_(ツ)_/¯
+(┛◉Д◉)┛彡┻━┻
+(ಠ_ಠ)
 ########################################
 #### Mama Tunnel basic dialogue
 ########################################
@@ -2248,8 +2322,9 @@ Fastest Time: %ls
 ########################################
 #### Online
 ########################################
-<SYS_ACCEPT/> Report
+Report
 Describe the inappropiate content or offensive behaviour.
+Show Gamercard
 Feedback
 Describe the bug or suggestion you have encountered while playing Spelunky 2
 Data to ensure integrity and authenticity of the run will be made public, contact privacy@blitworks.com for removal requests.
@@ -2262,6 +2337,29 @@ This leaderboard is currently unavailable, please come back later.
 ########################################
 Final Score:
 Total Time:
+########################################
+#### Characters short name
+########################################
+Ana
+Margaret
+Colin
+Roffy
+Alto
+Liz
+Nekka
+LISE
+Coco
+Manfred
+Jay
+Tina
+Valerie
+Au
+Demi
+Pilot
+Airyn
+Dirk
+Guy
+Classic Guy
 ########################################
 #### Shopkeepers' names
 ########################################
@@ -2323,6 +2421,91 @@ Wolf
 Xorn
 Yor
 Zorgoth
+########################################
+#### Feats
+########################################
+Feats
+Hidden
+You Performed a Feat!
+The Full Spelunky
+You Got This
+Feels Good
+Skills Improving
+Persistent
+Journeyman
+Ironman
+Speedlunky
+Low Scorer
+Pilgrim
+Master
+Awakened
+Excavator
+Torchbearer
+Survivor
+Millionaire
+Seen a Lot
+Seen It All
+Mama's Little Helper
+Mama's Big Helper
+Track Star
+Arena Champion
+Turkey Whisperer
+Support a Local Business
+VIP
+Shadow Shopper
+Legendary
+Her Favorite
+Divine Right
+A Second Chance
+Chosen One
+Parenthood
+Obtain all other trophies.
+Unlock the entrance.
+Make it past 1-4 in a non-seeded run.
+Make it past Olmec's Lair in a non-seeded run.
+Reach the Ice Caves in a non-seeded run.
+Complete the game in a non-seeded run.
+Complete the game without using shortcuts in a non-seeded, single-player run.
+Complete the game in 10 minutes or less without shortcuts in a non-seeded, single-player run.
+Complete the game without collecting any treasure and without using shortcuts in a non-seeded, single-player run.
+Reach the Sunken City in a non-seeded, single-player run.
+Complete the game by defeating Hundun in a non-seeded, single-player run.
+Reach the Cosmic Ocean in a non-seeded, single-player run.
+Complete the Moon Challenge in a non-seeded run.
+Complete the Star Challenge in a non-seeded run.
+Complete the Sun Challenge in a non-seeded run.
+End a run with $1,000,000 or more in a non-seeded, single-player run.
+Complete 50% of the Journal or more.
+Complete the Journal.
+Unlock the first shortcut.
+Unlock all three shortcuts.
+Finish the Tutorial Speedrun in under 30 seconds.
+Win a First-to-Five Deathmatch against three bots using the Default ruleset.
+Bring two turkeys to Yang in a non-seeded run.
+Buy out Yang's Pet Shop in a non-seeded run.
+Enter Madame Tusk's Palace of Pleasure as a guest (in a non-seeded run).
+Reach the Black Market in a non-seeded run.
+Reach the City of Gold in a non-seeded, single-player run.
+Obtain the Kapala in a non-seeded run.
+Obtain some royal headwear in a non-seeded run.
+Obtain the Ankh in a non-seeded run.
+Obtain the Tablet of Destiny in a non-seeded run.
+Wake the Eggplant Child in a non-seeded run.
+########################################
+#### Constellations
+########################################
+Solanum
+Animus
+Canis
+Cattus
+Phodopus
+Felix
+Asinus
+Celeritas
+Major
+Fidelis
+Criminalus
+Minor
 ########################################
 #### Others
 ########################################
